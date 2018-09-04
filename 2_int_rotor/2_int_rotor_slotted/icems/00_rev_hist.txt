@@ -1,0 +1,7 @@
+rev8 candidacy exam (param revE and concentric E)
+	--> larger betas, wider airgap range, 
+	more J for ext rotor
+	revA has badly designed stator
+	revB has optimized stator, but its teeth are too long, so it becomes apparently too advantageous (in comparison to slotless)
+	revC makes slots shorter... l_slot=2 mm, to compete with the slotless, whose biggest radial coil thickness is 2 mm
+	revD is C but with 'circular' geometry
