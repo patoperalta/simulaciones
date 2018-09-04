@@ -1,0 +1,4 @@
+rev7 was for pre-sixth CTI presentation (10.4.2018)
+rev8 is for CTI presentation #6
+	--> larger betas, wider airgap range, 
+	more J for ext rotor
