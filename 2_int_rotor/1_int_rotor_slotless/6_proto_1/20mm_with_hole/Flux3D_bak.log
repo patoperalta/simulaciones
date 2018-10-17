@@ -1,0 +1,3524 @@
+Loading data model 'Flux_model.stp'
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/Flux3D_log.py'
+ 
+                                                            FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                  4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                 HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 5/8 cores LAIB108233:2844 jperalta
+ 
+12:57:11       0 sec. FLUX3D_18.1.0 kernel initialized
+
+Flux3D (application 2018.1) running
+
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/00_main.py' in batch mode ...
+Loading new project
+Creating ANONYM
+... end loading new project
+Execution of command file '1_param_revF.py' in batch mode ...
+FICHIER PARAM.PY
+
+   ParameterGeom[BETA] created
+   ParameterGeom[R_ROT_OUT] created
+ParameterGeom[2]
+   ParameterGeom[ALPHA_H] created
+   ParameterGeom[ALPHA_CASE] created
+   ParameterGeom[D_AGAP] created
+   ParameterGeom[D_ST] created
+   ParameterGeom[R_ST_OUT] created
+   ParameterGeom[R_ST_IN] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[D_ROT] created
+   ParameterGeom[R_ROT_IN] created
+   ParameterGeom[H_ROT] created
+   ParameterGeom[H_ST] created
+ParameterGeom[13]
+   ParameterGeom[D_MECHGAP] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DALPHA] created
+   ParameterGeom[DBETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[X_H_DIFF] created
+   ParameterGeom[DZ] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+End execution of command file '1_param_revF.py' in batch mode ...
+Execution of command file '2_app_def.py' in batch mode ...
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+End execution of command file '2_app_def.py' in batch mode ...
+Execution of command file '3_mesh_info.py' in batch mode ...
+   AidedMesh[1] modified
+End execution of command file '3_mesh_info.py' in batch mode ...
+Execution of command file '4_geom_revC_circular.py' in batch mode ...
+   CoordSys[COORD_SYS_ST] created
+   CoordSys[COORD_SYS_ROT] created
+   Point[1] created
+   Point[2] created
+   Point[3] created
+   Point[4] created
+   Point[5] created
+   Point[6] created
+   Point[7] created
+   Point[8] created
+   Line[1] created
+   Line[2] created
+   Line[3] created
+   Line[4] created
+   Line[5] created
+   Line[6] created
+   Line[7] created
+   Line[8] created
+   Transf[ROT_ROTOR] created
+   Transf[ROT_ST] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 1
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.204E-06
+Checking the unicity of lines
+Creation of 2 FACES :
+1  2
+   buildFaces executed
+   Face[1, 2] modified
+Creation of 1 volume(s) done :
+1
+   extrude executed
+Creation of 1 volume(s) done :
+2
+   extrude executed
+   Transf[ROT_SYM_ROT] created
+   Transf[ROT_SYM_ST] created
+   Transf[AX_SIM_ROT] created
+   Transf[AX_SIM_ST] created
+Creation of 1 volume(s) done :
+3
+   propagateVolume executed
+Creation of 1 volume(s) done :
+4
+   propagateVolume executed
+Creation of 2 volume(s) done :
+5  6
+   propagateVolume executed
+Creation of 2 volume(s) done :
+7  8
+   propagateVolume executed
+   InfiniteBox[InfiniteBoxCylinderZ] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 19
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.467E-06
+Checking the unicity of lines
+Creation of 30 FACES :
+37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66
+   buildFaces executed
+   setInvisible executed
+   Face[37] deleted
+   Face[40] deleted
+   Face[39] deleted
+   Face[42] deleted
+   Face[41] deleted
+   Face[38] deleted
+No line-face intersections
+Creation of 7 VOLUMES :
+9  10  11  12  13  14  15
+   buildVolumes executed
+Some intersections may not have been detected
+
+End execution of command file '4_geom_revC_circular.py' in batch mode ...
+Execution of command file '5_mat_def.py' in batch mode ...
+   Material[COGENT_M270_50A_50HZ] created
+Material[1]
+   Material[IMPHY_MUMETAL] created
+Material[2]
+   Material[BMT_50H] created
+Material[3]
+   Material[BMT_42UH] created
+Material[4]
+   Material[METGLAS] created
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   Material[NO12] created
+   Material[COGENT_M235_35A_50HZ] created
+Material[7]
+End execution of command file '5_mat_def.py' in batch mode ...
+Execution of command file '6_elec_circuit_toroidal_revF.py' in batch mode ...
+   ParameterGeom[M_R_THEO] created
+   ParameterGeom[N_R_THEO] created
+   ParameterGeom[COIL_R_THEO] created
+   ParameterGeom[COIL_R_CASE] created
+   ParameterGeom[COIL_R] created
+   ParameterGeom[COIL_WCOIL] created
+   ParameterGeom[COIL_KCU] created
+   VariationParameter[TH_COIL_CIRC] created
+   VariationParameter[R_ST_IN_PH] created
+   VariationParameter[A_COIL] created
+   VariationParameter[A_CU] created
+   VariationParameter[ALPHA_CASE_PH] created
+   VariationParameter[R_ST_OUT_PH] created
+   VariationParameter[H_ST_PH] created
+   VariationParameter[L_BAR_PH] created
+   ParameterGeom[RHO_CU] created
+   VariationParameter[R_COIL] created
+   VariationParameter[I_T_PEAK] created
+   VariationParameter[THETA_T] created
+   VariationParameter[JT_RMS] created
+   VariationParameter[IT_HAT] created
+   VariationParameter[I_F_PEAK] created
+   VariationParameter[THETA_F0] created
+   VariationParameter[THETA_F_DIR] created
+   VariationParameter[THETA_F] created
+   VariationParameter[JF_RMS] created
+   VariationParameter[IF_HAT] created
+   VariationParameter[P_CU_TOT] created
+   VariationParameter[V_FE_ST] created
+   VariationParameter[V_PM] created
+   VariationParameter[V_CU] created
+   CoordSys[COORD_COIL_1] created
+   VariationParameter[I_T_1] created
+   VariationParameter[I_F_1] created
+   CoilConductor[I_1] created
+ 
+Coil(1) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_1] created
+   CoordSys[COORD_COIL_2] created
+   VariationParameter[I_T_2] created
+   VariationParameter[I_F_2] created
+   CoilConductor[I_2] created
+Coil(2) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_2] created
+   CoordSys[COORD_COIL_3] created
+   VariationParameter[I_T_3] created
+   VariationParameter[I_F_3] created
+   CoilConductor[I_3] created
+Coil(3) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_3] created
+   CoordSys[COORD_COIL_4] created
+   VariationParameter[I_T_4] created
+   VariationParameter[I_F_4] created
+   CoilConductor[I_4] created
+Coil(4) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_4] created
+   CoordSys[COORD_COIL_5] created
+   VariationParameter[I_T_5] created
+   VariationParameter[I_F_5] created
+   CoilConductor[I_5] created
+Coil(5) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_5] created
+   CoordSys[COORD_COIL_6] created
+   VariationParameter[I_T_6] created
+   VariationParameter[I_F_6] created
+   CoilConductor[I_6] created
+Coil(6) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_6] created
+End execution of command file '6_elec_circuit_toroidal_revF.py' in batch mode ...
+Execution of command file '7_assign_circular.py' in batch mode ...
+   RegionVolume[IRON_ST] created
+   RegionVolume[AIR] created
+   RegionVolume[PM] created
+   assignRegion executed
+   assignRegion executed
+   assignRegionToVolumes executed
+   orientRegVolMaterial executed
+   RegionVolume[IRON_ST] modified
+   RegionVolume[PM] modified
+   MeshLine[R_ST] created
+   MeshLine[R_ROT] created
+   MeshLine[H_ST] created
+   MeshLine[H_ROT] created
+   MeshLine[THETA] created
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+End execution of command file '7_assign_circular.py' in batch mode ...
+Execution of command file '8_sensors.py' in batch mode ...
+   Sensor[F_ROT] created
+   Sensor[TX_ROT] created
+   Sensor[TY_ROT] created
+   Sensor[TZ_ROT] created
+   Sensor[F_ST] created
+   Sensor[TX_ST] created
+   Sensor[TY_ST] created
+   Sensor[TZ_ST] created
+End execution of command file '8_sensors.py' in batch mode ...
+Execution of command file '9_scenarios_characterization.py' in batch mode ...
+   Scenario[00_FIELDS] created
+Scenario[1]
+   addPilot executed
+   Scenario[01_DX] created
+Scenario[2]
+   addPilot executed
+   Scenario[02_DY] created
+Scenario[3]
+   addPilot executed
+   Scenario[03_DZ] created
+Scenario[4]
+   addPilot executed
+   Scenario[04_DALPHA] created
+Scenario[5]
+   addPilot executed
+   Scenario[05_DBETA] created
+Scenario[6]
+   addPilot executed
+   Scenario[06_JTORQUE] created
+Scenario[7]
+   addPilot executed
+   Scenario[07_JFORCE] created
+Scenario[8]
+   addPilot executed
+End execution of command file '9_scenarios_characterization.py' in batch mode ...
+
+Execution of command file '10_make_scenarios_sensors.py' in batch mode ...
+   Scenario[08_DISP0_ANGLE] created
+Scenario[9]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[09_DISP0_ANGLE_JT] created
+Scenario[10]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[10_DISP0_ANGLE_JF] created
+Scenario[11]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[11_DISP_ANGLE] created
+Scenario[12]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[12_DISP_ANGLE_JT] created
+Scenario[13]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[13_DISP_ANGLE_JF] created
+Scenario[14]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '10_make_scenarios_sensors.py' in batch mode ...
+
+End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/00_main.py' in batch mode ...
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+12:58:26      74 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+12:58:26      74 sec.     857 1st order surfacic elements created
+ 
+Extrusive meshing of 6 faces
+12:58:26      74 sec.    2610 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 28 linked faces
+ 
+12:58:26      74 sec.    2255 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+12:58:27      75 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 91627
+Checking 48 faces
+Checking 48 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 58
+Checking 48 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 2
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 60
+  10828  boundary nodes
+  62321  boundary meshes
+12:58:38      86 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 3222
+12:58:43      91 sec.
+         14058 nodes
+         91538 meshes
+12:58:43      91 sec. Mesh compressing
+         14058 nodes
+         56486 meshes
+12:58:43      91 sec.   56486 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+12:58:44      92 sec.   34920 1st order volumic elements created
+     20880 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 10440 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 58.37  %
+   Number of excellent quality elements : 9.18  %
+   Number of good quality elements      : 13.94  %
+   Number of average quality elements   : 11.87  %
+   Number of poor quality elements      : 6.63  %
+ 
+Verifying of linked faces ...
+  30 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+ 
+12:58:52     100 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 53 : 18%
+Percentage of 2nd order nodes not projected on line 54 : 18%
+Percentage of 2nd order nodes not projected on line 56 : 66%
+Percentage of 2nd order nodes not projected on line 57 : 27%
+Percentage of 2nd order nodes not projected on line 59 : 33%
+Percentage of 2nd order nodes not projected on line 61 : 9%
+Percentage of 2nd order nodes not projected on line 63 : 44%
+Percentage of 2nd order nodes not projected on line 72 : 9%
+Percentage of 2nd order nodes not projected on line 83 : 36%
+Percentage of 2nd order nodes not projected on face 44 : 13%
+Percentage of 2nd order nodes not projected on face 45 : 12%
+Percentage of 2nd order nodes not projected on face 46 : 12%
+Percentage of 2nd order nodes not projected on face 47 : 6%
+Percentage of 2nd order nodes not projected on face 48 : 4%
+Percentage of 2nd order nodes not projected on face 50 : 13%
+Percentage of 2nd order nodes not projected on face 51 : 96%
+Percentage of 2nd order nodes not projected on face 53 : 12%
+Percentage of 2nd order nodes not projected on face 55 : 11%
+Percentage of 2nd order nodes not projected on face 59 : 100%
+Percentage of 2nd order nodes not projected on face 65 : 26%
+  Total number of nodes --> 153882
+12:58:56     104 sec. End generating 2nd order elements
+   generateSecondOrderElements executed
+ 
+    2 holes have been identified.
+    2 magnetic cuts have been created.
+   buildMagneticCircuitCut executed
+Begin of physical check ...
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+Please, verify the properties of the material: NO12
+ 
+An electric circuit exists.
+The active physical application does not take account of it.
+ 
+End of physical check.
+13:00:15     183 sec. Start save ...
+13:00:16     184 sec. ... end save
+Active formulation(s) :
+MS3SCA : Magnetostatic total scalar potential formulation
+MS3RED : Magnetostatic reduced scalar potential formulation
+Matrix system : non linear, real, symmetrical
+ 
+13:00:17     185 sec. Start solving problem ...
+ 
+Step number 1
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 0.2
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:00:17     185 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+13:00:18     186 sec.     857 1st order surfacic elements created
+ 
+Extrusive meshing of 6 faces
+13:00:18     186 sec.    2610 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 28 linked faces
+ 
+13:00:18     186 sec.    2255 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+13:00:18     186 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 91621
+Checking 48 faces
+Checking 48 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 58
+Checking 48 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 2
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 60
+  10828  boundary nodes
+  62315  boundary meshes
+13:00:28     196 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 3276
+13:00:33     201 sec.
+         14112 nodes
+         91555 meshes
+13:00:33     201 sec. Mesh compressing
+         14112 nodes
+         56835 meshes
+13:00:33     201 sec.   56835 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+13:00:33     202 sec.   34920 1st order volumic elements created
+     20880 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 10440 1st order pyramid elements
+End of topological mesh regularization
+ 
+13:00:38     206 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 53 : 18%
+Percentage of 2nd order nodes not projected on line 54 : 18%
+Percentage of 2nd order nodes not projected on line 56 : 66%
+Percentage of 2nd order nodes not projected on line 57 : 18%
+Percentage of 2nd order nodes not projected on line 59 : 33%
+Percentage of 2nd order nodes not projected on line 61 : 9%
+Percentage of 2nd order nodes not projected on line 63 : 44%
+Percentage of 2nd order nodes not projected on line 72 : 9%
+Percentage of 2nd order nodes not projected on line 83 : 36%
+Percentage of 2nd order nodes not projected on face 44 : 6%
+Percentage of 2nd order nodes not projected on face 45 : 12%
+Percentage of 2nd order nodes not projected on face 46 : 12%
+Percentage of 2nd order nodes not projected on face 47 : 6%
+Percentage of 2nd order nodes not projected on face 48 : 4%
+Percentage of 2nd order nodes not projected on face 50 : 13%
+Percentage of 2nd order nodes not projected on face 51 : 96%
+Percentage of 2nd order nodes not projected on face 53 : 12%
+Percentage of 2nd order nodes not projected on face 55 : 11%
+Percentage of 2nd order nodes not projected on face 59 : 100%
+Percentage of 2nd order nodes not projected on face 65 : 26%
+  Total number of nodes --> 154319
+13:00:42     210 sec. End generating 2nd order elements
+ 
+13:00:42     210 sec. Start creating Dirichlet constraints at points...
+13:00:42     210 sec. ... end creating Dirichlet constraints at points.
+ 
+  V1 unknowns are initialized to zero
+  V1R unknowns are initialized to zero
+ 
+13:00:42     211 sec. Start computing reduced total increments ...
+13:00:42     211 sec. Start solving ...
+Active formulation(s) :
+MS3COU : 3D formulation for coupling potentials on a cut.
+MS3CRT : 3D formulation for coupling total and reduced scalar potentials
+Matrix system : linear, real, symmetrical
+  DV1 unknowns are initialized to zero
+13:00:42     211 sec. Numbering of    32100 nodal values done.
+13:00:42     211 sec. Number of non zero matrix elements estimated to be     2586560
+13:00:42     211 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          127 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                  31652
+ Length of the shortest line         =                                     11
+ Length of the longest line          =                                    370
+ Average line length                 =                                     15
+ Number of the longest line          =                                      1
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                 501148
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              127 Mo.
+   Memory allocated during solving process:                    132 Mo.
+ 
+13:00:43     211 sec. Integration on the region RS_CUT finished ( 194  elements )
+13:00:43     211 sec. Integration on the region COUPLING_RED_TOT finished ( 10440  elements )
+13:00:43     211 sec. Linear part has been integrated and assembled.
+       Prec. rel. = 0.0E0/0.0E0
+13:00:43     211 sec. ... end of solving
+13:00:43     211 sec. ... end of computing reduced total increments.
+ 
+13:00:43     211 sec. Numbering of   186087 nodal values done.
+13:00:43     211 sec. Number of non zero matrix elements estimated to be    14886960
+13:00:43     211 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          194 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                 153541
+ Length of the shortest line         =                                      9
+ Length of the longest line          =                                    390
+ Average line length                 =                                     38
+ Number of the longest line          =                                 105605
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                5937537
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              194 Mo.
+   Memory allocated during solving process:                    246 Mo.
+ 
+13:00:47     215 sec. Integration on the region PM finished ( 19440  elements )
+13:00:47     215 sec. Integration on the region AIR finished ( 43118  elements )
+13:00:47     215 sec. Linear part has been integrated and assembled.
+13:00:48     216 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:00:48     216 sec. Non linear part has been integrated and assembled.
+13:00:48     216 sec. Scaling linear system
+13:00:48     216 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 903 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 257 MiBytes
+ RAM effectively used during factorization : 771 MiBytes
+ RAM effectively used during solve phase : 823 MiBytes
+13:00:55     223 sec. Linear system has been solved.
+       Prec. rel. = 4.94E-14/ 1.66E-01
+13:00:55     223 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 1.63E+00/ 7.25E+00  Relax= 1.00E+00
+13:00:55     224 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 3.87E+00/ 1.63E+00  Relax= 5.00E-01
+13:00:56     224 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   1/ 100 Relax= 1.00E+00
+       Prec. rel. = 2.00E+00/ 1.00E-04
+13:00:57     225 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:00:57     225 sec. Non linear part has been integrated and assembled.
+13:00:57     225 sec. Scaling linear system
+13:00:57     225 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 903 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 257 MiBytes
+ RAM effectively used during factorization : 771 MiBytes
+ RAM effectively used during solve phase : 823 MiBytes
+13:01:04     232 sec. Linear system has been solved.
+       Prec. rel. = 1.66E-13/ 2.27E-04
+13:01:04     232 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 4.42E-01/ 1.63E+00  Relax= 1.00E+00
+13:01:05     233 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 7.39E-01/ 4.42E-01  Relax= 5.00E-01
+13:01:05     233 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   2/ 100 Relax= 1.00E+00
+       Prec. rel. = 9.69E-05/ 1.00E-04
+13:01:06     234 sec. Computation of F_ROT
+13:01:06     234 sec. Value of F_ROT : 0.872398091762209 -0.006269230411319 0.106106217833394
+13:01:06     234 sec. Computation of TX_ROT
+13:01:07     235 sec. Value of TX_ROT : -.407050576713E-06
+13:01:07     235 sec. Computation of TY_ROT
+13:01:07     235 sec. Value of TY_ROT : -.145236974413E-04
+13:01:07     235 sec. Computation of TZ_ROT
+13:01:08     236 sec. Value of TZ_ROT : 0.784261709966E-04
+13:01:08     236 sec. Computation of F_ST
+13:01:08     236 sec. Value of F_ST : -0.774583125397824 0.003035598355756 0.058635204532968
+13:01:08     236 sec. Computation of TX_ST
+13:01:08     237 sec. Value of TX_ST : -.670092699214E-04
+13:01:08     237 sec. Computation of TY_ST
+13:01:09     237 sec. Value of TY_ST : -.106692840251E-05
+13:01:09     237 sec. Computation of TZ_ST
+13:01:09     237 sec. Value of TZ_ST : -.281251522549E-04
+13:01:09     237 sec. Value of TH_COIL_CIRC : 4
+13:01:09     237 sec. Value of R_ST_IN_PH : 15
+13:01:09     237 sec. Value of A_COIL : 54.4542726622231
+13:01:09     237 sec. Value of A_CU : 21.7817090648892
+13:01:09     237 sec. Value of ALPHA_CASE_PH : 0
+13:01:09     237 sec. Value of R_ST_OUT_PH : 23
+13:01:09     237 sec. Value of H_ST_PH : 6.00015000375009
+13:01:09     237 sec. Value of L_BAR_PH : 40.5666706218594
+13:01:09     237 sec. Value of R_COIL : 0.312886405937E-04
+13:01:09     237 sec. Value of IT_HAT : 0
+13:01:09     237 sec. Value of THETA_F : 270
+13:01:09     237 sec. Value of IF_HAT : 0
+13:01:09     237 sec. Value of P_CU_TOT : 0
+13:01:09     237 sec. Value of V_FE_ST : 5730.40826035429
+13:01:09     237 sec. Value of V_PM : 2287.07945181337
+13:01:09     237 sec. Value of V_CU : 13254.1712582479
+13:01:09     237 sec. Value of I_T_1 : 0
+13:01:09     237 sec. Value of I_F_1 : 0
+13:01:09     237 sec. Value of I_T_2 : 0
+13:01:09     237 sec. Value of I_F_2 : 0
+13:01:09     237 sec. Value of I_T_3 : 0
+13:01:09     237 sec. Value of I_F_3 : 0
+13:01:09     237 sec. Value of I_T_4 : 0
+13:01:09     237 sec. Value of I_F_4 : 0
+13:01:09     237 sec. Value of I_T_5 : 0
+13:01:09     237 sec. Value of I_F_5 : 0
+13:01:09     237 sec. Value of I_T_6 : 0
+13:01:09     237 sec. Value of I_F_6 : 0
+ 
+Step number 2
+Value of parameter DX : 0.4
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:01:09     237 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+13:01:10     238 sec.     857 1st order surfacic elements created
+ 
+Extrusive meshing of 6 faces
+13:01:10     238 sec.    2610 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 28 linked faces
+ 
+13:01:10     238 sec.    2255 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+13:01:10     238 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 91555
+Checking 48 faces
+Checking 48 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 58
+Checking 48 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 2
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 60
+  10828  boundary nodes
+  62249  boundary meshes
+13:01:21     249 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 3304
+13:01:25     254 sec.
+         14140 nodes
+         92129 meshes
+13:01:25     254 sec. Mesh compressing
+         14140 nodes
+         57097 meshes
+13:01:26     254 sec.   57097 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+13:01:26     254 sec.   34920 1st order volumic elements created
+     20880 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 10440 1st order pyramid elements
+End of topological mesh regularization
+ 
+13:01:30     258 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 53 : 27%
+Percentage of 2nd order nodes not projected on line 54 : 18%
+Percentage of 2nd order nodes not projected on line 56 : 66%
+Percentage of 2nd order nodes not projected on line 57 : 27%
+Percentage of 2nd order nodes not projected on line 59 : 33%
+Percentage of 2nd order nodes not projected on line 61 : 9%
+Percentage of 2nd order nodes not projected on line 63 : 44%
+Percentage of 2nd order nodes not projected on line 72 : 9%
+Percentage of 2nd order nodes not projected on line 83 : 36%
+Percentage of 2nd order nodes not projected on face 44 : 16%
+Percentage of 2nd order nodes not projected on face 45 : 12%
+Percentage of 2nd order nodes not projected on face 46 : 12%
+Percentage of 2nd order nodes not projected on face 47 : 6%
+Percentage of 2nd order nodes not projected on face 48 : 4%
+Percentage of 2nd order nodes not projected on face 50 : 13%
+Percentage of 2nd order nodes not projected on face 51 : 96%
+Percentage of 2nd order nodes not projected on face 53 : 12%
+Percentage of 2nd order nodes not projected on face 55 : 11%
+Percentage of 2nd order nodes not projected on face 59 : 100%
+Percentage of 2nd order nodes not projected on face 65 : 26%
+  Total number of nodes --> 154634
+13:01:34     262 sec. End generating 2nd order elements
+ 
+13:01:35     263 sec. Start creating Dirichlet constraints at points...
+13:01:35     263 sec. ... end creating Dirichlet constraints at points.
+ 
+  V1 unknowns are initialized to zero
+  V1R unknowns are initialized to zero
+ 
+13:01:35     263 sec. Start computing reduced total increments ...
+13:01:35     263 sec. Start solving ...
+Active formulation(s) :
+MS3COU : 3D formulation for coupling potentials on a cut.
+MS3CRT : 3D formulation for coupling total and reduced scalar potentials
+Matrix system : linear, real, symmetrical
+  DV1 unknowns are initialized to zero
+13:01:35     263 sec. Numbering of    32100 nodal values done.
+13:01:35     263 sec. Number of non zero matrix elements estimated to be     2586560
+13:01:35     263 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          127 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                  31652
+ Length of the shortest line         =                                     11
+ Length of the longest line          =                                    370
+ Average line length                 =                                     15
+ Number of the longest line          =                                      1
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                 501148
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              127 Mo.
+   Memory allocated during solving process:                    132 Mo.
+ 
+13:01:35     263 sec. Integration on the region RS_CUT finished ( 194  elements )
+13:01:35     263 sec. Integration on the region COUPLING_RED_TOT finished ( 10440  elements )
+13:01:35     263 sec. Linear part has been integrated and assembled.
+       Prec. rel. = 0.0E0/0.0E0
+13:01:35     263 sec. ... end of solving
+13:01:35     263 sec. ... end of computing reduced total increments.
+ 
+13:01:35     264 sec. Numbering of   186402 nodal values done.
+13:01:35     264 sec. Number of non zero matrix elements estimated to be    14912160
+13:01:36     264 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          195 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                 153856
+ Length of the shortest line         =                                      9
+ Length of the longest line          =                                    330
+ Average line length                 =                                     38
+ Number of the longest line          =                                 105642
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                5947344
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              195 Mo.
+   Memory allocated during solving process:                    246 Mo.
+ 
+13:01:39     267 sec. Integration on the region PM finished ( 19440  elements )
+13:01:39     268 sec. Integration on the region AIR finished ( 43377  elements )
+13:01:39     268 sec. Linear part has been integrated and assembled.
+13:01:40     268 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:01:40     268 sec. Non linear part has been integrated and assembled.
+13:01:40     268 sec. Scaling linear system
+13:01:40     268 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 954 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 300 MiBytes
+ RAM effectively used during factorization : 817 MiBytes
+ RAM effectively used during solve phase : 855 MiBytes
+13:01:47     275 sec. Linear system has been solved.
+       Prec. rel. = 5.60E-14/ 1.66E-01
+13:01:47     275 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 1.63E+00/ 7.25E+00  Relax= 1.00E+00
+13:01:48     276 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 3.87E+00/ 1.63E+00  Relax= 5.00E-01
+13:01:48     276 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   1/ 100 Relax= 1.00E+00
+       Prec. rel. = 2.00E+00/ 1.00E-04
+13:01:49     277 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:01:49     277 sec. Non linear part has been integrated and assembled.
+13:01:49     277 sec. Scaling linear system
+13:01:49     277 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 954 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 300 MiBytes
+ RAM effectively used during factorization : 817 MiBytes
+ RAM effectively used during solve phase : 855 MiBytes
+13:01:56     284 sec. Linear system has been solved.
+       Prec. rel. = 1.65E-13/ 2.27E-04
+13:01:56     284 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 4.44E-01/ 1.63E+00  Relax= 1.00E+00
+13:01:57     285 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 7.37E-01/ 4.44E-01  Relax= 5.00E-01
+13:01:57     285 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   2/ 100 Relax= 1.00E+00
+       Prec. rel. = 9.48E-05/ 1.00E-04
+13:01:58     286 sec. Computation of F_ROT
+13:01:58     286 sec. Value of F_ROT : 1.65498758493791 0.036582405873295 -0.113431513776359
+13:01:58     286 sec. Computation of TX_ROT
+13:01:59     287 sec. Value of TX_ROT : -.945301839683E-04
+13:01:59     287 sec. Computation of TY_ROT
+13:01:59     287 sec. Value of TY_ROT : -.355636669187E-03
+13:01:59     287 sec. Computation of TZ_ROT
+13:02:00     288 sec. Value of TZ_ROT : -.1914688398E-03
+13:02:00     288 sec. Computation of F_ST
+13:02:00     288 sec. Value of F_ST : -1.60945040090383 0.013881973625449 0.032582881053158
+13:02:00     288 sec. Computation of TX_ST
+13:02:00     288 sec. Value of TX_ST : 0.163701610428E-03
+13:02:00     288 sec. Computation of TY_ST
+13:02:01     289 sec. Value of TY_ST : -.115449379252E-03
+13:02:01     289 sec. Computation of TZ_ST
+13:02:01     289 sec. Value of TZ_ST : 0.493319369082E-04
+13:02:01     289 sec. Value of TH_COIL_CIRC : 4
+13:02:01     289 sec. Value of R_ST_IN_PH : 15
+13:02:01     289 sec. Value of A_COIL : 54.4542726622231
+13:02:01     289 sec. Value of A_CU : 21.7817090648892
+13:02:01     289 sec. Value of ALPHA_CASE_PH : 0
+13:02:01     289 sec. Value of R_ST_OUT_PH : 23
+13:02:01     289 sec. Value of H_ST_PH : 6.00015000375009
+13:02:01     289 sec. Value of L_BAR_PH : 40.5666706218594
+13:02:01     289 sec. Value of R_COIL : 0.312886405937E-04
+13:02:01     289 sec. Value of IT_HAT : 0
+13:02:01     289 sec. Value of THETA_F : 270
+13:02:01     289 sec. Value of IF_HAT : 0
+13:02:01     289 sec. Value of P_CU_TOT : 0
+13:02:01     289 sec. Value of V_FE_ST : 5730.40826035429
+13:02:01     289 sec. Value of V_PM : 2287.07945181337
+13:02:01     289 sec. Value of V_CU : 13254.1712582479
+13:02:01     289 sec. Value of I_T_1 : 0
+13:02:01     289 sec. Value of I_F_1 : 0
+13:02:01     289 sec. Value of I_T_2 : 0
+13:02:01     289 sec. Value of I_F_2 : 0
+13:02:01     289 sec. Value of I_T_3 : 0
+13:02:01     289 sec. Value of I_F_3 : 0
+13:02:01     289 sec. Value of I_T_4 : 0
+13:02:01     289 sec. Value of I_F_4 : 0
+13:02:01     289 sec. Value of I_T_5 : 0
+13:02:01     289 sec. Value of I_F_5 : 0
+13:02:01     289 sec. Value of I_T_6 : 0
+13:02:01     289 sec. Value of I_F_6 : 0
+ 
+Step number 3
+Value of parameter DX : 0.6
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:02:01     289 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+13:02:02     290 sec.     857 1st order surfacic elements created
+ 
+Extrusive meshing of 6 faces
+13:02:02     290 sec.    2610 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 28 linked faces
+ 
+13:02:02     290 sec.    2255 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+13:02:02     290 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 91577
+Checking 48 faces
+Checking 48 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 58
+Checking 48 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 2
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 60
+  10828  boundary nodes
+  62271  boundary meshes
+13:02:13     301 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 3467
+13:02:17     306 sec.
+         14303 nodes
+         93133 meshes
+13:02:17     306 sec. Mesh compressing
+         14303 nodes
+         58307 meshes
+13:02:18     306 sec.   58307 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+13:02:18     306 sec.   34920 1st order volumic elements created
+     20880 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 10440 1st order pyramid elements
+End of topological mesh regularization
+ 
+13:02:22     310 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 53 : 27%
+Percentage of 2nd order nodes not projected on line 54 : 18%
+Percentage of 2nd order nodes not projected on line 56 : 66%
+Percentage of 2nd order nodes not projected on line 57 : 18%
+Percentage of 2nd order nodes not projected on line 59 : 33%
+Percentage of 2nd order nodes not projected on line 61 : 9%
+Percentage of 2nd order nodes not projected on line 63 : 44%
+Percentage of 2nd order nodes not projected on line 72 : 9%
+Percentage of 2nd order nodes not projected on line 83 : 36%
+Percentage of 2nd order nodes not projected on face 44 : 11%
+Percentage of 2nd order nodes not projected on face 45 : 12%
+Percentage of 2nd order nodes not projected on face 46 : 12%
+Percentage of 2nd order nodes not projected on face 47 : 6%
+Percentage of 2nd order nodes not projected on face 48 : 4%
+Percentage of 2nd order nodes not projected on face 50 : 13%
+Percentage of 2nd order nodes not projected on face 51 : 96%
+Percentage of 2nd order nodes not projected on face 53 : 12%
+Percentage of 2nd order nodes not projected on face 55 : 11%
+Percentage of 2nd order nodes not projected on face 59 : 100%
+Percentage of 2nd order nodes not projected on face 65 : 26%
+  Total number of nodes --> 155999
+13:02:26     314 sec. End generating 2nd order elements
+ 
+13:02:27     315 sec. Start creating Dirichlet constraints at points...
+13:02:27     315 sec. ... end creating Dirichlet constraints at points.
+ 
+  V1 unknowns are initialized to zero
+  V1R unknowns are initialized to zero
+ 
+13:02:27     315 sec. Start computing reduced total increments ...
+13:02:27     315 sec. Start solving ...
+Active formulation(s) :
+MS3COU : 3D formulation for coupling potentials on a cut.
+MS3CRT : 3D formulation for coupling total and reduced scalar potentials
+Matrix system : linear, real, symmetrical
+  DV1 unknowns are initialized to zero
+13:02:27     315 sec. Numbering of    32100 nodal values done.
+13:02:27     315 sec. Number of non zero matrix elements estimated to be     2586560
+13:02:27     315 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          128 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                  31652
+ Length of the shortest line         =                                     11
+ Length of the longest line          =                                    370
+ Average line length                 =                                     15
+ Number of the longest line          =                                      1
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                 501148
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              128 Mo.
+   Memory allocated during solving process:                    133 Mo.
+ 
+13:02:27     315 sec. Integration on the region RS_CUT finished ( 194  elements )
+13:02:27     315 sec. Integration on the region COUPLING_RED_TOT finished ( 10440  elements )
+13:02:27     315 sec. Linear part has been integrated and assembled.
+       Prec. rel. = 0.0E0/0.0E0
+13:02:27     316 sec. ... end of solving
+13:02:27     316 sec. ... end of computing reduced total increments.
+ 
+13:02:28     316 sec. Numbering of   187767 nodal values done.
+13:02:28     316 sec. Number of non zero matrix elements estimated to be    15021360
+13:02:28     316 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          196 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                 155221
+ Length of the shortest line         =                                      9
+ Length of the longest line          =                                    358
+ Average line length                 =                                     38
+ Number of the longest line          =                                 106538
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                5987091
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              196 Mo.
+   Memory allocated during solving process:                    248 Mo.
+ 
+13:02:31     319 sec. Integration on the region PM finished ( 19440  elements )
+13:02:32     320 sec. Integration on the region AIR finished ( 44416  elements )
+13:02:32     320 sec. Linear part has been integrated and assembled.
+13:02:32     320 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:02:32     320 sec. Non linear part has been integrated and assembled.
+13:02:32     320 sec. Scaling linear system
+13:02:32     320 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 983 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 311 MiBytes
+ RAM effectively used during factorization : 842 MiBytes
+ RAM effectively used during solve phase : 879 MiBytes
+13:02:40     328 sec. Linear system has been solved.
+       Prec. rel. = 6.81E-14/ 1.66E-01
+13:02:40     328 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 1.63E+00/ 7.25E+00  Relax= 1.00E+00
+13:02:40     328 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 3.87E+00/ 1.63E+00  Relax= 5.00E-01
+13:02:41     329 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   1/ 100 Relax= 1.00E+00
+       Prec. rel. = 2.00E+00/ 1.00E-04
+13:02:42     330 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:02:42     330 sec. Non linear part has been integrated and assembled.
+13:02:42     330 sec. Scaling linear system
+13:02:42     330 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 983 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 311 MiBytes
+ RAM effectively used during factorization : 842 MiBytes
+ RAM effectively used during solve phase : 879 MiBytes
+13:02:49     337 sec. Linear system has been solved.
+       Prec. rel. = 1.66E-13/ 2.27E-04
+13:02:49     337 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 4.44E-01/ 1.63E+00  Relax= 1.00E+00
+13:02:50     338 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 7.36E-01/ 4.44E-01  Relax= 5.00E-01
+13:02:50     338 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   2/ 100 Relax= 1.00E+00
+       Prec. rel. = 9.70E-05/ 1.00E-04
+13:02:51     339 sec. Computation of F_ROT
+13:02:51     339 sec. Value of F_ROT : 2.41658938086317 0.011836514878601 0.045166009468213
+13:02:51     339 sec. Computation of TX_ROT
+13:02:52     340 sec. Value of TX_ROT : 0.527214444752E-04
+13:02:52     340 sec. Computation of TY_ROT
+13:02:52     340 sec. Value of TY_ROT : 0.154991734112E-03
+13:02:52     340 sec. Computation of TZ_ROT
+13:02:53     341 sec. Value of TZ_ROT : -.631390365141E-05
+13:02:53     341 sec. Computation of F_ST
+13:02:53     341 sec. Value of F_ST : -2.41795384438906 -0.00763813396373 0.055743380265634
+13:02:53     341 sec. Computation of TX_ST
+13:02:53     341 sec. Value of TX_ST : 0.162880814841E-04
+13:02:53     341 sec. Computation of TY_ST
+13:02:54     342 sec. Value of TY_ST : 0.257756314252E-03
+13:02:54     342 sec. Computation of TZ_ST
+13:02:54     342 sec. Value of TZ_ST : -.556688155969E-05
+13:02:54     342 sec. Value of TH_COIL_CIRC : 4
+13:02:54     342 sec. Value of R_ST_IN_PH : 15
+13:02:54     342 sec. Value of A_COIL : 54.4542726622231
+13:02:54     342 sec. Value of A_CU : 21.7817090648892
+13:02:54     342 sec. Value of ALPHA_CASE_PH : 0
+13:02:54     342 sec. Value of R_ST_OUT_PH : 23
+13:02:54     342 sec. Value of H_ST_PH : 6.00015000375009
+13:02:54     342 sec. Value of L_BAR_PH : 40.5666706218594
+13:02:54     342 sec. Value of R_COIL : 0.312886405937E-04
+13:02:54     342 sec. Value of IT_HAT : 0
+13:02:54     342 sec. Value of THETA_F : 270
+13:02:54     342 sec. Value of IF_HAT : 0
+13:02:54     342 sec. Value of P_CU_TOT : 0
+13:02:54     342 sec. Value of V_FE_ST : 5730.40826035429
+13:02:54     342 sec. Value of V_PM : 2287.07945181337
+13:02:54     342 sec. Value of V_CU : 13254.1712582479
+13:02:54     342 sec. Value of I_T_1 : 0
+13:02:54     342 sec. Value of I_F_1 : 0
+13:02:54     342 sec. Value of I_T_2 : 0
+13:02:54     342 sec. Value of I_F_2 : 0
+13:02:54     342 sec. Value of I_T_3 : 0
+13:02:54     342 sec. Value of I_F_3 : 0
+13:02:54     342 sec. Value of I_T_4 : 0
+13:02:54     342 sec. Value of I_F_4 : 0
+13:02:54     342 sec. Value of I_T_5 : 0
+13:02:54     342 sec. Value of I_F_5 : 0
+13:02:54     342 sec. Value of I_T_6 : 0
+13:02:54     342 sec. Value of I_F_6 : 0
+ 
+Step number 4
+Value of parameter DX : 0.8
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:02:55     343 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+13:02:55     343 sec.     857 1st order surfacic elements created
+ 
+Extrusive meshing of 6 faces
+13:02:55     343 sec.    2610 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 28 linked faces
+ 
+13:02:55     343 sec.    2255 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+13:02:55     343 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 91523
+Checking 48 faces
+Checking 48 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 58
+Checking 48 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 2
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 60
+  10828  boundary nodes
+  62217  boundary meshes
+13:03:06     354 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 3294
+13:03:11     359 sec.
+         14130 nodes
+         91656 meshes
+13:03:11     359 sec. Mesh compressing
+         14130 nodes
+         56968 meshes
+13:03:11     359 sec.   56968 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+13:03:11     359 sec.   34920 1st order volumic elements created
+     20880 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 10440 1st order pyramid elements
+End of topological mesh regularization
+ 
+13:03:16     364 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 53 : 27%
+Percentage of 2nd order nodes not projected on line 54 : 18%
+Percentage of 2nd order nodes not projected on line 56 : 66%
+Percentage of 2nd order nodes not projected on line 57 : 27%
+Percentage of 2nd order nodes not projected on line 59 : 33%
+Percentage of 2nd order nodes not projected on line 63 : 44%
+Percentage of 2nd order nodes not projected on line 72 : 9%
+Percentage of 2nd order nodes not projected on line 83 : 36%
+Percentage of 2nd order nodes not projected on face 44 : 18%
+Percentage of 2nd order nodes not projected on face 45 : 12%
+Percentage of 2nd order nodes not projected on face 46 : 12%
+Percentage of 2nd order nodes not projected on face 47 : 6%
+Percentage of 2nd order nodes not projected on face 50 : 13%
+Percentage of 2nd order nodes not projected on face 51 : 96%
+Percentage of 2nd order nodes not projected on face 53 : 12%
+Percentage of 2nd order nodes not projected on face 55 : 11%
+Percentage of 2nd order nodes not projected on face 59 : 100%
+Percentage of 2nd order nodes not projected on face 65 : 26%
+  Total number of nodes --> 154495
+13:03:20     368 sec. End generating 2nd order elements
+ 
+13:03:20     368 sec. Start creating Dirichlet constraints at points...
+13:03:20     368 sec. ... end creating Dirichlet constraints at points.
+ 
+  V1 unknowns are initialized to zero
+  V1R unknowns are initialized to zero
+ 
+13:03:21     369 sec. Start computing reduced total increments ...
+13:03:21     369 sec. Start solving ...
+Active formulation(s) :
+MS3COU : 3D formulation for coupling potentials on a cut.
+MS3CRT : 3D formulation for coupling total and reduced scalar potentials
+Matrix system : linear, real, symmetrical
+  DV1 unknowns are initialized to zero
+13:03:21     369 sec. Numbering of    32100 nodal values done.
+13:03:21     369 sec. Number of non zero matrix elements estimated to be     2586560
+13:03:21     369 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          127 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                  31652
+ Length of the shortest line         =                                     11
+ Length of the longest line          =                                    370
+ Average line length                 =                                     15
+ Number of the longest line          =                                      1
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                 501148
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              127 Mo.
+   Memory allocated during solving process:                    132 Mo.
+ 
+13:03:21     369 sec. Integration on the region RS_CUT finished ( 194  elements )
+13:03:21     369 sec. Integration on the region COUPLING_RED_TOT finished ( 10440  elements )
+13:03:21     369 sec. Linear part has been integrated and assembled.
+       Prec. rel. = 0.0E0/0.0E0
+13:03:21     369 sec. ... end of solving
+13:03:21     369 sec. ... end of computing reduced total increments.
+ 
+13:03:21     369 sec. Numbering of   186263 nodal values done.
+13:03:21     369 sec. Number of non zero matrix elements estimated to be    14901040
+13:03:22     370 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          195 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                 153717
+ Length of the shortest line         =                                      9
+ Length of the longest line          =                                    310
+ Average line length                 =                                     38
+ Number of the longest line          =                                 106459
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                5942861
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              195 Mo.
+   Memory allocated during solving process:                    246 Mo.
+ 
+13:03:25     373 sec. Integration on the region PM finished ( 19440  elements )
+13:03:25     373 sec. Integration on the region AIR finished ( 43258  elements )
+13:03:25     373 sec. Linear part has been integrated and assembled.
+13:03:26     374 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:03:26     374 sec. Non linear part has been integrated and assembled.
+13:03:26     374 sec. Scaling linear system
+13:03:26     374 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 958 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 298 MiBytes
+ RAM effectively used during factorization : 819 MiBytes
+ RAM effectively used during solve phase : 860 MiBytes
+13:03:33     381 sec. Linear system has been solved.
+       Prec. rel. = 8.19E-14/ 1.66E-01
+13:03:33     381 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 1.63E+00/ 7.25E+00  Relax= 1.00E+00
+13:03:34     382 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 3.87E+00/ 1.63E+00  Relax= 5.00E-01
+13:03:34     382 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   1/ 100 Relax= 1.00E+00
+       Prec. rel. = 2.00E+00/ 1.00E-04
+13:03:35     383 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:03:35     383 sec. Non linear part has been integrated and assembled.
+13:03:35     383 sec. Scaling linear system
+13:03:35     383 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 958 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 298 MiBytes
+ RAM effectively used during factorization : 819 MiBytes
+ RAM effectively used during solve phase : 860 MiBytes
+13:03:42     390 sec. Linear system has been solved.
+       Prec. rel. = 1.63E-13/ 2.26E-04
+13:03:43     391 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 4.42E-01/ 1.63E+00  Relax= 1.00E+00
+13:03:43     391 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 7.34E-01/ 4.42E-01  Relax= 5.00E-01
+13:03:44     392 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   2/ 100 Relax= 1.00E+00
+       Prec. rel. = 9.47E-05/ 1.00E-04
+13:03:44     392 sec. Computation of F_ROT
+13:03:45     393 sec. Value of F_ROT : 3.3285791063661 -0.011358575048472 0.081180026596737
+13:03:45     393 sec. Computation of TX_ROT
+13:03:45     393 sec. Value of TX_ROT : 0.11463318036E-03
+13:03:45     393 sec. Computation of TY_ROT
+13:03:46     394 sec. Value of TY_ROT : 0.524732233527E-03
+13:03:46     394 sec. Computation of TZ_ROT
+13:03:46     394 sec. Value of TZ_ROT : -.688169589997E-04
+13:03:46     394 sec. Computation of F_ST
+13:03:46     394 sec. Value of F_ST : -3.28909913008454 0.013817032259356 0.017089157558126
+13:03:46     394 sec. Computation of TX_ST
+13:03:47     395 sec. Value of TX_ST : -.123953579111E-03
+13:03:47     395 sec. Computation of TY_ST
+13:03:47     395 sec. Value of TY_ST : 0.290982214177E-03
+13:03:47     395 sec. Computation of TZ_ST
+13:03:47     395 sec. Value of TZ_ST : -.842575767446E-05
+13:03:47     395 sec. Value of TH_COIL_CIRC : 4
+13:03:47     395 sec. Value of R_ST_IN_PH : 15
+13:03:47     395 sec. Value of A_COIL : 54.4542726622231
+13:03:47     395 sec. Value of A_CU : 21.7817090648892
+13:03:47     395 sec. Value of ALPHA_CASE_PH : 0
+13:03:47     395 sec. Value of R_ST_OUT_PH : 23
+13:03:47     395 sec. Value of H_ST_PH : 6.00015000375009
+13:03:47     395 sec. Value of L_BAR_PH : 40.5666706218594
+13:03:47     395 sec. Value of R_COIL : 0.312886405937E-04
+13:03:47     395 sec. Value of IT_HAT : 0
+13:03:47     395 sec. Value of THETA_F : 270
+13:03:47     395 sec. Value of IF_HAT : 0
+13:03:47     395 sec. Value of P_CU_TOT : 0
+13:03:47     395 sec. Value of V_FE_ST : 5730.40826035429
+13:03:47     395 sec. Value of V_PM : 2287.07945181337
+13:03:47     395 sec. Value of V_CU : 13254.1712582479
+13:03:47     395 sec. Value of I_T_1 : 0
+13:03:47     395 sec. Value of I_F_1 : 0
+13:03:47     395 sec. Value of I_T_2 : 0
+13:03:47     395 sec. Value of I_F_2 : 0
+13:03:47     395 sec. Value of I_T_3 : 0
+13:03:47     395 sec. Value of I_F_3 : 0
+13:03:47     395 sec. Value of I_T_4 : 0
+13:03:47     395 sec. Value of I_F_4 : 0
+13:03:47     395 sec. Value of I_T_5 : 0
+13:03:47     395 sec. Value of I_F_5 : 0
+13:03:47     395 sec. Value of I_T_6 : 0
+13:03:47     395 sec. Value of I_F_6 : 0
+ 
+Step number 5
+Value of parameter DX : 1
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:03:48     396 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+13:03:48     396 sec.     857 1st order surfacic elements created
+ 
+Extrusive meshing of 6 faces
+13:03:48     396 sec.    2610 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 28 linked faces
+ 
+13:03:48     396 sec.    2255 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+13:03:48     396 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 91675
+Checking 48 faces
+Checking 48 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 58
+Checking 48 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 2
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 60
+  10828  boundary nodes
+  62369  boundary meshes
+13:03:59     407 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 3342
+13:04:04     412 sec.
+         14178 nodes
+         92433 meshes
+13:04:04     412 sec. Mesh compressing
+         14178 nodes
+         57281 meshes
+13:04:04     412 sec.   57281 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+13:04:04     412 sec.   34920 1st order volumic elements created
+     20880 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 10440 1st order pyramid elements
+End of topological mesh regularization
+ 
+13:04:09     417 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 53 : 18%
+Percentage of 2nd order nodes not projected on line 54 : 18%
+Percentage of 2nd order nodes not projected on line 56 : 66%
+Percentage of 2nd order nodes not projected on line 57 : 18%
+Percentage of 2nd order nodes not projected on line 59 : 33%
+Percentage of 2nd order nodes not projected on line 61 : 9%
+Percentage of 2nd order nodes not projected on line 63 : 44%
+Percentage of 2nd order nodes not projected on line 72 : 9%
+Percentage of 2nd order nodes not projected on line 83 : 36%
+Percentage of 2nd order nodes not projected on face 44 : 6%
+Percentage of 2nd order nodes not projected on face 45 : 12%
+Percentage of 2nd order nodes not projected on face 46 : 12%
+Percentage of 2nd order nodes not projected on face 47 : 6%
+Percentage of 2nd order nodes not projected on face 48 : 4%
+Percentage of 2nd order nodes not projected on face 50 : 13%
+Percentage of 2nd order nodes not projected on face 51 : 96%
+Percentage of 2nd order nodes not projected on face 53 : 12%
+Percentage of 2nd order nodes not projected on face 55 : 11%
+Percentage of 2nd order nodes not projected on face 59 : 100%
+Percentage of 2nd order nodes not projected on face 65 : 26%
+  Total number of nodes --> 154796
+13:04:13     421 sec. End generating 2nd order elements
+ 
+13:04:13     421 sec. Start creating Dirichlet constraints at points...
+13:04:13     421 sec. ... end creating Dirichlet constraints at points.
+ 
+  V1 unknowns are initialized to zero
+  V1R unknowns are initialized to zero
+ 
+13:04:14     422 sec. Start computing reduced total increments ...
+13:04:14     422 sec. Start solving ...
+Active formulation(s) :
+MS3COU : 3D formulation for coupling potentials on a cut.
+MS3CRT : 3D formulation for coupling total and reduced scalar potentials
+Matrix system : linear, real, symmetrical
+  DV1 unknowns are initialized to zero
+13:04:14     422 sec. Numbering of    32100 nodal values done.
+13:04:14     422 sec. Number of non zero matrix elements estimated to be     2586560
+13:04:14     422 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          127 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                  31652
+ Length of the shortest line         =                                     11
+ Length of the longest line          =                                    370
+ Average line length                 =                                     15
+ Number of the longest line          =                                      1
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                 501148
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              127 Mo.
+   Memory allocated during solving process:                    132 Mo.
+ 
+13:04:14     422 sec. Integration on the region RS_CUT finished ( 194  elements )
+13:04:14     422 sec. Integration on the region COUPLING_RED_TOT finished ( 10440  elements )
+13:04:14     422 sec. Linear part has been integrated and assembled.
+       Prec. rel. = 0.0E0/0.0E0
+13:04:14     422 sec. ... end of solving
+13:04:14     422 sec. ... end of computing reduced total increments.
+ 
+13:04:14     422 sec. Numbering of   186564 nodal values done.
+13:04:14     422 sec. Number of non zero matrix elements estimated to be    14925120
+13:04:14     423 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          195 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                 154018
+ Length of the shortest line         =                                      9
+ Length of the longest line          =                                    311
+ Average line length                 =                                     38
+ Number of the longest line          =                                 106870
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                5950830
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              195 Mo.
+   Memory allocated during solving process:                    246 Mo.
+ 
+13:04:18     426 sec. Integration on the region PM finished ( 19440  elements )
+13:04:18     426 sec. Integration on the region AIR finished ( 43463  elements )
+13:04:18     426 sec. Linear part has been integrated and assembled.
+13:04:19     427 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:04:19     427 sec. Non linear part has been integrated and assembled.
+13:04:19     427 sec. Scaling linear system
+13:04:19     427 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 905 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 253 MiBytes
+ RAM effectively used during factorization : 772 MiBytes
+ RAM effectively used during solve phase : 827 MiBytes
+13:04:26     434 sec. Linear system has been solved.
+       Prec. rel. = 9.51E-14/ 1.66E-01
+13:04:26     434 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 1.62E+00/ 7.25E+00  Relax= 1.00E+00
+13:04:27     435 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 3.87E+00/ 1.62E+00  Relax= 5.00E-01
+13:04:27     435 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   1/ 100 Relax= 1.00E+00
+       Prec. rel. = 2.00E+00/ 1.00E-04
+13:04:28     436 sec. Integration on the region IRON_ST finished ( 15480  elements )
+13:04:28     436 sec. Non linear part has been integrated and assembled.
+13:04:28     436 sec. Scaling linear system
+13:04:28     436 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 905 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 253 MiBytes
+ RAM effectively used during factorization : 772 MiBytes
+ RAM effectively used during solve phase : 827 MiBytes
+13:04:35     443 sec. Linear system has been solved.
+       Prec. rel. = 1.62E-13/ 2.26E-04
+13:04:35     443 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   1/   4  Resid= 4.36E-01/ 1.62E+00  Relax= 1.00E+00
+13:04:36     444 sec. Integration on the region IRON_ST finished ( 15480  elements )
+  Relaxation:  No iter=   2/   8  Resid= 7.31E-01/ 4.36E-01  Relax= 5.00E-01
+13:04:36     444 sec. Integration on the region IRON_ST finished ( 15480  elements )
+   Newton-Raphson:  No iter=   2/ 100 Relax= 1.00E+00
+       Prec. rel. = 9.64E-05/ 1.00E-04
+13:04:37     445 sec. Computation of F_ROT
+13:04:37     445 sec. Value of F_ROT : 4.21677411502128 -0.008230608907445 -0.165070343550155
+13:04:37     445 sec. Computation of TX_ROT
+13:04:38     446 sec. Value of TX_ROT : -.44537062389E-03
+13:04:38     446 sec. Computation of TY_ROT
+13:04:38     446 sec. Value of TY_ROT : 0.001271799248305
+13:04:38     446 sec. Computation of TZ_ROT
+13:04:39     447 sec. Value of TZ_ROT : 0.812845531828E-04
+13:04:39     447 sec. Computation of F_ST
+13:04:39     447 sec. Value of F_ST : -4.10688126204206 -0.010833656941013 -0.024563269243347
+13:04:39     447 sec. Computation of TX_ST
+13:04:39     447 sec. Value of TX_ST : -.36300917888E-03
+13:04:39     447 sec. Computation of TY_ST
+13:04:40     448 sec. Value of TY_ST : 0.104325864927E-03
+13:04:40     448 sec. Computation of TZ_ST
+13:04:40     448 sec. Value of TZ_ST : 0.339182896492E-05
+13:04:40     448 sec. Value of TH_COIL_CIRC : 4
+13:04:40     448 sec. Value of R_ST_IN_PH : 15
+13:04:40     448 sec. Value of A_COIL : 54.4542726622231
+13:04:40     448 sec. Value of A_CU : 21.7817090648892
+13:04:40     448 sec. Value of ALPHA_CASE_PH : 0
+13:04:40     448 sec. Value of R_ST_OUT_PH : 23
+13:04:40     448 sec. Value of H_ST_PH : 6.00015000375009
+13:04:40     448 sec. Value of L_BAR_PH : 40.5666706218594
+13:04:40     448 sec. Value of R_COIL : 0.312886405937E-04
+13:04:40     448 sec. Value of IT_HAT : 0
+13:04:40     448 sec. Value of THETA_F : 270
+13:04:40     448 sec. Value of IF_HAT : 0
+13:04:40     448 sec. Value of P_CU_TOT : 0
+13:04:40     448 sec. Value of V_FE_ST : 5730.40826035429
+13:04:40     448 sec. Value of V_PM : 2287.07945181337
+13:04:40     448 sec. Value of V_CU : 13254.1712582479
+13:04:40     448 sec. Value of I_T_1 : 0
+13:04:40     448 sec. Value of I_F_1 : 0
+13:04:40     448 sec. Value of I_T_2 : 0
+13:04:40     448 sec. Value of I_F_2 : 0
+13:04:40     448 sec. Value of I_T_3 : 0
+13:04:40     448 sec. Value of I_F_3 : 0
+13:04:40     448 sec. Value of I_T_4 : 0
+13:04:40     448 sec. Value of I_F_4 : 0
+13:04:40     448 sec. Value of I_T_5 : 0
+13:04:40     448 sec. Value of I_F_5 : 0
+13:04:40     448 sec. Value of I_T_6 : 0
+13:04:40     448 sec. Value of I_F_6 : 0
+13:04:40     448 sec. Start reading ...
+13:04:41     449 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:04:41     449 sec. ... end solving problem.
+ 
+13:04:41     449 sec. Start save ...
+13:04:41     449 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+   solve executed
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:04:58     466 sec. Start reading ...
+13:04:58     466 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:04:58     466 sec. Start save ...
+13:04:59     467 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+... end saving project
+Analysis of face box finished
+   Grid2D[XZ] created
+   Grid2D[XZ] modified
+   Grid2D[XZ] modified
+   PropIsovalues[ISOVAL_1] created
+   displayIsovalues executed
+   PropArrows[ARROWS_1] created
+Analysis of face box finished
+   Grid2D[YZ] created
+   PropArrows[ARROWS_2] created
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:14:19    1027 sec. Start reading ...
+13:14:19    1027 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:14:19    1027 sec. Start save ...
+13:14:20    1028 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:14:32    1040 sec. Start reading ...
+13:14:32    1040 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:14:32    1041 sec. Start save ...
+13:14:33    1041 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+   displayArrows executed
+   PropIsolines[ISOLIN_1] created
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:15:39    1107 sec. Start reading ...
+13:15:39    1107 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:15:39    1107 sec. Start save ...
+13:15:40    1108 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+   displayIsolines executed
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:21:42    1470 sec. Start reading ...
+13:21:43    1471 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:21:43    1471 sec. Start save ...
+13:21:43    1471 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+Anomaly (1) - User error:
+Can not execute the following command :
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=IntervalPathDiscretization(intervalNumber=10),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['R_ROT_OUT*Cosd(60*'+str(i-1)+')', 'R_ROT_OUT*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_IN*Cosd(60*'+str(i-1)+')', 'R_ST_IN*Sind(60*'+str(i-1)+')', '0']))
+     
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                                                  
+
+     PathStraightLine2PTS(name='PAX_TOP'+str(i),
+                               pathDiscretization=IntervalPathDiscretization(intervalNumber=10),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', 'H_ST/2']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', 'H_ST/2']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_'+str(i),
+                     paths=[Path['PAX_TOP'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                          
+                     
+     PathStraightLine2PTS(name='PAX_BOTTOM'+str(i),
+                               pathDiscretization=IntervalPathDiscretization(intervalNumber=10),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', '-H_ST/2']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', '-H_ST/2']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_'+str(i),
+                     paths=[Path['PAX_BOTTOM'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])                     
+
+     cleanInvalidPaths()
+
+The path is not on the region AIR.
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:39:08    2516 sec. Start reading ...
+13:39:08    2516 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:39:08    2516 sec. Start save ...
+13:39:08    2517 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+   Path[PRAD1] created
+PathStraightLine2PTS[1]
+   CompoundPath[HS_R_1] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP1] created
+PathStraightLine2PTS[2]
+   CompoundPath[HS_AX_1] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM1] created
+PathStraightLine2PTS[3]
+Anomaly (2) - Program error:
+Can not execute the following command :
+dx=.5 #look at A1366 hall sensor datasheet... 
+
+# define paths were hall sensor path will be read
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=IntervalPathDiscretization(intervalNumber=10),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+dx)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+dx)*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-dx)*Cosd(60*'+str(i-1)+')', '(R_ST_IN-dx)*Sind(60*'+str(i-1)+')', '0']))
+     
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                                                  
+
+     PathStraightLine2PTS(name='PAX_TOP'+str(i),
+                               pathDiscretization=IntervalPathDiscretization(intervalNumber=10),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', 'H_ST/2+dx']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', 'H_ST/2+dx']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_'+str(i),
+                     paths=[Path['PAX_TOP'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                          
+                     
+     PathStraightLine2PTS(name='PAX_BOTTOM'+str(i),
+                               pathDiscretization=IntervalPathDiscretization(intervalNumber=10),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', '-H_ST/2-dx']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', '-H_ST/2-dx']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_'+str(i),
+                     paths=[Path['PAX_BOTTOM'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])                     
+
+     cleanInvalidPaths()
+
+Entity : CompoundPath['HS_AX_1_ABCDEF1']
+Cause :
+HS_AX_1 : this name has already been used by another entity. 
+Transaction failed.
+   CompoundPath[HS_AX_1] deleted
+   CompoundPath[HS_R_1] deleted
+   Path[PRAD1] created
+PathStraightLine2PTS[1]
+   CompoundPath[HS_R_1] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP1] created
+PathStraightLine2PTS[2]
+   CompoundPath[HS_AX_TOP_1] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM1] created
+PathStraightLine2PTS[3]
+   CompoundPath[HS_AX_BOTTOM_1] created
+   cleanInvalidPaths executed
+   Path[PRAD2] created
+PathStraightLine2PTS[4]
+   CompoundPath[HS_R_2] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP2] created
+PathStraightLine2PTS[5]
+   CompoundPath[HS_AX_TOP_2] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM2] created
+PathStraightLine2PTS[6]
+   CompoundPath[HS_AX_BOTTOM_2] created
+   cleanInvalidPaths executed
+   Path[PRAD3] created
+PathStraightLine2PTS[7]
+   CompoundPath[HS_R_3] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP3] created
+PathStraightLine2PTS[8]
+   CompoundPath[HS_AX_TOP_3] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM3] created
+PathStraightLine2PTS[9]
+   CompoundPath[HS_AX_BOTTOM_3] created
+   cleanInvalidPaths executed
+   Path[PRAD4] created
+PathStraightLine2PTS[10]
+   CompoundPath[HS_R_4] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP4] created
+PathStraightLine2PTS[11]
+   CompoundPath[HS_AX_TOP_4] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM4] created
+PathStraightLine2PTS[12]
+   CompoundPath[HS_AX_BOTTOM_4] created
+   cleanInvalidPaths executed
+   Path[PRAD5] created
+PathStraightLine2PTS[13]
+   CompoundPath[HS_R_5] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP5] created
+PathStraightLine2PTS[14]
+   CompoundPath[HS_AX_TOP_5] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM5] created
+PathStraightLine2PTS[15]
+   CompoundPath[HS_AX_BOTTOM_5] created
+   cleanInvalidPaths executed
+   Path[PRAD6] created
+PathStraightLine2PTS[16]
+   CompoundPath[HS_R_6] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP6] created
+PathStraightLine2PTS[17]
+   CompoundPath[HS_AX_TOP_6] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM6] created
+PathStraightLine2PTS[18]
+   CompoundPath[HS_AX_BOTTOM_6] created
+   cleanInvalidPaths executed
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_6] created)
+executed Undo(Path[PAX_BOTTOM6] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_6] created)
+executed Undo(Path[PAX_TOP6] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_6] created)
+executed Undo(Path[PRAD6] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_5] created)
+executed Undo(Path[PAX_BOTTOM5] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_5] created)
+executed Undo(Path[PAX_TOP5] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_5] created)
+executed Undo(Path[PRAD5] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_4] created)
+executed Undo(Path[PAX_BOTTOM4] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_4] created)
+executed Undo(Path[PAX_TOP4] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_4] created)
+executed Undo(Path[PRAD4] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_3] created)
+executed Undo(Path[PAX_BOTTOM3] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_3] created)
+executed Undo(Path[PAX_TOP3] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_3] created)
+executed Undo(Path[PRAD3] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_2] created)
+executed Undo(Path[PAX_BOTTOM2] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_2] created)
+executed Undo(Path[PAX_TOP2] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_2] created)
+executed Undo(Path[PRAD2] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_1] created)
+executed Undo(Path[PAX_BOTTOM1] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_1] created)
+executed Undo(Path[PAX_TOP1] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_1] created)
+executed Undo(Path[PRAD1] created)
+executed Undo(CompoundPath[HS_R_1] deleted)
+executed Undo(CompoundPath[HS_AX_1] deleted)
+executed Undo(Path[PAX_BOTTOM1] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_1] created)
+executed Undo(Path[PAX_TOP1] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_1] created)
+executed Undo(Path[PRAD1] created)
+   Path[PATH_1] created
+executed Undo(Path[PATH_1] created)
+   cleanInvalidPaths executed
+Anomaly (3) - Program error:
+Can not execute the following command :
+dx=.5 #look at A1366 hall sensor datasheet... 
+
+# define paths were hall sensor path will be read
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+dx)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+dx)*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-dx)*Cosd(60*'+str(i-1)+')', '(R_ST_IN-dx)*Sind(60*'+str(i-1)+')', '0']))
+     
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                                                  
+
+     PathStraightLine2PTS(name='PAX_TOP'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', 'H_ST/2+dx']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', 'H_ST/2+dx']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_TOP_'+str(i),
+                     paths=[Path['PAX_TOP'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                          
+                     
+     PathStraightLine2PTS(name='PAX_BOTTOM'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', '-H_ST/2-dx']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', '-H_ST/2-dx']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_BOTTOM_'+str(i),
+                     paths=[Path['PAX_BOTTOM'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])                     
+
+     cleanInvalidPaths()
+
+ 
+Failed execution
+The path is not on the region AIR.
+Anomaly (4) - Program error:
+Can not execute the following command :
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+dx)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+dx)*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-dx)*Cosd(60*'+str(i-1)+')', '(R_ST_IN-dx)*Sind(60*'+str(i-1)+')', '0']))
+     
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+ 
+Failed execution
+The path is not on the region AIR.
+Anomaly (5) - Program error:
+Can not execute the following command :
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=0.5),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+dx)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+dx)*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-dx)*Cosd(60*'+str(i-1)+')', '(R_ST_IN-dx)*Sind(60*'+str(i-1)+')', '0']))
+     
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                                                  
+
+ 
+Failed execution
+The path is not on the region AIR.
+Anomaly (6) - Program error:
+Can not execute the following command :
+i=1
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=0.5),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+dx)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+dx)*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-dx)*Cosd(60*'+str(i-1)+')', '(R_ST_IN-dx)*Sind(60*'+str(i-1)+')', '0']))
+     
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()     
+
+Syntax error in the command file :
+Command prompt
+Line : 2  Column : 5
+Incorrect line :      PathStraightLine2PTS(name='PRAD'+str(i), 
+
+Anomaly (7) - Program error:
+Can not execute the following command :
+PathStraightLine2PTS(name='PRAD'+str(i),
+                          pathDiscretization=DistancePathDiscretization(distance=0.5),
+                          regionVolume='AIR',
+                          color=Color['White'],
+                          visibility=Visibility['VISIBLE'],
+                          startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                    uvw=['(R_ROT_OUT+dx)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+dx)*Sind(60*'+str(i-1)+')', '0']),
+                          endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                  uvw=['(R_ST_IN-dx)*Cosd(60*'+str(i-1)+')', '(R_ST_IN-dx)*Sind(60*'+str(i-1)+')', '0']))
+
+lastInstance = CompoundPath(name='HS_R_'+str(i),
+           paths=[Path['PRAD'+str(i)]],
+           color=Color['Turquoise'],
+           visibility=Visibility['VISIBLE'])
+
+cleanInvalidPaths()                                                  
+
+
+ 
+Failed execution
+The path is not on the region AIR.
+Anomaly (8) - Program error:
+Can not execute the following command :
+# EXPORT SENSORS
+
+# color='VIOLET' 
+# ALPHA_H=2
+# BETA=0.3
+# D_AGAP=3
+
+sep=.5 #look at A1366 hall sensor datasheet... 
+
+# define paths were hall sensor path will be read
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=0.5),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+1.5*'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+1.5*'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ST_IN-'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']))
+
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                                                  
+
+     PathStraightLine2PTS(name='PAX_TOP'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', 'H_ST/2+'+str(sep)+'']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', 'H_ST/2+'+str(sep)+'']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_TOP_'+str(i),
+                     paths=[Path['PAX_TOP'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                          
+                     
+     PathStraightLine2PTS(name='PAX_BOTTOM'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', '-H_ST/2-'+str(sep)+'']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', '-H_ST/2-'+str(sep)+'']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_BOTTOM_'+str(i),
+                     paths=[Path['PAX_BOTTOM'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])                     
+
+     cleanInvalidPaths()
+
+ 
+Failed execution
+The path is not on the region AIR.
+0.5
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:50:58    3226 sec. Start reading ...
+13:50:58    3226 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:50:58    3226 sec. Start save ...
+13:50:59    3227 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+Anomaly (9) - Program error:
+Can not execute the following command :
+sep=.5 #look at A1366 hall sensor datasheet... 
+
+# define paths were hall sensor path will be read
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=0.5),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+1.5*'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+1.5*'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ST_IN-'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']))
+
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+Failed execution
+ 
+Anomaly (10) - Program error:
+Can not execute the following command :
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=0.5),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+1.5*'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+1.5*'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ST_IN-'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']))
+
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()     
+
+ 
+Failed execution
+The path is not on the region AIR.
+Anomaly (11) - Program error:
+Can not execute the following command :
+sep=.5 #look at A1366 hall sensor datasheet... 
+
+# define paths were hall sensor path will be read
+for i in range(1,7):
+     # # radial path
+     # PathStraightLine2PTS(name='PRAD'+str(i),
+                               # pathDiscretization=DistancePathDiscretization(distance=0.5),
+                               # regionVolume='AIR',
+                               # color=Color['White'],
+                               # visibility=Visibility['VISIBLE'],
+                               # startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         # uvw=['(R_ROT_OUT+1.5*'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+1.5*'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']),
+                               # endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       # uvw=['(R_ST_IN-'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ST_IN-'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']))
+
+     # lastInstance = CompoundPath(name='HS_R_'+str(i),
+                # paths=[Path['PRAD'+str(i)]],
+                # color=Color['Turquoise'],
+                # visibility=Visibility['VISIBLE'])
+
+     # cleanInvalidPaths()                                                  
+
+     PathStraightLine2PTS(name='PAX_TOP'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', 'H_ST/2+'+str(sep)+'']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', 'H_ST/2+'+str(sep)+'']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_TOP_'+str(i),
+                     paths=[Path['PAX_TOP'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                          
+                     
+     PathStraightLine2PTS(name='PAX_BOTTOM'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', '-H_ST/2-'+str(sep)+'']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', '-H_ST/2-'+str(sep)+'']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_BOTTOM_'+str(i),
+                     paths=[Path['PAX_BOTTOM'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])                     
+
+     cleanInvalidPaths()
+
+ 
+Failed execution
+The path is not on the region AIR.
+Anomaly (12) - Program error:
+Can not execute the following command :
+(R_ROT_OUT+1.5*'+str(sep)+')
+
+
+Unknown argument : R_ROT_OUT
+This argument must be defined in your jython session before usage.
+
+Anomaly (13) - Program error:
+Can not execute the following command :
+PathStraightLine2PTS(name='PRAD'+str(i),
+                          pathDiscretization=DistancePathDiscretization(distance=0.5),
+                          regionVolume='AIR',
+                          color=Color['White'],
+                          visibility=Visibility['VISIBLE'],
+                          startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                    uvw=['(R_ROT_OUT+1.5*'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+1.5*'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']),
+                          endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                  uvw=['(R_ST_IN-'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ST_IN-'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']))
+
+lastInstance = CompoundPath(name='HS_R_'+str(i),
+           paths=[Path['PRAD'+str(i)]],
+           color=Color['Turquoise'],
+           visibility=Visibility['VISIBLE'])
+
+cleanInvalidPaths()                                                  
+
+
+ 
+Failed execution
+The path is not on the region AIR.
+   cleanInvalidPaths executed
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:55:00    3468 sec. Start reading ...
+13:55:01    3469 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:55:01    3469 sec. Start save ...
+13:55:01    3469 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+   Path[PRAD1] created
+PathStraightLine2PTS[1]
+   CompoundPath[HS_R_1] created
+   cleanInvalidPaths executed
+   Path[PRAD2] created
+PathStraightLine2PTS[2]
+   CompoundPath[HS_R_2] created
+   cleanInvalidPaths executed
+   Path[PRAD3] created
+PathStraightLine2PTS[3]
+   CompoundPath[HS_R_3] created
+   cleanInvalidPaths executed
+   Path[PRAD4] created
+PathStraightLine2PTS[4]
+   CompoundPath[HS_R_4] created
+   cleanInvalidPaths executed
+   Path[PRAD5] created
+PathStraightLine2PTS[5]
+   CompoundPath[HS_R_5] created
+   cleanInvalidPaths executed
+   Path[PRAD6] created
+PathStraightLine2PTS[6]
+   CompoundPath[HS_R_6] created
+   cleanInvalidPaths executed
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_6] created)
+executed Undo(Path[PRAD6] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_5] created)
+executed Undo(Path[PRAD5] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_4] created)
+executed Undo(Path[PRAD4] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_3] created)
+executed Undo(Path[PRAD3] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_2] created)
+executed Undo(Path[PRAD2] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_1] created)
+executed Undo(Path[PRAD1] created)
+   Path[PRAD1] created
+PathStraightLine2PTS[1]
+   CompoundPath[HS_R_1] created
+   cleanInvalidPaths executed
+Anomaly (14) - Program error:
+Can not execute the following command :
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=0.5),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+3*'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+3*'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ST_IN-'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']))
+
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                                                  
+
+     PathStraightLine2PTS(name='PAX_TOP'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP)*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP)*Sind(60*'+str(i-1)+')', 'H_ST/2+'+str(sep)+'']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', 'H_ST/2+'+str(sep)+'']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_TOP_'+str(i),
+                     paths=[Path['PAX_TOP'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()     
+
+ 
+Failed execution
+The path is not on the region AIR.
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_1] created)
+executed Undo(Path[PRAD1] created)
+   cleanInvalidPaths executed
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+13:58:46    3694 sec. Start reading ...
+13:58:46    3694 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+13:58:46    3695 sec. Start save ...
+Unable to move and rename file from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to move and rename artefact from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile
+13:58:47    3695 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+   Path[PRAD1] created
+PathStraightLine2PTS[1]
+   CompoundPath[HS_R_1] created
+   cleanInvalidPaths executed
+Parameter_geom with the same name of a parameter_var
+Unable to change the name of the geometric parameter
+Anomaly (15) - User error:
+Can not execute the following command :
+sep=.5 #look at A1366 hall sensor datasheet... 
+
+# define paths were hall sensor path will be read
+for i in range(1,7):
+     # radial path
+     PathStraightLine2PTS(name='PRAD'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=0.5),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+3*'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+3*'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['(R_ST_IN-'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ST_IN-'+str(sep)+')*Sind(60*'+str(i-1)+')', '0']))
+
+     lastInstance = CompoundPath(name='HS_R_'+str(i),
+                paths=[Path['PRAD'+str(i)]],
+                color=Color['Turquoise'],
+                visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()                                                  
+
+     PathStraightLine2PTS(name='PAX_TOP'+str(i),
+                               pathDiscretization=DistancePathDiscretization(distance=1.0),
+                               regionVolume='AIR',
+                               color=Color['White'],
+                               visibility=Visibility['VISIBLE'],
+                               startPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                         uvw=['(R_ROT_OUT+D_MECHGAP'+str(sep)+')*Cosd(60*'+str(i-1)+')', '(R_ROT_OUT+D_MECHGAP'+str(sep)+')*Sind(60*'+str(i-1)+')', 'H_ST/2+'+str(sep)+'']),
+                               endPoint=PathPoint(coordSys=CoordSys['XYZ1'],
+                                                       uvw=['R_ST_OUT*Cosd(60*'+str(i-1)+')', 'R_ST_OUT*Sind(60*'+str(i-1)+')', 'H_ST/2+'+str(sep)+'']))
+
+
+     lastInstance = CompoundPath(name='HS_AX_TOP_'+str(i),
+                     paths=[Path['PAX_TOP'+str(i)]],
+                     color=Color['Turquoise'],
+                     visibility=Visibility['VISIBLE'])
+
+     cleanInvalidPaths()     
+
+D_MECHGAP0 is not a valid parameter name
+Parameter_geom with the same name of a parameter_var
+Unable to change the name of the geometric parameter
+
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_1] created)
+executed Undo(Path[PRAD1] created)
+   Path[PRAD1] created
+PathStraightLine2PTS[1]
+   CompoundPath[HS_R_1] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP1] created
+PathStraightLine2PTS[2]
+   CompoundPath[HS_AX_TOP_1] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM1] created
+PathStraightLine2PTS[3]
+   CompoundPath[HS_AX_BOTTOM_1] created
+   cleanInvalidPaths executed
+   Path[PRAD2] created
+PathStraightLine2PTS[4]
+   CompoundPath[HS_R_2] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP2] created
+PathStraightLine2PTS[5]
+   CompoundPath[HS_AX_TOP_2] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM2] created
+PathStraightLine2PTS[6]
+   CompoundPath[HS_AX_BOTTOM_2] created
+   cleanInvalidPaths executed
+   Path[PRAD3] created
+PathStraightLine2PTS[7]
+   CompoundPath[HS_R_3] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP3] created
+PathStraightLine2PTS[8]
+   CompoundPath[HS_AX_TOP_3] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM3] created
+PathStraightLine2PTS[9]
+   CompoundPath[HS_AX_BOTTOM_3] created
+   cleanInvalidPaths executed
+   Path[PRAD4] created
+PathStraightLine2PTS[10]
+   CompoundPath[HS_R_4] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP4] created
+PathStraightLine2PTS[11]
+   CompoundPath[HS_AX_TOP_4] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM4] created
+PathStraightLine2PTS[12]
+   CompoundPath[HS_AX_BOTTOM_4] created
+   cleanInvalidPaths executed
+   Path[PRAD5] created
+PathStraightLine2PTS[13]
+   CompoundPath[HS_R_5] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP5] created
+PathStraightLine2PTS[14]
+   CompoundPath[HS_AX_TOP_5] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM5] created
+PathStraightLine2PTS[15]
+   CompoundPath[HS_AX_BOTTOM_5] created
+   cleanInvalidPaths executed
+   Path[PRAD6] created
+PathStraightLine2PTS[16]
+   CompoundPath[HS_R_6] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP6] created
+PathStraightLine2PTS[17]
+   CompoundPath[HS_AX_TOP_6] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM6] created
+PathStraightLine2PTS[18]
+   CompoundPath[HS_AX_BOTTOM_6] created
+   cleanInvalidPaths executed
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_6] created)
+executed Undo(Path[PAX_BOTTOM6] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_6] created)
+executed Undo(Path[PAX_TOP6] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_6] created)
+executed Undo(Path[PRAD6] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_5] created)
+executed Undo(Path[PAX_BOTTOM5] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_5] created)
+executed Undo(Path[PAX_TOP5] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_5] created)
+executed Undo(Path[PRAD5] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_4] created)
+executed Undo(Path[PAX_BOTTOM4] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_4] created)
+executed Undo(Path[PAX_TOP4] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_4] created)
+executed Undo(Path[PRAD4] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_3] created)
+executed Undo(Path[PAX_BOTTOM3] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_3] created)
+executed Undo(Path[PAX_TOP3] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_3] created)
+executed Undo(Path[PRAD3] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_2] created)
+executed Undo(Path[PAX_BOTTOM2] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_2] created)
+executed Undo(Path[PAX_TOP2] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_2] created)
+executed Undo(Path[PRAD2] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_BOTTOM_1] created)
+executed Undo(Path[PAX_BOTTOM1] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_AX_TOP_1] created)
+executed Undo(Path[PAX_TOP1] created)
+executed Undo(cleanInvalidPaths executed)
+executed Undo(CompoundPath[HS_R_1] created)
+executed Undo(Path[PRAD1] created)
+   Path[PRAD1] created
+PathStraightLine2PTS[1]
+   CompoundPath[HS_R_1] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP1] created
+PathStraightLine2PTS[2]
+   CompoundPath[HS_AX_TOP_1] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM1] created
+PathStraightLine2PTS[3]
+   CompoundPath[HS_AX_BOTTOM_1] created
+   cleanInvalidPaths executed
+   Path[PRAD2] created
+PathStraightLine2PTS[4]
+   CompoundPath[HS_R_2] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP2] created
+PathStraightLine2PTS[5]
+   CompoundPath[HS_AX_TOP_2] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM2] created
+PathStraightLine2PTS[6]
+   CompoundPath[HS_AX_BOTTOM_2] created
+   cleanInvalidPaths executed
+   Path[PRAD3] created
+PathStraightLine2PTS[7]
+   CompoundPath[HS_R_3] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP3] created
+PathStraightLine2PTS[8]
+   CompoundPath[HS_AX_TOP_3] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM3] created
+PathStraightLine2PTS[9]
+   CompoundPath[HS_AX_BOTTOM_3] created
+   cleanInvalidPaths executed
+   Path[PRAD4] created
+PathStraightLine2PTS[10]
+   CompoundPath[HS_R_4] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP4] created
+PathStraightLine2PTS[11]
+   CompoundPath[HS_AX_TOP_4] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM4] created
+PathStraightLine2PTS[12]
+   CompoundPath[HS_AX_BOTTOM_4] created
+   cleanInvalidPaths executed
+   Path[PRAD5] created
+PathStraightLine2PTS[13]
+   CompoundPath[HS_R_5] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP5] created
+PathStraightLine2PTS[14]
+   CompoundPath[HS_AX_TOP_5] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM5] created
+PathStraightLine2PTS[15]
+   CompoundPath[HS_AX_BOTTOM_5] created
+   cleanInvalidPaths executed
+   Path[PRAD6] created
+PathStraightLine2PTS[16]
+   CompoundPath[HS_R_6] created
+   cleanInvalidPaths executed
+   Path[PAX_TOP6] created
+PathStraightLine2PTS[17]
+   CompoundPath[HS_AX_TOP_6] created
+   cleanInvalidPaths executed
+   Path[PAX_BOTTOM6] created
+PathStraightLine2PTS[18]
+   CompoundPath[HS_AX_BOTTOM_6] created
+   cleanInvalidPaths executed
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+14:00:07    3775 sec. Start reading ...
+14:00:07    3775 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+14:00:07    3775 sec. Start save ...
+Unable to move and rename file from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to move and rename artefact from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile
+14:00:08    3776 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+14:17:01    4789 sec. Start reading ...
+14:17:01    4789 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+14:17:01    4789 sec. Start save ...
+Unable to move and rename file from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to move and rename artefact from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile
+14:17:02    4790 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+[0]
+[0, 1, 2, 3, 4]
+[1, 2, 3, 4, 5]
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+14:23:44    5192 sec. Start reading ...
+14:23:44    5192 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+14:23:44    5192 sec. Start save ...
+Unable to move and rename file from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to move and rename artefact from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile
+14:23:45    5193 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 1
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+... end saving project
+Anomaly (16) - Program error:
+Can not execute the following command :
+## for DISP
+scenario='01_DX'
+folder='fields_displacements/'                         
+for i in range(1,6)     
+          selectCurrentStep(activeScenario=Scenario[scenario],
+                                parameterValue=['DX='+str(i/5)])     
+          for hs in range(1,7):
+               #define name
+               hr=scenario+'_HS_R_'+str(hs)+'_ANG_DTHETA_'+str(i*10)+'_ANG_DTHETA_0_'+str(j*60)
+               #make curve
+               SpatialCurve(name=hr,
+                         compoundPath=CompoundPath['HS_R_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save
+               CurveSpatial2D[hr].exportExcel(xlsFile=folder+hr,
+                         mode='add')
+                         
+               #define name
+               hax_top=scenario+'_HS_AX_TOP_'+str(hs)+'_ANG_DTHETA_'+str(i*10)+'_ANG_DTHETA_0_'+str(j*60)
+               #make curve          
+               SpatialCurve(name=hax_top,
+                         compoundPath=CompoundPath['HS_AX_TOP_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_top].exportExcel(xlsFile=folder+hax_top,
+                         mode='add')
+               
+               #define name
+               hax_bottom=scenario+'_HS_AX_BOTTOM_'+str(hs)+'_ANG_DTHETA_'+str(i*10)+'_ANG_DTHETA_0_'+str(j*60)
+               #make curve          
+               SpatialCurve(name=hax_bottom,
+                         compoundPath=CompoundPath['HS_AX_BOTTOM_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_bottom].exportExcel(xlsFile=folder+hax_bottom,
+                         mode='add')
+
+Syntax error in the command file :
+Command prompt
+Line : 4  Column : 24
+Incorrect line : for i in range(1,6)      
+
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 0.2
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 8
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+Analysis of face box finished
+   selectCurrentStep executed
+Anomaly (17) - Program error:
+Can not execute the following command :
+scenario='01_DX'
+folder='fields_displacements/'                         
+for i in range(1,6):     
+          selectCurrentStep(activeScenario=Scenario[scenario],
+                                parameterValue=['DX='+str(i/5)])     
+          for hs in range(1,7):
+               #define name
+               hr=scenario+'_HS_R_'+str(hs)+'_ANG_DTHETA_'+str(i*10)+'_ANG_DTHETA_0_'+str(j*60)
+               #make curve
+               SpatialCurve(name=hr,
+                         compoundPath=CompoundPath['HS_R_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save
+               CurveSpatial2D[hr].exportExcel(xlsFile=folder+hr,
+                         mode='add')
+                         
+               #define name
+               hax_top=scenario+'_HS_AX_TOP_'+str(hs)+'_ANG_DTHETA_'+str(i*10)+'_ANG_DTHETA_0_'+str(j*60)
+               #make curve          
+               SpatialCurve(name=hax_top,
+                         compoundPath=CompoundPath['HS_AX_TOP_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_top].exportExcel(xlsFile=folder+hax_top,
+                         mode='add')
+               
+               #define name
+               hax_bottom=scenario+'_HS_AX_BOTTOM_'+str(hs)+'_ANG_DTHETA_'+str(i*10)+'_ANG_DTHETA_0_'+str(j*60)
+               #make curve          
+               SpatialCurve(name=hax_bottom,
+                         compoundPath=CompoundPath['HS_AX_BOTTOM_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_bottom].exportExcel(xlsFile=folder+hax_bottom,
+                         mode='add')                                
+
+
+Unknown argument : j
+This argument must be defined in your jython session before usage.
+
+   selectCurrentStep executed
+ 
+Comp(1,B)
+   ABS_CURV_HS_R_1
+    Interval = 0.003 (0, 0.003)
+      Minimal value = 0.382235489137996
+      Maximal value = 0.58741539214075
+      Mean value                 = 0.464414
+      Rectified mean value       = 0.464414
+      R.m.s value                = 0.468324
+      Integral along the curve = 0.001393
+ 
+Comp(2,B)
+   ABS_CURV_HS_R_1
+    Interval = 0.003 (0, 0.003)
+      Minimal value = -.4472940999E-03
+      Maximal value = 0.002869958288334
+      Mean value                 = 0.001055
+      Rectified mean value       = 0.001207
+      R.m.s value                = 0.001561
+      Integral along the curve = 0.317E-05
+ 
+Comp(3,B)
+   ABS_CURV_HS_R_1
+    Interval = 0.003 (0, 0.003)
+      Minimal value = -0.004071317837796
+      Maximal value = 0.007240717848447
+      Mean value                 = 0.001075
+      Rectified mean value       = 0.003215
+      R.m.s value                = 0.00392
+      Integral along the curve = 0.323E-05
+ 
+   SpatialCurve[01_DX_HS_R_1_DX_0] created
+SpatialCurve[1]
+Anomaly (18) - Program error:
+Can not execute the following command :
+scenario='01_DX'
+folder='fields_displacements/'                         
+for i in range(1,6):     
+          selectCurrentStep(activeScenario=Scenario[scenario],
+                                parameterValue=['DX='+str(i/5)])     
+          for hs in range(1,7):
+               #define name
+               hr=scenario+'_HS_R_'+str(hs)+'_DX_'+str(i/5)
+               #make curve
+               SpatialCurve(name=hr,
+                         compoundPath=CompoundPath['HS_R_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save
+               CurveSpatial2D[hr].exportExcel(xlsFile=folder+hr,
+                         mode='add')
+                         
+               #define name
+               hax_top=scenario+'_HS_AX_TOP_'+str(hs)+'_DX_'+str(i/5)
+               #make curve          
+               SpatialCurve(name=hax_top,
+                         compoundPath=CompoundPath['HS_AX_TOP_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_top].exportExcel(xlsFile=folder+hax_top,
+                         mode='add')
+               
+               #define name
+               hax_bottom=scenario+'_HS_AX_BOTTOM_'+str(hs)+'_DX_'+str(i/5)
+               #make curve          
+               SpatialCurve(name=hax_bottom,
+                         compoundPath=CompoundPath['HS_AX_BOTTOM_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_bottom].exportExcel(xlsFile=folder+hax_bottom,
+                         mode='add')                                
+
+
+The excel file could not be saved:
+fields_displacements\01_DX_HS_R_1_DX_0.xls (The system cannot find the path specified)
+   Curve2d[01_DX_HS_R_1_DX_0] deleted
+'fields_displacements/'
+'01_DX_HS_R_1_DX_0'
+   selectCurrentStep executed
+ 
+Comp(1,B)
+   ABS_CURV_HS_R_1
+    Interval = 0.003 (0, 0.003)
+      Minimal value = 0.382235489137996
+      Maximal value = 0.58741539214075
+      Mean value                 = 0.464414
+      Rectified mean value       = 0.464414
+      R.m.s value                = 0.468324
+      Integral along the curve = 0.001393
+ 
+Comp(2,B)
+   ABS_CURV_HS_R_1
+    Interval = 0.003 (0, 0.003)
+      Minimal value = -.4472940999E-03
+      Maximal value = 0.002869958288334
+      Mean value                 = 0.001055
+      Rectified mean value       = 0.001207
+      R.m.s value                = 0.001561
+      Integral along the curve = 0.317E-05
+ 
+Comp(3,B)
+   ABS_CURV_HS_R_1
+    Interval = 0.003 (0, 0.003)
+      Minimal value = -0.004071317837796
+      Maximal value = 0.007240717848447
+      Mean value                 = 0.001075
+      Rectified mean value       = 0.003215
+      R.m.s value                = 0.00392
+      Integral along the curve = 0.323E-05
+ 
+   SpatialCurve[01_DX_HS_R_1_DX_0] created
+SpatialCurve[1]
+Anomaly (19) - Program error:
+Can not execute the following command :
+scenario='01_DX'
+folder='fields_displacements/'                         
+for i in range(1,6):     
+          selectCurrentStep(activeScenario=Scenario[scenario],
+                                parameterValue=['DX='+str(i/5)])     
+          for hs in range(1,7):
+               #define name
+               hr=scenario+'_HS_R_'+str(hs)+'_DX_'+str(i/5)
+               #make curve
+               SpatialCurve(name=hr,
+                         compoundPath=CompoundPath['HS_R_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save
+               CurveSpatial2D[hr].exportExcel(xlsFile=folder+hr,
+                         mode='add')
+                         
+               #define name
+               hax_top=scenario+'_HS_AX_TOP_'+str(hs)+'_DX_'+str(i/5)
+               #make curve          
+               SpatialCurve(name=hax_top,
+                         compoundPath=CompoundPath['HS_AX_TOP_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_top].exportExcel(xlsFile=folder+hax_top,
+                         mode='add')
+               
+               #define name
+               hax_bottom=scenario+'_HS_AX_BOTTOM_'+str(hs)+'_DX_'+str(i/5)
+               #make curve          
+               SpatialCurve(name=hax_bottom,
+                         compoundPath=CompoundPath['HS_AX_BOTTOM_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_bottom].exportExcel(xlsFile=folder+hax_bottom,
+                         mode='add')     
+
+
+The excel file could not be saved:
+fields_displacements\01_DX_HS_R_1_DX_0.xls (The system cannot find the path specified)
+Excel exporting Curve2d[01_DX_HS_R_1_DX_0]
+End Excel exporting Curve2d[01_DX_HS_R_1_DX_0]
+executed Undo(SpatialCurve[01_DX_HS_R_1_DX_0] created)
+Saving project '../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization.FLU'
+14:30:12    5580 sec. Start reading ...
+14:30:12    5580 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+14:30:12    5580 sec. Start save ...
+Unable to move and rename file from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to move and rename artefact from : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py to :C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\persistent\Jython_log\Project_PyFlux_Log.py
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile
+14:30:13    5581 sec. ... end save
+... end saving project
+Closing project
+Unable to delete file C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log\Project_PyFlux_Log.py
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile\Jython_log
+Unable to delete directory : C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\..\..\..\..\..\..\Desktop\03_flux_int_rotor_slotless\8_market_rotors\20mm_with_hole\sims\20181011_proto_1_characterization.FLU\volatile
+Close of ../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_with_hole/sims/20181011_proto_1_characterization
+... end closing project
+Maximum use of 1392 MiB. in numerical memory
+For the dynamic table ID 57348181
+Maximum use of 14 MiB. in character memory
+For the dynamic table ID 22669824
+ 
+   NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
+ 
+       1             5       6       4   R08 5             0             0
+       2             1       5       5   C80 8             0             0
+       4     536870913       1       6   R08 5             0             0
+       5       1677722       2       2   C80 8             0             0
+       6             5       4       1   I04 2        600037             0
+Numerical memory: Total length                   = 536870912
+(8 byte words)    Present length                 =    600041
+                  Useful length                  =    600041
+                  Number of numerical arrays     =         3
+Character memory: Total length                   =   1677721
+(80 byte words)   Present length                 =         0
+                  Useful length                  =         0
+                  Number of character arrays     =         2
+Maximum number of arrays (num+char)              =    100006
+ 
+14:30:14    5582 sec. FLUX3D_18.1.0 kernel finalized

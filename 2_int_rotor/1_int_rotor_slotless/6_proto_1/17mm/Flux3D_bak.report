@@ -1,0 +1,214 @@
+[12|1539780772321|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1539780772442|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1539780772492|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1539780772495|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1539780772495|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1539780772495|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1539780772495|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1\17mm
+[19|1539780772495|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1539780772495|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1539780772496|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1539780772496|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1539780772496|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1539780772496|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1539780772619|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@5579bb86
+Loading data model 'Flux_model.stp'
+[27|1539780773208|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/Flux3D_log.pyPython : ^&|#! Flux3D 18.1
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/Flux3D_log.py'
+ 
+                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:24232 jperalta
+ 
+14:52:55       0 sec. FLUX3D_18.1.0 kernel initialized
+[62315|1539780776078|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
+[62316|1539780776079|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
+[62317|1539780776125|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
+[62319|1539780776410|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@53f97df3
+
+Flux3D (application 2018.1) running
+
+[62328|1539780776479|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@14c170b9
+[62346|1539780777420|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62352|1539780777438|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py' in batch mode ...
+[62363|1539780777578|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1539780778745|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62431|1539780779280|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeSpy Exception: (JavaException, 4_geom_revC_circular.py : Unable to open file. Check the path.)
+Loading new project
+Creating ANONYM
+... end loading new project
+Execution of command file '1_param_revF.py' in batch mode ...
+FICHIER PARAM.PY
+
+   ParameterGeom[BETA] created
+   ParameterGeom[R_ROT_OUT] created
+ParameterGeom[2]
+   ParameterGeom[ALPHA_H] created
+   ParameterGeom[ALPHA_CASE] created
+   ParameterGeom[D_AGAP] created
+   ParameterGeom[D_ST] created
+   ParameterGeom[R_ST_OUT] created
+   ParameterGeom[R_ST_IN] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[D_ROT] created
+   ParameterGeom[R_ROT_IN] created
+   ParameterGeom[H_ROT] created
+   ParameterGeom[H_ST] created
+ParameterGeom[13]
+   ParameterGeom[D_MECHGAP] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DALPHA] created
+   ParameterGeom[DBETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[X_H_DIFF] created
+   ParameterGeom[DZ] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+End execution of command file '1_param_revF.py' in batch mode ...
+Execution of command file '2_app_def.py' in batch mode ...
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+End execution of command file '2_app_def.py' in batch mode ...
+Execution of command file '3_mesh_info.py' in batch mode ...
+   AidedMesh[1] modified
+End execution of command file '3_mesh_info.py' in batch mode ...
+Execution of command file '4_geom_revC_circular.py' in batch mode ...
+
+[62681|1539780781305|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Error occured while executing the command file :
+   C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py.
+Line : 32.
+
+
+[62682|1539780781305|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeSpy Exception: (JavaException, Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py. Line : 32. 4_geom_revC_circular.py : Unable to open file. Check the path.)
+[62917|1539780781925|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py') Exception: (PythonWrapperException, Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py. Line : 32. 4_geom_revC_circular.py : Unable to open file. Check the path.)
+[62918|1539780781925|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py') Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py. Line : 32. 4_geom_revC_circular.py : Unable to open file. Check the path.)
+--------------------------------------------------------------------------------
+Anomaly (1) - Program error:
+Can not execute the following command :
+executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py')
+
+Error occured while executing the command file :
+   C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py.
+Line : 32.
+
+
+4_geom_revC_circular.py : Unable to open file.
+Check the path.
+------------------------------ Advanced Text -----------------------------------
+stdcom.error.JavaException: 4_geom_revC_circular.py : Unable to open file.
+Check the path.
+	at cad.core.kernel.components.CommandFileReader.readHeader(CommandFileReader.java:106)
+	at cad.core.kernel.components.CommandFileReader.executeFile(CommandFileReader.java:79)
+	at cad.core.kernel.actions.implementation.algo.spy.ExecuteSpyAction.internalExecute(ExecuteSpyAction.java:155)
+	at cad.core.kernel.actions.implementation.algo.spy.ExecuteBatchSpyAction.doAction(ExecuteBatchSpyAction.java:103)
+	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
+	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:302)
+	at cad.core.kernel.Supervisor.executeBatchSpy(Supervisor.java:1914)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
+	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
+	at org.python.core.PyObject.__call__(PyObject.java:508)
+	at org.python.core.PyObject.__call__(PyObject.java:512)
+	at org.python.core.PyMethod.__call__(PyMethod.java:141)
+	at pydb$py.executeBatchSpy$26(pydb.py:439)
+	at pydb$py.call_function(pydb.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:139)
+	at org.python.core.PyFunction.__call__(PyFunction.java:413)
+	at org.python.pycode._pyx5.f$0(C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py:79)
+	at org.python.pycode._pyx5.call_function(C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/17mm/00_main.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1625)
+	at org.python.util.PythonInterpreter.execfile(PythonInterpreter.java:296)
+	at cad.core.kernel.components.PythonWrapper.execCommandCheckLength(PythonWrapper.java:919)
+	at cad.core.kernel.components.PythonWrapper.execfile(PythonWrapper.java:827)
+	at cad.core.kernel.components.CommandFileReader.executeFile(CommandFileReader.java:84)
+	at cad.core.kernel.actions.implementation.algo.spy.ExecuteSpyAction.internalExecute(ExecuteSpyAction.java:155)
+	at cad.core.kernel.actions.implementation.algo.spy.ExecuteBatchSpyAction.doAction(ExecuteBatchSpyAction.java:103)
+	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
+	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:302)
+	at cad.core.kernel.Supervisor.executeBatchSpy(Supervisor.java:1914)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
+	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
+	at org.python.core.PyObject.__call__(PyObject.java:508)
+	at org.python.core.PyObject.__call__(PyObject.java:512)
+	at org.python.core.PyMethod.__call__(PyMethod.java:141)
+	at pydb$py.executeBatchSpy$26(pydb.py:439)
+	at pydb$py.call_function(pydb.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:139)
+	at org.python.core.PyFunction.__call__(PyFunction.java:413)
+	at org.python.pycode._pyx4.f$0(<string>:1)
+	at org.python.pycode._pyx4.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1625)
+	at org.python.core.Py.exec(Py.java:1669)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
+	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
+	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
+	at cad.core.kernel.actions.implementation.algo.python.ExecuteCommandAction.doAction(ExecuteCommandAction.java:89)
+	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
+	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
+	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
+	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
+	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
+	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
+	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
+	at cad.core.frontal.actions.implementation.algo.python.ExecuteCommandAction.act(ExecuteCommandAction.java:85)
+	at cad.core.frontal.actions.implementation.ModalImplementer.internalRun(ModalImplementer.java:88)
+	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
+	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
+--------------------------------------------------------------------------------
+[62923|1539780781992|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/error.gif
+[62924|1539780782003|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/informations.gif
+Closing project
+Close of ANONYM
+[62954|1539780795339|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62979|1539780795376|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+... end closing project
+Python : closeProject()
+
+Python : exit()
+[62983|1539780795386|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+Maximum use of 20 MiB. in numerical memory
+For the dynamic table ID 50330
+Maximum use of 8 MiB. in character memory
+For the dynamic table ID 50263
+ 
+   NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
+ 
+       1             5       6       4   R08 5             0             0
+       2             1       5       5   C80 8             0             0
+       4     536870913       1       6   R08 5             0             0
+       5       1677722       2       2   C80 8             0             0
+       6             5       4       1   I04 2        600037             0
+Numerical memory: Total length                   = 536870912
+(8 byte words)    Present length                 =    600041
+                  Useful length                  =    600041
+                  Number of numerical arrays     =         3
+Character memory: Total length                   =   1677721
+(80 byte words)   Present length                 =         0
+                  Useful length                  =         0
+                  Number of character arrays     =         2
+Maximum number of arrays (num+char)              =    100006
+ 
+14:53:15      19 sec. FLUX3D_18.1.0 kernel finalized
+[63007|1539780795389|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[63008|1539780795389|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[63009|1539780795390|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers

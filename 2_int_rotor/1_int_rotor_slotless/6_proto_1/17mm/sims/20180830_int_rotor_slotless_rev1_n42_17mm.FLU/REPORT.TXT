@@ -1,0 +1,2 @@
+SOFTWARE : FLUX3D_12.0.2 : 3D Finite Element Electromagnetism
+USECASE  : Flux3DMagneticDCAutoNotSolved

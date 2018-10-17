@@ -1,0 +1,196 @@
+[12|1539261277208|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1539261277372|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1539261277425|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1539261277427|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1539261277427|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1539261277427|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1539261277427|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\6_proto_1
+[19|1539261277427|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1539261277428|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1539261277428|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1539261277428|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1539261277428|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1539261277428|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1539261277555|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+Loading data model 'Flux_model.stp'
+[27|1539261278078|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/Flux3D_log.pyPython : ^&|#! Flux3D 18.1
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/Flux3D_log.py'
+ 
+                                                            FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                  4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                 HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 5/8 cores LAIB108233:2928 jperalta
+ 
+14:34:40       0 sec. FLUX3D_18.1.0 kernel initialized
+[62315|1539261281196|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
+[62316|1539261281197|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
+[62317|1539261281238|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
+[62319|1539261281539|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@78a6cf3e
+
+Flux3D (application 2018.1) running
+
+[62328|1539261281612|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@6766b7be
+[62348|1539261282602|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1539261282620|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62357|1539261282634|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+Loading project 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/20181010_prot1_drot20mm_metglas_characterization.FLU'
+14:34:42       1 sec. Start reading ...
+14:34:43       2 sec. ... end reading
+Updating the data structure: merge standard database
+... end loading project
+Python : loadProject('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/20181010_prot1_drot20mm_metglas_characterization.FLU')
+
+[62778|1539261391355|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 500   Message: FL6SCF   => No result on selected scenario
+[62779|1539261391356|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 500   Message: FL6SCF   => No result on selected scenario
+[62780|1539261391356|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: FL6SCF   => Failed
+[62781|1539261391356|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: executeAlgo_c => failed
+[62782|1539261391357|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message: executeAlgo_c : Execution failed.
+[62789|1539261391392|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: scenario='01_DX' folder='fields_displacements/' for i in range(1,6): selectCurrentStep(activeScenario=Scenario[scenario], parameterValue=['DX='+str(i/5)]) for hs in range(1,7): #define name hr=scenario+'_HS_R_'+str(hs)+'_DX_'+str(i/5) #make curve SpatialCurve(name=hr, compoundPath=CompoundPath['HS_R_'+str(hs)], formula=['Comp(1,B)', 'Comp(2,B)', 'Comp(3,B)']) #save CurveSpatial2D[hr].exportExcel(xlsFile=folder+hr, mode='add') #define name hax_top=scenario+'_HS_AX_TOP_'+str(hs)+'_DX_'+str(i/5) #make curve SpatialCurve(name=hax_top, compoundPath=CompoundPath['HS_AX_TOP_'+str(hs)], formula=['Comp(1,B)', 'Comp(2,B)', 'Comp(3,B)']) #save CurveSpatial2D[hax_top].exportExcel(xlsFile=folder+hax_top, mode='add') #define name hax_bottom=scenario+'_HS_AX_BOTTOM_'+str(hs)+'_DX_'+str(i/5) #make curve SpatialCurve(name=hax_bottom, compoundPath=CompoundPath['HS_AX_BOTTOM_'+str(hs)], formula=['Comp(1,B)', 'Comp(2,B)', 'Comp(3,B)']) #save CurveSpatial2D[hax_bottom].exportExcel(xlsFile=folder+hax_bottom, mode='add') Exception: (PythonWrapperException, executeAlgo_c : Execution failed. Failed execution)
+[62790|1539261391394|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : scenario='01_DX' folder='fields_displacements/' for i in range(1,6): selectCurrentStep(activeScenario=Scenario[scenario], parameterValue=['DX='+str(i/5)]) for hs in range(1,7): #define name hr=scenario+'_HS_R_'+str(hs)+'_DX_'+str(i/5) #make curve SpatialCurve(name=hr, compoundPath=CompoundPath['HS_R_'+str(hs)], formula=['Comp(1,B)', 'Comp(2,B)', 'Comp(3,B)']) #save CurveSpatial2D[hr].exportExcel(xlsFile=folder+hr, mode='add') #define name hax_top=scenario+'_HS_AX_TOP_'+str(hs)+'_DX_'+str(i/5) #make curve SpatialCurve(name=hax_top, compoundPath=CompoundPath['HS_AX_TOP_'+str(hs)], formula=['Comp(1,B)', 'Comp(2,B)', 'Comp(3,B)']) #save CurveSpatial2D[hax_top].exportExcel(xlsFile=folder+hax_top, mode='add') #define name hax_bottom=scenario+'_HS_AX_BOTTOM_'+str(hs)+'_DX_'+str(i/5) #make curve SpatialCurve(name=hax_bottom, compoundPath=CompoundPath['HS_AX_BOTTOM_'+str(hs)], formula=['Comp(1,B)', 'Comp(2,B)', 'Comp(3,B)']) #save CurveSpatial2D[hax_bottom].exportExcel(xlsFile=folder+hax_bottom, mode='add') executeAlgo_c : Execution failed. Failed execution)
+--------------------------------------------------------------------------------
+Anomaly (1) - Program error:
+Can not execute the following command :
+scenario='01_DX'
+folder='fields_displacements/'                         
+for i in range(1,6):     
+          selectCurrentStep(activeScenario=Scenario[scenario],
+                                parameterValue=['DX='+str(i/5)])     
+          for hs in range(1,7):
+               #define name
+               hr=scenario+'_HS_R_'+str(hs)+'_DX_'+str(i/5)
+               #make curve
+               SpatialCurve(name=hr,
+                         compoundPath=CompoundPath['HS_R_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save
+               CurveSpatial2D[hr].exportExcel(xlsFile=folder+hr,
+                         mode='add')
+                         
+               #define name
+               hax_top=scenario+'_HS_AX_TOP_'+str(hs)+'_DX_'+str(i/5)
+               #make curve          
+               SpatialCurve(name=hax_top,
+                         compoundPath=CompoundPath['HS_AX_TOP_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_top].exportExcel(xlsFile=folder+hax_top,
+                         mode='add')
+               
+               #define name
+               hax_bottom=scenario+'_HS_AX_BOTTOM_'+str(hs)+'_DX_'+str(i/5)
+               #make curve          
+               SpatialCurve(name=hax_bottom,
+                         compoundPath=CompoundPath['HS_AX_BOTTOM_'+str(hs)],
+                         formula=['Comp(1,B)',
+                                    'Comp(2,B)',
+                                    'Comp(3,B)'])
+               #save                               
+               CurveSpatial2D[hax_bottom].exportExcel(xlsFile=folder+hax_bottom,
+                         mode='add')     
+
+executeAlgo_c : Execution failed.
+Failed execution
+------------------------------ Advanced Text -----------------------------------
+FL6SCF   => No result on selected scenario
+FL6SCF   => Failed
+executeAlgo_c => failed
+stdcom.error.SoftwareFortranException: executeAlgo_c : Execution failed.
+Failed execution
+	at cad.core.common.error.ErrorManager.createFortranException(ErrorManager.java:163)
+	at cad.flux.kernel.dbmanager.FGCProjectDbWrapper.executeAlgo(Native Method)
+	at cad.flux.kernel.dbmanager.FGCProjectDbAdapter.executeAlgo(FGCProjectDbAdapter.java:890)
+	at cad.flux.kernel.dbmanager.FGCDbManager.executeAlgo(FGCDbManager.java:151)
+	at cad.flux.kernel.FGSupervisor.executeNativeCommand(FGSupervisor.java:2156)
+	at cad.core.kernel.Supervisor.executeCommand(Supervisor.java:1976)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
+	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
+	at org.python.core.PyObject.__call__(PyObject.java:526)
+	at org.python.core.PyObject.__call__(PyObject.java:530)
+	at org.python.core.PyMethod.__call__(PyMethod.java:156)
+	at pydb$py.executeCommand$199(pydb.py:1560)
+	at pydb$py.call_function(pydb.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:171)
+	at org.python.core.PyFunction.__call__(PyFunction.java:434)
+	at org.python.core.PyMethod.__call__(PyMethod.java:156)
+	at pydb$py.__call__$172(pydb.py:1375)
+	at pydb$py.call_function(pydb.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:308)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:199)
+	at org.python.core.PyFunction.__call__(PyFunction.java:482)
+	at org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
+	at org.python.core.PyMethod.__call__(PyMethod.java:228)
+	at org.python.core.PyMethod.__call__(PyMethod.java:223)
+	at org.python.core.PyObject.invoke(PyObject.java:3715)
+	at org.python.core.PyInstance.instance___call__(PyInstance.java:377)
+	at org.python.core.PyInstance.__call__(PyInstance.java:372)
+	at org.python.core.PyObject.__call__(PyObject.java:424)
+	at org.python.pycode._pyx8.f$0(<string>:3)
+	at org.python.pycode._pyx8.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1625)
+	at org.python.core.Py.exec(Py.java:1669)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
+	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
+	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
+	at cad.core.kernel.actions.implementation.algo.python.ExecuteCommandAction.doAction(ExecuteCommandAction.java:89)
+	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
+	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
+	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
+	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
+	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
+	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
+	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
+	at cad.core.frontal.actions.implementation.algo.python.ExecuteCommandAction.act(ExecuteCommandAction.java:85)
+	at cad.core.frontal.actions.implementation.ModalImplementer.internalRun(ModalImplementer.java:88)
+	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
+	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
+--------------------------------------------------------------------------------
+[62792|1539261391408|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/error.gif
+[62793|1539261391409|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/informations.gif
+Closing project
+Close of C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/20181010_prot1_drot20mm_metglas_characterization
+[62813|1539261405725|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62838|1539261405752|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+... end closing project
+Python : closeProject()
+
+Python : exit()
+[62842|1539261405757|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+Maximum use of 13 MiB. in numerical memory
+For the dynamic table ID 177009
+Maximum use of 6 MiB. in character memory
+For the dynamic table ID 177585
+ 
+   NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
+ 
+       1             5       6       4   R08 5             0             0
+       2             1       5       5   C80 8             0             0
+       4     536870913       1       6   R08 5             0             0
+       5       1677722       2       2   C80 8             0             0
+       6             5       4       1   I04 2        600037             0
+Numerical memory: Total length                   = 536870912
+(8 byte words)    Present length                 =    600041
+                  Useful length                  =    600041
+                  Number of numerical arrays     =         3
+Character memory: Total length                   =   1677721
+(80 byte words)   Present length                 =         0
+                  Useful length                  =         0
+                  Number of character arrays     =         2
+Maximum number of arrays (num+char)              =    100006
+ 
+14:36:45     124 sec. FLUX3D_18.1.0 kernel finalized
+[62866|1539261405761|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[62867|1539261405762|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[62868|1539261405762|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
