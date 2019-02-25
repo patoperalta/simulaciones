@@ -16,6 +16,10 @@ beta_d_min = 0.5
 beta_d_max = 0.7
 d_beta_d= 0.1
 
+r_sep_min = 2
+r_sep_max = 4
+r_sep_d= 1
+
 d_gap_d_min=2
 d_gap_d_max=3
 d_d_gap_d=.5
@@ -42,6 +46,11 @@ Scenario['6_JT'].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA_D
                                             intervals=[IntervalStepValue(minValue=beta_d_min,
                                                                          maxValue=beta_d_max,
                                                                          stepValue=d_beta_d)]))
+																		 
+Scenario['6_JT'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_SEP'],
+                                            intervals=[IntervalStepValue(minValue=r_sep_min,
+                                                                         maxValue=r_sep_max,
+                                                                         stepValue=r_sep_d)]))																				 
 
 Scenario['6_JT'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP_D'],
                                             intervals=[IntervalStepValue(minValue=d_gap_d_min,
@@ -73,6 +82,11 @@ Scenario['7_JF'].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA_D
                                             intervals=[IntervalStepValue(minValue=beta_d_min,
                                                                          maxValue=beta_d_max,
                                                                          stepValue=d_beta_d)]))
+																		 
+Scenario['7_JF'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_SEP'],
+                                            intervals=[IntervalStepValue(minValue=r_sep_min,
+                                                                         maxValue=r_sep_max,
+                                                                         stepValue=r_sep_d)]))																			 
 
 Scenario['7_JF'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP_D'],
                                             intervals=[IntervalStepValue(minValue=d_gap_d_min,

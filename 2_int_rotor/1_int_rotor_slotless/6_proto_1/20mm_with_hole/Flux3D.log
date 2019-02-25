@@ -1,73 +1,854 @@
 Loading data model 'Flux_model.stp'
-Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/Flux3D_log.py'
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/20mm_with_hole/Flux3D_log.py'
  
-                                                            FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
-                                                                  4096 MiB N. + 127 MiB C. + 2048 MiB J.
-                                                                 HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 5/8 cores LAIB108233:2928 jperalta
+                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:28884 jperalta
  
-14:34:40       0 sec. FLUX3D_18.1.0 kernel initialized
+07:55:50       0 sec. FLUX3D_18.1.0 kernel initialized
 
 Flux3D (application 2018.1) running
 
-Loading project 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/20181010_prot1_drot20mm_metglas_characterization.FLU'
-14:34:42       1 sec. Start reading ...
-14:34:43       2 sec. ... end reading
-Updating the data structure: merge standard database
-... end loading project
-Anomaly (1) - Program error:
-Can not execute the following command :
-scenario='01_DX'
-folder='fields_displacements/'                         
-for i in range(1,6):     
-          selectCurrentStep(activeScenario=Scenario[scenario],
-                                parameterValue=['DX='+str(i/5)])     
-          for hs in range(1,7):
-               #define name
-               hr=scenario+'_HS_R_'+str(hs)+'_DX_'+str(i/5)
-               #make curve
-               SpatialCurve(name=hr,
-                         compoundPath=CompoundPath['HS_R_'+str(hs)],
-                         formula=['Comp(1,B)',
-                                    'Comp(2,B)',
-                                    'Comp(3,B)'])
-               #save
-               CurveSpatial2D[hr].exportExcel(xlsFile=folder+hr,
-                         mode='add')
-                         
-               #define name
-               hax_top=scenario+'_HS_AX_TOP_'+str(hs)+'_DX_'+str(i/5)
-               #make curve          
-               SpatialCurve(name=hax_top,
-                         compoundPath=CompoundPath['HS_AX_TOP_'+str(hs)],
-                         formula=['Comp(1,B)',
-                                    'Comp(2,B)',
-                                    'Comp(3,B)'])
-               #save                               
-               CurveSpatial2D[hax_top].exportExcel(xlsFile=folder+hax_top,
-                         mode='add')
-               
-               #define name
-               hax_bottom=scenario+'_HS_AX_BOTTOM_'+str(hs)+'_DX_'+str(i/5)
-               #make curve          
-               SpatialCurve(name=hax_bottom,
-                         compoundPath=CompoundPath['HS_AX_BOTTOM_'+str(hs)],
-                         formula=['Comp(1,B)',
-                                    'Comp(2,B)',
-                                    'Comp(3,B)'])
-               #save                               
-               CurveSpatial2D[hax_bottom].exportExcel(xlsFile=folder+hax_bottom,
-                         mode='add')     
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/20mm_with_hole/00_main.py' in batch mode ...
+Loading new project
+Creating ANONYM
+... end loading new project
+Execution of command file '1_param_revF.py' in batch mode ...
+FICHIER PARAM.PY
 
-executeAlgo_c : Execution failed.
-Failed execution
+   ParameterGeom[BETA] created
+   ParameterGeom[R_ROT_OUT] created
+ParameterGeom[2]
+   ParameterGeom[ALPHA_H] created
+   ParameterGeom[ALPHA_CASE] created
+   ParameterGeom[D_AGAP] created
+   ParameterGeom[D_ST] created
+   ParameterGeom[R_ST_OUT] created
+   ParameterGeom[R_ST_IN] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[D_ROT] created
+   ParameterGeom[R_ROT_IN] created
+   ParameterGeom[H_ROT] created
+   ParameterGeom[H_ST] created
+ParameterGeom[13]
+   ParameterGeom[D_MECHGAP] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DALPHA] created
+   ParameterGeom[DBETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[X_H_DIFF] created
+   ParameterGeom[DZ] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+End execution of command file '1_param_revF.py' in batch mode ...
+Execution of command file '2_app_def.py' in batch mode ...
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+End execution of command file '2_app_def.py' in batch mode ...
+Execution of command file '3_mesh_info.py' in batch mode ...
+   AidedMesh[1] modified
+End execution of command file '3_mesh_info.py' in batch mode ...
+Execution of command file '4_geom_revC_circular.py' in batch mode ...
+   CoordSys[COORD_SYS_ST] created
+   CoordSys[COORD_SYS_ROT] created
+   Point[1] created
+   Point[2] created
+   Point[3] created
+   Point[4] created
+   Point[5] created
+   Point[6] created
+   Point[7] created
+   Point[8] created
+   Line[1] created
+   Line[2] created
+   Line[3] created
+   Line[4] created
+   Line[5] created
+   Line[6] created
+   Line[7] created
+   Line[8] created
+   Transf[ROT_ROTOR] created
+   Transf[ROT_ST] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 1
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.204E-06
+Checking the unicity of lines
+Creation of 2 FACES :
+1  2
+   buildFaces executed
+   Face[1, 2] modified
+Creation of 1 volume(s) done :
+1
+   extrude executed
+Creation of 1 volume(s) done :
+2
+   extrude executed
+   Transf[ROT_SYM_ROT] created
+   Transf[ROT_SYM_ST] created
+   Transf[AX_SIM_ROT] created
+   Transf[AX_SIM_ST] created
+Creation of 1 volume(s) done :
+3
+   propagateVolume executed
+Creation of 1 volume(s) done :
+4
+   propagateVolume executed
+Creation of 2 volume(s) done :
+5  6
+   propagateVolume executed
+Creation of 2 volume(s) done :
+7  8
+   propagateVolume executed
+   InfiniteBox[InfiniteBoxCylinderZ] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 19
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.467E-06
+Checking the unicity of lines
+Creation of 30 FACES :
+37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66
+   buildFaces executed
+   setInvisible executed
+   Face[37] deleted
+   Face[40] deleted
+   Face[39] deleted
+   Face[42] deleted
+   Face[41] deleted
+   Face[38] deleted
+No line-face intersections
+Creation of 7 VOLUMES :
+9  10  11  12  13  14  15
+   buildVolumes executed
+Some intersections may not have been detected
+
+End execution of command file '4_geom_revC_circular.py' in batch mode ...
+Execution of command file '5_mat_def.py' in batch mode ...
+   Material[COGENT_M270_50A_50HZ] created
+Material[1]
+   Material[IMPHY_MUMETAL] created
+Material[2]
+   Material[BMT_50H] created
+Material[3]
+   Material[BMT_42UH] created
+Material[4]
+   Material[METGLAS] created
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   Material[NO12] created
+   Material[COGENT_M235_35A_50HZ] created
+Material[7]
+The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
+   Material[METGLAS_2605SA1] created
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 372.3764826737
+   Material[METGLAS_NETL] created
+End execution of command file '5_mat_def.py' in batch mode ...
+Execution of command file '6_elec_circuit_toroidal_revF.py' in batch mode ...
+   ParameterGeom[M_R_THEO] created
+   ParameterGeom[N_R_THEO] created
+   ParameterGeom[COIL_R_THEO] created
+   ParameterGeom[COIL_R_CASE] created
+   ParameterGeom[COIL_R] created
+   ParameterGeom[COIL_WCOIL] created
+   ParameterGeom[COIL_KCU] created
+   VariationParameter[TH_COIL_CIRC] created
+   VariationParameter[R_ST_IN_PH] created
+   VariationParameter[A_COIL] created
+   VariationParameter[A_CU] created
+   VariationParameter[ALPHA_CASE_PH] created
+   VariationParameter[R_ST_OUT_PH] created
+   VariationParameter[H_ST_PH] created
+   VariationParameter[L_BAR_PH] created
+   ParameterGeom[RHO_CU] created
+   VariationParameter[R_COIL] created
+   VariationParameter[I_T_PEAK] created
+   VariationParameter[THETA_T] created
+   VariationParameter[JT_RMS] created
+   VariationParameter[IT_HAT] created
+   VariationParameter[I_F_PEAK] created
+   VariationParameter[THETA_F0] created
+   VariationParameter[THETA_F_DIR] created
+   VariationParameter[THETA_F] created
+   VariationParameter[JF_RMS] created
+   VariationParameter[IF_HAT] created
+   VariationParameter[P_CU_TOT] created
+   VariationParameter[V_FE_ST] created
+   VariationParameter[V_PM] created
+   VariationParameter[V_CU] created
+   CoordSys[COORD_COIL_1] created
+   VariationParameter[I_T_1] created
+   VariationParameter[I_F_1] created
+   CoilConductor[I_1] created
+ 
+Coil(1) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_1] created
+   CoordSys[COORD_COIL_2] created
+   VariationParameter[I_T_2] created
+   VariationParameter[I_F_2] created
+   CoilConductor[I_2] created
+Coil(2) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_2] created
+   CoordSys[COORD_COIL_3] created
+   VariationParameter[I_T_3] created
+   VariationParameter[I_F_3] created
+   CoilConductor[I_3] created
+Coil(3) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_3] created
+   CoordSys[COORD_COIL_4] created
+   VariationParameter[I_T_4] created
+   VariationParameter[I_F_4] created
+   CoilConductor[I_4] created
+Coil(4) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_4] created
+   CoordSys[COORD_COIL_5] created
+   VariationParameter[I_T_5] created
+   VariationParameter[I_F_5] created
+   CoilConductor[I_5] created
+Coil(5) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_5] created
+   CoordSys[COORD_COIL_6] created
+   VariationParameter[I_T_6] created
+   VariationParameter[I_F_6] created
+   CoilConductor[I_6] created
+Coil(6) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_6] created
+End execution of command file '6_elec_circuit_toroidal_revF.py' in batch mode ...
+Execution of command file '7_assign_circular.py' in batch mode ...
+   RegionVolume[IRON_ST] created
+   RegionVolume[AIR] created
+   RegionVolume[PM] created
+   assignRegion executed
+   assignRegion executed
+   assignRegionToVolumes executed
+   orientRegVolMaterial executed
+   RegionVolume[IRON_ST] modified
+   RegionVolume[PM] modified
+   MeshLine[R_ST] created
+   MeshLine[R_ROT] created
+   MeshLine[H_ST] created
+   MeshLine[H_ROT] created
+   MeshLine[THETA] created
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+End execution of command file '7_assign_circular.py' in batch mode ...
+Execution of command file '8_sensors.py' in batch mode ...
+   Sensor[F_ROT] created
+   Sensor[TX_ROT] created
+   Sensor[TY_ROT] created
+   Sensor[TZ_ROT] created
+   Sensor[F_ST] created
+   Sensor[TX_ST] created
+   Sensor[TY_ST] created
+   Sensor[TZ_ST] created
+End execution of command file '8_sensors.py' in batch mode ...
+Execution of command file '9_scenarios_characterization.py' in batch mode ...
+   Scenario[00_FIELDS] created
+Scenario[1]
+   addPilot executed
+   Scenario[01_DX] created
+Scenario[2]
+   addPilot executed
+   Scenario[02_DY] created
+
+Scenario[3]
+   addPilot executed
+   Scenario[03_DZ] created
+Scenario[4]
+   addPilot executed
+   Scenario[04_DALPHA] created
+Scenario[5]
+   addPilot executed
+   Scenario[05_DBETA] created
+Scenario[6]
+   addPilot executed
+   Scenario[06_JTORQUE] created
+Scenario[7]
+   addPilot executed
+   Scenario[07_JFORCE] created
+Scenario[8]
+   addPilot executed
+End execution of command file '9_scenarios_characterization.py' in batch mode ...
+Execution of command file '10_make_scenarios_sensors.py' in batch mode ...
+   Scenario[08_DISP0_ANGLE] created
+Scenario[9]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[09_DISP0_ANGLE_JT] created
+Scenario[10]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[10_DISP0_ANGLE_JF] created
+Scenario[11]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[11_DISP_ANGLE] created
+Scenario[12]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[12_DISP_ANGLE_JT] created
+Scenario[13]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[13_DISP_ANGLE_JF] created
+Scenario[14]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '10_make_scenarios_sensors.py' in batch mode ...
+
+End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/20mm_with_hole/00_main.py' in batch mode ...
+   RegionVolume[IRON_ST] modified
+Saving project as '../../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_dst_vs_bhcurves/20181120_metglas_1_excel.FLU'
+07:58:17     147 sec. Start save ...
+07:58:18     147 sec. ... end save
+... end saving project
+   ParameterGeom[D_ST] modified
+   ParameterGeom[D_ST] modified
+   Scenario[14_DST_JT] created
+   addPilot executed
+   addPilot executed
+Saving project '../../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_dst_vs_bhcurves/20181120_metglas_1_excel.FLU'
+08:01:00     310 sec. Start save ...
+08:01:01     310 sec. ... end save
+... end saving project
+Saving project as '../../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_dst_vs_bhcurves/20181120_metglas_2_pdf.FLU'
+08:02:28     397 sec. Start save ...
+08:02:29     398 sec. ... end save
+... end saving project
+   RegionVolume[IRON_ST] modified
+Saving project '../../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_dst_vs_bhcurves/20181120_metglas_2_pdf.FLU'
+08:02:46     415 sec. Start save ...
+08:02:46     416 sec. ... end save
+... end saving project
+Saving project as '../../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_dst_vs_bhcurves/20181120_metglas_3_netl.FLU'
+08:02:55     425 sec. Start save ...
+08:02:56     425 sec. ... end save
+... end saving project
+   RegionVolume[IRON_ST] modified
+Saving project '../../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_dst_vs_bhcurves/20181120_metglas_3_netl.FLU'
+08:03:18     448 sec. Start save ...
+08:03:19     448 sec. ... end save
+... end saving project
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+08:06:19     628 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+08:06:19     629 sec.     883 1st order surfacic elements created
+ 
+Extrusive meshing of 6 faces
+08:06:19     629 sec.    2610 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 28 linked faces
+ 
+08:06:19     629 sec.    2255 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+08:06:20     629 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 91820
+Checking 48 faces
+Checking 48 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 72
+Checking 48 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 3
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 75
+  10857  boundary nodes
+  62610  boundary meshes
+08:06:31     641 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 3313
+08:06:37     646 sec.
+         14178 nodes
+         92353 meshes
+08:06:37     646 sec. Mesh compressing
+         14178 nodes
+         57184 meshes
+08:06:37     646 sec.   57184 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+08:06:37     646 sec.   34200 1st order volumic elements created
+     20880 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 10440 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 57.5  %
+   Number of excellent quality elements : 9.71  %
+   Number of good quality elements      : 14.62  %
+   Number of average quality elements   : 11.62  %
+   Number of poor quality elements      : 6.54  %
+ 
+Verifying of linked faces ...
+  30 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+ 
+08:06:42     651 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 53 : 9%
+Percentage of 2nd order nodes not projected on line 54 : 45%
+Percentage of 2nd order nodes not projected on line 55 : 27%
+Percentage of 2nd order nodes not projected on line 56 : 45%
+Percentage of 2nd order nodes not projected on line 57 : 9%
+Percentage of 2nd order nodes not projected on line 59 : 36%
+Percentage of 2nd order nodes not projected on line 61 : 18%
+Percentage of 2nd order nodes not projected on line 63 : 63%
+Percentage of 2nd order nodes not projected on line 72 : 18%
+Percentage of 2nd order nodes not projected on line 83 : 18%
+Percentage of 2nd order nodes not projected on face 44 : 10%
+Percentage of 2nd order nodes not projected on face 46 : 18%
+Percentage of 2nd order nodes not projected on face 47 : 20%
+Percentage of 2nd order nodes not projected on face 48 : 11%
+Percentage of 2nd order nodes not projected on face 49 : 11%
+Percentage of 2nd order nodes not projected on face 50 : 34%
+Percentage of 2nd order nodes not projected on face 51 : 100%
+Percentage of 2nd order nodes not projected on face 55 : 20%
+Percentage of 2nd order nodes not projected on face 57 : 11%
+Percentage of 2nd order nodes not projected on face 59 : 100%
+Percentage of 2nd order nodes not projected on face 65 : 28%
+  Total number of nodes --> 152965
+08:06:46     655 sec. End generating 2nd order elements
+   generateSecondOrderElements executed
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 372.3764826737
+ 
+    2 holes have been identified.
+    2 magnetic cuts have been created.
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 372.3764826737
+   buildMagneticCircuitCut executed
+Begin of physical check ...
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 372.3764826737
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+Please, verify the properties of the material: NO12
+The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
+Please, verify the properties of the material: METGLAS_2605SA1
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 372.3764826737
+Please, verify the properties of the material: METGLAS_NETL
+ 
+An electric circuit exists.
+The active physical application does not take account of it.
+ 
+End of physical check.
+08:06:58     668 sec. Start save ...
+08:06:59     668 sec. ... end save
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 372.3764826737
+Active formulation(s) :
+MS3SCA : Magnetostatic total scalar potential formulation
+MS3RED : Magnetostatic reduced scalar potential formulation
+Matrix system : non linear, real, symmetrical
+ 
+08:07:00     669 sec. Start solving problem ...
+ 
+Step number 1
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 0
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 2
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 2
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+08:07:00     670 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+08:07:01     670 sec.     917 1st order surfacic elements created
+ 
+Extrusive meshing of 6 faces
+08:07:01     670 sec.    2790 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 28 linked faces
+ 
+08:07:01     670 sec.    2261 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+08:07:01     670 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 96667
+Checking 48 faces
+Checking 48 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 40
+Checking 48 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 2
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 42
+  11558  boundary nodes
+  65066  boundary meshes
+08:07:15     685 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 3485
+08:07:21     690 sec.
+         15051 nodes
+         95611 meshes
+08:07:21     690 sec. Mesh compressing
+         15051 nodes
+         59713 meshes
+08:07:21     690 sec.   59713 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+08:07:21     690 sec.   33480 1st order volumic elements created
+     22320 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 11160 1st order pyramid elements
+End of topological mesh regularization
+ 
+08:07:26     695 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 53 : 11%
+Percentage of 2nd order nodes not projected on line 56 : 28%
+Percentage of 2nd order nodes not projected on line 63 : 28%
+Percentage of 2nd order nodes not projected on line 72 : 18%
+Percentage of 2nd order nodes not projected on line 83 : 18%
+Percentage of 2nd order nodes not projected on face 44 : 4%
+Percentage of 2nd order nodes not projected on face 51 : 38%
+Percentage of 2nd order nodes not projected on face 59 : 100%
+Percentage of 2nd order nodes not projected on face 65 : 4%
+  Total number of nodes --> 154419
+08:07:30     700 sec. End generating 2nd order elements
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 372.3764826737
+ 
+08:07:31     700 sec. Start creating Dirichlet constraints at points...
+08:07:31     700 sec. ... end creating Dirichlet constraints at points.
+ 
+  V1 unknowns are initialized to zero
+  V1R unknowns are initialized to zero
+ 
+08:07:31     700 sec. Start computing reduced total increments ...
+08:07:31     700 sec. Start solving ...
+Active formulation(s) :
+MS3COU : 3D formulation for coupling potentials on a cut.
+MS3CRT : 3D formulation for coupling total and reduced scalar potentials
+Matrix system : linear, real, symmetrical
+  DV1 unknowns are initialized to zero
+08:07:31     700 sec. Numbering of    34228 nodal values done.
+08:07:31     700 sec. Number of non zero matrix elements estimated to be     2758080
+08:07:31     700 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          128 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                  33792
+ Length of the shortest line         =                                     11
+ Length of the longest line          =                                    370
+ Average line length                 =                                     15
+ Number of the longest line          =                                      1
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                 534916
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              128 Mo.
+   Memory allocated during solving process:                    133 Mo.
+ 
+08:07:32     701 sec. Integration on the region RS_CUT finished ( 186  elements )
+08:07:38     708 sec. Integration on the region COUPLING_RED_TOT finished ( 11160  elements )
+08:07:38     708 sec. Linear part has been integrated and assembled.
+08:07:38     708 sec. Scaling linear system
+08:07:38     708 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 31 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 12 MiBytes
+ RAM effectively used during factorization : 26 MiBytes
+ RAM effectively used during solve phase : 31 MiBytes
+08:07:39     708 sec. Linear system has been solved.
+       Prec. rel. = 9.41E-14/ 2.66E+01
+08:07:39     708 sec. ... end of solving
+08:07:39     708 sec. ... end of computing reduced total increments.
+ 
+08:07:39     708 sec. Numbering of   188335 nodal values done.
+08:07:39     708 sec. Number of non zero matrix elements estimated to be    15066800
+08:07:39     709 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          196 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                 153625
+ Length of the shortest line         =                                      6
+ Length of the longest line          =                                    332
+ Average line length                 =                                     38
+ Number of the longest line          =                                 103232
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                5893601
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              196 Mo.
+   Memory allocated during solving process:                    246 Mo.
+ 
+08:07:47     717 sec. Integration on the region PM finished ( 19440  elements )
+08:07:48     717 sec. Integration on the region AIR finished ( 45296  elements )
+08:07:48     717 sec. Linear part has been integrated and assembled.
+08:07:48     718 sec. Integration on the region IRON_ST finished ( 14040  elements )
+08:07:48     718 sec. Non linear part has been integrated and assembled.
+08:07:48     718 sec. Scaling linear system
+08:07:48     718 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 982 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 294 MiBytes
+ RAM effectively used during factorization : 839 MiBytes
+ RAM effectively used during solve phase : 885 MiBytes
+08:07:56     725 sec. Linear system has been solved.
+       Prec. rel. = 4.43E-14/ 1.76E-01
+08:07:56     726 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   1/   4  Resid= 2.49E+00/ 8.55E+00  Relax= 1.00E+00
+08:07:57     726 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   2/   8  Resid= 4.42E+00/ 2.49E+00  Relax= 5.00E-01
+08:07:57     727 sec. Integration on the region IRON_ST finished ( 14040  elements )
+   Newton-Raphson:  No iter=   1/ 100 Relax= 1.00E+00
+       Prec. rel. = 2.00E+00/ 1.00E-04
+08:07:58     728 sec. Integration on the region IRON_ST finished ( 14040  elements )
+08:07:58     728 sec. Non linear part has been integrated and assembled.
+08:07:58     728 sec. Scaling linear system
+08:07:58     728 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 982 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 294 MiBytes
+ RAM effectively used during factorization : 839 MiBytes
+ RAM effectively used during solve phase : 885 MiBytes
+08:08:06     735 sec. Linear system has been solved.
+       Prec. rel. = 4.67E-12/ 1.32E-03
+08:08:06     736 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   1/   4  Resid= 1.53E+00/ 2.49E+00  Relax= 1.00E+00
+08:08:07     736 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   2/   8  Resid= 1.87E+00/ 1.53E+00  Relax= 5.00E-01
+08:08:07     737 sec. Integration on the region IRON_ST finished ( 14040  elements )
+   Newton-Raphson:  No iter=   2/ 100 Relax= 1.00E+00
+       Prec. rel. = 5.83E-02/ 1.00E-04
+08:08:08     737 sec. Integration on the region IRON_ST finished ( 14040  elements )
+08:08:08     737 sec. Non linear part has been integrated and assembled.
+08:08:08     737 sec. Scaling linear system
+08:08:08     737 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 982 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 294 MiBytes
+ RAM effectively used during factorization : 839 MiBytes
+ RAM effectively used during solve phase : 885 MiBytes
+08:08:15     745 sec. Linear system has been solved.
+       Prec. rel. = 5.33E-12/ 1.70E-03
+08:08:16     745 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   1/   8  Resid= 6.62E-01/ 1.53E+00  Relax= 1.00E+00
+08:08:16     745 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   2/   8  Resid= 8.69E-01/ 6.62E-01  Relax= 5.00E-01
+08:08:17     746 sec. Integration on the region IRON_ST finished ( 14040  elements )
+   Newton-Raphson:  No iter=   3/ 100 Relax= 1.00E+00
+       Prec. rel. = 1.35E-01/ 1.00E-04
+08:08:17     747 sec. Integration on the region IRON_ST finished ( 14040  elements )
+08:08:17     747 sec. Non linear part has been integrated and assembled.
+08:08:17     747 sec. Scaling linear system
+08:08:17     747 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 982 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 294 MiBytes
+ RAM effectively used during factorization : 839 MiBytes
+ RAM effectively used during solve phase : 885 MiBytes
+08:08:25     754 sec. Linear system has been solved.
+       Prec. rel. = 2.48E-13/ 7.08E-04
+08:08:25     754 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   1/   4  Resid= 7.80E-02/ 6.62E-01  Relax= 1.00E+00
+08:08:25     755 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   2/   8  Resid= 3.36E-01/ 7.80E-02  Relax= 5.00E-01
+08:08:26     756 sec. Integration on the region IRON_ST finished ( 14040  elements )
+   Newton-Raphson:  No iter=   4/ 100 Relax= 1.00E+00
+       Prec. rel. = 1.67E-03/ 1.00E-04
+08:08:27     756 sec. Integration on the region IRON_ST finished ( 14040  elements )
+08:08:27     756 sec. Non linear part has been integrated and assembled.
+08:08:27     756 sec. Scaling linear system
+08:08:27     756 sec. Solving linear system with Mumps.
+ Estimated RAM for Factorization - Incore: 982 MiBytes
+ Estimated RAM for factorization - Memory on Disk: 294 MiBytes
+ RAM effectively used during factorization : 839 MiBytes
+ RAM effectively used during solve phase : 885 MiBytes
+08:08:34     764 sec. Linear system has been solved.
+       Prec. rel. = 4.72E-14/ 6.74E-05
+08:08:35     764 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   1/   8  Resid= 4.28E-03/ 7.80E-02  Relax= 1.00E+00
+08:08:35     765 sec. Integration on the region IRON_ST finished ( 14040  elements )
+  Relaxation:  No iter=   2/   8  Resid= 3.88E-02/ 4.28E-03  Relax= 5.00E-01
+08:08:36     765 sec. Integration on the region IRON_ST finished ( 14040  elements )
+   Newton-Raphson:  No iter=   5/ 100 Relax= 1.00E+00
+       Prec. rel. = 2.13E-05/ 1.00E-04
+08:08:36     766 sec. Computation of F_ROT
+08:09:07     797 sec. Value of F_ROT : 0.017926873007847 0.003958554225975 0.003938448646508
+08:09:07     797 sec. Computation of TX_ROT
+08:09:39     828 sec. Value of TX_ROT : -.742947178784E-04
+08:09:39     828 sec. Computation of TY_ROT
+08:10:10     859 sec. Value of TY_ROT : -.118801491892E-03
+08:10:10     859 sec. Computation of TZ_ROT
+08:10:41     890 sec. Value of TZ_ROT : 0.008000327823293
+08:10:41     890 sec. Computation of F_ST
+08:11:05     914 sec. Value of F_ST : -0.011507755024392 0.012525534156843 0.008584941264092
+08:11:05     914 sec. Computation of TX_ST
+08:11:27     936 sec. Value of TX_ST : -.430849142042E-04
+08:11:27     936 sec. Computation of TY_ST
+08:11:51     961 sec. Value of TY_ST : 0.10913138393E-03
+08:11:51     961 sec. Computation of TZ_ST
+08:12:15     984 sec. Value of TZ_ST : -.971653121597E-03
+08:12:15     984 sec. Value of TH_COIL_CIRC : 4
+08:12:15     984 sec. Value of R_ST_IN_PH : 15
+08:12:15     984 sec. Value of A_COIL : 54.4542726622231
+08:12:15     984 sec. Value of A_CU : 21.7817090648892
+08:12:15     984 sec. Value of ALPHA_CASE_PH : 0
+08:12:15     984 sec. Value of R_ST_OUT_PH : 17
+08:12:15     984 sec. Value of H_ST_PH : 6.00015000375009
+08:12:15     984 sec. Value of L_BAR_PH : 28.5666706218594
+08:12:15     984 sec. Value of R_COIL : 0.220331685185E-04
+08:12:15     984 sec. Value of IT_HAT : 61.6079767424627
+08:12:15     984 sec. Value of THETA_F : 270
+08:12:15     984 sec. Value of IF_HAT : 0
+08:12:15     984 sec. Value of P_CU_TOT : 0.250883502282145
+08:12:15     984 sec. Value of V_FE_ST : 1206.40173902196
+08:12:15     984 sec. Value of V_PM : 2287.07945181337
+08:12:15     984 sec. Value of V_CU : 9333.46362656788
+08:12:15     984 sec. Value of I_T_1 : 61.6079767424627
+08:12:15     984 sec. Value of I_F_1 : 0
+08:12:15     984 sec. Value of I_T_2 : 30.8039883712313
+08:12:15     984 sec. Value of I_F_2 : 0
+08:12:15     984 sec. Value of I_T_3 : -30.8039883712313
+08:12:15     984 sec. Value of I_F_3 : 0
+08:12:15     984 sec. Value of I_T_4 : -61.6079767424627
+08:12:15     984 sec. Value of I_F_4 : 0
+08:12:15     984 sec. Value of I_T_5 : -30.8039883712314
+08:12:15     984 sec. Value of I_F_5 : 0
+08:12:15     984 sec. Value of I_T_6 : 30.8039883712313
+08:12:15     984 sec. Value of I_F_6 : 0
+08:12:15     985 sec. Start save ...
+08:12:16     985 sec. ... end save
+08:12:16     986 sec. Start reading ...
+08:12:16     986 sec. ... end reading
+ 
+Verifying of linked faces ...
+  30 face(s) have consistent linked mesh generator.
+ 
+08:12:17     986 sec. ... end solving problem.
+ 
+08:12:17     986 sec. Start save ...
+08:12:17     986 sec. ... end save
+Value of parameter ALPHA_H : 1.3333
+Value of parameter BETA : 0.3
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA : 0
+Value of parameter DBETA : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX : 0
+Value of parameter DY : 0
+Value of parameter DZ : 0
+Value of parameter D_AGAP : 5
+Value of parameter D_MECHGAP : 1
+Value of parameter D_ROT : 7
+Value of parameter D_ST : 2
+Value of parameter H_ROT : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 2
+Value of parameter M_R_THEO : 0.3394
+Value of parameter N_R_THEO : 0
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 270
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 0
+Value of parameter X_H_DIFF : 0
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 372.3764826737
+   solve executed
+Anomaly (1) - Warning:
+Solving process interrupted by user
+
 Closing project
-Close of C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/6_proto_1/20181010_prot1_drot20mm_metglas_characterization
+Close of ../../../../../../../Desktop/03_flux_int_rotor_slotless/8_market_rotors/20mm_dst_vs_bhcurves/20181120_metglas_3_netl
 ... end closing project
-Maximum use of 13 MiB. in numerical memory
-For the dynamic table ID 177009
-Maximum use of 6 MiB. in character memory
-For the dynamic table ID 177585
+Maximum use of 906 MiB. in numerical memory
+For the dynamic table ID 9061689
+Maximum use of 12 MiB. in character memory
+For the dynamic table ID 14651719
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -86,4 +867,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-14:36:45     124 sec. FLUX3D_18.1.0 kernel finalized
+08:13:00    1030 sec. FLUX3D_18.1.0 kernel finalized

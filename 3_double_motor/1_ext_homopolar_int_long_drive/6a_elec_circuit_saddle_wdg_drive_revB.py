@@ -24,7 +24,7 @@ lastInstance = ParameterGeom(name='DRV_COIL_L_STR_P',
               expression='.4*H_DRV')
 
 lastInstance = VariationParameterFormula(name='BNG_R_B_ST_OUT : as auxiliary, define now instead of after',
-                          formula='R_B_PM_ROT_OUT+D_AGAP_B+D_ST_B')				  
+                          formula='R_OUT_PM_ROT_BNG+D_AGAP_B+D_ST_BNG')				  
 			  			  
 lastInstance = ParameterGeom(name='DRV_COIL_HALFHEIGHT_SADDLES',
               expression='.5*H_DRV')				  
@@ -33,7 +33,7 @@ lastInstance = VariationParameterFormula(name='DRV_COIL_HALFHEIGHT_SADDLES_PH : 
                           formula='.5*(2*BNG_R_B_ST_OUT)*beta_d')				  			  
 			  
 lastInstance = ParameterGeom(name='DRV_COIL_R_SADDLES',
-              expression='R_DRV_ST_OUT-D_DRV_ST-.1')				  
+              expression='R_OUT_ST_DRV-D_DRV_ST-.1')				  
 
 lastInstance = ParameterGeom(name='DRV_COIL_TOTAL_ANGLE',
               expression='118')					  
@@ -46,22 +46,22 @@ lastInstance = VariationParameterFormula(name='DRV_COIL_R_TH : radial thickness 
                           formula='D_AGAP_D-.5')	
 
 lastInstance = VariationParameterFormula(name='DRV_R_ST_IN_PH',
-                          formula='R_B_PM_ROT_OUT-D_PM_B_ROT-R_SEP-D_ST_B')
+                          formula='R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP-D_ST_BNG')
 						  
-lastInstance = VariationParameterFormula(name='DRV_A_COIL : area of EACH coil',
-                          formula='(DRV_R_ST_IN_PH^2-(DRV_R_ST_IN_PH-DRV_COIL_R_TH)^2)*DRV_WDG_ANG_STR_P/360*pi()')						  
+lastInstance = VariationParameterFormula(name='DRV_A_COIL : area of EACH coil, also S in 4.37 in pfister',
+                          formula='(DRV_R_ST_IN_PH^2-(DRV_R_ST_IN_PH-DRV_COIL_R_TH)^2)*DRV_WDG_ANG_STR_P/360*pi()')
 						  
 lastInstance = VariationParameterFormula(name='DRV_A_CU',
                           formula='DRV_A_COIL*COIL_KCU')			  
 						  
 lastInstance = VariationParameterFormula(name='DRV_DELTA_1 : part of pg 59, 4.38 pfister ',
-                          formula='1/4*(DRV_WDG_ANG_CYL_P/2+DRV_COIL_ANG_TOT/2)')							  
+                          formula='(DRV_WDG_ANG_CYL_P/2+DRV_COIL_ANG_TOT/2)')							  
 
 lastInstance = VariationParameterFormula(name='DRV_DELTA_2 : part of pg 59, 4.38 pfister ',
-                          formula='2*DRV_R_ST_IN_PH-DRV_COIL_R_TH')							  						  
-
+                          formula='DRV_R_ST_IN_PH+(DRV_R_ST_IN_PH-DRV_COIL_R_TH)')		
+						  
 lastInstance = VariationParameterFormula(name='DRV_DELTA : part of pg 59, 4.38 pfister ',
-                          formula='DRV_DELTA_1*DRV_DELTA_2')							  
+                          formula='1/4*DRV_DELTA_1*DRV_DELTA_2')							  
 
 lastInstance = VariationParameterFormula(name='DRV_LCA : 4.39 pfister ',
                           formula='2*(2*DRV_COIL_HALFHEIGHT_SADDLES_PH)+2*pi()*DRV_DELTA')						  

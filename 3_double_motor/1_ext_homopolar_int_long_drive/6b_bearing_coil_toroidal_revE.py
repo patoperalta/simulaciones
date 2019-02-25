@@ -13,7 +13,7 @@ lastInstance = ParameterGeom(name='BNG_N_R_THEO : m * x + n',
               expression='0')			  
 
 lastInstance = ParameterGeom(name='BNG_COIL_R_THEO : theoretical coil radial thickness, see excel',
-              expression='BNG_M_R_THEO*R_B_ST_OUT+BNG_N_R_THEO')	
+              expression='BNG_M_R_THEO*R_OUT_ST_BNG+BNG_N_R_THEO')	
 			  
 lastInstance = ParameterGeom(name='BNG_COIL_R_CASE : if 0, max coil thickness is limited by airgap',
               expression='Valid(BNG_COIL_R_THEO,0,D_AGAP_B-1)')				  
@@ -22,14 +22,14 @@ lastInstance = ParameterGeom(name='BNG_COIL_R : real coil radial thickness, see 
               expression='BNG_COIL_R_CASE*BNG_COIL_R_THEO+(1-BNG_COIL_R_CASE)*(D_AGAP_B-1)')	
 			  
 lastInstance = ParameterGeom(name='BNG_COIL_WCOIL : toroidal coil width, motor is very small, so width also',
-              expression='2*pi()/6*(R_B_ST_OUT-D_ST_B-BNG_COIL_R)*0+3')				  
+              expression='2*pi()/6*(R_OUT_ST_BNG-D_ST_B-BNG_COIL_R)*0+3')				  
 
 ## now start with the theoretical parameters of the radially oriented coils
 lastInstance = VariationParameterFormula(name='BNG_TH_COIL_CIRC : theoretical thickness, see 2.2.2018',
                           formula='D_AGAP_B-1')	
 
 lastInstance = VariationParameterFormula(name='BNG_R_ST_IN_PH',
-                          formula='R_B_PM_ROT_OUT+D_AGAP_B')	
+                          formula='R_OUT_PM_ROT_BNG+D_AGAP_B')	
 
 lastInstance = VariationParameterFormula(name='BNG_A_COIL : area of each coil',
                           formula='pi()/6*(BNG_R_ST_IN_PH^2-(BNG_R_ST_IN_PH-BNG_TH_COIL_CIRC)^2)')	
@@ -41,7 +41,7 @@ lastInstance = VariationParameterFormula(name='BNG_ALPHA_CASE_PH : needed for st
                           formula='ValidLR(ALPHA_H,0,1,1,1)')	
 
 # lastInstance = VariationParameterFormula(name='BNG_R_B_ST_OUT : as auxiliary, once again',
-                          # formula='R_B_PM_ROT_OUT+D_AGAP_B+D_ST_B')							  
+                          # formula='R_OUT_PM_ROT_BNG+D_AGAP_B+D_ST_B')							  
 
 ##now the length and therefore resistance
 lastInstance = VariationParameterFormula(name='BNG_H_L_PH : height of the bearing coil',
@@ -79,8 +79,8 @@ for i in range(1,7):
 	lastInstance = CoordSysCartesian(name='COORD_COIL_BNG_'+str(i),
 					parentCoordSys=GlobalUnits(lengthUnit=LengthUnit['MILLIMETER'],
 												angleUnit=AngleUnit['DEGREE']),
-					origin=['(R_B_ST_OUT-1/2*D_ST_B)*cosd(60*'+str(i-1)+')',
-							'(R_B_ST_OUT-1/2*D_ST_B)*sind(60*'+str(i-1)+')',
+					origin=['(R_OUT_ST_BNG-1/2*D_ST_B)*cosd(60*'+str(i-1)+')',
+							'(R_OUT_ST_BNG-1/2*D_ST_B)*sind(60*'+str(i-1)+')',
 							'0'],
 					rotationAngles=RotationAngles(angleX='90',
 													angleY='60*'+str(i-1)+'',
@@ -103,7 +103,7 @@ for i in range(1,7):
                         '0',
                         '0'],
                 dimensions=['D_ST_B+BNG_COIL_R',
-                            'H_B_ST+BNG_COIL_R'],
+                            'H_ST_BNG+BNG_COIL_R'],
                 filletRadius='.1',
                 section=ComposedCoilRectangularSection(height='BNG_COIL_WCOIL',
                                                        width='BNG_COIL_R'),

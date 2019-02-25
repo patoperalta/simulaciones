@@ -4,7 +4,7 @@
 #########################################################################################################################################################			 	
 
 lastInstance = RegionVolume(name='IRON_ST',
-             magneticDC3D=MagneticDC3DVolumeMagnetic(material=Material['METGLAS']),
+             magneticDC3D=MagneticDC3DVolumeMagnetic(material=Material['METGLAS_2605SA1']),
              color=Color['Turquoise'],
              visibility=Visibility['VISIBLE'])
 			 

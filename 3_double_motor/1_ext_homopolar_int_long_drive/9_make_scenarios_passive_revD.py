@@ -4,7 +4,7 @@
 ##passive scenarios
 #########################################################################################################################################################	
 
-alpha_min = 1.4
+alpha_min = 1.0
 alpha_max = 2
 d_alpha= 0.2
  
@@ -15,6 +15,10 @@ d_beta_b= 0.1
 beta_d_min = 0.5
 beta_d_max = 0.7
 d_beta_d= 0.1
+
+r_sep_min = 2
+r_sep_max = 4
+r_sep_d= 1
 
 d_gap_d_min=2
 d_gap_d_max=3
@@ -39,6 +43,11 @@ Scenario['0_FIELD'].addPilot(pilot=MultiValues(parameter=VariationParameter['BET
                                             intervals=[IntervalStepValue(minValue=beta_d_min,
                                                                          maxValue=beta_d_max,
                                                                          stepValue=d_beta_d)]))
+																		 
+Scenario['0_FIELD'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_SEP'],
+                                            intervals=[IntervalStepValue(minValue=r_sep_min,
+                                                                         maxValue=r_sep_max,
+                                                                         stepValue=r_sep_d)]))																		 
 
 Scenario['0_FIELD'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP_D'],
                                             intervals=[IntervalStepValue(minValue=d_gap_d_min,
@@ -69,7 +78,12 @@ Scenario['1_DZ'].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA_D
                                             intervals=[IntervalStepValue(minValue=beta_d_min,
                                                                          maxValue=beta_d_max,
                                                                          stepValue=d_beta_d)]))
-
+																		 
+Scenario['1_DZ'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_SEP'],
+                                            intervals=[IntervalStepValue(minValue=r_sep_min,
+                                                                         maxValue=r_sep_max,
+                                                                         stepValue=r_sep_d)]))
+																		 
 Scenario['1_DZ'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP_D'],
                                             intervals=[IntervalStepValue(minValue=d_gap_d_min,
                                                                          maxValue=d_gap_d_max,
@@ -100,6 +114,11 @@ Scenario['2_DALPHA'].addPilot(pilot=MultiValues(parameter=VariationParameter['BE
                                             intervals=[IntervalStepValue(minValue=beta_d_min,
                                                                          maxValue=beta_d_max,
                                                                          stepValue=d_beta_d)]))
+																		 
+Scenario['2_DALPHA'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_SEP'],
+                                            intervals=[IntervalStepValue(minValue=r_sep_min,
+                                                                         maxValue=r_sep_max,
+                                                                         stepValue=r_sep_d)]))																		 
 
 Scenario['2_DALPHA'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP_D'],
                                             intervals=[IntervalStepValue(minValue=d_gap_d_min,
@@ -131,6 +150,11 @@ Scenario['3_DBETA'].addPilot(pilot=MultiValues(parameter=VariationParameter['BET
                                             intervals=[IntervalStepValue(minValue=beta_d_min,
                                                                          maxValue=beta_d_max,
                                                                          stepValue=d_beta_d)]))
+																		 
+Scenario['3_DBETA'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_SEP'],
+                                            intervals=[IntervalStepValue(minValue=r_sep_min,
+                                                                         maxValue=r_sep_max,
+                                                                         stepValue=r_sep_d)]))																			 
 
 Scenario['3_DBETA'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP_D'],
                                             intervals=[IntervalStepValue(minValue=d_gap_d_min,
@@ -163,6 +187,11 @@ Scenario['4_DX'].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA_D
                                             intervals=[IntervalStepValue(minValue=beta_d_min,
                                                                          maxValue=beta_d_max,
                                                                          stepValue=d_beta_d)]))
+																		 
+Scenario['4_DX'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_SEP'],
+                                            intervals=[IntervalStepValue(minValue=r_sep_min,
+                                                                         maxValue=r_sep_max,
+                                                                         stepValue=r_sep_d)]))																			 
 
 Scenario['4_DX'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP_D'],
                                             intervals=[IntervalStepValue(minValue=d_gap_d_min,
@@ -187,6 +216,11 @@ Scenario['5_DY'].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA_B
                                             intervals=[IntervalStepValue(minValue=beta_b_min,
                                                                          maxValue=beta_b_max,
                                                                          stepValue=d_beta_b)]))
+																		 
+Scenario['5_DY'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_SEP'],
+                                            intervals=[IntervalStepValue(minValue=r_sep_min,
+                                                                         maxValue=r_sep_max,
+                                                                         stepValue=r_sep_d)]))																			 
 
 Scenario['5_DY'].addPilot(pilot=MonoValue(parameter=VariationParameter['DX'],
                                           value=.5))

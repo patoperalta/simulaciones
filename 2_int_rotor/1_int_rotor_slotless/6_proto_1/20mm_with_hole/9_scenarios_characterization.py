@@ -23,7 +23,7 @@ startMacroTransaction()
 Scenario['01_DX'].addPilot(pilot=MultiValues(parameter=VariationParameter['DX'],
                                              intervals=[IntervalStepValue(minValue=0.2,
                                                                           maxValue=1,
-                                                                          stepValue=0.2)]))
+                                                                          stepValue=0.1)]))
 
 endMacroTransaction()
 
