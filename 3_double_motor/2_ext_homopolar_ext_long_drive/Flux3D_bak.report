@@ -1,0 +1,1326 @@
+[12|1551106564744|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1551106564878|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1551106564930|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: true
+[15|1551106564932|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1551106564933|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1551106564933|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1551106564933|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\3_double_motor\2_ext_homopolar_ext_long_drive
+[19|1551106564933|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1551106564933|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1551106564933|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1551106564934|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1551106564934|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1551106564934|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1551106565057|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+Loading data model 'Flux_model.stp'
+[27|1551106565620|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+Python : @#*C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/2_ext_homopolar_ext_long_drive/Flux3D_log.pyPython : ^&|#! Flux3D 18.1
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/2_ext_homopolar_ext_long_drive/Flux3D_log.py'
+ 
+                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:26708 jperalta
+ 
+15:56:08       0 sec. FLUX3D_18.1.0 kernel initialized
+[62315|1551106568486|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
+[62316|1551106568486|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
+[62317|1551106568527|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
+[62319|1551106568795|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@49aa1d3b
+
+Flux3D (application 2018.1) running
+
+[62328|1551106568852|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@1410a137
+[62348|1551106569929|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1551106569945|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62357|1551106569962|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+Loading new project
+One or more of the required features checked out will expire in 18 day(s)
+[62363|1551106570162|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: One or more of the required features checked out will expire in 18 day(s)
+[62364|1551106570162|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: One or more of the required features checked out will expire in 18 day(s)
+Creating ANONYM
+[62366|1551106571161|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.UserFortranException: One or more of the required features checked out will expire in 18 day(s)
+   Priority: 1
+[62367|1551106571163|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+--------------------------------------------------------------------------------
+Anomaly (1) - Warning:
+One or more of the required features checked out will expire in 18 day(s)
+
+------------------------------ Advanced Text -----------------------------------
+
+--------------------------------------------------------------------------------
+[62369|1551106571165|22|INFO       ][UserNotification|UserNotification.addNotification] : Notification: One or more of the required features checked out will expire in 18 day(s)
+
+... end loading new project
+Python : newProject()
+
+   GeomMeshOptions[1] modified
+Python : GeomMeshOptions[1].methodAutomaticMeshVolume=OptimizeMeshGemsActivated(level=OptimizationStandard())
+
+   openModelerContext executed
+Modeler context opened
+Python : openModelerContext()
+
+FICHIER PARAM.PY
+
+   ParameterGeom[R_OUT_PM_ROT_BNG] created
+   ParameterGeom[D_AGAP_B] created
+   ParameterGeom[D_ST_BNG] created
+   ParameterGeom[R_OUT_ST_BNG] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[ALPHA_H] created
+   ParameterGeom[ALPHA_CASE] created
+   ParameterGeom[BETA_B] created
+   ParameterGeom[BETA_D] created
+   ParameterGeom[H_DRV] created
+   ParameterGeom[H_ST_BNG] created
+   ParameterGeom[H_PERCENT_PM_TO_FE_BNG_ST] created
+   ParameterGeom[H_PM_BNG_ST] created
+   ParameterGeom[H_FE_BNG_ST] created
+   ParameterGeom[H_ROT_B] created
+   ParameterGeom[D_PM_B_ROT] created
+   ParameterGeom[H_PERCENT_PM_TO_FE_BNG_ROT] created
+   ParameterGeom[H_FE_ROT_B] created
+   ParameterGeom[H_PM_ROT_B] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DALPHA] created
+   ParameterGeom[DBETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[X_H_DIFF] created
+   ParameterGeom[DZ] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+   ParameterGeom[R_SEP] created
+   ParameterGeom[R_DR_ROT_OUT] created
+   ParameterGeom[K_D_DR_FE_ROT] created
+   ParameterGeom[D_DR_FE_ROT] created
+   ParameterGeom[K_D_DR_PM] created
+   ParameterGeom[D_DR_PM] created
+   ParameterGeom[D_AGAP_D] created
+   ParameterGeom[THETA_MAG] created
+   ParameterGeom[R_DR_ST_OUT] created
+ParameterGeom[37]
+   ParameterGeom[K_W_SLOT] created
+ParameterGeom[38]
+   ParameterGeom[W_SLOT] created
+ParameterGeom[39]
+   ParameterGeom[L_SLOT_OUT] created
+Python : #! Flux3D 18.1
+
+
+print("FICHIER PARAM.PY\n")
+##################################################################################################################################################################
+#########################################################################################################################################################
+## geometric parameters
+#########################################################################################################################################################
+
+## define the motor by the radius of bearing pm
+# lastInstance = ParameterGeom(name='R_OUT_PM_ROT_BNG : outer radius of rotor bearing pm',
+              # expression='10')
+lastInstance = ParameterGeom(name='R_OUT_PM_ROT_BNG : outer radius of rotor bearing pm',
+              expression='10')                 
+
+##now, define the airgap and the stator thickness, then we know the total radius of the motor
+lastInstance = ParameterGeom(name='D_AGAP_B : bearing air gap',
+              expression='1.5')
+                 
+lastInstance = ParameterGeom(name='D_ST_BNG : radial thickness of bearing stator and its PMs',
+              expression='1')                      
+                 
+##PARAMETERS FOR BEARING STATOR
+lastInstance = ParameterGeom(name='R_OUT_ST_BNG : outer radius of bearing stator',
+              expression='R_OUT_PM_ROT_BNG+D_AGAP_B+D_ST_BNG')
+
+lastInstance = ParameterGeom(name='D_MOT : diameter of whole motor magnetics',
+              expression='2*R_OUT_ST_BNG')
+
+##rotor height and diameter parameters                 
+lastInstance = ParameterGeom(name='ALPHA_H : ratio H_ROT_B/H_ST_BNG',
+              expression='1.8')
+
+lastInstance = ParameterGeom(name='ALPHA_CASE : case of alpha, equals to 1 if he\'s between 0 and 1',
+              expression='ValidLR(ALPHA_H,0,1,1,1)')
+
+lastInstance = ParameterGeom(name='beta_b : times total diameter gives away motor height if alpha_h <= 1',
+              expression='.2')
+                 
+lastInstance = ParameterGeom(name='beta_d : times total diameter gives away motor height if alpha_h <= 1',
+              expression='.5')                 
+
+lastInstance = ParameterGeom(name='H_DRV : total drive height',
+              expression='d_mot*beta_d')                 
+                 
+## height of the bearing stator                 
+lastInstance = ParameterGeom(name='H_ST_BNG : bearing stator height, f(dmot,alpha,beta_b) ',
+              expression='D_MOT*(ALPHA_CASE*beta_b+(1-ALPHA_CASE)*beta_b/ALPHA_H)')
+
+##total height of pms in bearing stator, that it, each pm has the half of this percentage                 
+lastInstance = ParameterGeom(name='H_PERCENT_PM_TO_FE_BNG_ST : %(h of pm  / total height) of stator bearing',
+              expression='.6')                   
+
+##each pm with half the height
+lastInstance = ParameterGeom(name='H_PM_BNG_ST : actual height of each pm of bearing stator',
+              expression='H_PERCENT_PM_TO_FE_BNG_ST*H_ST_BNG/2')
+                 
+##total iron                 
+lastInstance = ParameterGeom(name='H_FE_BNG_ST : iron height of bearing stator ',
+              expression='H_ST_BNG-2*H_PM_BNG_ST')                 
+
+##start with rotor                 
+lastInstance = ParameterGeom(name='H_ROT_B : rotor height',
+              expression='d_mot*(alpha_case*alpha_h*beta_b+(1-alpha_case)*beta_b)')
+                             
+lastInstance = ParameterGeom(name='D_PM_B_ROT : thickness of rotor bearing pm',
+              expression='1')     
+
+##amount of pm and fe in bearing rotor
+lastInstance = ParameterGeom(name='H_PERCENT_PM_TO_FE_BNG_ROT : %(h of pm  / total height) of rotor of bearing',
+              expression='0.8')
+
+lastInstance = ParameterGeom(name='H_FE_ROT_B : iron height of rotor of bearing',
+              expression='H_ROT_B*(1-H_PERCENT_PM_TO_FE_BNG_ROT)')
+
+lastInstance = ParameterGeom(name='H_PM_ROT_B : iron height of rotor of bearing',
+              expression='H_ROT_B*H_PERCENT_PM_TO_FE_BNG_ROT/2')                 
+                 
+##PARAMETERS FOR ROTOR DISPLACEMENT
+lastInstance = ParameterGeom(name='DTHETA',
+              expression='0')
+
+lastInstance = ParameterGeom(name='DALPHA',
+              expression='0')
+
+lastInstance = ParameterGeom(name='DBETA',
+              expression='0')
+
+lastInstance = ParameterGeom(name='DX',
+              expression='0')
+
+lastInstance = ParameterGeom(name='DY',
+              expression='0')
+
+lastInstance = ParameterGeom(name='X_H_DIFF : abs val of height dif between st and rot',
+              expression='0')                 
+                 
+lastInstance = ParameterGeom(name='DZ',
+              expression='0')     
+
+lastInstance = ParameterGeom(name='DR_0',
+              expression='0')
+
+lastInstance = ParameterGeom(name='DTHETA_0',
+              expression='0')                      
+
+##DRIVE MOTOR     
+##separation between inner radius of bearing rotor and outer radius of drive rotor
+lastInstance = ParameterGeom(name='R_SEP : separation between rotor bearing magnet and drive iron',
+              expression='1.5')     
+
+lastInstance = ParameterGeom(name='R_DR_ROT_OUT : outer radius of drive rotor',
+              expression='(R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP)')
+
+##iron                 
+lastInstance = ParameterGeom(name='K_D_DR_FE_ROT : prop constant, radial thickness of drive iron in rotor',
+              expression='(1.1/(13/2))')
+                 
+lastInstance = ParameterGeom(name='D_DR_FE_ROT : radial thickness of drive iron in rotor',
+              expression='K_D_DR_FE_ROT*R_DR_ROT_OUT')                 
+
+##pm                 
+lastInstance = ParameterGeom(name='K_D_DR_PM : constant for radial thickness of drive pms ',
+              expression='1/7.5')     
+                 
+lastInstance = ParameterGeom(name='D_DR_PM : radial thickness of pms of drive',
+              expression='R_DR_ROT_OUT*K_D_DR_PM')     
+
+##airgap                 
+lastInstance = ParameterGeom(name='D_AGAP_D : drive airgap',
+              expression='.75')
+                 
+lastInstance = ParameterGeom(name='theta_mag : angular width of drive pms',
+              expression='60')                      
+
+##slotted stator of drive
+
+ParameterGeom(name='R_DR_ST_OUT : outer radius of stator',
+              expression='R_DR_ROT_OUT-D_DR_FE_ROT-D_DR_PM-D_AGAP_D')
+                 
+ParameterGeom(name='K_W_SLOT',
+              expression='2/7.5')
+
+ParameterGeom(name='W_SLOT',
+              expression='K_W_SLOT*R_DR_ROT_OUT')                      
+                 
+lastInstance = ParameterGeom(name='L_SLOT_OUT : outer flank of slot',
+              expression='Sqrt(R_DR_ST_OUT^2-(W_SLOT/2)^2)')                      
+
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+Python : #! Flux3D 18.1
+
+#########################################################################################################################################################
+##define application
+#########################################################################################################################################################                 
+lastInstance = ApplicationMagneticDC3D(formulationModel=MagneticDC3DAutomatic(),
+                        scalarVariableOrder=ScalarVariableAutomaticOrder(),
+                        vectorNodalVariableOrder=VectorNodalVariableAutomaticOrder(),
+                        coilCoefficient=CoilCoefficientAutomatic())     
+
+closeModelerContext()
+   closeModelerContext executed
+Modeler context closed
+Python : closeModelerContext()
+
+   AidedMesh[1] modified
+Python : #! Flux3D 18.1
+
+# Pour pouvoir mailler plus petit
+# GeomMeshOptions[1].meshRelativeEpsilon = 1.0E-7
+     
+
+AidedMesh[1].aidedMeshState=AidedMeshActivated(meshPoint=MeshPointAssigned(type=MeshPointDynamic()),
+                                               meshDeviation=MeshDeviationAssignedExcludeIB(type=MeshDeviationExcludeIBRelative(value=0.9)),
+                                               meshRelaxation=MeshRelaxation(lineMeshRelaxation=LineMeshRelaxationAssigned(type=LineMeshRelaxationLow()),
+                                                                             faceMeshRelaxation=FaceMeshRelaxationAssigned(type=FaceMeshRelaxationLow()),
+                                                                             volumeMeshRelaxation=VolumeMeshRelaxationAssigned(type=VolumeMeshRelaxationLow())),
+                                               meshShadow=MeshShadowUnassigned())                       
+
+   CoordSys[COORD_SYS_ST] created
+   CoordSys[COORD_SYS_ROT] created
+   CoordSys[COORD_SYS_ST_VERT] created
+   CoordSys[COORD_SYS_ROT_VERT] created
+   Point[1] created
+   Point[2] created
+   Point[3] created
+   Point[4] created
+   Line[1] created
+   Line[2] created
+   Line[3] created
+   Line[4] created
+   Transf[H_FE_BNG_ST] created
+Creation of 8 line(s) done :
+5  6  7  8  9  10  11  12
+   extrude executed
+   Point[9] created
+   Point[10] created
+   Point[11] created
+   Point[12] created
+   Line[13] created
+   Line[14] created
+   Line[15] created
+   Line[16] created
+   Line[17] created
+   Line[18] created
+   Line[19] created
+   Line[20] created
+   Line[21] created
+   Point[13] created
+   Point[14] created
+   Point[15] created
+   Point[16] created
+   Line[22] created
+   Line[23] created
+   Line[24] created
+   Line[25] created
+   Line[26] created
+   Line[27] created
+   Line[28] created
+   Point[17] created
+   Point[18] created
+   Line[29] created
+   Line[30] created
+   Point[19] created
+   Point[20] created
+   Line[31] created
+   Line[32] created
+   Transf[H_PM_ROT_B] created
+Creation of 8 line(s) done :
+33  34  35  36  37  38  39  40
+   extrude executed
+   Transf[H_FE_ROT_B] created
+Creation of 8 line(s) done :
+41  42  43  44  45  46  47  48
+   extrude executed
+Creation of 8 line(s) done :
+49  50  51  52  53  54  55  56
+   extrude executed
+   Point[33] created
+   Point[34] created
+   Line[57] created
+   Line[58] created
+   Point[35] created
+   Point[36] created
+   Point[37] created
+   Point[38] created
+   Line[59] created
+   Line[60] created
+   Line[61] created
+   Transf[ROT_DRIVE_PMS] created
+Creation of 9 line(s) done :
+62  63  64  65  66  67  68  69  70
+   propagate executed
+   Line[71] created
+   Line[72] created
+Creation of 6 line(s) done :
+73  74  75  76  77  78
+   propagate executed
+   Transf[H_DR_ROTOR] created
+Creation of 40 line(s) done :
+79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118
+   extrude executed
+   Point[69] created
+   Point[70] created
+   Line[119] created
+   Point[71] created
+   Point[72] created
+   Transf[ROT_TEETH] created
+Creation of 5 line(s) done :
+120  121  122  123  124
+   propagate executed
+Creation of 4 point(s) done :
+83  84  85  86
+   propagate executed
+   Line[125] created
+   Line[126] created
+Creation of 10 line(s) done :
+127  128  129  130  131  132  133  134  135  136
+   propagate executed
+   Transf[DR_H_ST] created
+Creation of 36 line(s) done :
+137  138  139  140  141  142  143  144  145  146  147  148  149  150  151  152  153  154  155  156  157  158  159  160  161  162  163  164  165  166  167  168  169  170  171  172
+   extrude executed
+   Line[173] created
+   Line[174] created
+   Line[175] created
+   Line[176] created
+   Line[177] created
+   Line[178] created
+   Line[179] created
+   Line[180] created
+   Line[181] created
+   Line[182] created
+   InfiniteBox[InfiniteBoxCylinderZ] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 38
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.280E-06
+Checking the unicity of lines
+Creation of 125 FACES :
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62
+63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117
+118  119  120  121  122  123  124  125
+   buildFaces executed
+   setInvisible executed
+   Face[52] deleted
+   Face[19] deleted
+   Face[34] deleted
+   Face[15] deleted
+   Face[6] deleted
+   Face[23] deleted
+   Face[41] deleted
+   Face[77] deleted
+   Face[27] deleted
+   Face[46] deleted
+[97252|1551106617875|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[97253|1551106617876|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+No line-face intersections
+Creation of 19 VOLUMES :
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19
+[97257|1551106618115|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.WarningFortranException: Some intersections may not have been detected   Priority: 1
+   buildVolumes executed
+--------------------------------------------------------------------------------
+Anomaly (2) - Warning:
+Some intersections may not have been detected
+
+------------------------------ Advanced Text -----------------------------------
+
+--------------------------------------------------------------------------------
+[97576|1551106618151|22|INFO       ][UserNotification|UserNotification.addNotification] : Notification: Some intersections may not have been detected
+
+
+Python : #! Flux3D 18.1
+
+##COORDINATE SYSTEMS
+lastInstance = CoordSysCartesian(name='COORD_SYS_ST',
+                  parentCoordSys=Local(coordSys=CoordSys['XYZ1']),
+                  origin=['0',
+                          '0',
+                          '-H_ST_BNG/2*0'],
+                  rotationAngles=RotationAngles(angleX='0',
+                                                angleY='0',
+                                                angleZ='30'),
+                  visibility=Visibility['VISIBLE'])     
+#rotated in 30° degrees so drive stator looks nicer ...                      
+##rotor coordinate system                 
+lastInstance = CoordSysCartesian(name='COORD_SYS_ROT',
+                  parentCoordSys=Local(coordSys=CoordSys['XYZ1']),
+                  origin=['DX+DR_0*Cosd(DTHETA_0)',
+                          'DY+DR_0*Sind(DTHETA_0)',
+                          'DZ+Abs(ALPHA_H-1)*H_ST_BNG/2*X_H_DIFF'],
+                  rotationAngles=RotationAngles(angleX='DALPHA',
+                                                angleY='DBETA',
+                                                angleZ='DTHETA'),
+                  visibility=Visibility['VISIBLE'])     
+
+## coordinate systems for vertical pms from stator
+lastInstance = CoordSysCartesian(name='COORD_SYS_ST_VERT',
+                  parentCoordSys=Local(coordSys=CoordSys['COORD_SYS_ST']),
+                  origin=['0',
+                          '0',
+                          '0'],
+                  rotationAngles=RotationAngles(angleX='0',
+                                                angleY='-90',
+                                                angleZ='0'),
+                  visibility=Visibility['VISIBLE'])     
+## coordinate systems for vertical pms from rotor
+lastInstance = CoordSysCartesian(name='COORD_SYS_ROT_VERT',
+                  parentCoordSys=Local(coordSys=CoordSys['COORD_SYS_ROT']),
+                  origin=['0',
+                          '0',
+                          '0'],
+                  rotationAngles=RotationAngles(angleX='0',
+                                                angleY='-90',
+                                                angleZ='0'),
+                  visibility=Visibility['VISIBLE'])                           
+
+##start with stator                      
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['R_OUT_ST_BNG',
+                      '0',
+                      '-H_FE_BNG_ST/2'],
+                 nature=Nature['STANDARD'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['-R_OUT_ST_BNG',
+                      '0',
+                      '-H_FE_BNG_ST/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['-R_OUT_ST_BNG+D_ST_BNG',
+                      '0',
+                      '-H_FE_BNG_ST/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['R_OUT_ST_BNG-D_ST_BNG',
+                      '0',
+                      '-H_FE_BNG_ST/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_OUT_ST_BNG',
+              defPoint=[Point[1],
+                        Point[2]],
+              nature=Nature['STANDARD'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_OUT_ST_BNG',
+              defPoint=[Point[2],
+                        Point[1]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_OUT_ST_BNG-D_ST_BNG',
+              defPoint=[Point[4],
+                        Point[3]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_OUT_ST_BNG-D_ST_BNG',
+              defPoint=[Point[3],
+                        Point[4]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = TransfTranslationVector(name='H_FE_BNG_ST',
+                        coordSys=CoordSys['COORD_SYS_ST'],
+                        vector=['0',
+                                '0',
+                                'H_FE_BNG_ST'])
+                   
+## DO STATOR IRON POINTS                    
+result = LineArcRadius[1,2,3,4].extrude(transformation=Transf['H_FE_BNG_ST'],
+        repetitionNumber=1,
+        extrusionType='standard',
+        buildingOption='Lines')
+
+## DO STATOR PM RING TOP POINTS
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['R_OUT_ST_BNG-D_ST_BNG',
+                      '0',
+                      'H_ST_BNG/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['-(R_OUT_ST_BNG-D_ST_BNG)',
+                      '0',
+                      'H_ST_BNG/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['R_OUT_ST_BNG-0*D_ST_BNG',
+                      '0',
+                      'H_ST_BNG/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['-(R_OUT_ST_BNG-0*D_ST_BNG)',
+                      '0',
+                      'H_ST_BNG/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+                     
+# lastInstance = PointCoordinates(color=Color['White'],
+                 # visibility=Visibility['VISIBLE'],
+                 # coordSys=CoordSys['COORD_SYS_ST'],
+                 # uvw=['-(R_OUT_ST_BNG-D_ST_BNG+D_PM_B_ST)',
+                      # '0',
+                      # 'H_ST_BNG/2-H_PM_BNG_ST'],
+                 # nature=Nature['STANDARD'],
+                 # mesh=MeshPoint['AIDED_MESHPOINT'])
+
+# lastInstance = PointCoordinates(color=Color['White'],
+                 # visibility=Visibility['VISIBLE'],
+                 # coordSys=CoordSys['COORD_SYS_ST'],
+                 # uvw=['(R_OUT_ST_BNG-D_ST_BNG+D_PM_B_ST)',
+                      # '0',
+                      # 'H_ST_BNG/2-H_PM_BNG_ST'],
+                 # nature=Nature['STANDARD'],
+                 # mesh=MeshPoint['AIDED_MESHPOINT'])                     
+
+## CLOSE TOP OF PM                     
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='(R_OUT_ST_BNG-0*D_ST_BNG)',
+              defPoint=[Point[12],
+                        Point[11]],
+              nature=Nature['STANDARD'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='(R_OUT_ST_BNG-0*D_ST_BNG)',
+              defPoint=[Point[11],
+                        Point[12]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='(R_OUT_ST_BNG-D_ST_BNG)',
+              defPoint=[Point[9],
+                        Point[10]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='(R_OUT_ST_BNG-D_ST_BNG)',
+              defPoint=[Point[10],
+                        Point[9]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[10],
+                      Point[12]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[12],
+                      Point[6]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[6],
+                      Point[8]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[8],
+                      Point[10]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[3],
+                      Point[2]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])                 
+               
+##do lower stator bearing magnet     
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['R_OUT_ST_BNG-D_ST_BNG',
+                      '0',
+                      '-H_ST_BNG/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['-(R_OUT_ST_BNG-D_ST_BNG)',
+                      '0',
+                      '-H_ST_BNG/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['-(R_OUT_ST_BNG-0*D_ST_BNG)',
+                      '0',
+                      '-H_ST_BNG/2-H_PM_BNG_ST*0'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['(R_OUT_ST_BNG-0*D_ST_BNG)',
+                      '0',
+                      '-H_ST_BNG/2-H_PM_BNG_ST*0'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])          
+                     
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_OUT_ST_BNG-0*D_ST_BNG',
+              defPoint=[Point[15],
+                        Point[16]],
+              nature=Nature['STANDARD'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_OUT_ST_BNG-0*D_ST_BNG',
+              defPoint=[Point[16],
+                        Point[15]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_OUT_ST_BNG-D_ST_BNG',
+              defPoint=[Point[13],
+                        Point[14]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_OUT_ST_BNG-D_ST_BNG',
+              defPoint=[Point[14],
+                        Point[13]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+##close pm stator under
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[2],
+                      Point[15]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[15],
+                      Point[14]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[14],
+                      Point[3]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+##start with bearing rotor                 
+##########################
+
+## upper pm, bearing rotor
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['R_OUT_PM_ROT_BNG',
+                      '0',
+                      'H_ROT_B/2'],
+                 nature=Nature['STANDARD'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['-R_OUT_PM_ROT_BNG',
+                      '0',
+                      'H_ROT_B/2'],
+                 nature=Nature['STANDARD'])                     
+
+## outer perimeter                 
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='R_OUT_PM_ROT_BNG',
+              defPoint=[Point[17],
+                        Point[18]],
+              nature=Nature['STANDARD'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='R_OUT_PM_ROT_BNG',
+              defPoint=[Point[18],
+                        Point[17]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])     
+                                 
+## inner perimeter points                 
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['R_OUT_PM_ROT_BNG-D_PM_B_ROT',
+                      '0',
+                      'H_ROT_B/2'],
+                 nature=Nature['STANDARD'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['-R_OUT_PM_ROT_BNG+D_PM_B_ROT',
+                      '0',
+                      'H_ROT_B/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])                 
+
+## inner perimeter                      
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='R_OUT_PM_ROT_BNG-D_PM_B_ROT',
+              defPoint=[Point[19],
+                        Point[20]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='R_OUT_PM_ROT_BNG-D_PM_B_ROT',
+              defPoint=[Point[20],
+                        Point[19]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+## bearing pm rotor tranlation definition                     
+lastInstance = TransfTranslationVector(name='H_PM_ROT_B',
+                        coordSys=CoordSys['COORD_SYS_ROT'],
+                        vector=['0',
+                                '0',
+                                '-H_PM_ROT_B/1'])
+
+result = LineArcRadius[29,30,31,32].extrude(transformation=Transf['H_PM_ROT_B'],
+        repetitionNumber=1,
+        extrusionType='standard',
+        buildingOption='Lines')     
+          
+## now define the translation for the rotor iron          
+lastInstance = TransfTranslationVector(name='H_FE_ROT_B',
+                        coordSys=CoordSys['COORD_SYS_ROT'],
+                        vector=['0',
+                                '0',
+                                '-H_FE_ROT_B/1'])
+                                        
+result = LineArcRadius[35,36,39,40].extrude(transformation=Transf['H_FE_ROT_B'],
+        repetitionNumber=1,
+        extrusionType='standard',
+        buildingOption='Lines')                                             
+
+## now extrude lower magnet !!!
+result = LineArcRadius[43,44,47,48].extrude(transformation=Transf['H_PM_ROT_B'],
+        repetitionNumber=1,
+        extrusionType='standard',
+        buildingOption='Lines')     
+          
+## start doing drive rotor
+## outer radius
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['R_DR_ROT_OUT*Cosd(THETA_MAG/2)',
+                      'R_DR_ROT_OUT*Sind(THETA_MAG/2)',
+                      'H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['-R_DR_ROT_OUT*Cosd(THETA_MAG/2)',
+                      '-R_DR_ROT_OUT*Sind(THETA_MAG/2)',
+                      'H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+
+## close drive fe circle                     
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='R_DR_ROT_OUT',
+              defPoint=[Point[33],
+                        Point[34]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='R_DR_ROT_OUT',
+              defPoint=[Point[34],
+                        Point[33]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+## do pms
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['(R_DR_ROT_OUT-D_DR_FE_ROT)*Cosd(THETA_MAG/2)',
+                      '(R_DR_ROT_OUT-D_DR_FE_ROT)*Sind(THETA_MAG/2)',
+                      'H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['(R_DR_ROT_OUT-D_DR_FE_ROT)*Cosd(THETA_MAG/2)',
+                      '-(R_DR_ROT_OUT-D_DR_FE_ROT)*Sind(THETA_MAG/2)',
+                      'H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['(R_DR_ROT_OUT-D_DR_FE_ROT-D_DR_PM)*Cosd(THETA_MAG/2)',
+                      '(R_DR_ROT_OUT-D_DR_FE_ROT-D_DR_PM)*Sind(THETA_MAG/2)',
+                      'H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ROT'],
+                 uvw=['(R_DR_ROT_OUT-D_DR_FE_ROT-D_DR_PM)*Cosd(THETA_MAG/2)',
+                      '-(R_DR_ROT_OUT-D_DR_FE_ROT-D_DR_PM)*Sind(THETA_MAG/2)',
+                      'H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+##close pms innerly
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='(R_DR_ROT_OUT-D_DR_FE_ROT-0*D_DR_PM)',
+              defPoint=[Point[36],
+                        Point[35]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[37],
+                      Point[35]],
+            nature=Nature['STANDARD'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[36],
+                      Point[38]],
+            nature=Nature['STANDARD'])
+
+## propagate pms
+lastInstance = TransfRotation3AnglesPivotCoord(name='ROT_DRIVE_PMS',
+                                coordSys=CoordSys['COORD_SYS_ROT'],
+                                pivotCoord=['0',
+                                            '0',
+                                            '0'],
+                                rotationAngles=RotationAngles(angleX='0',
+                                                              angleY='0',
+                                                              angleZ='90'))
+
+result = Line[59,60,61].propagate(transformation=Transf['ROT_DRIVE_PMS'],
+          repetitionNumber=3)          
+
+##close fe of drive rotor
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='R_DR_ROT_OUT-D_DR_FE_ROT-0*D_DR_PM',
+              defPoint=[Point[35],
+                        Point[39]],
+              nature=Nature['STANDARD'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+##close pms of drive rotor                 
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ROT'],
+              radius='R_DR_ROT_OUT-D_DR_FE_ROT-1*D_DR_PM',
+              defPoint=[Point[38],
+                        Point[37]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])                 
+##close inner radii stator fe and stator pms                 
+result = Line[71,72].propagate(transformation=Transf['ROT_DRIVE_PMS'],
+          repetitionNumber=3)                      
+
+##extrude drive rotor            
+lastInstance = TransfTranslationVector(name='H_DR_ROTOR',
+                        coordSys=CoordSys['COORD_SYS_ROT'],
+                        vector=['0',
+                                '0',
+                                '-H_DRV'])
+
+result = Line[74,57,58,71,73,75,59,62,63,64,78,72,76,77,66,70,67,61,60,68,65,69].extrude(transformation=Transf['H_DR_ROTOR'],
+        repetitionNumber=1,
+        extrusionType='standard',
+        buildingOption='Lines')
+          
+##outer points of stator teeth                                                                             
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['L_SLOT_OUT',
+                      '-W_SLOT/2',
+                      '-H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['L_SLOT_OUT',
+                      'W_SLOT/2',
+                      '-H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+## close teeth     
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_DR_ST_OUT',
+              defPoint=[Point[69],
+                        Point[70]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+                     
+##points were stator teeth meet
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['(W_SLOT/2)/Tand(30)',
+                      '-W_SLOT/2',
+                      '-H_DRV/2'],
+                 nature=Nature['STANDARD'])
+
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['(W_SLOT/2)/Tand(30)',
+                      'W_SLOT/2',
+                      '-H_DRV/2'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])
+
+##transformation for tooth tip
+lastInstance = TransfRotation3AnglesPivotCoord(name='ROT_TEETH',
+                                coordSys=CoordSys['COORD_SYS_ST'],
+                                pivotCoord=['0',
+                                            '0',
+                                            '0'],
+                                rotationAngles=RotationAngles(angleX='0',
+                                                              angleY='0',
+                                                              angleZ='60'))     
+
+result = LineArcRadius[119].propagate(transformation=Transf['ROT_TEETH'],
+          repetitionNumber=5)
+                                                                             
+##propagate (rotate) slot junction
+result = PointCoordinates[72].propagate(transformation=Transf['ROT_TEETH'],
+          repetitionNumber=4)
+
+##close sides
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[70],
+                      Point[72]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[69],
+                      Point[71]],
+            nature=Nature['STANDARD'],
+            mesh=MeshLine['AIDED_MESHLINE'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+##close sides               
+result = LineSegment[125,126].propagate(transformation=Transf['ROT_TEETH'],
+          repetitionNumber=5)
+
+##extrude upwards
+lastInstance = TransfTranslationVector(name='DR_H_ST',
+                        coordSys=CoordSys['COORD_SYS_ST'],
+                        vector=['0',
+                                '0',
+                                'H_DRV'])     
+
+result = Line[119,120,121,122,123,124,126,125,132,127,133,128,134,129,135,130,136,131].extrude(transformation=Transf['DR_H_ST'],
+        repetitionNumber=1,
+        extrusionType='standard',
+        buildingOption='Lines')
+
+##close bearing stator          
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[11],
+                      Point[5]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[1],
+                      Point[16]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[4],
+                      Point[13]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[9],
+                      Point[7]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])     
+
+##close bearing rotor
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[18],
+                      Point[20]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[22],
+                      Point[24]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[26],
+                      Point[28]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[30],
+                      Point[32]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+                                                     
+## close iron of drive rotor
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[34],
+                      Point[42]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[54],
+                      Point[51]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])
+
+## build infinte box
+lastInstance = InfiniteBoxCylinderZ(size=['3*R_OUT_ST_BNG',
+                           '4*R_OUT_ST_BNG',
+                           '3*Max(H_ROT_B,H_DRV)',
+                           '4*Max(H_ROT_B,H_DRV)'])               
+                                 
+## build faces
+buildFaces()
+                  
+## invisible cylinder
+InfiniteBoxCylinderZ['InfiniteBoxCylinderZ'].setInvisible()
+
+## delete strange airgap faces
+FaceAutomatic[52].delete()
+FaceAutomatic[19].delete()
+FaceAutomatic[34].delete()
+FaceAutomatic[15].delete()
+FaceAutomatic[6].delete()
+FaceAutomatic[23].delete()
+FaceAutomatic[41].delete()
+FaceAutomatic[77].delete()
+FaceAutomatic[27].delete()
+FaceAutomatic[46].delete()
+
+## build volumes
+buildVolumes()          
+
+   ParameterGeom[DX] modified
+Python : ParameterGeom['DX'].expression='2'
+
+
+   ParameterGeom[DX] modified
+Python : ParameterGeom['DX'].expression='1'
+
+
+   ParameterGeom[DX] modified
+Python : ParameterGeom['DX'].expression='0'
+
+
+   ParameterGeom[DY] modified
+Python : ParameterGeom['DY'].expression='2'
+
+
+   ParameterGeom[DY] modified
+Python : ParameterGeom['DY'].expression='0'
+
+
+   ParameterGeom[DZ] modified
+Python : ParameterGeom['DZ'].expression='3'
+
+
+Closing project
+Close of ANONYM
+[99915|1551106653799|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[99940|1551106653931|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+... end closing project
+Python : closeProject()
+
+Python : exit()
+[99944|1551106653935|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+Maximum use of 595 MiB. in numerical memory
+For the dynamic table ID 1527058
+Maximum use of 7 MiB. in character memory
+For the dynamic table ID 32300
+ 
+   NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
+ 
+       1             5       6       4   R08 5             0             0
+       2             1       5       5   C80 8             0             0
+       4     536870913       1       6   R08 5             0             0
+       5       1677722       2       2   C80 8             0             0
+       6             5       4       1   I04 2        600037             0
+Numerical memory: Total length                   = 536870912
+(8 byte words)    Present length                 =    600041
+                  Useful length                  =    600041
+                  Number of numerical arrays     =         3
+Character memory: Total length                   =   1677721
+(80 byte words)   Present length                 =         0
+                  Useful length                  =         0
+                  Number of character arrays     =         2
+Maximum number of arrays (num+char)              =    100006
+ 
+15:57:33      85 sec. FLUX3D_18.1.0 kernel finalized
+[99968|1551106653938|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[99969|1551106653939|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[99970|1551106653940|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers

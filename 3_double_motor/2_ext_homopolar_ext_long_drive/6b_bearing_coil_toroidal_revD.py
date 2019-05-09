@@ -1,54 +1,42 @@
-#! Flux3D 12.0
-# some change of definitions
-
-##rev B has new copper area, see 2.2.2017
-
-##revE is for homopolar bearing inner rotor slotless
-
+#! Flux3D 18.1
+				
 ##for aesthetic purposes
 lastInstance = ParameterGeom(name='BNG_M_R_THEO : m * x + n',
-              expression='.15')	
-			  
+              expression='.15')     
+                 
 lastInstance = ParameterGeom(name='BNG_N_R_THEO : m * x + n',
-              expression='0')			  
+              expression='0')                 
 
 lastInstance = ParameterGeom(name='BNG_COIL_R_THEO : theoretical coil radial thickness, see excel',
-              expression='BNG_M_R_THEO*R_OUT_ST_BNG+BNG_N_R_THEO')	
-			  
+              expression='BNG_M_R_THEO*R_OUT_ST_BNG+BNG_N_R_THEO')     
+                 
 lastInstance = ParameterGeom(name='BNG_COIL_R_CASE : if 0, max coil thickness is limited by airgap',
-              expression='Valid(BNG_COIL_R_THEO,0,D_AGAP_B-1)')				  
+              expression='Valid(BNG_COIL_R_THEO,0,D_AGAP_B-1)')                      
 
 lastInstance = ParameterGeom(name='BNG_COIL_R : real coil radial thickness, see excel v2',
-              expression='BNG_COIL_R_CASE*BNG_COIL_R_THEO+(1-BNG_COIL_R_CASE)*(D_AGAP_B-1)')	
-			  
+              expression='BNG_COIL_R_CASE*BNG_COIL_R_THEO+(1-BNG_COIL_R_CASE)*(D_AGAP_B-1)')     
+                 
 lastInstance = ParameterGeom(name='BNG_COIL_WCOIL : toroidal coil width, motor is very small, so width also',
-              expression='2*pi()/6*(R_OUT_ST_BNG-D_ST_B-BNG_COIL_R)*0+3')				  
+              expression='2*pi()/6*(R_OUT_ST_BNG-D_ST_B-BNG_COIL_R)*0+3')          
 
 ## now start with the theoretical parameters of the radially oriented coils
 lastInstance = VariationParameterFormula(name='BNG_TH_COIL_CIRC : theoretical thickness, see 2.2.2018',
-                          formula='D_AGAP_B-1')	
+                          formula='D_AGAP_B-1')     
 
 lastInstance = VariationParameterFormula(name='BNG_R_ST_IN_PH',
-                          formula='R_OUT_PM_ROT_BNG+D_AGAP_B')	
+                          formula='R_OUT_PM_ROT_BNG+D_AGAP_B')     
 
 lastInstance = VariationParameterFormula(name='BNG_A_COIL : area of each coil',
-                          formula='pi()/6*(BNG_R_ST_IN_PH^2-(BNG_R_ST_IN_PH-BNG_TH_COIL_CIRC)^2)')	
+                          formula='pi()/6*(BNG_R_ST_IN_PH^2-(BNG_R_ST_IN_PH-BNG_TH_COIL_CIRC)^2)')     
 
 lastInstance = VariationParameterFormula(name='BNG_A_CU',
-                          formula='BNG_A_COIL*COIL_KCU')	
+                          formula='BNG_A_COIL*COIL_KCU')     
 
-lastInstance = VariationParameterFormula(name='BNG_ALPHA_CASE_PH : needed for stator height',
-                          formula='ValidLR(ALPHA_H,0,1,1,1)')	
-
-# lastInstance = VariationParameterFormula(name='BNG_R_B_ST_OUT : as auxiliary, once again',
-                          # formula='R_OUT_PM_ROT_BNG+D_AGAP_B+D_ST_B')							  
-
-##now the length and therefore resistance
 lastInstance = VariationParameterFormula(name='BNG_H_L_PH_AUX : height of the bearing coil',
-                          formula='(BNG_ALPHA_CASE_PH*BETA_B+(1-BNG_ALPHA_CASE_PH)*BETA_B/ALPHA_H)')							  
+                          formula='(ALPHA_CASE_PH*BETA_B+(1-ALPHA_CASE_PH)*BETA_B/ALPHA_H)')							  
 						  
 lastInstance = VariationParameterFormula(name='BNG_H_L_PH : height of the bearing coil',
-                          formula='2*R_OUT_PM_ROT_BNG*BNG_H_L_PH_AUX')	
+                          formula='2*R_OUT_PM_ROT_BNG*BNG_H_L_PH_AUX')			
 
 lastInstance = VariationParameterFormula(name='BNG_L_BAR_PH',
                           formula='2*(BNG_H_L_PH+D_ST_B)+2*pi()*BNG_TH_COIL_CIRC/2')	
@@ -112,4 +100,4 @@ for i in range(1,7):
                                                        width='BNG_COIL_R'),
                 fillFactor='1',
                 color=Color['Turquoise'],
-                visibility=Visibility['VISIBLE'])							  
+                visibility=Visibility['VISIBLE'])							  						  

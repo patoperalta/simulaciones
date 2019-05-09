@@ -1,0 +1,564 @@
+Loading data model 'Flux_model.stp'
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/Flux3D_log_1.py'
+ 
+                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:25140 jperalta
+ 
+15:44:48       0 sec. FLUX3D_18.1.0 kernel initialized
+
+Flux3D (application 2018.1) running
+
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py' in batch mode ...
+Loading new project
+One or more of the required features checked out will expire in 18 day(s)
+Creating ANONYM
+One or more of the required features checked out will expire in 18 day(s)
+... end loading new project
+Execution of command file '1_param_revJ.py' in batch mode ...
+FICHIER PARAM.PY
+
+   ParameterGeom[R_OUT_PM_ROT_BNG] created
+   ParameterGeom[D_AGAP_B] created
+   ParameterGeom[D_ST_BNG] created
+   ParameterGeom[R_OUT_ST_BNG] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[ALPHA_H] created
+   ParameterGeom[ALPHA_CASE] created
+   ParameterGeom[BETA_B] created
+   ParameterGeom[BETA_D] created
+   ParameterGeom[H_ST_BNG] created
+   ParameterGeom[H_PERCENT_PM_TO_FE_BNG_ST] created
+   ParameterGeom[H_PM_BNG_ST] created
+   ParameterGeom[H_FE_BNG_ST] created
+   ParameterGeom[H_ROT_B] created
+   ParameterGeom[H_DRV] created
+   ParameterGeom[D_PM_B_ROT] created
+   ParameterGeom[H_PERCENT_PM_TO_FE_BNG_ROT] created
+   ParameterGeom[H_FE_ROT_B] created
+   ParameterGeom[H_PM_ROT_B] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DALPHA] created
+   ParameterGeom[DBETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[X_H_DIFF] created
+   ParameterGeom[DZ] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+   ParameterGeom[R_SEP] created
+   ParameterGeom[R_OUT_ST_DRV] created
+   ParameterGeom[D_DRV_ST] created
+   ParameterGeom[D_AGAP_D] created
+   ParameterGeom[R_ROT_DRV] created
+End execution of command file '1_param_revJ.py' in batch mode ...
+Execution of command file '2_app_def.py' in batch mode ...
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+End execution of command file '2_app_def.py' in batch mode ...
+Execution of command file '3_mesh_info.py' in batch mode ...
+   AidedMesh[1] modified
+End execution of command file '3_mesh_info.py' in batch mode ...
+Execution of command file '4_geom_revI.py' in batch mode ...
+   CoordSys[COORD_SYS_ST] created
+   CoordSys[COORD_SYS_ROT] created
+   CoordSys[COORD_SYS_ST_VERT] created
+   CoordSys[COORD_SYS_ROT_VERT] created
+   Point[1] created
+   Point[2] created
+   Point[3] created
+   Point[4] created
+   Line[1] created
+   Line[2] created
+   Line[3] created
+   Line[4] created
+   Transf[H_FE_BNG_ST] created
+Creation of 8 line(s) done :
+5  6  7  8  9  10  11  12
+   extrude executed
+   Point[9] created
+   Point[10] created
+   Point[11] created
+   Point[12] created
+   Line[13] created
+   Line[14] created
+   Line[15] created
+   Line[16] created
+   Line[17] created
+   Line[18] created
+   Line[19] created
+   Line[20] created
+   Line[21] created
+   Point[13] created
+   Point[14] created
+   Point[15] created
+   Point[16] created
+   Line[22] created
+   Line[23] created
+   Line[24] created
+   Line[25] created
+   Line[26] created
+   Line[27] created
+   Line[28] created
+   Point[17] created
+   Point[18] created
+   Line[29] created
+   Line[30] created
+   Point[19] created
+   Point[20] created
+   Line[31] created
+   Line[32] created
+   Transf[H_PM_ROT_B] created
+Creation of 8 line(s) done :
+33  34  35  36  37  38  39  40
+   extrude executed
+   Transf[H_FE_ROT_B] created
+Creation of 8 line(s) done :
+41  42  43  44  45  46  47  48
+   extrude executed
+Creation of 8 line(s) done :
+49  50  51  52  53  54  55  56
+   extrude executed
+   Point[33] created
+   Point[34] created
+   Line[57] created
+   Line[58] created
+   Point[35] created
+   Point[36] created
+   Line[59] created
+   Line[60] created
+   Transf[H_FE_ST_DRV] created
+Creation of 8 line(s) done :
+61  62  63  64  65  66  67  68
+   extrude executed
+   Point[41] created
+   Point[42] created
+   Line[69] created
+   Line[70] created
+   Transf[H_PM_ROT_DRV] created
+Creation of 4 line(s) done :
+71  72  73  74
+   extrude executed
+   Line[75] created
+   Line[76] created
+   Line[77] created
+   Line[78] created
+   Line[79] created
+   Line[80] created
+   Line[81] created
+   Line[82] created
+   Line[83] created
+   Line[84] created
+   InfiniteBox[InfiniteBoxCylinderZ] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 27
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.280E-06
+Checking the unicity of lines
+Creation of 83 FACES :
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62
+63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83
+   buildFaces executed
+   setInvisible executed
+   Face[19] deleted
+   Face[15] deleted
+   Face[6] deleted
+   Face[23] deleted
+   Face[27] deleted
+   Face[34] deleted
+   Face[41] deleted
+   Face[46] deleted
+   Face[55] deleted
+   Face[50] deleted
+No line-face intersections
+Creation of 15 VOLUMES :
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15
+   buildVolumes executed
+Some intersections may not have been detected
+
+End execution of command file '4_geom_revI.py' in batch mode ...
+Execution of command file '5_mat_def.py' in batch mode ...
+   Material[COGENT_M270_50A_50HZ] created
+Material[1]
+   Material[IMPHY_MUMETAL] created
+Material[2]
+   Material[BMT_50H] created
+Material[3]
+   Material[BMT_42UH] created
+Material[4]
+   Material[METGLAS] created
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   Material[NO12] created
+End execution of command file '5_mat_def.py' in batch mode ...
+Execution of command file '6a_elec_circuit_saddle_wdg_drive_revB.py' in batch mode ...
+   ParameterGeom[COIL_KCU] created
+   ParameterGeom[RHO_CU] created
+   ParameterGeom[RHO_V_CU] created
+   ParameterGeom[DRV_WDG_ANG_STR_P] created
+   ParameterGeom[DRV_WDG_ANG_CYL_P] created
+   ParameterGeom[DRV_COIL_ANG_TOT] created
+   ParameterGeom[DRV_COIL_L_STR_P] created
+   VariationParameter[BNG_R_B_ST_OUT] created
+   ParameterGeom[DRV_COIL_HALFHEIGHT_SADDLES] created
+   VariationParameter[DRV_COIL_HALFHEIGHT_SADDLES_PH] created
+   ParameterGeom[DRV_COIL_R_SADDLES] created
+   ParameterGeom[DRV_COIL_TOTAL_ANGLE] created
+   VariationParameter[DRV_COIL_R_TH] created
+   VariationParameter[DRV_R_ST_IN_PH] created
+   VariationParameter[DRV_A_COIL] created
+   VariationParameter[DRV_A_CU] created
+   VariationParameter[DRV_DELTA_1] created
+   VariationParameter[DRV_DELTA_2] created
+   VariationParameter[DRV_DELTA] created
+   VariationParameter[DRV_LCA] created
+   VariationParameter[DRV_R_COIL] created
+   VariationParameter[DRV_I_T_PEAK] created
+   VariationParameter[DRV_THETA_T] created
+   VariationParameter[DRV_JT_RMS] created
+   VariationParameter[DRV_IT_HAT] created
+   VariationParameter[P_CU_TOT] created
+   CoordSys[COORD_SYS_DRV_COIL_1] created
+   VariationParameter[I_T_1] created
+   CoilConductor[I_DRV_1] created
+ 
+Coil(1) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_DRV_1] created
+   CoordSys[COORD_SYS_DRV_COIL_2] created
+   VariationParameter[I_T_2] created
+   CoilConductor[I_DRV_2] created
+Coil(2) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_DRV_2] created
+   CoordSys[COORD_SYS_DRV_COIL_3] created
+   VariationParameter[I_T_3] created
+   CoilConductor[I_DRV_3] created
+Coil(3) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_DRV_3] created
+End execution of command file '6a_elec_circuit_saddle_wdg_drive_revB.py' in batch mode ...
+Execution of command file '6b_bearing_coil_toroidal_revE.py' in batch mode ...
+   ParameterGeom[BNG_M_R_THEO] created
+   ParameterGeom[BNG_N_R_THEO] created
+   ParameterGeom[BNG_COIL_R_THEO] created
+   ParameterGeom[BNG_COIL_R_CASE] created
+   ParameterGeom[BNG_COIL_R] created
+   ParameterGeom[BNG_COIL_WCOIL] created
+   VariationParameter[BNG_TH_COIL_CIRC] created
+   VariationParameter[BNG_R_ST_IN_PH] created
+   VariationParameter[BNG_A_COIL] created
+   VariationParameter[BNG_A_CU] created
+   VariationParameter[BNG_ALPHA_CASE_PH] created
+   VariationParameter[BNG_H_L_PH_AUX] created
+   VariationParameter[BNG_H_L_PH] created
+   VariationParameter[BNG_L_BAR_PH] created
+   VariationParameter[BNG_R_COIL] created
+   VariationParameter[BNG_I_F_PEAK] created
+   VariationParameter[BNG_THETA_F0] created
+   VariationParameter[BNG_THETA_F_DIR] created
+   VariationParameter[BNG_THETA_F] created
+   VariationParameter[BNG_JF_RMS] created
+   VariationParameter[BNG_IF_HAT] created
+   CoordSys[COORD_COIL_BNG_1] created
+
+   VariationParameter[I_F_1] created
+   CoilConductor[I_BNG_1] created
+Coil(4) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_BNG_1] created
+   CoordSys[COORD_COIL_BNG_2] created
+   VariationParameter[I_F_2] created
+   CoilConductor[I_BNG_2] created
+Coil(5) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_BNG_2] created
+   CoordSys[COORD_COIL_BNG_3] created
+   VariationParameter[I_F_3] created
+   CoilConductor[I_BNG_3] created
+Coil(6) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_BNG_3] created
+   CoordSys[COORD_COIL_BNG_4] created
+   VariationParameter[I_F_4] created
+   CoilConductor[I_BNG_4] created
+Coil(7) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_BNG_4] created
+   CoordSys[COORD_COIL_BNG_5] created
+   VariationParameter[I_F_5] created
+   CoilConductor[I_BNG_5] created
+Coil(8) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_BNG_5] created
+   CoordSys[COORD_COIL_BNG_6] created
+   VariationParameter[I_F_6] created
+   CoilConductor[I_BNG_6] created
+Coil(9) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_BNG_6] created
+End execution of command file '6b_bearing_coil_toroidal_revE.py' in batch mode ...
+Execution of command file '6c_other_outputs_revB.py' in batch mode ...
+   VariationParameter[R_OUT_ST_BNG_AUX] created
+   VariationParameter[A_BNG_ST] created
+   VariationParameter[D_MOT_AUX] created
+   VariationParameter[ALPHA_CASE_AUX] created
+   VariationParameter[H_ST_BNG_AUX] created
+   VariationParameter[H_PM_BNG_ST_AUX] created
+   VariationParameter[H_FE_BNG_ST_AUX] created
+   VariationParameter[V_PM_BNG_ST] created
+   VariationParameter[V_FE_BNG_ST] created
+   VariationParameter[A_BNG_ROT] created
+   VariationParameter[H_ROT_B_AUX] created
+   VariationParameter[H_PM_ROT_B_AUX] created
+   VariationParameter[V_PM_BNG_ROT] created
+   VariationParameter[V_FE_BNG_ROT] created
+   VariationParameter[R_OUT_ST_DRV_AUX] created
+   VariationParameter[A_DRV_ST] created
+   VariationParameter[V_FE_DRV_ST] created
+   VariationParameter[R_ROT_DRV_AUX] created
+   VariationParameter[V_PM_DRV_ROT] created
+   VariationParameter[OUT_V_FE] created
+   VariationParameter[OUT_V_PM] created
+   VariationParameter[OUT_V_CU] created
+End execution of command file '6c_other_outputs_revB.py' in batch mode ...
+Execution of command file '7_assign_revF.py' in batch mode ...
+   RegionVolume[BNG_ST_PM_TOP] created
+   RegionVolume[BNG_ST_PM_BOTTOM] created
+   RegionVolume[BNG_ST_IRON] created
+   RegionVolume[BNG_ROT_IRON] created
+   RegionVolume[BNG_ROT_PM_TOP] created
+   RegionVolume[BNG_ROT_PM_BOTTOM] created
+   RegionVolume[DRV_ROT_PM] created
+   RegionVolume[DRV_ST_IRON] created
+   RegionVolume[AIR] created
+   assignRegion executed
+   assignRegion executed
+   assignRegion executed
+   assignRegion executed
+   assignRegion executed
+   assignRegion executed
+   assignRegion executed
+   assignRegion executed
+   assignRegionToVolumes executed
+   orientRegVolMaterial executed
+   orientRegVolMaterial executed
+   orientRegVolMaterial executed
+   orientRegVolMaterial executed
+   orientRegVolMaterial executed
+   RegionVolume[BNG_ST_PM_TOP, BNG_ROT_PM_BOTTOM] modified
+   RegionVolume[BNG_ST_PM_BOTTOM, BNG_ROT_PM_TOP] modified
+   RegionVolume[BNG_ST_IRON, BNG_ROT_IRON, DRV_ST_IRON] modified
+   RegionVolume[DRV_ROT_PM] modified
+   setInvisible executed
+End execution of command file '7_assign_revF.py' in batch mode ...
+Execution of command file '8_sensors_revE.py' in batch mode ...
+   Sensor[F_DRV_BNG_ST] created
+   Sensor[F_DRV_BNG_ROT] created
+   Sensor[TX_DRV_BNG_ST] created
+   Sensor[TY_DRV_BNG_ST] created
+   Sensor[TZ_DRV_BNG_ST] created
+   Sensor[TX_DRV_BNG_ROT] created
+   Sensor[TY_DRV_BNG_ROT] created
+   Sensor[TZ_DRV_BNG_ROT] created
+End execution of command file '8_sensors_revE.py' in batch mode ...
+Execution of command file '9_make_scenarios_passive_revD.py' in batch mode ...
+   Scenario[0_FIELD] created
+Scenario[1]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ] created
+Scenario[2]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA] created
+Scenario[3]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA] created
+Scenario[4]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX] created
+Scenario[5]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY] created
+Scenario[6]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_make_scenarios_passive_revD.py' in batch mode ...
+Execution of command file '10_make_scenarios_active_revD.py' in batch mode ...
+   Scenario[6_JT] created
+Scenario[7]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF] created
+Scenario[8]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '10_make_scenarios_active_revD.py' in batch mode ...
+Execution of command file '11_mag_circ_mesh.py' in batch mode ...
+15:44:54       6 sec. Internal meshing of the lines
+ 
+Automatic meshing of 73  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 73 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 73 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 73 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+15:45:02      13 sec.   32867 1st order surfacic elements created
+ 
+Automatic mesh of 15 volumes
+15:45:02      14 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 121458
+Checking 73 faces
+Checking 73 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 959
+Checking 73 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 3
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 962
+  17018  boundary nodes
+  126803  boundary meshes
+15:45:23      34 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 6457
+15:45:30      42 sec.
+         23483 nodes
+        176470 meshes
+15:45:30      42 sec. Mesh compressing
+         23483 nodes
+        140044 meshes
+15:45:31      42 sec.  140044 1st order volumic elements created
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 0  %
+   Number of excellent quality elements : 29.42  %
+   Number of good quality elements      : 51.49  %
+   Number of average quality elements   : 17.83  %
+   Number of poor quality elements      : 1.26  %
+   meshDomain executed
+ 
+15:45:39      51 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 88 : 45%
+Percentage of 2nd order nodes not projected on line 89 : 18%
+Percentage of 2nd order nodes not projected on line 91 : 36%
+Percentage of 2nd order nodes not projected on line 93 : 22%
+Percentage of 2nd order nodes not projected on line 95 : 45%
+Percentage of 2nd order nodes not projected on line 104 : 18%
+Percentage of 2nd order nodes not projected on line 115 : 18%
+Percentage of 2nd order nodes not projected on face 48 : < 1%
+Percentage of 2nd order nodes not projected on face 49 : < 1%
+Percentage of 2nd order nodes not projected on face 51 : < 1%
+Percentage of 2nd order nodes not projected on face 52 : < 1%
+Percentage of 2nd order nodes not projected on face 57 : < 1%
+Percentage of 2nd order nodes not projected on face 58 : < 1%
+Percentage of 2nd order nodes not projected on face 61 : 10%
+Percentage of 2nd order nodes not projected on face 63 : 11%
+Percentage of 2nd order nodes not projected on face 65 : 3%
+Percentage of 2nd order nodes not projected on face 67 : 18%
+Percentage of 2nd order nodes not projected on face 68 : 100%
+
+Percentage of 2nd order nodes not projected on face 70 : 17%
+Percentage of 2nd order nodes not projected on face 72 : 29%
+Percentage of 2nd order nodes not projected on face 74 : 11%
+Percentage of 2nd order nodes not projected on face 76 : 100%
+Percentage of 2nd order nodes not projected on face 82 : 25%
+  Total number of nodes --> 178942
+15:45:45      57 sec. End generating 2nd order elements
+   generateSecondOrderElements executed
+ 
+    3 holes have been identified.
+    3 magnetic cuts have been created.
+   buildMagneticCircuitCut executed
+End execution of command file '11_mag_circ_mesh.py' in batch mode ...
+
+End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py' in batch mode ...
+Closing project
+Close of ANONYM
+... end closing project
+Maximum use of 960 MiB. in numerical memory
+For the dynamic table ID 6494753
+Maximum use of 8 MiB. in character memory
+For the dynamic table ID 50821
+ 
+   NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
+ 
+       1             5       6       4   R08 5             0             0
+       2             1       5       5   C80 8             0             0
+       4     536870913       1       6   R08 5             0             0
+       5       1677722       2       2   C80 8             0             0
+       6             5       4       1   I04 2        600037             0
+Numerical memory: Total length                   = 536870912
+(8 byte words)    Present length                 =    600041
+                  Useful length                  =    600041
+                  Number of numerical arrays     =         3
+Character memory: Total length                   =   1677721
+(80 byte words)   Present length                 =         0
+                  Useful length                  =         0
+                  Number of character arrays     =         2
+Maximum number of arrays (num+char)              =    100006
+ 
+15:46:01      73 sec. FLUX3D_18.1.0 kernel finalized

@@ -1,885 +1,128 @@
-[12|1551087830976|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
-[13|1551087831103|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
-[14|1551087831154|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: true
-[15|1551087831156|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
-[16|1551087831156|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
-[17|1551087831157|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
-[18|1551087831157|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\3_double_motor\1_ext_homopolar_int_long_drive
-[19|1551087831157|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
-[20|1551087831157|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
-[21|1551087831157|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
-[22|1551087831157|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
-[23|1551087831157|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
-[24|1551087831158|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
-[25|1551087831283|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[12|1552907881386|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1552907881535|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1552907881611|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1552907881614|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1552907881614|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1552907881615|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1552907881615|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\3_double_motor\1_ext_homopolar_int_long_drive
+[19|1552907881615|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1552907881615|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1552907881615|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1552907881616|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1552907881616|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1552907881616|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1552907881766|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[26|1552907882040|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Loading data model 'Flux_model.stp'
-[27|1551087831856|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Python : @#*C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/Flux3D_log.pyPython : ^&|#! Flux3D 18.1
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/Flux3D_log.py'
  
                                                              FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                    4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:28204 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:24564 jperalta
  
-10:43:54       0 sec. FLUX3D_18.1.0 kernel initialized
-[62315|1551087835212|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
-[62316|1551087835214|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
-[62317|1551087835354|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
-[62319|1551087835732|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@21e850e8
+12:18:10       0 sec. FLUX3D_18.1.0 kernel initialized
+[62315|1552907891353|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
+[62316|1552907891354|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
+[62317|1552907891534|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
+[62319|1552907892210|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@30bd5fd5
 
 Flux3D (application 2018.1) running
 
-[62328|1551087835790|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@4736e0ac
-[62348|1551087837168|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62354|1551087837191|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62357|1551087837216|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62328|1552907892343|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@4c5f7cc5
+[62348|1552907895375|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1552907895393|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py' in batch mode ...
+[62363|1552907895537|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1552907895926|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: Altair License Manager: License error Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUIError Code: 12Error Description:[NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired Feature: FluxGUIError Code: 9Error Description:[LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable to read file[NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5.epfl.ch
+[62365|1552907895926|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: Altair License Manager: License error Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUIError Code: 12Error Description:[NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired Feature: FluxGUIError Code: 9Error Description:[LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable to read file[NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5.epfl.ch
+[62366|1552907895927|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.UserFortranException: Altair License Manager: License error
+ 
+Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI
+Error Code: 12
+Error Description:
+[NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired
+ 
+Feature: FluxGUI
+Error Code: 9
+Error Description:
+[LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t
+o read file
+[NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found
+ 
+License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5.
+epfl.ch
+   Priority: 5
+[62367|1552907895927|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
+[62368|1552907895927|22|WARNING    ][DbManager|CProjectDbAdapter.newProject] : Error while creating project, exception: (UserFortranException, stdcom.error.UserFortranException: Altair License Manager: License error Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI Error Code: 12 Error Description: [NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired Feature: FluxGUI Error Code: 9 Error Description: [LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t o read file [NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5. epfl.ch )
+[62369|1552907895929|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: newProject Exception: (JavaException, Altair License Manager: License error Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI Error Code: 12 Error Description: [NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired Feature: FluxGUI Error Code: 9 Error Description: [LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t o read file [NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5. epfl.ch )
+[62370|1552907895929|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
 Loading new project
-One or more of the required features checked out will expire in 18 day(s)
-[62363|1551087837356|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: One or more of the required features checked out will expire in 18 day(s)
-[62364|1551087837357|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: One or more of the required features checked out will expire in 18 day(s)
-Creating ANONYM
-[62366|1551087838469|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.UserFortranException: One or more of the required features checked out will expire in 18 day(s)
-   Priority: 1
-[62367|1551087838472|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+Altair License Manager: License error
+ 
+Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI
+Error Code: 12
+Error Description:
+[NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired
+ 
+Feature: FluxGUI
+Error Code: 9
+Error Description:
+[LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t
+o read file
+[NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found
+ 
+License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5.
+epfl.ch
+
+[62372|1552907895952|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62373|1552907895954|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Error occured while executing the command file :
+   C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py.
+Line : 24.
+
+
+[62374|1552907895954|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeSpy Exception: (JavaException, Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py. Line : 24. Altair License Manager: License error Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI Error Code: 12 Error Description: [NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired Feature: FluxGUI Error Code: 9 Error Description: [LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t o read file [NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5. epfl.ch )
+[62387|1552907896315|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62393|1552907896347|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62394|1552907896352|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py') Exception: (PythonWrapperException, Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py. Line : 24. Altair License Manager: License error Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI Error Code: 12 Error Description: [NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired Feature: FluxGUI Error Code: 9 Error Description: [LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t o read file [NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5. epfl.ch )
+[62395|1552907896353|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py') Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py. Line : 24. Altair License Manager: License error Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI Error Code: 12 Error Description: [NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired Feature: FluxGUI Error Code: 9 Error Description: [LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t o read file [NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5. epfl.ch )
 --------------------------------------------------------------------------------
-Anomaly (1) - Warning:
-One or more of the required features checked out will expire in 18 day(s)
-
------------------------------- Advanced Text -----------------------------------
-
---------------------------------------------------------------------------------
-[62369|1551087838474|22|INFO       ][UserNotification|UserNotification.addNotification] : Notification: One or more of the required features checked out will expire in 18 day(s)
-
-... end loading new project
-Python : newProject()
-
-   GeomMeshOptions[1] modified
-Python : GeomMeshOptions[1].methodAutomaticMeshVolume=OptimizeMeshGemsActivated(level=OptimizationStandard())
-
-   openModelerContext executed
-Modeler context opened
-Python : openModelerContext()
-
-Execution of command file '1_param_revJ.py' in batch mode ...
-FICHIER PARAM.PY
-
-   ParameterGeom[R_OUT_PM_ROT_BNG] created
-   ParameterGeom[D_AGAP_B] created
-   ParameterGeom[D_ST_BNG] created
-   ParameterGeom[R_OUT_ST_BNG] created
-   ParameterGeom[D_MOT] created
-   ParameterGeom[ALPHA_H] created
-   ParameterGeom[ALPHA_CASE] created
-   ParameterGeom[BETA_B] created
-   ParameterGeom[BETA_D] created
-   ParameterGeom[H_ST_BNG] created
-   ParameterGeom[H_PERCENT_PM_TO_FE_BNG_ST] created
-   ParameterGeom[H_PM_BNG_ST] created
-   ParameterGeom[H_FE_BNG_ST] created
-   ParameterGeom[H_ROT_B] created
-   ParameterGeom[H_DRV] created
-   ParameterGeom[D_PM_B_ROT] created
-   ParameterGeom[H_PERCENT_PM_TO_FE_BNG_ROT] created
-   ParameterGeom[H_FE_ROT_B] created
-   ParameterGeom[H_PM_ROT_B] created
-   ParameterGeom[DTHETA] created
-   ParameterGeom[DALPHA] created
-   ParameterGeom[DBETA] created
-   ParameterGeom[DX] created
-   ParameterGeom[DY] created
-   ParameterGeom[X_H_DIFF] created
-   ParameterGeom[DZ] created
-   ParameterGeom[DR_0] created
-   ParameterGeom[DTHETA_0] created
-   ParameterGeom[R_SEP] created
-   ParameterGeom[R_OUT_ST_DRV] created
-   ParameterGeom[D_DRV_ST] created
-   ParameterGeom[D_AGAP_D] created
-   ParameterGeom[R_ROT_DRV] created
-
-End execution of command file '1_param_revJ.py' in batch mode ...
-   closeModelerContext executed
-Modeler context closed
-Execution of command file '2_app_def.py' in batch mode ...
- 
-Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
-Automatically calculated value = 1
- 
-   Application[2] created
-
-End execution of command file '2_app_def.py' in batch mode ...
-Execution of command file '3_mesh_info.py' in batch mode ...
-   AidedMesh[1] modified
-
-End execution of command file '3_mesh_info.py' in batch mode ...
-Execution of command file '4_geom_revI.py' in batch mode ...
-[64892|1551087850233|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
-[64893|1551087850233|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
-[64894|1551087850381|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.WarningFortranException: Some intersections may not have been detected   Priority: 1
-   CoordSys[COORD_SYS_ST] created
-   CoordSys[COORD_SYS_ROT] created
-   CoordSys[COORD_SYS_ST_VERT] created
-   CoordSys[COORD_SYS_ROT_VERT] created
-   Point[1] created
-   Point[2] created
-   Point[3] created
-   Point[4] created
-   Line[1] created
-   Line[2] created
-   Line[3] created
-   Line[4] created
-   Transf[H_FE_BNG_ST] created
-Creation of 8 line(s) done :
-5  6  7  8  9  10  11  12
-   extrude executed
-   Point[9] created
-   Point[10] created
-   Point[11] created
-   Point[12] created
-   Line[13] created
-   Line[14] created
-   Line[15] created
-   Line[16] created
-   Line[17] created
-   Line[18] created
-   Line[19] created
-   Line[20] created
-   Line[21] created
-   Point[13] created
-   Point[14] created
-   Point[15] created
-   Point[16] created
-   Line[22] created
-   Line[23] created
-   Line[24] created
-   Line[25] created
-   Line[26] created
-   Line[27] created
-   Line[28] created
-   Point[17] created
-   Point[18] created
-   Line[29] created
-   Line[30] created
-   Point[19] created
-   Point[20] created
-   Line[31] created
-   Line[32] created
-   Transf[H_PM_ROT_B] created
-Creation of 8 line(s) done :
-33  34  35  36  37  38  39  40
-   extrude executed
-   Transf[H_FE_ROT_B] created
-Creation of 8 line(s) done :
-41  42  43  44  45  46  47  48
-   extrude executed
-Creation of 8 line(s) done :
-49  50  51  52  53  54  55  56
-   extrude executed
-   Point[33] created
-   Point[34] created
-   Line[57] created
-   Line[58] created
-   Point[35] created
-   Point[36] created
-   Line[59] created
-   Line[60] created
-   Transf[H_FE_ST_DRV] created
-Creation of 8 line(s) done :
-61  62  63  64  65  66  67  68
-   extrude executed
-   Point[41] created
-   Point[42] created
-   Line[69] created
-   Line[70] created
-   Transf[H_PM_ROT_DRV] created
-Creation of 4 line(s) done :
-71  72  73  74
-   extrude executed
-   Line[75] created
-   Line[76] created
-   Line[77] created
-   Line[78] created
-   Line[79] created
-   Line[80] created
-   Line[81] created
-   Line[82] created
-   Line[83] created
-   Line[84] created
-   InfiniteBox[InfiniteBoxCylinderZ] created
-No line-line intersections and no lines superimposed
-Number of surfaces found : 27
-Checking the unicity of auxiliary points
-Looking for identical points, minimum distance between 2 points is 0.280E-06
-Checking the unicity of lines
-Creation of 83 FACES :
-1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62
-63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83
-   buildFaces executed
-   setInvisible executed
-   Face[19] deleted
-   Face[15] deleted
-   Face[6] deleted
-   Face[23] deleted
-   Face[27] deleted
-   Face[34] deleted
-   Face[41] deleted
-   Face[46] deleted
-   Face[55] deleted
-   Face[50] deleted
-No line-face intersections
-Creation of 15 VOLUMES :
-1  2  3  4  5  6  7  8  9  10  11  12  13  14  15
-   buildVolumes executed
-Some intersections may not have been detected
-
-
-End execution of command file '4_geom_revI.py' in batch mode ...
-Execution of command file '5_mat_def.py' in batch mode ...
-   Material[COGENT_M270_50A_50HZ] created
-Material[1]
-   Material[IMPHY_MUMETAL] created
-Material[2]
-   Material[BMT_50H] created
-Material[3]
-   Material[BMT_42UH] created
-Material[4]
-   Material[METGLAS] created
-The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
-   Material[NO12] created
-
-End execution of command file '5_mat_def.py' in batch mode ...
-Execution of command file '6a_elec_circuit_saddle_wdg_drive_revB.py' in batch mode ...
-   ParameterGeom[COIL_KCU] created
-   ParameterGeom[RHO_CU] created
-   ParameterGeom[RHO_V_CU] created
-   ParameterGeom[DRV_WDG_ANG_STR_P] created
-   ParameterGeom[DRV_WDG_ANG_CYL_P] created
-   ParameterGeom[DRV_COIL_ANG_TOT] created
-   ParameterGeom[DRV_COIL_L_STR_P] created
-   VariationParameter[BNG_R_B_ST_OUT] created
-   ParameterGeom[DRV_COIL_HALFHEIGHT_SADDLES] created
-   VariationParameter[DRV_COIL_HALFHEIGHT_SADDLES_PH] created
-   ParameterGeom[DRV_COIL_R_SADDLES] created
-   ParameterGeom[DRV_COIL_TOTAL_ANGLE] created
-   VariationParameter[DRV_COIL_R_TH] created
-   VariationParameter[DRV_R_ST_IN_PH] created
-   VariationParameter[DRV_A_COIL] created
-   VariationParameter[DRV_A_CU] created
-   VariationParameter[DRV_DELTA_1] created
-   VariationParameter[DRV_DELTA_2] created
-   VariationParameter[DRV_DELTA] created
-   VariationParameter[DRV_LCA] created
-   VariationParameter[DRV_R_COIL] created
-   VariationParameter[DRV_I_T_PEAK] created
-   VariationParameter[DRV_THETA_T] created
-   VariationParameter[DRV_JT_RMS] created
-   VariationParameter[DRV_IT_HAT] created
-   VariationParameter[P_CU_TOT] created
-   CoordSys[COORD_SYS_DRV_COIL_1] created
-   VariationParameter[I_T_1] created
-   CoilConductor[I_DRV_1] created
- 
-Coil(1) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_DRV_1] created
-   CoordSys[COORD_SYS_DRV_COIL_2] created
-   VariationParameter[I_T_2] created
-   CoilConductor[I_DRV_2] created
-Coil(2) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_DRV_2] created
-   CoordSys[COORD_SYS_DRV_COIL_3] created
-   VariationParameter[I_T_3] created
-   CoilConductor[I_DRV_3] created
-Coil(3) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_DRV_3] created
-
-End execution of command file '6a_elec_circuit_saddle_wdg_drive_revB.py' in batch mode ...
-Execution of command file '6b_bearing_coil_toroidal_revE.py' in batch mode ...
-   ParameterGeom[BNG_M_R_THEO] created
-   ParameterGeom[BNG_N_R_THEO] created
-   ParameterGeom[BNG_COIL_R_THEO] created
-   ParameterGeom[BNG_COIL_R_CASE] created
-   ParameterGeom[BNG_COIL_R] created
-   ParameterGeom[BNG_COIL_WCOIL] created
-   VariationParameter[BNG_TH_COIL_CIRC] created
-   VariationParameter[BNG_R_ST_IN_PH] created
-   VariationParameter[BNG_A_COIL] created
-   VariationParameter[BNG_A_CU] created
-   VariationParameter[BNG_ALPHA_CASE_PH] created
-   VariationParameter[BNG_H_L_PH] created
-   VariationParameter[BNG_L_BAR_PH] created
-   VariationParameter[BNG_R_COIL] created
-   VariationParameter[BNG_I_F_PEAK] created
-   VariationParameter[BNG_THETA_F0] created
-   VariationParameter[BNG_THETA_F_DIR] created
-   VariationParameter[BNG_THETA_F] created
-   VariationParameter[BNG_JF_RMS] created
-   VariationParameter[BNG_IF_HAT] created
-   CoordSys[COORD_COIL_BNG_1] created
-   VariationParameter[I_F_1] created
-   CoilConductor[I_BNG_1] created
-Coil(4) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_BNG_1] created
-   CoordSys[COORD_COIL_BNG_2] created
-   VariationParameter[I_F_2] created
-   CoilConductor[I_BNG_2] created
-Coil(5) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_BNG_2] created
-   CoordSys[COORD_COIL_BNG_3] created
-   VariationParameter[I_F_3] created
-   CoilConductor[I_BNG_3] created
-Coil(6) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_BNG_3] created
-   CoordSys[COORD_COIL_BNG_4] created
-   VariationParameter[I_F_4] created
-   CoilConductor[I_BNG_4] created
-Coil(7) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_BNG_4] created
-   CoordSys[COORD_COIL_BNG_5] created
-   VariationParameter[I_F_5] created
-   CoilConductor[I_BNG_5] created
-Coil(8) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_BNG_5] created
-   CoordSys[COORD_COIL_BNG_6] created
-   VariationParameter[I_F_6] created
-   CoilConductor[I_BNG_6] created
-Coil(9) :
-   Total number of coils obtained by duplication : 1
-   Number of portions of conductors in parallel = 1
- 
-   Coil[COIL_BNG_6] created
-
-End execution of command file '6b_bearing_coil_toroidal_revE.py' in batch mode ...
-Python : 
-executeBatchSpy('1_param_revJ.py')                         # Defines different parameters
-
-closeModelerContext()
-
-executeBatchSpy('2_app_def.py')                              # Defines different parameters
-
-executeBatchSpy('3_mesh_info.py')                         # Defines different parameters
-
-executeBatchSpy('4_geom_revI.py')                             # Defines different parameters
-
-executeBatchSpy('5_mat_def.py')                              # Defines different parameters
-
-executeBatchSpy('6a_elec_circuit_saddle_wdg_drive_revB.py')      # Defines different parameters
-
-executeBatchSpy('6b_bearing_coil_toroidal_revE.py')      # Defines different parameters
-
-
-
-   VariationParameter[OUT_R_ROT_OUT_BNG] created
-   VariationParameter[OUT_R_ROT_OUT_DRV] created
-   VariationParameter[R_IN_PM_ROT_BNG] created
-[68388|1551088305487|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: D_MOT is not a valid parameter name
-[68389|1551088305488|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: D_MOT is not a valid parameter name
-[68390|1551088305488|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: setFieldStringValue => failed
-[68391|1551088305488|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
-[68392|1551088305488|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Invalid value for VariationParameter['H_ST_BNG_AUX'].formula.
-Create process abort.
-[68401|1551088305568|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor', formula='R_OUT_PM_ROT_BNG') lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor', formula='(R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP)') lastInstance = VariationParameterFormula(name='R_IN_PM_ROT_BNG : inner radius bng rotor', formula='R_OUT_PM_ROT_BNG-D_ST_B') lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM', formula='D_MOT*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)') lastInstance = VariationParameterFormula(name='H_PM_BNG_ST_AUX : height of one rotor BNG PM', formula='H_PERCENT_PM_TO_FE_BNG_ST*H_ST_BNG_AUX/2') Exception: (PythonWrapperException, D_MOT is not a valid parameter name)
-[68402|1551088305568|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor', formula='R_OUT_PM_ROT_BNG') lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor', formula='(R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP)') lastInstance = VariationParameterFormula(name='R_IN_PM_ROT_BNG : inner radius bng rotor', formula='R_OUT_PM_ROT_BNG-D_ST_B') lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM', formula='D_MOT*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)') lastInstance = VariationParameterFormula(name='H_PM_BNG_ST_AUX : height of one rotor BNG PM', formula='H_PERCENT_PM_TO_FE_BNG_ST*H_ST_BNG_AUX/2') D_MOT is not a valid parameter name)
---------------------------------------------------------------------------------
-Anomaly (2) - User error:
+Anomaly (1) - Super fatal error:
 Can not execute the following command :
-lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor',
-                          formula='R_OUT_PM_ROT_BNG')
+executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py')
 
-lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor',
-                          formula='(R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP)')
-                                
-lastInstance = VariationParameterFormula(name='R_IN_PM_ROT_BNG : inner radius bng rotor',
-                          formula='R_OUT_PM_ROT_BNG-D_ST_B')     
+Error occured while executing the command file :
+   C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py.
+Line : 24.
 
-lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM',
-                          formula='D_MOT*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)')                                
-                                
-lastInstance = VariationParameterFormula(name='H_PM_BNG_ST_AUX : height of one rotor BNG PM',
-                          formula='H_PERCENT_PM_TO_FE_BNG_ST*H_ST_BNG_AUX/2')
 
-D_MOT is not a valid parameter name
------------------------------- Advanced Text -----------------------------------
-setFieldStringValue => failed
-Invalid value for VariationParameter['H_ST_BNG_AUX'].formula.
-Create process abort.
---------------------------------------------------------------------------------
-[68404|1551088305589|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/error.gif
-[68405|1551088305590|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/informations.gif
-[68425|1551088324472|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: R_OUT_ST_BNG is not a valid parameter name
-[68426|1551088324472|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: R_OUT_ST_BNG is not a valid parameter name
-[68427|1551088324472|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: setFieldStringValue => failed
-[68428|1551088324472|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
-[68429|1551088324473|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Invalid value for VariationParameter['H_ST_BNG_AUX'].formula.
-Create process abort.
-[68437|1551088324542|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM', formula='2*R_OUT_ST_BNG*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)') Exception: (PythonWrapperException, R_OUT_ST_BNG is not a valid parameter name)
-[68438|1551088324543|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM', formula='2*R_OUT_ST_BNG*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)') R_OUT_ST_BNG is not a valid parameter name)
---------------------------------------------------------------------------------
-Anomaly (3) - User error:
-Can not execute the following command :
-lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM',
-                          formula='2*R_OUT_ST_BNG*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)')
-
-R_OUT_ST_BNG is not a valid parameter name
------------------------------- Advanced Text -----------------------------------
-setFieldStringValue => failed
-Invalid value for VariationParameter['H_ST_BNG_AUX'].formula.
-Create process abort.
---------------------------------------------------------------------------------
-[68493|1551088522200|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor', formula='R_OUT_PM_ROT_BNG') lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor', formula='R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP') lastInstance = VariationParameterFormula(name='R_IN_PM_ROT_BNG : inner radius bng rotor', formula='R_OUT_PM_ROT_BNG-D_ST_B') Exception: (PythonWrapperException, Entity : VariationParameter Cause : OUT_R_ROT_OUT_BNG : out radius of bng rotor : this name has already been used by another entity. Transaction failed.)
-[68494|1551088522200|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor', formula='R_OUT_PM_ROT_BNG') lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor', formula='R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP') lastInstance = VariationParameterFormula(name='R_IN_PM_ROT_BNG : inner radius bng rotor', formula='R_OUT_PM_ROT_BNG-D_ST_B') Entity : VariationParameter Cause : OUT_R_ROT_OUT_BNG : out radius of bng rotor : this name has already been used by another entity. Transaction failed.)
---------------------------------------------------------------------------------
-Anomaly (4) - Program error:
-Can not execute the following command :
-lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor',
-                          formula='R_OUT_PM_ROT_BNG')
-
-lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor',
-                          formula='R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP')
-                                
-lastInstance = VariationParameterFormula(name='R_IN_PM_ROT_BNG : inner radius bng rotor',
-                          formula='R_OUT_PM_ROT_BNG-D_ST_B')
-
-Entity : VariationParameter
-Cause :
-OUT_R_ROT_OUT_BNG : out radius of bng rotor : this name has already been used by another entity. 
-Transaction failed.
------------------------------- Advanced Text -----------------------------------
-stdcom.error.JavaException: Entity : VariationParameter
-Cause :
-OUT_R_ROT_OUT_BNG : out radius of bng rotor : this name has already been used by another entity. 
-Transaction failed.
-	at cad.core.kernel.components.TransactionCreateInstance.executeDBModification(TransactionCreateInstance.java:524)
-	at cad.core.kernel.components.TransactionCreateInstance.processDBModification(TransactionCreateInstance.java:395)
-	at cad.core.kernel.components.TransactionManager.processTransactionCreateInstance(TransactionManager.java:650)
-	at cad.core.kernel.components.TransactionManager.newProjectInstance(TransactionManager.java:739)
-	at cad.flux.kernel.FGSupervisor.newProjectInstance(FGSupervisor.java:3573)
-	at sun.reflect.GeneratedMethodAccessor337.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
-	at org.python.core.PyObject.__call__(PyObject.java:526)
-	at org.python.core.PyObject.__call__(PyObject.java:530)
-	at org.python.core.PyMethod.__call__(PyMethod.java:156)
-	at pydb$py.newObject$203(pydb.py:1586)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:171)
-	at org.python.core.PyFunction.__call__(PyFunction.java:434)
-	at org.python.core.PyMethod.__call__(PyMethod.java:156)
-	at pydb$py.__call__$159(pydb.py:1261)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:308)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:199)
-	at org.python.core.PyFunction.__call__(PyFunction.java:482)
-	at org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
-	at org.python.core.PyMethod.__call__(PyMethod.java:228)
-	at org.python.core.PyMethod.__call__(PyMethod.java:223)
-	at org.python.core.PyObject.invoke(PyObject.java:3715)
-	at org.python.core.PyInstance.instance___call__(PyInstance.java:377)
-	at org.python.core.PyInstance.__call__(PyInstance.java:372)
-	at org.python.core.PyObject.__call__(PyObject.java:424)
-	at org.python.pycode._pyx30.f$0(<string>:7)
-	at org.python.pycode._pyx30.call_function(<string>)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyCode.call(PyCode.java:18)
-	at org.python.core.Py.runCode(Py.java:1625)
-	at org.python.core.Py.exec(Py.java:1669)
-	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
-	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
-	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
-	at cad.core.kernel.actions.implementation.algo.python.ExecuteCommandAction.doAction(ExecuteCommandAction.java:89)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
-	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
-	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
-	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
-	at cad.core.frontal.actions.implementation.algo.python.ExecuteCommandAction.act(ExecuteCommandAction.java:85)
-	at cad.core.frontal.actions.implementation.ModalImplementer.internalRun(ModalImplementer.java:88)
-	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
-	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
---------------------------------------------------------------------------------
-Saving project as 'test_2.FLU'
-The following volumes are not inside any volume region:
-1  2  3  4  5  6  7  8  9  10  11  12  13  14  15
-Please use the "Assign regions to volumes" command in the "Physics" menu.
+Altair License Manager: License error
  
-10:55:38     703 sec. Start save ...
-10:55:39     704 sec. ... end save
-... end saving project
-Python : saveProjectAs('test_2.FLU')
-
-[68533|1551088540923|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor', formula='R_OUT_PM_ROT_BNG') lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor', formula='R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP') Exception: (PythonWrapperException, Entity : VariationParameter Cause : OUT_R_ROT_OUT_BNG : out radius of bng rotor : this name has already been used by another entity. Transaction failed.)
-[68534|1551088540924|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor', formula='R_OUT_PM_ROT_BNG') lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor', formula='R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP') Entity : VariationParameter Cause : OUT_R_ROT_OUT_BNG : out radius of bng rotor : this name has already been used by another entity. Transaction failed.)
---------------------------------------------------------------------------------
-Anomaly (5) - Program error:
-Can not execute the following command :
-lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_BNG : out radius of bng rotor',
-                          formula='R_OUT_PM_ROT_BNG')
-
-lastInstance = VariationParameterFormula(name='OUT_R_ROT_OUT_DRV : out radius of drv rotor',
-                          formula='R_OUT_PM_ROT_BNG-D_PM_B_ROT-R_SEP')
-
-Entity : VariationParameter
-Cause :
-OUT_R_ROT_OUT_BNG : out radius of bng rotor : this name has already been used by another entity. 
-Transaction failed.
------------------------------- Advanced Text -----------------------------------
-stdcom.error.JavaException: Entity : VariationParameter
-Cause :
-OUT_R_ROT_OUT_BNG : out radius of bng rotor : this name has already been used by another entity. 
-Transaction failed.
-	at cad.core.kernel.components.TransactionCreateInstance.executeDBModification(TransactionCreateInstance.java:524)
-	at cad.core.kernel.components.TransactionCreateInstance.processDBModification(TransactionCreateInstance.java:395)
-	at cad.core.kernel.components.TransactionManager.processTransactionCreateInstance(TransactionManager.java:650)
-	at cad.core.kernel.components.TransactionManager.newProjectInstance(TransactionManager.java:739)
-	at cad.flux.kernel.FGSupervisor.newProjectInstance(FGSupervisor.java:3573)
-	at sun.reflect.GeneratedMethodAccessor337.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
-	at org.python.core.PyObject.__call__(PyObject.java:526)
-	at org.python.core.PyObject.__call__(PyObject.java:530)
-	at org.python.core.PyMethod.__call__(PyMethod.java:156)
-	at pydb$py.newObject$203(pydb.py:1586)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:171)
-	at org.python.core.PyFunction.__call__(PyFunction.java:434)
-	at org.python.core.PyMethod.__call__(PyMethod.java:156)
-	at pydb$py.__call__$159(pydb.py:1261)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:308)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:199)
-	at org.python.core.PyFunction.__call__(PyFunction.java:482)
-	at org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
-	at org.python.core.PyMethod.__call__(PyMethod.java:228)
-	at org.python.core.PyMethod.__call__(PyMethod.java:223)
-	at org.python.core.PyObject.invoke(PyObject.java:3715)
-	at org.python.core.PyInstance.instance___call__(PyInstance.java:377)
-	at org.python.core.PyInstance.__call__(PyInstance.java:372)
-	at org.python.core.PyObject.__call__(PyObject.java:424)
-	at org.python.pycode._pyx36.f$0(<string>:4)
-	at org.python.pycode._pyx36.call_function(<string>)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyCode.call(PyCode.java:18)
-	at org.python.core.Py.runCode(Py.java:1625)
-	at org.python.core.Py.exec(Py.java:1669)
-	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
-	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
-	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
-	at cad.core.kernel.actions.implementation.algo.python.ExecuteCommandAction.doAction(ExecuteCommandAction.java:89)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
-	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
-	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
-	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
-	at cad.core.frontal.actions.implementation.algo.python.ExecuteCommandAction.act(ExecuteCommandAction.java:85)
-	at cad.core.frontal.actions.implementation.ModalImplementer.internalRun(ModalImplementer.java:88)
-	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
-	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
---------------------------------------------------------------------------------
-[68540|1551088557155|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Geometry]
-   VariationParameter[D_MOT_AUX] created
-Python : lastInstance = VariationParameterFormula(name='D_MOT_AUX : ',
-                          formula='2*(R_OUT_PM_ROT_BNG+D_AGAP_B+D_ST_BNG)')     
-
-[68567|1551088601160|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: ALPHA_CASE is not a valid parameter name
-[68568|1551088601160|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: ALPHA_CASE is not a valid parameter name
-[68569|1551088601161|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: setFieldStringValue => failed
-[68570|1551088601161|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
-[68571|1551088601161|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Invalid value for VariationParameter['H_ST_BNG_AUX'].formula.
-Create process abort.
-[68579|1551088601295|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM', formula='D_MOT_AUX*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)') Exception: (PythonWrapperException, ALPHA_CASE is not a valid parameter name)
-[68580|1551088601295|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM', formula='D_MOT_AUX*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)') ALPHA_CASE is not a valid parameter name)
---------------------------------------------------------------------------------
-Anomaly (6) - User error:
-Can not execute the following command :
-lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM',
-                          formula='D_MOT_AUX*(ALPHA_CASE*BETA_B+(1-ALPHA_CASE)*BETA_B/ALPHA_H)')
-
-ALPHA_CASE is not a valid parameter name
------------------------------- Advanced Text -----------------------------------
-setFieldStringValue => failed
-Invalid value for VariationParameter['H_ST_BNG_AUX'].formula.
-Create process abort.
---------------------------------------------------------------------------------
-Saving project 'test_2.FLU'
+Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI
+Error Code: 12
+Error Description:
+[NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired
  
-The following volumes are not inside any volume region:
-1  2  3  4  5  6  7  8  9  10  11  12  13  14  15
-Please use the "Assign regions to volumes" command in the "Physics" menu.
+Feature: FluxGUI
+Error Code: 9
+Error Description:
+[LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t
+o read file
+[NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found
  
-10:56:45     770 sec. Start save ...
-10:56:46     771 sec. ... end save
-... end saving project
-Python : saveProject()
+License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5.
+epfl.ch
 
-[68619|1551088651491|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Geometry, Geometric tools]
-[68620|1551088652435|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Geometry]
-   VariationParameter[ALPHA_CASE_AUX] created
-Python : lastInstance = VariationParameterFormula(name='ALPHA_CASE_AUX : ',
-                          formula='ValidLR(ALPHA_H,0,1,1,1)')
-
-   VariationParameter[H_ST_BNG_AUX] created
-Python : lastInstance = VariationParameterFormula(name='H_ST_BNG_AUX : height of one rotor BNG PM',
-                          formula='D_MOT_AUX*(ALPHA_CASE_AUX*BETA_B+(1-ALPHA_CASE_AUX)*BETA_B/ALPHA_H)')     
-
-   VariationParameter[H_PM_BNG_ST_AUX] created
-Python : lastInstance = VariationParameterFormula(name='H_PM_BNG_ST_AUX : height of one rotor BNG PM',
-                          formula='H_PERCENT_PM_TO_FE_BNG_ST*H_ST_BNG_AUX/2')
-
-   VariationParameter[V_PM_BNG_ST] created
-Python : lastInstance = VariationParameterFormula(name='V_PM_BNG_ST : means ONE magnet, so count double the volume at end x2',
-                          formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX')
-
-Saving project 'test_2.FLU'
- 
-The following volumes are not inside any volume region:
-1  2  3  4  5  6  7  8  9  10  11  12  13  14  15
-Please use the "Assign regions to volumes" command in the "Physics" menu.
- 
-10:58:22     867 sec. Start save ...
-10:58:23     868 sec. ... end save
-... end saving project
-Python : saveProject()
-
-[68733|1551088819593|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 1   Message: pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST)
-[68734|1551088819593|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 1   Message: pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST)
-[68735|1551088819594|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_F
-[68736|1551088819594|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: copystringarrayjavatofortran => Java to Fortran conversion string failed
-[68737|1551088819594|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: setFieldStringValue => failed
-[68738|1551088819594|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:   *** Too many values : String too long
-[68739|1551088819594|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Invalid value for VariationParameter['V_FE_BNG_ST'].formula.
-Create process abort.
-[68747|1551088819647|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: lastInstance = VariationParameterFormula(name='V_FE_BNG_ST', formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST)') Exception: (PythonWrapperException, Invalid value for VariationParameter['V_FE_BNG_ST'].formula. Create process abort. *** Too many values : String too long Failed execution pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST) pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_F)
-[68748|1551088819648|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : lastInstance = VariationParameterFormula(name='V_FE_BNG_ST', formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST)') Invalid value for VariationParameter['V_FE_BNG_ST'].formula. Create process abort. *** Too many values : String too long Failed execution pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST) pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_F)
---------------------------------------------------------------------------------
-Anomaly (7) - Program error:
-Can not execute the following command :
-lastInstance = VariationParameterFormula(name='V_FE_BNG_ST',
-                          formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST)')
-
-Invalid value for VariationParameter['V_FE_BNG_ST'].formula.
-Create process abort.
-  *** Too many values : String too long
-Failed execution
-pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST)
-pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_F
 ------------------------------ Advanced Text -----------------------------------
-copystringarrayjavatofortran => Java to Fortran conversion string failed
-setFieldStringValue => failed
-stdcom.error.SoftwareFortranException:   *** Too many values : String too long
-Failed execution
-pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_FE_BNG_ST)
-pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX*(1-H_PERCENT_PM_TO_F
-	at cad.core.common.error.ErrorManager.createFortranException(ErrorManager.java:163)
-	at cad.flux.kernel.dbmanager.FGCProjectDbWrapper.setFieldStringValue(Native Method)
-	at cad.flux.kernel.dbmanager.FGCProjectDbAdapter.convertPseudoIntrinsicTypes(FGCProjectDbAdapter.java:5234)
-	at cad.flux.kernel.dbmanager.FGCProjectDbAdapter.setFieldValue(FGCProjectDbAdapter.java:4279)
-	at cad.core.kernel.dbmanager.DbManager.setFieldValue(DbManager.java:2274)
-	at cad.core.kernel.components.TransactionCreateInstance.executeDBModification(TransactionCreateInstance.java:491)
-	at cad.core.kernel.components.TransactionCreateInstance.processDBModification(TransactionCreateInstance.java:395)
-	at cad.core.kernel.components.TransactionManager.processTransactionCreateInstance(TransactionManager.java:650)
-	at cad.core.kernel.components.TransactionManager.newProjectInstance(TransactionManager.java:739)
-	at cad.flux.kernel.FGSupervisor.newProjectInstance(FGSupervisor.java:3573)
-	at sun.reflect.GeneratedMethodAccessor337.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
-	at org.python.core.PyObject.__call__(PyObject.java:526)
-	at org.python.core.PyObject.__call__(PyObject.java:530)
-	at org.python.core.PyMethod.__call__(PyMethod.java:156)
-	at pydb$py.newObject$203(pydb.py:1586)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:171)
-	at org.python.core.PyFunction.__call__(PyFunction.java:434)
-	at org.python.core.PyMethod.__call__(PyMethod.java:156)
-	at pydb$py.__call__$159(pydb.py:1261)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:308)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:199)
-	at org.python.core.PyFunction.__call__(PyFunction.java:482)
-	at org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
-	at org.python.core.PyMethod.__call__(PyMethod.java:228)
-	at org.python.core.PyMethod.__call__(PyMethod.java:223)
-	at org.python.core.PyObject.invoke(PyObject.java:3715)
-	at org.python.core.PyInstance.instance___call__(PyInstance.java:377)
-	at org.python.core.PyInstance.__call__(PyInstance.java:372)
-	at org.python.core.PyObject.__call__(PyObject.java:424)
-	at org.python.pycode._pyx63.f$0(<string>:1)
-	at org.python.pycode._pyx63.call_function(<string>)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyCode.call(PyCode.java:18)
-	at org.python.core.Py.runCode(Py.java:1625)
-	at org.python.core.Py.exec(Py.java:1669)
-	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
-	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
-	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
-	at cad.core.kernel.actions.implementation.algo.python.ExecuteCommandAction.doAction(ExecuteCommandAction.java:89)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
-	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
-	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
-	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
-	at cad.core.frontal.actions.implementation.algo.python.ExecuteCommandAction.act(ExecuteCommandAction.java:85)
-	at cad.core.frontal.actions.implementation.ModalImplementer.internalRun(ModalImplementer.java:88)
-	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
-	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
+
 --------------------------------------------------------------------------------
-[68776|1551088924646|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: ## BNG_H_L_PH is the height of the stator anyways lastInstance = VariationParameterFormula(name='V_PM_BNG_ST : means ONE magnet, so count double the volume at end x2', formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX') lastInstance = VariationParameterFormula(name='V_FE_BNG_ST : whole height minus two magnets', formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_FE_BNG_ST_AUX') Exception: (PythonWrapperException, Entity : VariationParameter Cause : V_PM_BNG_ST : means ONE magnet, so count double the volume at end x2 : this name has already been used by another entity. Transaction failed.)
-[68777|1551088924646|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : ## BNG_H_L_PH is the height of the stator anyways lastInstance = VariationParameterFormula(name='V_PM_BNG_ST : means ONE magnet, so count double the volume at end x2', formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX') lastInstance = VariationParameterFormula(name='V_FE_BNG_ST : whole height minus two magnets', formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_FE_BNG_ST_AUX') Entity : VariationParameter Cause : V_PM_BNG_ST : means ONE magnet, so count double the volume at end x2 : this name has already been used by another entity. Transaction failed.)
---------------------------------------------------------------------------------
-Anomaly (8) - Program error:
-Can not execute the following command :
-## BNG_H_L_PH is the height of the stator anyways
-lastInstance = VariationParameterFormula(name='V_PM_BNG_ST : means ONE magnet, so count double the volume at end x2',
-                          formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_PM_BNG_ST_AUX')
-
-lastInstance = VariationParameterFormula(name='V_FE_BNG_ST : whole height minus two magnets',
-                          formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_FE_BNG_ST_AUX')
-
-Entity : VariationParameter
-Cause :
-V_PM_BNG_ST : means ONE magnet, so count double the volume at end x2 : this name has already been used by another entity. 
-Transaction failed.
------------------------------- Advanced Text -----------------------------------
-stdcom.error.JavaException: Entity : VariationParameter
-Cause :
-V_PM_BNG_ST : means ONE magnet, so count double the volume at end x2 : this name has already been used by another entity. 
-Transaction failed.
-	at cad.core.kernel.components.TransactionCreateInstance.executeDBModification(TransactionCreateInstance.java:524)
-	at cad.core.kernel.components.TransactionCreateInstance.processDBModification(TransactionCreateInstance.java:395)
-	at cad.core.kernel.components.TransactionManager.processTransactionCreateInstance(TransactionManager.java:650)
-	at cad.core.kernel.components.TransactionManager.newProjectInstance(TransactionManager.java:739)
-	at cad.flux.kernel.FGSupervisor.newProjectInstance(FGSupervisor.java:3573)
-	at sun.reflect.GeneratedMethodAccessor337.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
-	at org.python.core.PyObject.__call__(PyObject.java:526)
-	at org.python.core.PyObject.__call__(PyObject.java:530)
-	at org.python.core.PyMethod.__call__(PyMethod.java:156)
-	at pydb$py.newObject$203(pydb.py:1586)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:171)
-	at org.python.core.PyFunction.__call__(PyFunction.java:434)
-	at org.python.core.PyMethod.__call__(PyMethod.java:156)
-	at pydb$py.__call__$159(pydb.py:1261)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:308)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:199)
-	at org.python.core.PyFunction.__call__(PyFunction.java:482)
-	at org.python.core.PyMethod.instancemethod___call__(PyMethod.java:237)
-	at org.python.core.PyMethod.__call__(PyMethod.java:228)
-	at org.python.core.PyMethod.__call__(PyMethod.java:223)
-	at org.python.core.PyObject.invoke(PyObject.java:3715)
-	at org.python.core.PyInstance.instance___call__(PyInstance.java:377)
-	at org.python.core.PyInstance.__call__(PyInstance.java:372)
-	at org.python.core.PyObject.__call__(PyObject.java:424)
-	at org.python.pycode._pyx66.f$0(<string>:5)
-	at org.python.pycode._pyx66.call_function(<string>)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyCode.call(PyCode.java:18)
-	at org.python.core.Py.runCode(Py.java:1625)
-	at org.python.core.Py.exec(Py.java:1669)
-	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
-	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
-	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
-	at cad.core.kernel.actions.implementation.algo.python.ExecuteCommandAction.doAction(ExecuteCommandAction.java:89)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
-	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
-	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
-	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
-	at cad.core.frontal.actions.implementation.algo.python.ExecuteCommandAction.act(ExecuteCommandAction.java:85)
-	at cad.core.frontal.actions.implementation.ModalImplementer.internalRun(ModalImplementer.java:88)
-	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
-	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
---------------------------------------------------------------------------------
-[68788|1551088940968|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: H_FE_BNG_ST_AUX is not a valid parameter name
-[68789|1551088940968|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: H_FE_BNG_ST_AUX is not a valid parameter name
-[68790|1551088940968|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: setFieldStringValue => failed
-[68791|1551088940968|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
-[68792|1551088940969|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Invalid value for VariationParameter['V_FE_BNG_ST'].formula.
-Create process abort.
-[68800|1551088941032|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: lastInstance = VariationParameterFormula(name='V_FE_BNG_ST : whole height minus two magnets', formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_FE_BNG_ST_AUX') Exception: (PythonWrapperException, H_FE_BNG_ST_AUX is not a valid parameter name)
-[68801|1551088941032|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : lastInstance = VariationParameterFormula(name='V_FE_BNG_ST : whole height minus two magnets', formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_FE_BNG_ST_AUX') H_FE_BNG_ST_AUX is not a valid parameter name)
---------------------------------------------------------------------------------
-Anomaly (9) - User error:
-Can not execute the following command :
-lastInstance = VariationParameterFormula(name='V_FE_BNG_ST : whole height minus two magnets',
-                          formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_FE_BNG_ST_AUX')
-
-H_FE_BNG_ST_AUX is not a valid parameter name
------------------------------- Advanced Text -----------------------------------
-setFieldStringValue => failed
-Invalid value for VariationParameter['V_FE_BNG_ST'].formula.
-Create process abort.
---------------------------------------------------------------------------------
-   VariationParameter[H_FE_BNG_ST_AUX] created
-Python : lastInstance = VariationParameterFormula(name='H_FE_BNG_ST_AUX : height of one rotor BNG PM',
-                          formula='H_ST_BNG_AUX-2*H_PM_BNG_ST_AUX')     
-
-   VariationParameter[V_FE_BNG_ST] created
-Python : lastInstance = VariationParameterFormula(name='V_FE_BNG_ST : whole height minus two magnets',
-                          formula='pi()*(R_OUT_PM_ROT_BNG^2-R_IN_PM_ROT_BNG^2)*H_FE_BNG_ST_AUX')
-
-Closing project
-Close of test_2
-[69051|1551089278940|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-[69080|1551089279009|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-... end closing project
-Python : closeProject()
-
 Python : exit()
-[69084|1551089279014|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
-Maximum use of 591 MiB. in numerical memory
-For the dynamic table ID 136823
-Maximum use of 7 MiB. in character memory
-For the dynamic table ID 502071
+[62405|1552907903797|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+Maximum use of 7 MiB. in numerical memory
+For the dynamic table ID 1267
+Maximum use of 2 MiB. in character memory
+For the dynamic table ID 308
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -898,7 +141,32 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-11:07:59    1444 sec. FLUX3D_18.1.0 kernel finalized
-[69108|1551089279018|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
-[69109|1551089279019|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
-[69110|1551089279019|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
+12:18:23      13 sec. FLUX3D_18.1.0 kernel finalized
+[62429|1552907903822|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.JavaException: Can not execute the following command :
+executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py')
+
+Error occured while executing the command file :
+   C:/Users/jperalta/Documents/github_pato/flux/3_double_motor/1_ext_homopolar_int_long_drive/00_main.py.
+Line : 24.
+
+
+Altair License Manager: License error
+ 
+Feature(s): GlobalZoneEU, HyperWorks, HWFluxGUI
+Error Code: 12
+Error Description:
+[NETWORK] 6200@stilic5.epfl.ch - (Err: 12) Software expired
+ 
+Feature: FluxGUI
+Error Code: 9
+Error Description:
+[LOCAL] C:\Program Files\Altair\2018\security\altair_lic.dat - (Err: 6) Unable t
+o read file
+[NETWORK] 6200@stilic5.epfl.ch - (Err: 9) Feature not found
+ 
+License Path: C:\Program Files\Altair\2018\security\altair_lic.dat;6200@stilic5.
+epfl.ch
+   Priority: 1
+[62430|1552907903822|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[62431|1552907903823|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[62432|1552907903824|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
