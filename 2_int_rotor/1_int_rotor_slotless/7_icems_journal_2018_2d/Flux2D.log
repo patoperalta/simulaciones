@@ -1,0 +1,19 @@
+Loading data model 'Flux_model.stp'
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/Flux2D_log.py'
+ 
+                                                             FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
+                                                                   2048 MiB N. + 127 MiB C. + 1024 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:14596 jperalta
+ 
+08:43:35       0 sec. FLUX2D_18.1.0 kernel initialized
+
+Flux2D (application 2018.1) running
+
+Loading new project
+Creating ANONYM
+... end loading new project
+   MagnetizationGrid[2] created
+   SketcherOption[1] modified
+Start to open Sketcher
+... Sketcher opened

@@ -43,9 +43,9 @@ Scenario(name='3_JTORQUE',
 startMacroTransaction()
 
 Scenario['3_JTORQUE'].addPilot(pilot=MultiValues(parameter=VariationParameter['JT_RMS'],
-                                                  intervals=[IntervalStepValue(minValue=2.0,
-                                                                               maxValue=8.0,
-                                                                               stepValue=2.0)]))
+                                                  intervals=[IntervalStepValue(minValue=0.0,
+                                                                               maxValue=25.0,
+                                                                               stepValue=0.5)]))
 
 endMacroTransaction()
 ###################################################################################################################
@@ -55,9 +55,9 @@ Scenario(name='4_JFORCE',
 startMacroTransaction()
 
 Scenario['4_JFORCE'].addPilot(pilot=MultiValues(parameter=VariationParameter['JF_RMS'],
-                                                 intervals=[IntervalStepValue(minValue=2.0,
-                                                                              maxValue=8.0,
-                                                                              stepValue=2.0)]))
+                                                 intervals=[IntervalStepValue(minValue=0.0,
+                                                                              maxValue=25.0,
+                                                                              stepValue=0.5)]))
 
 endMacroTransaction()
 ###################################################################################################################

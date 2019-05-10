@@ -153,3 +153,5 @@ assignRegionToFaces(face=[Face[9]],
 
 InfiniteBoxDisc['InfiniteBoxDisc'].setInvisible()
 ##PM direction
+##orient PM
+orientRegSurfMaterial(region=RegionFace['PM'],coordSys=CoordSys['COORD_SYS_ROT'],orientation='Direction',angle='0')	

@@ -1,4 +1,4 @@
-#! Flux3D 12.0
+#! Flux2D 18.1
 
 print("FICHIER PARAM.PY\n")
 ##copy parameters from ext rotor rout14 in

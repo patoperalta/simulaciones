@@ -1,3 +1,4 @@
+#! Flux2D 18.1
 ##coordinate systems
 lastInstance = CoordSysCartesian(name='COORD_SYS_ST',
                   parentCoordSys=Local(coordSys=CoordSys['XY1']),

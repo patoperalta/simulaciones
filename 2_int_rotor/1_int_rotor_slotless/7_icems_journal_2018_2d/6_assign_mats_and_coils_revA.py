@@ -24,7 +24,7 @@ lastInstance = VariationParameterFormula(name='TH_COIL_CIRC : theoretical thickn
                           formula='D_AGAP-D_MECHGAP')	
 
 lastInstance = VariationParameterFormula(name='R_ST_IN_PH',
-                          formula='R_ST_OUT-D_ST')
+                          formula='R_ROT_OUT+D_AGAP')
 						  
 lastInstance = VariationParameterFormula(name='A_COIL : area of each coil',
                           formula='pi()/6*(R_ST_IN_PH^2-(R_ST_IN_PH-TH_COIL_CIRC)^2)')				   
@@ -90,7 +90,6 @@ for i in range(1,7):
 			   visibility=Visibility['VISIBLE'])
 
 ##assign
-
 assignRegionToFaces(face=[Face[10]],
                     region=RegionFace['INFINITE'])
 
