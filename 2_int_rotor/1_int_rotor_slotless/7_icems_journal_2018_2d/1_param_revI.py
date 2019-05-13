@@ -15,30 +15,51 @@ print("FICHIER PARAM.PY\n")
 
 ## define rotor and then towards the outside
 
-## rotor with NO HOLE	  
-ParameterGeom(name='R_ROT_OUT : outer radius of rotor',
-              expression='10')				  
-			  
-## airgap			  
-lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
-              expression='5.2')	
+## rotor with NO HOLE
 
+r_rot_out = 20
+	  
+ParameterGeom(name='R_ROT_OUT : outer radius of rotor',
+              expression=str(r_rot_out))				  
+			  
+if r_rot_out==10:
+	## airgap			  
+	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
+				  expression='5.25')	
+				  
+	## D_ST is now a parameter, so there is no proportionality constant			  		  
+	lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  expression='5')	
+				  
+	lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
+				  expression='2')	
+elif r_rot_out==15:
+	## airgap			  
+	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
+				  expression='5')	
+	## D_ST is now a parameter, so there is no proportionality constant			  		  
+	lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  expression='9')	
+	lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
+				  expression='2')					  				  
+elif r_rot_out==20:
+	## airgap			  
+	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
+				  expression='5')	
+	## D_ST is now a parameter, so there is no proportionality constant			  		  
+	lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  expression='12.5')	
+	lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
+				  expression='2')				  
+	  
 lastInstance = ParameterGeom(name='R_ST_IN : stator inner radius',
               expression='R_ROT_OUT+D_AGAP')			  			  
-			  
-## D_ST is now a parameter, so there is no proportionality constant			  		  
-lastInstance = ParameterGeom(name='D_ST : stator thickness',
-              expression='5.5')				  
-
 ## stator
 lastInstance = ParameterGeom(name='R_ST_OUT : stator outer radius',
               expression='R_ST_IN+D_ST')
 			  
 lastInstance = ParameterGeom(name='D_MOT : stator outer diameter',
-              expression='R_ST_OUT*2')				  
-			  
-lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
-              expression='2')			  		  
+              expression='R_ST_OUT*2')				  		  		  
 			  
 # height parameters become irrelevant for 2D
 

@@ -11,43 +11,61 @@ print("FICHIER PARAM.PY\n")
 ## geometric parameters
 #########################################################################################################################################################
 
+r_rot_out=20
+
 ##rotor without hole!
 ParameterGeom(name='R_ROT_OUT : outer radius of stator',
-              expression='10')	
-			  
-## mech/mag airgap 			  
-lastInstance = ParameterGeom(name='D_AGAP',
-              expression='2')			  
-			  
-## slot length
-# ParameterGeom(name='K_L_SLOT',
-              # expression='2/10')	
-			  
-ParameterGeom(name='L_SLOT',
-              expression='7')	
+              expression=str(r_rot_out))	
+
+if r_rot_out==10:			  
+	## mech/mag airgap 			  
+	lastInstance = ParameterGeom(name='D_AGAP',
+				  expression='2')			  
+							  
+	ParameterGeom(name='L_SLOT',
+				  expression='7.5')	
+				  
+	ParameterGeom(name='W_SLOT : now directly modifiable',
+				  expression='6')	
+
+	lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
+				  expression='6')	
+elif r_rot_out==15:				  
+	## mech/mag airgap 			  
+	lastInstance = ParameterGeom(name='D_AGAP',
+				  expression='2')			  
+							  
+	ParameterGeom(name='L_SLOT',
+				  expression='8')	
+				  
+	ParameterGeom(name='W_SLOT : now directly modifiable',
+				  expression='9')	
+
+	lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
+				  expression='10')						  
+elif r_rot_out==20:	
+	## mech/mag airgap 			  
+	lastInstance = ParameterGeom(name='D_AGAP',
+				  expression='2')			  
+							  
+	ParameterGeom(name='L_SLOT',
+				  expression='9.25')	
+				  
+	ParameterGeom(name='W_SLOT : now directly modifiable',
+				  expression='13')	
+
+	lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
+				  expression='14')			  				  
 			  
 ## stator
 lastInstance = ParameterGeom(name='R_ST_IN',
               expression='R_ROT_OUT+D_AGAP+L_SLOT')				  
 			  			  
-# lastInstance = ParameterGeom(name='K_D_ST : prop stator thickness',
-              # expression='1.5/5')	
-
-lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
-              expression='5.5')			  
-
 lastInstance = ParameterGeom(name='R_ST_OUT : outside stator radius',
               expression='R_ST_IN+D_ST')
 			  
 lastInstance = ParameterGeom(name='D_MOT',
-              expression='R_ST_OUT*2')				  
-			  
-## slot width			  
-# ParameterGeom(name='K_W_SLOT : prop factor for teeth length',
-              # expression='1.5/5')
-
-ParameterGeom(name='W_SLOT : now directly modifiable',
-              expression='5')
+              expression='R_ST_OUT*2')				  	  
 			  
 lastInstance = ParameterGeom(name='Y : for beginning of slot',
               expression='sqrt(R_ST_IN^2-(W_SLOT/2)^2)')			  

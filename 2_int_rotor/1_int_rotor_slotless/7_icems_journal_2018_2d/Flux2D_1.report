@@ -1,41 +1,53 @@
-[12|1557473199505|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
-[13|1557473199711|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
-[14|1557473199793|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
-[15|1557473199795|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
-[16|1557473199795|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
-[17|1557473199796|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
-[18|1557473199796|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\7_icems_journal_2018_2d
-[19|1557473199796|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
-[20|1557473199796|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
-[21|1557473199796|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
-[22|1557473199797|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
-[23|1557473199797|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
-[24|1557473199797|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
-[25|1557473199981|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[12|1557738960830|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1557738960974|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1557738961032|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1557738961035|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1557738961035|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1557738961035|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1557738961035|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\7_icems_journal_2018_2d
+[19|1557738961035|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1557738961035|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1557738961036|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1557738961036|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1557738961036|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1557738961036|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1557738961188|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
 Loading data model 'Flux_model.stp'
-[27|1557473200383|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+[27|1557738961699|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/Flux2D_log_1.pyPython : ^&|#! Flux2D 18.1
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/Flux2D_log_1.py'
  
-                                                            FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
-                                                                  2048 MiB N. + 127 MiB C. + 1024 MiB J.
-                                                                 HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:8736 jperalta
+                                                             FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
+                                                                   2048 MiB N. + 127 MiB C. + 1024 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13372 jperalta
  
-09:26:43       0 sec. FLUX2D_18.1.0 kernel initialized
-[62315|1557473204173|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
-[62316|1557473204174|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
-[62317|1557473204196|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
-[62319|1557473204533|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@40ea3333
+11:16:05       0 sec. FLUX2D_18.1.0 kernel initialized
+[62315|1557738965507|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
+[62316|1557738965509|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
+[62317|1557738965578|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
+[62319|1557738965984|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@49aa1d3b
 
 Flux2D (application 2018.1) running
 
-[62328|1557473204600|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@2e0cb63f
-[62348|1557473205420|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62354|1557473205436|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62328|1557738966048|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@1410a137
+[62348|1557738966933|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1557738966950|1|WARNING    ][Document|Document.updateInstances] : No project loaded
 Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py' in batch mode ...
-[62363|1557473205612|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62364|1557473206706|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62363|1557738967120|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1557738968976|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62368|1557738969490|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: D_AGAP is not a valid parameter name
+[62369|1557738969490|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: D_AGAP is not a valid parameter name
+[62370|1557738969491|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 1   Message: setFieldStringValue => failed
+[62371|1557738969491|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
+[62372|1557738969491|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Invalid value for ParameterGeom['R_ST_IN'].expression.
+Create process abort.
+[62373|1557738969497|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Error occured while executing the command file :
+   1_param_revI.py.
+Line : 55.
+
+
+[62374|1557738969498|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeSpy Exception: (JavaException, Error occured while executing the command file : 1_param_revI.py. Line : 55. D_AGAP is not a valid parameter name)
 Loading new project
 Creating ANONYM
 ... end loading new project
@@ -50,219 +62,51 @@ FICHIER PARAM.PY
 
    ParameterGeom[R_ROT_OUT] created
 ParameterGeom[1]
-   ParameterGeom[D_AGAP] created
-   ParameterGeom[R_ST_IN] created
-   ParameterGeom[D_ST] created
-   ParameterGeom[R_ST_OUT] created
-   ParameterGeom[D_MOT] created
-   ParameterGeom[D_MECHGAP] created
-   ParameterGeom[DTHETA] created
-   ParameterGeom[DX] created
-   ParameterGeom[DY] created
-   ParameterGeom[DR_0] created
-   ParameterGeom[DTHETA_0] created
-End execution of command file '1_param_revI.py' in batch mode ...
-Execution of command file '2_app_def.py' in batch mode ...
- 
-Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
-Automatically calculated value = 1
- 
-   Application[2] created
-End execution of command file '2_app_def.py' in batch mode ...
-Execution of command file '3_mesh_info.py' in batch mode ...
-   AidedMesh[1] modified
-End execution of command file '3_mesh_info.py' in batch mode ...
-Execution of command file '4_geom_2D_revF.py' in batch mode ...
-   CoordSys[COORD_SYS_ST] created
-   CoordSys[COORD_SYS_ROT] created
-   Point[1] created
-   Point[2] created
-   Point[3] created
-   Point[4] created
-   Point[5] created
-   Transf[PROP_ST] created
-   Transf[PROP_ROT] created
-Creation of 6 line(s) done :
-1  2  3  4  5  6
-   extrude executed
-Creation of 24 line(s) done :
-7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30
-   extrude executed
-   Line[31] created
-   Line[32] created
-Creation of 10 line(s) done :
-33  34  35  36  37  38  39  40  41  42
-   propagate executed
-   InfiniteBox[InfiniteBoxDisc] created
-Creation of 17 FACES :
-1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17
-   buildFaces executed
-   setInvisible executed
-End execution of command file '4_geom_2D_revF.py' in batch mode ...
-Execution of command file '5_mat_def.py' in batch mode ...
-   Material[BMT_42UH] created
-Material[1]
-The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
-   Material[NO12] created
-The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
-   Material[METGLAS_2605SA1] created
-The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 33.2103049326848
-   Material[METGLAS_NETL] created
-   Material[AIR] created
-End execution of command file '5_mat_def.py' in batch mode ...
-Execution of command file '6_assign_mats_and_coils_revA.py' in batch mode ...
-   RegionFace[IRON_ST] created
-   RegionFace[PM] created
-   RegionFace[AIRGAP] created
-   VariationParameter[TH_COIL_CIRC] created
-   VariationParameter[R_ST_IN_PH] created
-   VariationParameter[A_COIL] created
-   ParameterGeom[COIL_KCU] created
-   VariationParameter[A_CU] created
-   VariationParameter[I_T_PEAK] created
-   VariationParameter[THETA_T] created
-   VariationParameter[JT_RMS] created
-   VariationParameter[IT_HAT] created
-   VariationParameter[I_F_PEAK] created
-   VariationParameter[THETA_F0] created
-   VariationParameter[THETA_F_DIR] created
-   VariationParameter[THETA_F] created
-   VariationParameter[JF_RMS] created
-   VariationParameter[IF_HAT] created
-   VariationParameter[I_T_1] created
-   VariationParameter[I_F_1] created
-   CoilConductor[I_1] created
-   RegionFace[COIL_PLUS_1] created
-   RegionFace[COIL_MINUS_1] created
-   VariationParameter[I_T_2] created
-   VariationParameter[I_F_2] created
-   CoilConductor[I_2] created
-   RegionFace[COIL_PLUS_2] created
-   RegionFace[COIL_MINUS_2] created
-   VariationParameter[I_T_3] created
-   VariationParameter[I_F_3] created
-   CoilConductor[I_3] created
-   RegionFace[COIL_PLUS_3] created
-   RegionFace[COIL_MINUS_3] created
-   VariationParameter[I_T_4] created
-   VariationParameter[I_F_4] created
-   CoilConductor[I_4] created
-   RegionFace[COIL_PLUS_4] created
-   RegionFace[COIL_MINUS_4] created
-   VariationParameter[I_T_5] created
-   VariationParameter[I_F_5] created
-   CoilConductor[I_5] created
-   RegionFace[COIL_PLUS_5] created
-   RegionFace[COIL_MINUS_5] created
-   VariationParameter[I_T_6] created
-   VariationParameter[I_F_6] created
-   CoilConductor[I_6] created
-   RegionFace[COIL_PLUS_6] created
-   RegionFace[COIL_MINUS_6] created
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   assignRegionToFaces executed
-   orientRegSurfMaterial executed
-End execution of command file '6_assign_mats_and_coils_revA.py' in batch mode ...
-Execution of command file '7_sensors.py' in batch mode ...
-   Sensor[F_ROT] created
-   Sensor[F_ST] created
-   Sensor[TZ_ROT] created
-   Sensor[TZ_ST] created
-   Sensor[TZ_COILS] created
-   Sensor[F_COILS] created
-End execution of command file '7_sensors.py' in batch mode ...
-Execution of command file '8_scenarios_test.py' in batch mode ...
-   Scenario[0_FIELDS] created
-Scenario[1]
-   addPilot executed
-   Scenario[1_DX] created
-Scenario[2]
-   addPilot executed
-   Scenario[2_DY] created
-Scenario[3]
-   addPilot executed
-   Scenario[3_JTORQUE] created
-Scenario[4]
-   addPilot executed
-   Scenario[4_JFORCE] created
-Scenario[5]
-   addPilot executed
-   Scenario[5_THETA_TORQUE] created
-Scenario[6]
-   addPilot executed
-   addPilot executed
-   Scenario[6_THETA_FORCE] created
-Scenario[7]
-   addPilot executed
-   addPilot executed
-End execution of command file '8_scenarios_test.py' in batch mode ...
- 
-Meshing of 17 faces
- 
-Automatic mesh of 46 lines
-09:26:48       5 sec. Internal meshing of the lines
- 
-Automatic meshing of 17  faces
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 17 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 17 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 17 faces
-Faces internal meshing achieved
-End of topological mesh regularization
-09:26:49       5 sec.    2814 1st order surfacic elements created
- 
-09:26:49       5 sec. Generating 2nd order elements is running
-  Total number of nodes --> 5657
-09:26:49       5 sec. End generating 2nd order elements
- 
-Surface elements :
-   Number of elements not evaluated     : 0  %
-   Number of excellent quality elements : 96.59  %
-   Number of good quality elements      : 3.41  %
-   Number of average quality elements   : 0  %
-   Number of poor quality elements      : 0  %
-   meshDomain executed
- 
-09:26:49       5 sec. Generating 2nd order elements is running
-  Total number of nodes --> 5657
-09:26:49       5 sec. End generating 2nd order elements
-   generateSecondOrderElements executed
 
-End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py' in batch mode ...
-Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py')
+[62600|1557738970922|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: 3   Message: Error occured while executing the command file :
+   C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py.
+Line : 35.
 
-[63668|1557473304842|22|WARNING    ][JavaViewFactory|FGJavaViewFactory.createDialogBox] : Unable to get associated entity for method dialog box: --- NDialogBoxDescriptor Solve NDialogSolveScenario{name=, type=SOLVE_SCENARIO, Entity=Scenario} --- NDialogGroup SCENARIO_RESOUDRE_BOX.Scenario_resoudre { --- NDialogGroup SCENARIO_RESOUDRE_BOX.Scenario_resoudre.COMMON { } --- End NDialogGroup --- NDialogGroup SCENARIO_RESOUDRE_BOX.Scenario_resoudre.ARGUMENTS { NDialogProjectForSolve{name=scenario_resoudre.nom_projet, type=PROJECT_FOR_SOLVE, Empty} } --- End NDialogGroup } --- End NDialogGroup --- End NDialogBoxDescriptor 
+
+[62601|1557738970923|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeSpy Exception: (JavaException, Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py. Line : 35. Error occured while executing the command file : 1_param_revI.py. Line : 55. D_AGAP is not a valid parameter name)
+[62789|1557738971314|22|SEVERE     ][Actions|ExecuteCommandAction.doAction] : Error while executing command: Commands: 1 Command: executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py') Exception: (PythonWrapperException, Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py. Line : 35. Error occured while executing the command file : 1_param_revI.py. Line : 55. D_AGAP is not a valid parameter name)
+[62790|1557738971314|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: executeCommandRequest Exception: (JavaException, Can not execute the following command : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py') Error occured while executing the command file : C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py. Line : 35. Error occured while executing the command file : 1_param_revI.py. Line : 55. D_AGAP is not a valid parameter name)
+--------------------------------------------------------------------------------
+Anomaly (1) - User error:
+Can not execute the following command :
+executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py')
+
+Error occured while executing the command file :
+   C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py.
+Line : 35.
+
+
+Error occured while executing the command file :
+   1_param_revI.py.
+Line : 55.
+
+
+D_AGAP is not a valid parameter name
+------------------------------ Advanced Text -----------------------------------
+setFieldStringValue => failed
+Invalid value for ParameterGeom['R_ST_IN'].expression.
+Create process abort.
+--------------------------------------------------------------------------------
+[62806|1557738971494|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/error.gif
+[62807|1557738971495|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/informations.gif
 Closing project
 Close of ANONYM
-[63730|1557473309379|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-[63755|1557473309397|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62827|1557739042331|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62852|1557739042372|22|WARNING    ][Document|Document.updateInstances] : No project loaded
 ... end closing project
 Python : closeProject()
 
 Python : exit()
-[63760|1557473309418|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
-Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 263075
-Maximum use of 10 MiB. in character memory
-For the dynamic table ID 163487
+[62862|1557739042395|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+Maximum use of 17 MiB. in numerical memory
+For the dynamic table ID 45802
+Maximum use of 7 MiB. in character memory
+For the dynamic table ID 45815
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -281,7 +125,7 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:28:29     105 sec. FLUX2D_18.1.0 kernel finalized
-[63789|1557473309422|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
-[63792|1557473309422|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
-[63794|1557473309423|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
+11:17:22      77 sec. FLUX2D_18.1.0 kernel finalized
+[62887|1557739042399|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[62888|1557739042399|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[62889|1557739042399|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
