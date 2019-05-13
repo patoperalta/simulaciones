@@ -1,0 +1,410 @@
+[12|1557488278971|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1557488279103|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1557488279160|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1557488279162|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1557488279163|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1557488279163|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1557488279163|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\7_icems_journal_2018_2d
+[19|1557488279163|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1557488279163|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1557488279164|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1557488279164|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1557488279164|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1557488279164|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1557488279299|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+Loading data model 'Flux_model.stp'
+[27|1557488279847|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log_1.pyPython : ^&|#! Flux2D 18.1
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log_1.py'
+ 
+                                                             FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
+                                                                   2048 MiB N. + 127 MiB C. + 1024 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13976 jperalta
+ 
+13:38:02       0 sec. FLUX2D_18.1.0 kernel initialized
+[62315|1557488282962|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
+[62316|1557488282963|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
+[62317|1557488283271|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
+[62319|1557488283548|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@40ea3333
+
+Flux2D (application 2018.1) running
+
+[62328|1557488283614|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@2e0cb63f
+[62346|1557488284329|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62352|1557488284350|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
+[62363|1557488284497|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1557488285961|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+Loading new project
+Creating ANONYM
+... end loading new project
+   MagnetizationGrid[2] created
+   SketcherOption[1] modified
+Start to open Sketcher
+... Sketcher opened
+Start to close Sketcher
+... Sketcher closed
+Execution of command file '1_param_2d_revG.py' in batch mode ...
+FICHIER PARAM.PY
+
+   ParameterGeom[R_ROT_OUT] created
+ParameterGeom[1]
+   ParameterGeom[D_AGAP] created
+   ParameterGeom[L_SLOT] created
+ParameterGeom[3]
+   ParameterGeom[R_ST_IN] created
+   ParameterGeom[D_ST] created
+   ParameterGeom[R_ST_OUT] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[W_SLOT] created
+ParameterGeom[8]
+   ParameterGeom[Y] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+   ParameterGeom[Y2] created
+End execution of command file '1_param_2d_revG.py' in batch mode ...
+Execution of command file '2_app_def.py' in batch mode ...
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+End execution of command file '2_app_def.py' in batch mode ...
+Execution of command file '3_mesh_info.py' in batch mode ...
+   AidedMesh[1] modified
+End execution of command file '3_mesh_info.py' in batch mode ...
+Execution of command file '4_geom_2d_revG.py' in batch mode ...
+   CoordSys[COORD_SYS_ST] created
+   CoordSys[COORD_SYS_ROT] created
+   Point[1] created
+   Point[2] created
+   Point[3] created
+   Point[4] created
+   Point[5] created
+   Point[6] created
+   Line[1] created
+   Line[2] created
+   Line[3] created
+   Line[4] created
+   Transf[TRANSF_ST_60] created
+Creation of 20 line(s) done :
+5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24
+   propagate executed
+   Line[25] created
+Creation of 5 line(s) done :
+26  27  28  29  30
+   propagate executed
+   Point[37] created
+   Point[38] created
+   Line[31] created
+   Line[32] created
+   Line[33] created
+   Line[34] created
+   Line[35] created
+Creation of 25 line(s) done :
+36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60
+   propagate executed
+   Point[49] created
+   Transf[TRANSF_ROT_180] created
+Creation of 2 line(s) done :
+61  62
+   extrude executed
+   InfiniteBox[InfiniteBoxDisc] created
+Creation of 17 FACES :
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17
+   buildFaces executed
+   setInvisible executed
+   CoordSys[COORD_SYS_ST] modified
+End execution of command file '4_geom_2d_revG.py' in batch mode ...
+Execution of command file '5_mat_def.py' in batch mode ...
+   Material[BMT_42UH] created
+Material[1]
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   Material[NO12] created
+The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
+   Material[METGLAS_2605SA1] created
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 33.2103049326848
+   Material[METGLAS_NETL] created
+   Material[AIR] created
+End execution of command file '5_mat_def.py' in batch mode ...
+Execution of command file '6_assign_mats_and_coils_revA.py' in batch mode ...
+   RegionFace[IRON_ST] created
+   RegionFace[PM] created
+   RegionFace[AIRGAP] created
+   ParameterGeom[COIL_KCU] created
+   VariationParameter[R_ST_OUT_PH] created
+   VariationParameter[ST_A_SLOT] created
+   VariationParameter[ST_BI_SLOT] created
+   VariationParameter[ST_TOOTH_A] created
+   VariationParameter[A_SLOT] created
+   VariationParameter[A_COIL] created
+   VariationParameter[A_CU] created
+   VariationParameter[I_T_PEAK] created
+   VariationParameter[THETA_T] created
+   VariationParameter[JT_RMS] created
+   VariationParameter[IT_HAT] created
+   VariationParameter[I_F_PEAK] created
+   VariationParameter[THETA_F0] created
+   VariationParameter[THETA_F_DIR] created
+   VariationParameter[THETA_F] created
+   VariationParameter[JF_RMS] created
+   VariationParameter[IF_HAT] created
+   VariationParameter[I_T_1] created
+   VariationParameter[I_F_1] created
+   CoilConductor[I_1] created
+   RegionFace[COIL_PLUS_1] created
+   RegionFace[COIL_MINUS_1] created
+   VariationParameter[I_T_2] created
+   VariationParameter[I_F_2] created
+   CoilConductor[I_2] created
+   RegionFace[COIL_PLUS_2] created
+   RegionFace[COIL_MINUS_2] created
+   VariationParameter[I_T_3] created
+   VariationParameter[I_F_3] created
+   CoilConductor[I_3] created
+   RegionFace[COIL_PLUS_3] created
+   RegionFace[COIL_MINUS_3] created
+   VariationParameter[I_T_4] created
+   VariationParameter[I_F_4] created
+   CoilConductor[I_4] created
+   RegionFace[COIL_PLUS_4] created
+   RegionFace[COIL_MINUS_4] created
+   VariationParameter[I_T_5] created
+   VariationParameter[I_F_5] created
+   CoilConductor[I_5] created
+   RegionFace[COIL_PLUS_5] created
+   RegionFace[COIL_MINUS_5] created
+   VariationParameter[I_T_6] created
+   VariationParameter[I_F_6] created
+   CoilConductor[I_6] created
+   RegionFace[COIL_PLUS_6] created
+   RegionFace[COIL_MINUS_6] created
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   assignRegionToFaces executed
+   setInvisible executed
+   orientRegSurfMaterial executed
+End execution of command file '6_assign_mats_and_coils_revA.py' in batch mode ...
+Execution of command file '7_sensors.py' in batch mode ...
+   Sensor[F_ROT] created
+   Sensor[F_ST] created
+   Sensor[TZ_ROT] created
+   Sensor[TZ_ST] created
+End execution of command file '7_sensors.py' in batch mode ...
+Execution of command file '8_scenarios_test.py' in batch mode ...
+   Scenario[0_FIELDS] created
+Scenario[1]
+   addPilot executed
+   Scenario[1_DX] created
+Scenario[2]
+   addPilot executed
+   Scenario[2_DY] created
+Scenario[3]
+   addPilot executed
+   Scenario[3_JTORQUE] created
+Scenario[4]
+   addPilot executed
+   Scenario[4_JFORCE] created
+Scenario[5]
+   addPilot executed
+   Scenario[5_THETA_TORQUE] created
+Scenario[6]
+   addPilot executed
+   addPilot executed
+   Scenario[6_THETA_FORCE] created
+Scenario[7]
+   addPilot executed
+   addPilot executed
+End execution of command file '8_scenarios_test.py' in batch mode ...
+ 
+Meshing of 17 faces
+ 
+Automatic mesh of 66 lines
+13:38:08       5 sec. Internal meshing of the lines
+ 
+Automatic meshing of 17  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 17 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 17 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 17 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+13:38:08       6 sec.    3438 1st order surfacic elements created
+ 
+13:38:08       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6905
+13:38:08       6 sec. End generating 2nd order elements
+ 
+Surface elements :
+   Number of elements not evaluated     : 0  %
+   Number of excellent quality elements : 98.84  %
+   Number of good quality elements      : 1.16  %
+   Number of average quality elements   : 0  %
+   Number of poor quality elements      : 0  %
+   meshDomain executed
+ 
+13:38:08       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6905
+13:38:08       6 sec. End generating 2nd order elements
+   generateSecondOrderElements executed
+
+End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
+Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py')
+
+[63724|1557488363522|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 2   Message: Failed to modify an instance.
+Can not execute the following command :
+startMacroTransaction()
+ParameterGeom['DY'].expression='2'
+
+endMacroTransaction()
+
+[63725|1557488363523|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: editObject Exception: (JavaException, The creation/modification/deletion of these entities is forbidden because the geometry is meshed. To carry out this command, first delete the mesh. Failed to modify an instance. Can not execute the following command : startMacroTransaction() ParameterGeom['DY'].expression='2' endMacroTransaction() )
+--------------------------------------------------------------------------------
+Anomaly (1) - User error:
+The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
+To carry out this command, first delete the mesh.
+Failed to modify an instance.
+Can not execute the following command :
+startMacroTransaction()
+ParameterGeom['DY'].expression='2'
+
+endMacroTransaction()
+
+------------------------------ Advanced Text -----------------------------------
+stdcom.error.JavaException: The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
+To carry out this command, first delete the mesh.
+	at cad.flux.kernel.components.FGTransactionModifyInstance.checkTransactionMesh(FGTransactionModifyInstance.java:325)
+	at cad.flux.kernel.components.FGTransactionModifyInstance.checkTransaction(FGTransactionModifyInstance.java:162)
+	at cad.core.kernel.components.TransactionModifyInstance.buildMergeInstances(TransactionModifyInstance.java:867)
+	at cad.flux.kernel.components.FGTransactionModifyInstance.processDBEvaluation(FGTransactionModifyInstance.java:381)
+	at cad.core.kernel.components.TransactionModifyInstance.commit(TransactionModifyInstance.java:658)
+	at cad.core.kernel.components.TransactionManager.commit(TransactionManager.java:284)
+	at cad.core.kernel.components.TransactionManager.processTransactionModifyInstance(TransactionManager.java:433)
+	at cad.core.kernel.components.TransactionManager.setFieldValue(TransactionManager.java:466)
+	at cad.core.kernel.Supervisor.setFieldValue(Supervisor.java:1568)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
+	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
+	at org.python.core.PyObject.__call__(PyObject.java:545)
+	at org.python.core.PyObject.__call__(PyObject.java:551)
+	at org.python.core.PyMethod.__call__(PyMethod.java:171)
+	at pydb$py.setFieldValue$215(pydb.py:1674)
+	at pydb$py.call_function(pydb.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:308)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:199)
+	at org.python.core.PyFunction.__call__(PyFunction.java:482)
+	at org.python.core.PyMethod.__call__(PyMethod.java:187)
+	at pydb$py.__setattr__$78(pydb.py:773)
+	at pydb$py.call_function(pydb.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:171)
+	at org.python.core.PyFunction.__call__(PyFunction.java:434)
+	at org.python.core.PyFunction.__call__(PyFunction.java:428)
+	at org.python.core.PyInstance.instance___setattr__(PyInstance.java:303)
+	at org.python.core.PyInstance.__setattr__(PyInstance.java:280)
+	at org.python.pycode._pyx17.f$0(<string>:1)
+	at org.python.pycode._pyx17.call_function(<string>)
+	at org.python.core.PyTableCode.call(PyTableCode.java:171)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1625)
+	at org.python.core.Py.exec(Py.java:1669)
+	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
+	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
+	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
+	at cad.core.kernel.actions.implementation.instance.EditInstanceAction.doAction(EditInstanceAction.java:152)
+	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
+	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
+	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
+	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
+	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
+	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
+	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
+	at cad.core.frontal.actions.implementation.instance.EditInstanceAction.postAct(EditInstanceAction.java:164)
+	at cad.flux.frontal.actions.implementation.instance.FGEditInstanceAction.postAct(FGEditInstanceAction.java:199)
+	at cad.core.frontal.actions.implementation.instance.EditInstanceAction.interpret(EditInstanceAction.java:182)
+	at cad.flux.frontal.actions.implementation.instance.FGEditInstanceAction.interpret(FGEditInstanceAction.java:122)
+	at cad.core.frontal.components.box.frontaldialog.FrontalDescriptorDialogBox.internalRun(FrontalDescriptorDialogBox.java:306)
+	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
+	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
+--------------------------------------------------------------------------------
+[63729|1557488363570|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/error.gif
+[63730|1557488363571|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/informations.gif
+   deleteMesh executed
+Python : deleteMesh()
+
+   ParameterGeom[DY] modified
+Python : ParameterGeom['DY'].expression='1'
+
+
+   ParameterGeom[DY] modified
+Python : ParameterGeom['DY'].expression='0'
+
+
+   ParameterGeom[DX] modified
+Python : ParameterGeom['DX'].expression='1'
+
+
+   ParameterGeom[DTHETA] modified
+Python : ParameterGeom['DTHETA'].expression='90'
+
+
+Closing project
+Close of ANONYM
+[65465|1557488673644|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[65490|1557488673674|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+... end closing project
+Python : closeProject()
+
+Python : exit()
+[65494|1557488673680|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+Maximum use of 335 MiB. in numerical memory
+For the dynamic table ID 347177
+Maximum use of 9 MiB. in character memory
+For the dynamic table ID 237331
+ 
+   NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
+ 
+       1             5       6       4   R08 5             0             0
+       2             1       5       5   C80 8             0             0
+       4     268435457       1       6   R08 5             0             0
+       5       1677722       2       2   C80 8             0             0
+       6             5       4       1   I04 2        600037             0
+Numerical memory: Total length                   = 268435456
+(8 byte words)    Present length                 =    600041
+                  Useful length                  =    600041
+                  Number of numerical arrays     =         3
+Character memory: Total length                   =   1677721
+(80 byte words)   Present length                 =         0
+                  Useful length                  =         0
+                  Number of character arrays     =         2
+Maximum number of arrays (num+char)              =    100006
+ 
+13:44:33     390 sec. FLUX2D_18.1.0 kernel finalized
+[65518|1557488673685|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[65519|1557488673686|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[65520|1557488673686|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers

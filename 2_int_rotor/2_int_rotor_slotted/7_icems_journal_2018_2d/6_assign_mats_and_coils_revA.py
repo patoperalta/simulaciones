@@ -4,12 +4,12 @@
 #########
 lastInstance = RegionFace(name='IRON_ST',
            magneticDC2D=MagneticDC2DFaceMagnetic(material=Material['NO12']),
-           color=Color['Turquoise'],
+           color=Color['Black'],
            visibility=Visibility['VISIBLE'])
 
 lastInstance = RegionFace(name='PM',
            magneticDC2D=MagneticDC2DFaceMagnetic(material=Material['BMT_42UH']),
-           color=Color['Turquoise'],
+           color=Color['Red'],
            visibility=Visibility['VISIBLE'])
 		   
 lastInstance = RegionFace(name='AIRGAP',
@@ -21,11 +21,14 @@ lastInstance = RegionFace(name='AIRGAP',
 lastInstance = ParameterGeom(name='COIL_KCU : copper filling factor',
               expression='.4')	
 			  
+lastInstance = VariationParameterFormula(name='R_ST_OUT_PH',
+                          formula='R_ROT_OUT+D_AGAP+L_SLOT+D_ST')			  
+			  
 lastInstance = VariationParameterFormula(name='ST_A_SLOT : stator area / slot',
-                          formula='pi()*(R_ST_OUT^2-(R_ST_OUT-D_ST-L_SLOT)^2)/6')			  
+                          formula='pi()*(R_ST_OUT_PH^2-(R_ST_OUT_PH-D_ST-L_SLOT)^2)/6')			  
 
 lastInstance = VariationParameterFormula(name='ST_BI_SLOT : backiron area / slot',
-                          formula='Pi()*(R_ST_OUT**2-(R_ST_OUT-D_ST)**2)/6')
+                          formula='Pi()*(R_ST_OUT_PH**2-(R_ST_OUT_PH-D_ST)**2)/6')
 						  
 lastInstance = VariationParameterFormula(name='ST_TOOTH_A : tooth',
                           formula='W_SLOT*L_SLOT')			
@@ -45,7 +48,7 @@ lastInstance = VariationParameterPilot(name='I_T_PEAK : peak value of torque exc
                         referenceValue=0.0)
 						
 lastInstance = VariationParameterPilot(name='THETA_T : torque generation angle degrees',
-                        referenceValue=240)
+                        referenceValue=270)
 
 lastInstance = VariationParameterPilot(name='JT_RMS : torque current density',
                         referenceValue=0.0)			
@@ -58,7 +61,7 @@ lastInstance = VariationParameterPilot(name='I_F_PEAK : peak value of force exci
                         referenceValue=0.0)
 
 lastInstance = VariationParameterPilot(name='THETA_F0 : if 90, and THETA_F is 0, force goes in x direction',
-                        referenceValue=120)
+                        referenceValue=180)
 
 lastInstance = VariationParameterPilot(name='THETA_F_DIR : gives force direction in stator coordinates',
                         referenceValue=0.0)
@@ -90,7 +93,7 @@ for i in range(1,7):
 																								electricComponent=CoilConductor['I_'+str(i)],
 																								fillFactor='1'),
 														  material=Material['AIR']),
-			   color=Color['Turquoise'],
+			   color=Color['Green'],
 			   visibility=Visibility['VISIBLE'])
 	# define the coil face region
 	lastInstance = RegionFace(name='COIL_MINUS_'+str(i),
@@ -99,7 +102,7 @@ for i in range(1,7):
 																								electricComponent=CoilConductor['I_'+str(i)],
 																								fillFactor='1'),
 														  material=Material['AIR']),
-			   color=Color['Turquoise'],
+			   color=Color['Yellow'],
 			   visibility=Visibility['VISIBLE'])			   
 
 ##assign

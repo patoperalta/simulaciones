@@ -1,0 +1,435 @@
+Loading data model 'Flux_model.stp'
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_journal_icems/Flux3D_log.py'
+ 
+                                                            FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                  4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                 HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:2092 jperalta
+ 
+07:38:14       0 sec. FLUX3D_18.1.0 kernel initialized
+
+Flux3D (application 2018.1) running
+
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_journal_icems/00_main.py' in batch mode ...
+Loading new project
+Creating ANONYM
+... end loading new project
+Execution of command file '1_param_revH.py' in batch mode ...
+FICHIER PARAM.PY
+
+   ParameterGeom[R_ST_OUT] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[K_D_ST] created
+   ParameterGeom[D_ST] created
+   ParameterGeom[R_ST_IN] created
+   ParameterGeom[D_AGAP] created
+   ParameterGeom[D_MECHGAP] created
+   ParameterGeom[R_ROT_OUT] created
+ParameterGeom[8]
+   ParameterGeom[BETA] created
+   ParameterGeom[ALPHA_H] created
+   ParameterGeom[ALPHA_CASE] created
+   ParameterGeom[H_ST] created
+ParameterGeom[12]
+   ParameterGeom[H_ROT] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DALPHA] created
+   ParameterGeom[DBETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[X_H_DIFF] created
+   ParameterGeom[DZ] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+End execution of command file '1_param_revH.py' in batch mode ...
+Execution of command file '2_app_def.py' in batch mode ...
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+End execution of command file '2_app_def.py' in batch mode ...
+Execution of command file '3_mesh_info.py' in batch mode ...
+   AidedMesh[1] modified
+End execution of command file '3_mesh_info.py' in batch mode ...
+Execution of command file '4_geom_revD_circular.py' in batch mode ...
+   CoordSys[COORD_SYS_ST] created
+   CoordSys[COORD_SYS_ROT] created
+   Point[1] created
+   Point[2] created
+   Point[3] created
+   Point[4] created
+   Point[5] created
+   Point[6] created
+   Point[7] created
+   Point[8] created
+   Line[1] created
+   Line[2] created
+   Line[3] created
+   Line[4] created
+   Line[5] created
+   Line[6] created
+   Line[7] created
+   Line[8] created
+   Transf[ROT_ROTOR] created
+   Transf[ROT_ST] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 1
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.157E-06
+Checking the unicity of lines
+Creation of 2 FACES :
+1  2
+   buildFaces executed
+   Face[1, 2] modified
+Creation of 1 volume(s) done :
+1
+   extrude executed
+Creation of 1 volume(s) done :
+2
+   extrude executed
+   Transf[ROT_SYM_ROT] created
+   Transf[ROT_SYM_ST] created
+   Transf[AX_SIM_ROT] created
+   Transf[AX_SIM_ST] created
+Creation of 1 volume(s) done :
+3
+   propagateVolume executed
+Creation of 1 volume(s) done :
+4
+   propagateVolume executed
+Creation of 2 volume(s) done :
+5  6
+   propagateVolume executed
+Creation of 2 volume(s) done :
+7  8
+   propagateVolume executed
+   InfiniteBox[InfiniteBoxCylinderZ] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 18
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.313E-06
+Checking the unicity of lines
+Creation of 27 FACES :
+33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59
+   buildFaces executed
+   setInvisible executed
+   Face[34] deleted
+   Face[33] deleted
+   Face[35] deleted
+No line-face intersections
+Creation of 7 VOLUMES :
+9  10  11  12  13  14  15
+   buildVolumes executed
+Some intersections may not have been detected
+
+End execution of command file '4_geom_revD_circular.py' in batch mode ...
+Execution of command file '5_mat_def.py' in batch mode ...
+   Material[COGENT_M270_50A_50HZ] created
+Material[1]
+   Material[IMPHY_MUMETAL] created
+Material[2]
+   Material[BMT_50H] created
+Material[3]
+   Material[BMT_42UH] created
+Material[4]
+   Material[METGLAS] created
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   Material[NO12] created
+End execution of command file '5_mat_def.py' in batch mode ...
+Execution of command file '6_elec_circuit_toroidal_revG.py' in batch mode ...
+   ParameterGeom[M_R_THEO] created
+   ParameterGeom[N_R_THEO] created
+   ParameterGeom[COIL_R_THEO] created
+   ParameterGeom[COIL_R_CASE] created
+   ParameterGeom[COIL_R] created
+   ParameterGeom[COIL_WCOIL] created
+   ParameterGeom[COIL_KCU] created
+   VariationParameter[TH_COIL_CIRC] created
+   VariationParameter[R_ST_IN_PH] created
+   VariationParameter[A_COIL] created
+   VariationParameter[A_CU] created
+   VariationParameter[ALPHA_CASE_PH] created
+   VariationParameter[D_ST_PH] created
+   VariationParameter[R_ST_OUT_PH] created
+   VariationParameter[H_ST_PH] created
+   VariationParameter[L_BAR_PH] created
+   VariationParameter[R_ROT_PH] created
+   ParameterGeom[RHO_CU] created
+   VariationParameter[R_COIL] created
+   VariationParameter[I_T_PEAK] created
+   VariationParameter[THETA_T] created
+   VariationParameter[JT_RMS] created
+   VariationParameter[IT_HAT] created
+   VariationParameter[I_F_PEAK] created
+   VariationParameter[THETA_F0] created
+   VariationParameter[THETA_F_DIR] created
+   VariationParameter[THETA_F] created
+   VariationParameter[JF_RMS] created
+   VariationParameter[IF_HAT] created
+   VariationParameter[P_CU_TOT] created
+   VariationParameter[H_ROT_PH] created
+   VariationParameter[V_FE_ST] created
+   VariationParameter[V_PM] created
+   VariationParameter[V_CU] created
+   CoordSys[COORD_COIL_1] created
+   VariationParameter[I_T_1] created
+   VariationParameter[I_F_1] created
+   CoilConductor[I_1] created
+ 
+Coil(1) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_1] created
+   CoordSys[COORD_COIL_2] created
+   VariationParameter[I_T_2] created
+   VariationParameter[I_F_2] created
+   CoilConductor[I_2] created
+Coil(2) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_2] created
+   CoordSys[COORD_COIL_3] created
+   VariationParameter[I_T_3] created
+   VariationParameter[I_F_3] created
+   CoilConductor[I_3] created
+Coil(3) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_3] created
+   CoordSys[COORD_COIL_4] created
+   VariationParameter[I_T_4] created
+   VariationParameter[I_F_4] created
+   CoilConductor[I_4] created
+Coil(4) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_4] created
+   CoordSys[COORD_COIL_5] created
+   VariationParameter[I_T_5] created
+   VariationParameter[I_F_5] created
+   CoilConductor[I_5] created
+Coil(5) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_5] created
+   CoordSys[COORD_COIL_6] created
+   VariationParameter[I_T_6] created
+   VariationParameter[I_F_6] created
+   CoilConductor[I_6] created
+Coil(6) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_6] created
+End execution of command file '6_elec_circuit_toroidal_revG.py' in batch mode ...
+Execution of command file '7_assign_circular.py' in batch mode ...
+   RegionVolume[IRON_ST] created
+   RegionVolume[AIR] created
+   RegionVolume[PM] created
+   assignRegion executed
+   assignRegion executed
+   assignRegionToVolumes executed
+   orientRegVolMaterial executed
+   RegionVolume[IRON_ST] modified
+   RegionVolume[PM] modified
+   MeshLine[R_ST] created
+   MeshLine[R_ROT] created
+   MeshLine[H_ST] created
+   MeshLine[H_ROT] created
+   MeshLine[THETA] created
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+End execution of command file '7_assign_circular.py' in batch mode ...
+Execution of command file '8_sensors.py' in batch mode ...
+   Sensor[F_ROT] created
+   Sensor[TX_ROT] created
+   Sensor[TY_ROT] created
+   Sensor[TZ_ROT] created
+   Sensor[F_ST] created
+   Sensor[TX_ST] created
+   Sensor[TY_ST] created
+   Sensor[TZ_ST] created
+End execution of command file '8_sensors.py' in batch mode ...
+Execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
+   Scenario[0_FIELD] created
+Scenario[1]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ] created
+Scenario[2]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA] created
+Scenario[3]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA] created
+Scenario[4]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+
+   Scenario[4_DX] created
+Scenario[5]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY] created
+Scenario[6]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
+Execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+   Scenario[6_JT] created
+Scenario[7]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF] created
+Scenario[8]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+ 
+Verifying of linked faces ...
+  27 face(s) have consistent linked mesh generator.
+ 
+07:38:20       6 sec. Internal meshing of the lines
+ 
+Automatic meshing of 26  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 26 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+07:38:20       6 sec.    1051 1st order surfacic elements created
+ 
+Extrusive meshing of 5 faces
+07:38:20       6 sec.    2610 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 25 linked faces
+ 
+07:38:20       6 sec.    1725 1st order lineic elements created
+ 
+Automatic mesh of 15 volumes
+07:38:20       6 sec. Boundary meshing of volumes
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 59694
+Checking 44 faces
+Checking 44 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 32
+Checking 44 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 2
+Checking of faces completed in 3 iteration(s)
+Number of nodes creating while checking faces: 34
+  10686  boundary nodes
+  30146  boundary meshes
+07:38:30      16 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 2536
+07:38:33      19 sec.
+         13230 nodes
+         52798 meshes
+07:38:33      19 sec. Mesh compressing
+         13230 nodes
+         50055 meshes
+07:38:33      19 sec.   50055 1st order volumic elements created
+ 
+Extrusive meshing of 8 volumes
+07:38:34      19 sec.   54360 1st order volumic elements created
+     20160 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Creation of 10080 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 68.64  %
+   Number of excellent quality elements : 6.74  %
+   Number of good quality elements      : 9.26  %
+   Number of average quality elements   : 7.91  %
+   Number of poor quality elements      : 7.45  %
+ 
+Verifying of linked faces ...
+  27 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+ 
+07:38:38      24 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 47 : 14%
+Percentage of 2nd order nodes not projected on line 48 : 28%
+Percentage of 2nd order nodes not projected on line 53 : 14%
+Percentage of 2nd order nodes not projected on line 55 : 28%
+Percentage of 2nd order nodes not projected on line 64 : 18%
+Percentage of 2nd order nodes not projected on line 75 : 9%
+Percentage of 2nd order nodes not projected on face 43 : 4%
+Percentage of 2nd order nodes not projected on face 44 : 57%
+Percentage of 2nd order nodes not projected on face 52 : 6%
+Percentage of 2nd order nodes not projected on face 58 : 4%
+  Total number of nodes --> 193169
+07:38:41      27 sec. End generating 2nd order elements
+   generateSecondOrderElements executed
+
+End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_journal_icems/00_main.py' in batch mode ...
+Closing project
+Close of ANONYM
+... end closing project
+Maximum use of 890 MiB. in numerical memory
+For the dynamic table ID 1295963
+Maximum use of 8 MiB. in character memory
+For the dynamic table ID 50199
+ 
+   NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
+ 
+       1             5       6       4   R08 5             0             0
+       2             1       5       5   C80 8             0             0
+       4     536870913       1       6   R08 5             0             0
+       5       1677722       2       2   C80 8             0             0
+       6             5       4       1   I04 2        600037             0
+Numerical memory: Total length                   = 536870912
+(8 byte words)    Present length                 =    600041
+                  Useful length                  =    600041
+                  Number of numerical arrays     =         3
+Character memory: Total length                   =   1677721
+(80 byte words)   Present length                 =         0
+                  Useful length                  =         0
+                  Number of character arrays     =         2
+Maximum number of arrays (num+char)              =    100006
+ 
+07:41:03     169 sec. FLUX3D_18.1.0 kernel finalized

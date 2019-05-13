@@ -21,7 +21,7 @@ ParameterGeom(name='R_ROT_OUT : outer radius of rotor',
 			  
 ## airgap			  
 lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
-              expression='4')	
+              expression='5.2')	
 
 lastInstance = ParameterGeom(name='R_ST_IN : stator inner radius',
               expression='R_ROT_OUT+D_AGAP')			  			  
@@ -38,8 +38,7 @@ lastInstance = ParameterGeom(name='D_MOT : stator outer diameter',
               expression='R_ST_OUT*2')				  
 			  
 lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
-              expression='1')			  
-		  
+              expression='2')			  		  
 			  
 # height parameters become irrelevant for 2D
 

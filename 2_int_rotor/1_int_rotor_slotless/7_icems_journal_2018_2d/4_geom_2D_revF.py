@@ -48,6 +48,14 @@ lastInstance = PointCoordinates(color=Color['White'],
                       '0'],
                  nature=Nature['STANDARD'],
                  mesh=MeshPoint['AIDED_MESHPOINT'])		
+				 
+##coil outer point
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['R_ST_OUT+(D_AGAP-D_MECHGAP)',
+                      '0'],
+                 nature=Nature['STANDARD'])				 				 
 
 ##transformations to extrude 
 ##now repeate coil
@@ -68,7 +76,7 @@ result = PointCoordinates[1].extrude(transformation=Transf['PROP_ROT'],
         repetitionNumber=6,
         extrusionType='standard')
 
-result = PointCoordinates[2,3,4].extrude(transformation=Transf['PROP_ST'],
+result = PointCoordinates[2,3,4,5].extrude(transformation=Transf['PROP_ST'],
         repetitionNumber=6,
         extrusionType='standard')
 								
@@ -78,8 +86,15 @@ lastInstance = LineSegment(color=Color['White'],
             defPoint=[Point[2],
                       Point[3]],
             nature=Nature['STANDARD'])
+			
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[4],
+                      Point[5]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])			
 
-result = LineSegment[25].propagate(transformation=Transf['PROP_ST'],
+result = LineSegment[31,32].propagate(transformation=Transf['PROP_ST'],
           repetitionNumber=6)
 
 ##infinitebox

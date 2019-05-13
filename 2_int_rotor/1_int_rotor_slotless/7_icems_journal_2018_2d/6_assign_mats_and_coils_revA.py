@@ -4,12 +4,12 @@
 #########
 lastInstance = RegionFace(name='IRON_ST',
            magneticDC2D=MagneticDC2DFaceMagnetic(material=Material['NO12']),
-           color=Color['Turquoise'],
+           color=Color['Black'],
            visibility=Visibility['VISIBLE'])
 
 lastInstance = RegionFace(name='PM',
            magneticDC2D=MagneticDC2DFaceMagnetic(material=Material['BMT_42UH']),
-           color=Color['Turquoise'],
+           color=Color['Red'],
            visibility=Visibility['VISIBLE'])
 		   
 lastInstance = RegionFace(name='AIRGAP',
@@ -80,45 +80,73 @@ for i in range(1,7):
 	lastInstance = CurrentStrandedCoil(name='I_'+str(i)+' : current in first drive coil',
 						rmsModulus='I_T_'+str(i)+'+I_F_'+str(i))	 						  
 	# define the coil face region
-	lastInstance = RegionFace(name='COIL_'+str(i),
+	lastInstance = RegionFace(name='COIL_PLUS_'+str(i),
 			   magneticDC2D=MagneticDC2DFaceCoilConductor(coilConductor=CoilConductor2DPositive(turnNumber='1',
 																								seriesParallel=AllInSeries(),
 																								electricComponent=CoilConductor['I_'+str(i)],
 																								fillFactor='1'),
 														  material=Material['AIR']),
-			   color=Color['Turquoise'],
+			   color=Color['Green'],
 			   visibility=Visibility['VISIBLE'])
+	# define the coil face region
+	lastInstance = RegionFace(name='COIL_MINUS_'+str(i),
+			   magneticDC2D=MagneticDC2DFaceCoilConductor(coilConductor=CoilConductor2DNegative(turnNumber='1',
+																								seriesParallel=AllInSeries(),
+																								electricComponent=CoilConductor['I_'+str(i)],
+																								fillFactor='1'),
+														  material=Material['AIR']),
+			   color=Color['Yellow'],
+			   visibility=Visibility['VISIBLE'])			   
 
 ##assign
-assignRegionToFaces(face=[Face[10]],
+assignRegionToFaces(face=[Face[16]],
                     region=RegionFace['INFINITE'])
-
-assignRegionToFaces(face=[Face[9]],
-                    region=RegionFace['IRON_ST'])
-
-assignRegionToFaces(face=[Face[3]],
-                    region=RegionFace['COIL_1'])
-
-assignRegionToFaces(face=[Face[4]],
-                    region=RegionFace['COIL_2'])
-
-assignRegionToFaces(face=[Face[5]],
-                    region=RegionFace['COIL_3'])
-
-assignRegionToFaces(face=[Face[6]],
-                    region=RegionFace['COIL_4'])
-
-assignRegionToFaces(face=[Face[7]],
-                    region=RegionFace['COIL_5'])
-
-assignRegionToFaces(face=[Face[8]],
-                    region=RegionFace['COIL_6'])
 
 assignRegionToFaces(face=[Face[1]],
                     region=RegionFace['PM'])
 
+assignRegionToFaces(face=[Face[9]],
+                    region=RegionFace['IRON_ST'])
+
 assignRegionToFaces(face=[Face[2]],
                     region=RegionFace['AIRGAP'])
-				
+
+assignRegionToFaces(face=[Face[3]],
+                    region=RegionFace['COIL_PLUS_1'])
+
+assignRegionToFaces(face=[Face[4]],
+                    region=RegionFace['COIL_PLUS_2'])
+
+assignRegionToFaces(face=[Face[5]],
+                    region=RegionFace['COIL_PLUS_3'])
+
+assignRegionToFaces(face=[Face[6]],
+                    region=RegionFace['COIL_PLUS_4'])
+
+assignRegionToFaces(face=[Face[7]],
+                    region=RegionFace['COIL_PLUS_5'])
+
+assignRegionToFaces(face=[Face[8]],
+                    region=RegionFace['COIL_PLUS_6'])
+
+assignRegionToFaces(face=[Face[10]],
+                    region=RegionFace['COIL_MINUS_1'])
+
+assignRegionToFaces(face=[Face[11]],
+                    region=RegionFace['COIL_MINUS_2'])
+
+assignRegionToFaces(face=[Face[12]],
+                    region=RegionFace['COIL_MINUS_3'])
+
+assignRegionToFaces(face=[Face[13]],
+                    region=RegionFace['COIL_MINUS_4'])
+
+assignRegionToFaces(face=[Face[14]],
+                    region=RegionFace['COIL_MINUS_5'])
+
+assignRegionToFaces(face=[Face[15]],
+                    region=RegionFace['COIL_MINUS_6'])
+
+
 ##orient PM
 orientRegSurfMaterial(region=RegionFace['PM'],coordSys=CoordSys['COORD_SYS_ROT'],orientation='Direction',angle='0')	

@@ -32,7 +32,7 @@ closeSketcher2dContext()
 
 ## start scripting
 
-executeBatchSpy('1_param_2d_revF.py')               		# Defines different parameters
+executeBatchSpy('1_param_2d_revG.py')               		# Defines different parameters
 time_params = time.time() - t
 
 executeBatchSpy('2_app_def.py')               			# Defines different parameters
@@ -41,7 +41,7 @@ time_app_def= time.time() - t
 executeBatchSpy('3_mesh_info.py')               		# Defines different parameters
 time_mesh = time.time() - t
 
-executeBatchSpy('4_geom_2d_revF.py')              		# Defines different parameters
+executeBatchSpy('4_geom_2d_revG.py')              		# Defines different parameters
 time_geometry = time.time() - t
 
 executeBatchSpy('5_mat_def.py')               			# Defines different parameters
