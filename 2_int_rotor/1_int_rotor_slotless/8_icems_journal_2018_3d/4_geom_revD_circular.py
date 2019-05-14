@@ -17,18 +17,18 @@ lastInstance = CoordSysCartesian(name='COORD_SYS_ST',
                   rotationAngles=RotationAngles(angleX='0',
                                                 angleY='0',
                                                 angleZ='0'),
-                  visibility=Visibility['VISIBLE'])
-
-##rotor coordinate system			  
+                  visibility=Visibility['VISIBLE']) 
+				  
+#rotor coordinate system for relative displacements		  
 lastInstance = CoordSysCartesian(name='COORD_SYS_ROT',
                   parentCoordSys=Local(coordSys=CoordSys['XYZ1']),
                   origin=['DX+DR_0*Cosd(DTHETA_0)',
                           'DY+DR_0*Sind(DTHETA_0)',
-                          'DZ+Abs(ALPHA_H-1)*H_ST/2*X_H_DIFF'],
+                          'DZ'],
                   rotationAngles=RotationAngles(angleX='DALPHA',
                                                 angleY='DBETA',
                                                 angleZ='DTHETA'),
-                  visibility=Visibility['VISIBLE'])					  
+                  visibility=Visibility['VISIBLE'])						  
 #######################################################
 
 ##do all the points

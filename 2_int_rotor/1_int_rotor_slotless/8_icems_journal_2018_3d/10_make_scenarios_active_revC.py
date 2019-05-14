@@ -27,7 +27,12 @@ Scenario['6_JT'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP
                                                                          stepValue=d_dgap)]))
 
 Scenario['6_JT'].addPilot(pilot=MonoValue(parameter=VariationParameter['JT_RMS'],
-                                          value=j))																	 
+                                          value=j))
+
+Scenario['6_JT'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_ROT_OUT'],
+                                               intervals=[IntervalStepValue(minValue=r_rot_min,
+                                                                            maxValue=r_rot_max,
+                                                                            stepValue=d_rot)]))			  
 
 endMacroTransaction()
 
@@ -53,5 +58,10 @@ Scenario['7_JF'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP
                                                                          stepValue=d_dgap)]))
 
 Scenario['7_JF'].addPilot(pilot=MonoValue(parameter=VariationParameter['JF_RMS'],
-                                          value=j))																										
+                                          value=j))
+
+Scenario['7_JF'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_ROT_OUT'],
+                                               intervals=[IntervalStepValue(minValue=r_rot_min,
+                                                                            maxValue=r_rot_max,
+                                                                            stepValue=d_rot)]))											  
 endMacroTransaction()

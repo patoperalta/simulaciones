@@ -57,6 +57,8 @@ time_scenarios_a = time.time() - t
 
 t = time.time()
 
+closeModelerContext()
+
 meshDomain()
 
 generateSecondOrderElements()

@@ -23,28 +23,26 @@ ParameterGeom(name='R_ROT_OUT : outer radius of rotor',
 lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
 			  expression='2')			  
 			  
-if r_rot_out==10:
-	## airgap			  
-	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
-				  expression='5.25')	
-				  
-	## D_ST is now a parameter, so there is no proportionality constant			  		  
-	lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  expression='5')					  
-elif r_rot_out==15:
-	## airgap			  
-	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
-				  expression='5')	
-	## D_ST is now a parameter, so there is no proportionality constant			  		  
-	lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  expression='9')					  				  
-elif r_rot_out==20:
-	## airgap			  
-	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
-				  expression='5')	
-	## D_ST is now a parameter, so there is no proportionality constant			  		  
-	lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  expression='12.5')			  
+## airgap			  
+lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
+			  expression='5')	
+
+## from 2d
+ParameterGeom(name='D_ST',
+			  expression='5+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*7/2')				  			  			  			  			  
+			  
+# if r_rot_out==10:		  
+	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
+	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  # expression='5')					  
+# elif r_rot_out==15:
+	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
+	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  # expression='9')					  				  
+# elif r_rot_out==20:
+	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
+	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  # expression='12.5')			  
 	  
 lastInstance = ParameterGeom(name='R_ST_IN : stator inner radius',
               expression='R_ROT_OUT+D_AGAP')			  			  
@@ -73,31 +71,45 @@ ParameterGeom(name='h_st : height of stator',
 
 lastInstance = ParameterGeom(name='H_ROT',
               expression='D_MOT*(ALPHA_CASE*ALPHA_H*beta+(1-ALPHA_CASE)*beta)')				  	
+
+## displacements booleans
+lastInstance = ParameterGeom(name='DALPHA_MULT',
+              expression='0')
+
+lastInstance = ParameterGeom(name='DBETA_MULT',
+              expression='0')
+
+lastInstance = ParameterGeom(name='DX_MULT',
+              expression='0')
+
+lastInstance = ParameterGeom(name='DY_MULT',
+              expression='0')	  
 			  
-##rotor position			  
+lastInstance = ParameterGeom(name='DZ_MULT',
+              expression='0')	
+			  
+##rotor position for relative displacements...
 lastInstance = ParameterGeom(name='DTHETA',
               expression='0')
 
 lastInstance = ParameterGeom(name='DALPHA',
-              expression='0')
+              expression='DALPHA_MULT*R_ROT_OUT/4')
 
 lastInstance = ParameterGeom(name='DBETA',
-              expression='0')
+              expression='DBETA_MULT*R_ROT_OUT/4')
 
 lastInstance = ParameterGeom(name='DX',
-              expression='0')
+              expression='DX_MULT*R_ROT_OUT/12')
 
 lastInstance = ParameterGeom(name='DY',
-              expression='0')
-
-lastInstance = ParameterGeom(name='X_H_DIFF : abs val of height dif between st and rot',
-              expression='0')			  
+              expression='DY_MULT*R_ROT_OUT/12')	  
 			  
 lastInstance = ParameterGeom(name='DZ',
-              expression='0')	
+              expression='DZ_MULT*R_ROT_OUT/5')	
 
 lastInstance = ParameterGeom(name='DR_0',
               expression='0')
 
 lastInstance = ParameterGeom(name='DTHETA_0',
               expression='0')	
+			  

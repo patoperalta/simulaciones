@@ -50,10 +50,10 @@ lastInstance = VariationParameterFormula(name='ALPHA_CASE_PH',
                           formula='ValidLR(ALPHA_H,0,1,1,1)')
 
 lastInstance = VariationParameterFormula(name='D_ST_PH',
-                          formula='D_ST')
+                          formula='5+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*7/2')
 						  
 lastInstance = VariationParameterFormula(name='R_ST_OUT_PH',
-                          formula='R_ROT_OUT+D_AGAP+D_ST')						  
+                          formula='R_ROT_OUT+D_AGAP+D_ST_PH')						  
 
 lastInstance = VariationParameterFormula(name='H_ST_PH',
                           formula='2*R_ST_OUT_PH*(ALPHA_CASE_PH*BETA+(1-ALPHA_CASE_PH)*BETA/ALPHA_H)')	
