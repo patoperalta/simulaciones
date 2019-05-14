@@ -11,51 +11,41 @@ print("FICHIER PARAM.PY\n")
 ## geometric parameters
 #########################################################################################################################################################
 
-r_rot_out=20
+r_rot_out=10
 
 ##rotor without hole!
 ParameterGeom(name='R_ROT_OUT : outer radius of stator',
-              expression=str(r_rot_out))	
+              expression=str(r_rot_out))
 
-if r_rot_out==10:			  
-	## mech/mag airgap 			  
-	lastInstance = ParameterGeom(name='D_AGAP',
-				  expression='2')			  
-							  
-	ParameterGeom(name='L_SLOT',
-				  expression='7.5')	
-				  
-	ParameterGeom(name='W_SLOT : now directly modifiable',
-				  expression='6')	
+## mech/mag airgap 			  
+lastInstance = ParameterGeom(name='D_AGAP',
+			  expression='2')	
 
-	lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
-				  expression='6')	
-elif r_rot_out==15:				  
-	## mech/mag airgap 			  
-	lastInstance = ParameterGeom(name='D_AGAP',
-				  expression='2')			  
-							  
-	ParameterGeom(name='L_SLOT',
-				  expression='8')	
-				  
-	ParameterGeom(name='W_SLOT : now directly modifiable',
-				  expression='9')	
+ParameterGeom(name='L_SLOT',
+			  expression='7+ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*1.25')				  
+			  
+ParameterGeom(name='W_SLOT',
+			  expression='6+3*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')				  			  
+			  
+ParameterGeom(name='D_ST',
+			  expression='6+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')				  			  			  
 
-	lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
-				  expression='10')						  
-elif r_rot_out==20:	
-	## mech/mag airgap 			  
-	lastInstance = ParameterGeom(name='D_AGAP',
-				  expression='2')			  
-							  
-	ParameterGeom(name='L_SLOT',
-				  expression='9.25')	
-				  
-	ParameterGeom(name='W_SLOT : now directly modifiable',
-				  expression='13')	
-
-	lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
-				  expression='14')			  				  
+# here i already erased the L_SLOT
+# if r_rot_out==10:			  				  
+	# # ParameterGeom(name='W_SLOT : now directly modifiable',
+				  # # expression='6')	
+	# # lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
+				  # # expression='6')	
+# elif r_rot_out==15:				  				  
+	# # ParameterGeom(name='W_SLOT : now directly modifiable',
+				  # # expression='9')	
+	# # lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
+				  # # expression='10')						  
+# elif r_rot_out==20:					  
+	# # ParameterGeom(name='W_SLOT : now directly modifiable',
+				  # # expression='13')	
+	# # lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
+				  # # expression='14')			  				  
 			  
 ## stator
 lastInstance = ParameterGeom(name='R_ST_IN',

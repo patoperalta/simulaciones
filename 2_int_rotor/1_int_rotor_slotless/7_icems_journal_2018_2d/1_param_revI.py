@@ -17,41 +17,34 @@ print("FICHIER PARAM.PY\n")
 
 ## rotor with NO HOLE
 
-r_rot_out = 20
+r_rot_out = 10
 	  
 ParameterGeom(name='R_ROT_OUT : outer radius of rotor',
-              expression=str(r_rot_out))				  
+              expression=str(r_rot_out))	
+
+lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
+			  expression='2')				  
 			  
-if r_rot_out==10:
-	## airgap			  
-	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
-				  expression='5.25')	
-				  
-	## D_ST is now a parameter, so there is no proportionality constant			  		  
-	lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  expression='5')	
-				  
-	lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
-				  expression='2')	
-elif r_rot_out==15:
-	## airgap			  
-	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
-				  expression='5')	
-	## D_ST is now a parameter, so there is no proportionality constant			  		  
-	lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  expression='9')	
-	lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
-				  expression='2')					  				  
-elif r_rot_out==20:
-	## airgap			  
-	lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
-				  expression='5')	
-	## D_ST is now a parameter, so there is no proportionality constant			  		  
-	lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  expression='12.5')	
-	lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
-				  expression='2')				  
-	  
+## airgap			  
+lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
+			  expression='5')		
+
+ParameterGeom(name='D_ST',
+			  expression='5+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*7/2')				  			  			  			  
+			  
+# if r_rot_out==10:		  
+	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
+	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  # expression='5')	
+# elif r_rot_out==15:
+	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
+	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  # expression='9')					  				  
+# elif r_rot_out==20:
+	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
+	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
+				  # expression='12.5')	
+
 lastInstance = ParameterGeom(name='R_ST_IN : stator inner radius',
               expression='R_ROT_OUT+D_AGAP')			  			  
 ## stator

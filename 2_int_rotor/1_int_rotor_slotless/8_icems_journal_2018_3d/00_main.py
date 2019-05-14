@@ -17,11 +17,11 @@ def print_time_hms( time_sec ):
      else:
           return "%0.1f s \n" % time_sec
 
-
-
 t = time.time()
 
 newProject()
+
+closeModelerContext()
 
 ## start scripting
 

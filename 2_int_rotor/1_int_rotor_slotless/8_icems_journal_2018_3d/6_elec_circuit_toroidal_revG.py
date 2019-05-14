@@ -37,10 +37,11 @@ lastInstance = VariationParameterFormula(name='TH_COIL_CIRC : theoretical thickn
                           formula='D_AGAP-D_MECHGAP')	
 
 lastInstance = VariationParameterFormula(name='R_ST_IN_PH',
-                          formula='R_ST_OUT*(1-K_D_ST)')
+                          formula='R_ROT_OUT+D_AGAP')
 						  
 lastInstance = VariationParameterFormula(name='A_COIL : area of each coil',
-                          formula='pi()/6*(R_ST_IN_PH^2-(R_ST_IN_PH-TH_COIL_CIRC)^2)')						  						  
+                          formula='pi()/6*(R_ST_IN_PH^2-(R_ST_IN_PH-TH_COIL_CIRC)^2)')	
+						  
 lastInstance = VariationParameterFormula(name='A_CU',
                           formula='A_COIL*COIL_KCU')		
 
@@ -49,18 +50,19 @@ lastInstance = VariationParameterFormula(name='ALPHA_CASE_PH',
                           formula='ValidLR(ALPHA_H,0,1,1,1)')
 
 lastInstance = VariationParameterFormula(name='D_ST_PH',
-                          formula='K_D_ST*R_ST_OUT')
+                          formula='D_ST')
 						  
 lastInstance = VariationParameterFormula(name='R_ST_OUT_PH',
-                          formula='R_ST_OUT')						  
+                          formula='R_ROT_OUT+D_AGAP+D_ST')						  
 
 lastInstance = VariationParameterFormula(name='H_ST_PH',
-                          formula='2*R_ST_OUT_PH*(ALPHA_CASE_PH*BETA+(1-ALPHA_CASE_PH)*BETA/ALPHA_H)')						  
+                          formula='2*R_ST_OUT_PH*(ALPHA_CASE_PH*BETA+(1-ALPHA_CASE_PH)*BETA/ALPHA_H)')	
+						  
 lastInstance = VariationParameterFormula(name='L_BAR_PH',
                           formula='2*(H_ST_PH+D_ST_PH)+2*pi()*TH_COIL_CIRC/2')	
 						  
 lastInstance = VariationParameterFormula(name='R_ROT_PH',
-                          formula='R_ST_OUT*(1-K_D_ST)-D_AGAP')							  
+                          formula='R_ROT_OUT')							  
 
 ##everything ready for the resistance						  
 lastInstance = ParameterGeom(name='RHO_CU',

@@ -1,36 +1,37 @@
 Loading data model 'Flux_model.stp'
-Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_journal_icems/Flux3D_log.py'
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/Flux3D_log.py'
  
                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                  HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:2092 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:8392 jperalta
  
-07:38:14       0 sec. FLUX3D_18.1.0 kernel initialized
+08:11:45       0 sec. FLUX3D_18.1.0 kernel initialized
 
 Flux3D (application 2018.1) running
 
-Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_journal_icems/00_main.py' in batch mode ...
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py' in batch mode ...
 Loading new project
 Creating ANONYM
 ... end loading new project
+   openModelerContext executed
+Modeler context opened
 Execution of command file '1_param_revH.py' in batch mode ...
 FICHIER PARAM.PY
 
-   ParameterGeom[R_ST_OUT] created
-   ParameterGeom[D_MOT] created
-   ParameterGeom[K_D_ST] created
+   ParameterGeom[R_ROT_OUT] created
+ParameterGeom[1]
+   ParameterGeom[D_MECHGAP] created
+   ParameterGeom[D_AGAP] created
    ParameterGeom[D_ST] created
    ParameterGeom[R_ST_IN] created
-   ParameterGeom[D_AGAP] created
-   ParameterGeom[D_MECHGAP] created
-   ParameterGeom[R_ROT_OUT] created
-ParameterGeom[8]
+   ParameterGeom[R_ST_OUT] created
+   ParameterGeom[D_MOT] created
    ParameterGeom[BETA] created
    ParameterGeom[ALPHA_H] created
    ParameterGeom[ALPHA_CASE] created
    ParameterGeom[H_ST] created
-ParameterGeom[12]
+ParameterGeom[11]
    ParameterGeom[H_ROT] created
    ParameterGeom[DTHETA] created
    ParameterGeom[DALPHA] created
@@ -76,7 +77,7 @@ Execution of command file '4_geom_revD_circular.py' in batch mode ...
 No line-line intersections and no lines superimposed
 Number of surfaces found : 1
 Checking the unicity of auxiliary points
-Looking for identical points, minimum distance between 2 points is 0.157E-06
+Looking for identical points, minimum distance between 2 points is 0.392E-06
 Checking the unicity of lines
 Creation of 2 FACES :
 1  2
@@ -106,9 +107,9 @@ Creation of 2 volume(s) done :
    propagateVolume executed
    InfiniteBox[InfiniteBoxCylinderZ] created
 No line-line intersections and no lines superimposed
-Number of surfaces found : 18
+Number of surfaces found : 16
 Checking the unicity of auxiliary points
-Looking for identical points, minimum distance between 2 points is 0.313E-06
+Looking for identical points, minimum distance between 2 points is 0.783E-06
 Checking the unicity of lines
 Creation of 27 FACES :
 33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59
@@ -136,6 +137,12 @@ Material[4]
    Material[METGLAS] created
 The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
    Material[NO12] created
+   Material[COGENT_M235_35A_50HZ] created
+Material[7]
+The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
+   Material[METGLAS_2605SA1] created
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 33.2103049326848
+   Material[METGLAS_NETL] created
 End execution of command file '5_mat_def.py' in batch mode ...
 Execution of command file '6_elec_circuit_toroidal_revG.py' in batch mode ...
    ParameterGeom[M_R_THEO] created
@@ -265,10 +272,9 @@ Scenario[1]
    addPilot executed
    addPilot executed
    addPilot executed
-   addPilot executed
+
    Scenario[1_DZ] created
 Scenario[2]
-   addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
@@ -279,25 +285,20 @@ Scenario[3]
    addPilot executed
    addPilot executed
    addPilot executed
-   addPilot executed
    Scenario[3_DBETA] created
 Scenario[4]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   addPilot executed
-
    Scenario[4_DX] created
 Scenario[5]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   addPilot executed
    Scenario[5_DY] created
 Scenario[6]
-   addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
@@ -311,10 +312,8 @@ Scenario[7]
    addPilot executed
    addPilot executed
    addPilot executed
-   addPilot executed
    Scenario[7_JF] created
 Scenario[8]
-   addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
@@ -324,7 +323,7 @@ End execution of command file '10_make_scenarios_active_revC.py' in batch mode .
 Verifying of linked faces ...
   27 face(s) have consistent linked mesh generator.
  
-07:38:20       6 sec. Internal meshing of the lines
+08:11:52       7 sec. Internal meshing of the lines
  
 Automatic meshing of 26  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -337,21 +336,21 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 26 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-07:38:20       6 sec.    1051 1st order surfacic elements created
+08:11:53       7 sec.    1057 1st order surfacic elements created
  
 Extrusive meshing of 5 faces
-07:38:20       6 sec.    2610 1st order surfacic elements created
+08:11:53       7 sec.    2790 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 25 linked faces
  
-07:38:20       6 sec.    1725 1st order lineic elements created
+08:11:53       7 sec.    1729 1st order lineic elements created
  
 Automatic mesh of 15 volumes
-07:38:20       6 sec. Boundary meshing of volumes
+08:11:53       8 sec. Boundary meshing of volumes
 Insert of nodes ...
 ... End of nodes insert
-   Number of elements in the global boundary mesh  : 59694
+   Number of elements in the global boundary mesh  : 62729
 Checking 44 faces
 Checking 44 faces: iteration No 1  completed
 Number of node(s) creating while the iteration: 32
@@ -359,42 +358,40 @@ Checking 44 faces: iteration No 2  completed
 Number of node(s) creating while the iteration: 2
 Checking of faces completed in 3 iteration(s)
 Number of nodes creating while checking faces: 34
-  10686  boundary nodes
-  30146  boundary meshes
-07:38:30      16 sec. Internal meshing of volumes
+  11412  boundary nodes
+  31022  boundary meshes
+08:12:09      23 sec. Internal meshing of volumes
  
-Number of nodes created by internal meshing 2536
-07:38:33      19 sec.
-         13230 nodes
-         52798 meshes
-07:38:33      19 sec. Mesh compressing
-         13230 nodes
-         50055 meshes
-07:38:33      19 sec.   50055 1st order volumic elements created
+Number of nodes created by internal meshing 2365
+08:12:15      29 sec.
+         13785 nodes
+         52593 meshes
+08:12:15      29 sec. Mesh compressing
+         13785 nodes
+         51400 meshes
+08:12:15      29 sec.   51400 1st order volumic elements created
  
 Extrusive meshing of 8 volumes
-07:38:34      19 sec.   54360 1st order volumic elements created
-     20160 ill-connected elements have been detected
+08:12:15      30 sec.   52200 1st order volumic elements created
+     21600 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
-Creation of 10080 1st order pyramid elements
+Creation of 10800 1st order pyramid elements
 End of topological mesh regularization
  
 Volume elements :
-   Number of elements not evaluated     : 68.64  %
-   Number of excellent quality elements : 6.74  %
-   Number of good quality elements      : 9.26  %
-   Number of average quality elements   : 7.91  %
-   Number of poor quality elements      : 7.45  %
+   Number of elements not evaluated     : 68.98  %
+   Number of excellent quality elements : 7.15  %
+   Number of good quality elements      : 8.61  %
+   Number of average quality elements   : 9.25  %
+   Number of poor quality elements      : 6.01  %
  
 Verifying of linked faces ...
   27 face(s) respect strongly (ELEMENTS) linked mesh generator.
  
    meshDomain executed
  
-07:38:38      24 sec. Generating 2nd order elements is running
-Percentage of 2nd order nodes not projected on line 47 : 14%
+08:12:22      36 sec. Generating 2nd order elements is running
 Percentage of 2nd order nodes not projected on line 48 : 28%
-Percentage of 2nd order nodes not projected on line 53 : 14%
 Percentage of 2nd order nodes not projected on line 55 : 28%
 Percentage of 2nd order nodes not projected on line 64 : 18%
 Percentage of 2nd order nodes not projected on line 75 : 9%
@@ -402,18 +399,18 @@ Percentage of 2nd order nodes not projected on face 43 : 4%
 Percentage of 2nd order nodes not projected on face 44 : 57%
 Percentage of 2nd order nodes not projected on face 52 : 6%
 Percentage of 2nd order nodes not projected on face 58 : 4%
-  Total number of nodes --> 193169
-07:38:41      27 sec. End generating 2nd order elements
+  Total number of nodes --> 190258
+08:12:27      41 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
-End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_journal_icems/00_main.py' in batch mode ...
+End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py' in batch mode ...
 Closing project
 Close of ANONYM
 ... end closing project
-Maximum use of 890 MiB. in numerical memory
-For the dynamic table ID 1295963
+Maximum use of 896 MiB. in numerical memory
+For the dynamic table ID 1410610
 Maximum use of 8 MiB. in character memory
-For the dynamic table ID 50199
+For the dynamic table ID 346989
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -432,4 +429,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-07:41:03     169 sec. FLUX3D_18.1.0 kernel finalized
+08:14:53     187 sec. FLUX3D_18.1.0 kernel finalized

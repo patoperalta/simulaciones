@@ -12,13 +12,9 @@ beta_min = 0.1
 beta_max = 0.5
 d_beta= 0.1
 
-dgap_min = 3
-dgap_max = 5 
+dgap_min = 2
+dgap_max = 7 
 d_dgap= 1
-
-rmot_min = 15
-rmot_max = 25
-d_rmot= 5
 
 ##############################		 	
 Scenario(name='0_FIELD')
@@ -40,11 +36,6 @@ Scenario['0_FIELD'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_A
                                                                          maxValue=dgap_max,
                                                                          stepValue=d_dgap)]))
 
-Scenario['0_FIELD'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_ST_OUT'],
-                                            intervals=[IntervalStepValue(minValue=rmot_min,
-                                                                         maxValue=rmot_max,
-                                                                         stepValue=d_rmot)]))
-
 endMacroTransaction()
 
 ##############################
@@ -64,17 +55,12 @@ Scenario['1_DZ'].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA']
                                                                          stepValue=d_beta)]))
 
 Scenario['1_DZ'].addPilot(pilot=MonoValue(parameter=VariationParameter['DZ'],
-                                          value=.5))
+                                          value=r_rot_out/5))
 
 Scenario['1_DZ'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP'],
                                             intervals=[IntervalStepValue(minValue=dgap_min,
                                                                          maxValue=dgap_max,
                                                                          stepValue=d_dgap)]))
-
-Scenario['1_DZ'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_ST_OUT'],
-                                            intervals=[IntervalStepValue(minValue=rmot_min,
-                                                                         maxValue=rmot_max,
-                                                                         stepValue=d_rmot)]))
 
 endMacroTransaction()
 
@@ -95,18 +81,13 @@ Scenario['2_DALPHA'].addPilot(pilot=MultiValues(parameter=VariationParameter['BE
                                                                          stepValue=d_beta)]))
 
 Scenario['2_DALPHA'].addPilot(pilot=MonoValue(parameter=VariationParameter['DALPHA'],
-                                          value=5))
+                                          value=r_rot_out/4))
 
 Scenario['2_DALPHA'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP'],
                                             intervals=[IntervalStepValue(minValue=dgap_min,
                                                                          maxValue=dgap_max,
                                                                          stepValue=d_dgap)]))
-
-Scenario['2_DALPHA'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_ST_OUT'],
-                                            intervals=[IntervalStepValue(minValue=rmot_min,
-                                                                         maxValue=rmot_max,
-                                                                         stepValue=d_rmot)]))
-
+																		 
 endMacroTransaction()
 
 ##############################
@@ -126,17 +107,12 @@ Scenario['3_DBETA'].addPilot(pilot=MultiValues(parameter=VariationParameter['BET
                                                                          stepValue=d_beta)]))
 
 Scenario['3_DBETA'].addPilot(pilot=MonoValue(parameter=VariationParameter['DBETA'],
-                                          value=5))									  			  
+                                          value=r_rot_out/4))									  			  
 
 Scenario['3_DBETA'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP'],
                                             intervals=[IntervalStepValue(minValue=dgap_min,
                                                                          maxValue=dgap_max,
                                                                          stepValue=d_dgap)]))
-
-Scenario['3_DBETA'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_ST_OUT'],
-                                            intervals=[IntervalStepValue(minValue=rmot_min,
-                                                                         maxValue=rmot_max,
-                                                                         stepValue=d_rmot)]))
 
 endMacroTransaction()
 
@@ -158,17 +134,13 @@ Scenario['4_DX'].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA']
                                                                          stepValue=d_beta)]))
 
 Scenario['4_DX'].addPilot(pilot=MonoValue(parameter=VariationParameter['DX'],
-                                          value=.5))
+                                          value=r_rot_out/12))
 
 Scenario['4_DX'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP'],
                                             intervals=[IntervalStepValue(minValue=dgap_min,
                                                                          maxValue=dgap_max,
                                                                          stepValue=d_dgap)]))
 
-Scenario['4_DX'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_ST_OUT'],
-                                            intervals=[IntervalStepValue(minValue=rmot_min,
-                                                                         maxValue=rmot_max,
-                                                                         stepValue=d_rmot)]))
 
 endMacroTransaction()
 
@@ -190,7 +162,7 @@ Scenario['5_DY'].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA']
                                                                          stepValue=d_beta)]))
 
 Scenario['5_DY'].addPilot(pilot=MonoValue(parameter=VariationParameter['DX'],
-                                          value=.5))
+                                          value=r_rot_out/12))
 										  
 Scenario['5_DY'].addPilot(pilot=MonoValue(parameter=VariationParameter['DTHETA'],
                                           value=90))										  
@@ -199,10 +171,5 @@ Scenario['5_DY'].addPilot(pilot=MultiValues(parameter=VariationParameter['D_AGAP
                                             intervals=[IntervalStepValue(minValue=dgap_min,
                                                                          maxValue=dgap_max,
                                                                          stepValue=d_dgap)]))
-
-Scenario['5_DY'].addPilot(pilot=MultiValues(parameter=VariationParameter['R_ST_OUT'],
-                                            intervals=[IntervalStepValue(minValue=rmot_min,
-                                                                         maxValue=rmot_max,
-                                                                         stepValue=d_rmot)]))
 
 endMacroTransaction()

@@ -20,18 +20,29 @@ lastInstance = RegionFace(name='AIRGAP',
 ## coil geometric parameters
 lastInstance = ParameterGeom(name='COIL_KCU : copper filling factor',
               expression='.4')	
+
+## now i have to define them otherwise...  since they are defined through functions (and not hard coded)			  
+lastInstance = VariationParameterFormula(name='L_SLOT_PH',
+                          formula='7+ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*5/4')							  			  
+						  
+lastInstance = VariationParameterFormula(name='W_SLOT_PH',
+                          formula='6+3*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')							  			  						  
+						  
+lastInstance = VariationParameterFormula(name='D_ST_PH',
+                          formula='6+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')							  			  						  						  
+##						  
 			  
 lastInstance = VariationParameterFormula(name='R_ST_OUT_PH',
-                          formula='R_ROT_OUT+D_AGAP+L_SLOT+D_ST')			  
+                          formula='R_ROT_OUT+D_AGAP+L_SLOT_PH+D_ST_PH')			  
 			  
 lastInstance = VariationParameterFormula(name='ST_A_SLOT : stator area / slot',
-                          formula='pi()*(R_ST_OUT_PH^2-(R_ST_OUT_PH-D_ST-L_SLOT)^2)/6')			  
+                          formula='pi()*(R_ST_OUT_PH^2-(R_ST_OUT_PH-D_ST_PH-L_SLOT_PH)^2)/6')			  
 
 lastInstance = VariationParameterFormula(name='ST_BI_SLOT : backiron area / slot',
-                          formula='Pi()*(R_ST_OUT_PH**2-(R_ST_OUT_PH-D_ST)**2)/6')
+                          formula='Pi()*(R_ST_OUT_PH**2-(R_ST_OUT_PH-D_ST_PH)**2)/6')
 						  
 lastInstance = VariationParameterFormula(name='ST_TOOTH_A : tooth',
-                          formula='W_SLOT*L_SLOT')			
+                          formula='W_SLOT_PH*L_SLOT_PH')			
 
 lastInstance = VariationParameterFormula(name='A_SLOT : = 2*A_COIL',
                           formula='ST_A_SLOT-ST_BI_SLOT-ST_TOOTH_A')
