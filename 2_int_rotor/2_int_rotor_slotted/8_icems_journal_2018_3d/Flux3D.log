@@ -1,0 +1,982 @@
+Loading data model 'Flux_model.stp'
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/Flux3D_log.py'
+ 
+                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:25208 jperalta
+ 
+09:51:59       0 sec. FLUX3D_18.1.0 kernel initialized
+
+Flux3D (application 2018.1) running
+
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py' in batch mode ...
+Loading new project
+Creating ANONYM
+... end loading new project
+Execution of command file '1_param_revG.py' in batch mode ...
+FICHIER PARAM.PY
+
+   ParameterGeom[R_ROT_OUT] created
+ParameterGeom[1]
+   ParameterGeom[D_AGAP] created
+   ParameterGeom[L_SLOT] created
+ParameterGeom[3]
+   ParameterGeom[W_SLOT] created
+ParameterGeom[4]
+   ParameterGeom[D_ST] created
+ParameterGeom[5]
+   ParameterGeom[R_ST_IN] created
+   ParameterGeom[R_ST_OUT] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[Y] created
+   ParameterGeom[Y2] created
+   ParameterGeom[BETA] created
+   ParameterGeom[ALPHA_H] created
+   ParameterGeom[ALPHA_CASE] created
+   ParameterGeom[H_ST] created
+ParameterGeom[14]
+   ParameterGeom[H_ROT] created
+   ParameterGeom[DALPHA_MULT] created
+   ParameterGeom[DBETA_MULT] created
+   ParameterGeom[DX_MULT] created
+   ParameterGeom[DY_MULT] created
+   ParameterGeom[DZ_MULT] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DALPHA] created
+   ParameterGeom[DBETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[DZ] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+   ParameterGeom[TH_COIL] created
+End execution of command file '1_param_revG.py' in batch mode ...
+Execution of command file '2_app_def.py' in batch mode ...
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+End execution of command file '2_app_def.py' in batch mode ...
+Execution of command file '3_mesh_info.py' in batch mode ...
+   AidedMesh[1] modified
+End execution of command file '3_mesh_info.py' in batch mode ...
+Execution of command file '4_geom_revE.py' in batch mode ...
+   CoordSys[COORD_SYS_ST] created
+   CoordSys[COORD_SYS_ROT] created
+   Point[1] created
+   Point[2] created
+   Point[3] created
+   Point[4] created
+   Point[5] created
+   Point[6] created
+   Line[1] created
+   Line[2] created
+   Line[3] created
+   Line[4] created
+   Line[5] created
+   Line[6] created
+   Line[7] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 1
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.171E-06
+Checking the unicity of lines
+Creation of 2 FACES :
+1  2
+   buildFaces executed
+   Transf[ROT_ST_60] created
+Creation of 10 face(s) done :
+3  4  5  6  7  8  9  10  11  12
+   propagate executed
+   Line[43] created
+   Point[37] created
+   Point[38] created
+   Line[44] created
+   Line[45] created
+   Line[46] created
+   Line[47] created
+   Line[48] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 1
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.745E-06
+Checking the unicity of lines
+Creation of 3 FACES :
+13  14  15
+   buildFaces executed
+Creation of 15 face(s) done :
+16  17  18  19  20  21  22  23  24  25  26  27  28  29  30
+   propagate executed
+   Transf[ST_H_ST] created
+Creation of 30 volume(s) done :
+1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30
+   extrude executed
+   Point[97] created
+   Point[98] created
+   Point[99] created
+   Point[100] created
+   Line[205] created
+   Line[206] created
+   Line[207] created
+   Line[208] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 14
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.779E-06
+Checking the unicity of lines
+Creation of 3 FACES :
+139  140  141
+   buildFaces executed
+   Face[140] deleted
+   Face[139] deleted
+   Face[141] modified
+   Transf[ROT_ROTOR] created
+Creation of 2 volume(s) done :
+31  32
+   extrude executed
+   Transf[AX_SIM_ROT] created
+Creation of 2 volume(s) done :
+33  34
+   propagateVolume executed
+   Transf[H_COILS_PLUS] created
+   Transf[H_COILS_MINUS] created
+Creation of 3 volume(s) done :
+35  36  37
+   extrude executed
+Creation of 3 volume(s) done :
+38  39  40
+   extrude executed
+Creation of 30 volume(s) done :
+41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
+   propagateVolume executed
+   InfiniteBox[InfiniteBoxCylinderZ] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 29
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.794E-06
+Checking the unicity of lines
+Creation of 28 FACES :
+297  298  299  300  301  302  303  304  305  306  307  308  309  310  311  312  313  314  315  316  317  318  319  320  321  322  323  324
+   buildFaces executed
+   setInvisible executed
+   Face[299] deleted
+   Face[298] deleted
+   Face[297] deleted
+   Face[300] deleted
+No line-face intersections
+Creation of 7 VOLUMES :
+71  72  73  74  75  76  77
+   buildVolumes executed
+Some intersections may not have been detected
+
+   CoordSys[COORD_SYS_ST] modified
+End execution of command file '4_geom_revE.py' in batch mode ...
+Execution of command file '5_mat_def.py' in batch mode ...
+   Material[COGENT_M270_50A_50HZ] created
+Material[1]
+   Material[IMPHY_MUMETAL] created
+Material[2]
+   Material[BMT_50H] created
+Material[3]
+   Material[BMT_42UH] created
+Material[4]
+   Material[METGLAS] created
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   Material[NO12] created
+   Material[AIR] created
+End execution of command file '5_mat_def.py' in batch mode ...
+Execution of command file '6_coils_concentric_revF.py' in batch mode ...
+   ParameterGeom[COIL_KCU] created
+   ParameterGeom[RHO_CU] created
+   VariationParameter[L_SLOT_PH] created
+   VariationParameter[W_SLOT_PH] created
+   VariationParameter[D_ST_PH] created
+   VariationParameter[R_ST_IN_PH] created
+   VariationParameter[R_ST_OUT_PH] created
+   VariationParameter[ST_A_SLOT] created
+   VariationParameter[ST_BI_SLOT] created
+   VariationParameter[ST_TOOTH_A] created
+   VariationParameter[A_SLOT] created
+   VariationParameter[A_COIL] created
+   VariationParameter[A_CU] created
+   VariationParameter[TH_COIL] created
+   VariationParameter[ALPHA_CASE_PH] created
+   VariationParameter[H_ST_PH] created
+   VariationParameter[L_BAR_PH] created
+   VariationParameter[I_T_PEAK] created
+   VariationParameter[THETA_T] created
+   VariationParameter[JT_RMS] created
+   VariationParameter[IT_HAT] created
+   VariationParameter[I_F_PEAK] created
+   VariationParameter[THETA_F0] created
+   VariationParameter[THETA_F_DIR] created
+   VariationParameter[THETA_F] created
+   VariationParameter[JF_RMS] created
+   VariationParameter[IF_HAT] created
+   VariationParameter[R_COIL] created
+   VariationParameter[P_CU_TOT] created
+   ParameterGeom[TH_COIL_OFFSET] created
+   ParameterGeom[L_COIL] created
+ParameterGeom[33]
+   CoordSys[COORD_COIL_1] created
+   VariationParameter[I_T_1] created
+   VariationParameter[I_F_1] created
+   CoilConductor[I_1] created
+ 
+Coil(1) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_1] created
+   CoordSys[COORD_COIL_2] created
+   VariationParameter[I_T_2] created
+   VariationParameter[I_F_2] created
+   CoilConductor[I_2] created
+Coil(2) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_2] created
+   CoordSys[COORD_COIL_3] created
+   VariationParameter[I_T_3] created
+   VariationParameter[I_F_3] created
+   CoilConductor[I_3] created
+Coil(3) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_3] created
+   CoordSys[COORD_COIL_4] created
+   VariationParameter[I_T_4] created
+   VariationParameter[I_F_4] created
+   CoilConductor[I_4] created
+Coil(4) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_4] created
+   CoordSys[COORD_COIL_5] created
+   VariationParameter[I_T_5] created
+   VariationParameter[I_F_5] created
+   CoilConductor[I_5] created
+Coil(5) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_5] created
+   CoordSys[COORD_COIL_6] created
+   VariationParameter[I_T_6] created
+   VariationParameter[I_F_6] created
+   CoilConductor[I_6] created
+Coil(6) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_6] created
+   VariationParameter[V_FE_ST_RING] created
+   VariationParameter[V_FE_ST_SLOTS] created
+   VariationParameter[H_ROT_PH] created
+
+   VariationParameter[V_PM] created
+   VariationParameter[V_CU] created
+   VariationParameter[DENS_NO12] created
+   VariationParameter[DENS_CU] created
+   VariationParameter[DENS_NDFEB] created
+   VariationParameter[MASS_ST] created
+   VariationParameter[MASS_CU] created
+   VariationParameter[MASS_PM] created
+End execution of command file '6_coils_concentric_revF.py' in batch mode ...
+Execution of command file '7_assign_revB.py' in batch mode ...
+   RegionVolume[IRON_ST] created
+   RegionVolume[AIR_DOMAIN] created
+   RegionVolume[PM] created
+   RegionVolume[COIL_1] created
+   RegionVolume[COIL_2] created
+   RegionVolume[COIL_3] created
+   RegionVolume[COIL_4] created
+   RegionVolume[COIL_5] created
+   RegionVolume[COIL_6] created
+   setInvisible executed
+   assignRegion executed
+   assignRegion executed
+   assignRegion executed
+   assignRegionToVolumes executed
+   assignRegionToVolumes executed
+   assignRegionToVolumes executed
+   assignRegionToVolumes executed
+   assignRegionToVolumes executed
+   assignRegionToVolumes executed
+   assignRegionToVolumes executed
+   orientRegVolMaterial executed
+End execution of command file '7_assign_revB.py' in batch mode ...
+Execution of command file '8_sensors.py' in batch mode ...
+   Sensor[F_ROT] created
+   Sensor[TX_ROT] created
+   Sensor[TY_ROT] created
+   Sensor[TZ_ROT] created
+   Sensor[F_ST] created
+   Sensor[TX_ST] created
+   Sensor[TY_ST] created
+   Sensor[TZ_ST] created
+End execution of command file '8_sensors.py' in batch mode ...
+Execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
+   Scenario[0_FIELD] created
+Scenario[1]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ] created
+Scenario[2]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA] created
+Scenario[3]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA] created
+Scenario[4]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX] created
+Scenario[5]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY] created
+Scenario[6]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
+Execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+   Scenario[6_JT] created
+Scenario[7]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF] created
+Scenario[8]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+ 
+Verifying of linked faces ...
+  33 face(s) have consistent linked mesh generator.
+ 
+09:52:08       8 sec. Internal meshing of the lines
+ 
+Automatic meshing of 173  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 173 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 173 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 173 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+09:52:10      10 sec.    5451 1st order surfacic elements created
+ 
+Transport-projection meshing of 1  faces
+ 
+09:52:10      10 sec. Mapped meshing of the faces
+09:52:10      10 sec.      48 1st order surfacic elements created
+ 
+Extrusive meshing of 82 faces
+09:52:10      10 sec.    4396 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 64 linked faces
+ 
+09:52:10      10 sec.     951 1st order lineic elements created
+ 
+Automatic mesh of 77 volumes
+ 
+Extrusive meshing of 4 volumes
+09:52:10      10 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 41132
+Checking 266 faces
+ 
+Related line(s) (face edges):
+2
+ 
+
+Anomaly (1) - User error:
+Can not execute the following command :
+executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py')
+
+Error occured while executing the command file :
+   C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py.
+Line : 50.
+
+
+Creation of new nodes is not allowed on "MAPPED" faces
+Mesh generation failed. Try again with thiner meshes.
+   deleteMesh executed
+MAPPED mesh generator available only for volumes with 6 faces
+Anomaly (2) - User error:
+MAPPED mesh generator available only for volumes with 6 faces
+MAPPED mesh generator available only for volumes with 6 faces
+Failed to modify an instance.
+Can not execute the following command :
+Volume[26,2,27,8,28,9,29,10,30,11,15,12].meshGenerator=MeshGenerator['MAPPED']
+
+
+Anomaly (3) - User error:
+MAPPED mesh generator available only for volumes with 6 faces
+Failed to modify an instance.
+Can not execute the following command :
+startMacroTransaction()
+Volume[26].meshGenerator=MeshGenerator['MAPPED']
+
+endMacroTransaction()
+
+   Volume[2] modified
+executed Undo(Volume[2] modified)
+   Volume[2, 8, 9, 10, 11, 12] modified
+Volume[12,2,8,9,10,11] modified
+ 
+Verifying of linked faces ...
+  33 face(s) have consistent linked mesh generator.
+ 
+09:54:45     165 sec. Internal meshing of the lines
+ 
+Automatic meshing of 172  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 172 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 172 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 172 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+09:54:47     167 sec.    5491 1st order surfacic elements created
+ 
+Transport-projection meshing of 14  faces
+ 
+09:54:47     167 sec. Mapped meshing of the faces
+09:54:47     167 sec.     312 1st order surfacic elements created
+ 
+Extrusive meshing of 76 faces
+09:54:47     167 sec.    4420 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 58 linked faces
+ 
+09:54:47     168 sec.     962 1st order lineic elements created
+ 
+Automatic mesh of 77 volumes
+ 
+Extrusive meshing of 4 volumes
+09:54:48     168 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 41004
+Checking 266 faces
+Checking 266 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 138
+Checking of faces completed in 2 iteration(s)
+Number of nodes creating while checking faces: 138
+  6706  boundary nodes
+  26953  boundary meshes
+09:54:51     171 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 1091
+09:54:52     172 sec.
+          7805 nodes
+         35270 meshes
+09:54:52     172 sec. Mesh compressing
+          7805 nodes
+         34670 meshes
+09:54:52     172 sec.   34670 1st order volumic elements created
+ 
+09:54:52     172 sec. Mapped meshing of volumes
+09:54:52     172 sec.     720 1st order volumic elements created
+ 
+Extrusive meshing of 24 volumes
+09:54:52     173 sec.   11100 1st order volumic elements created
+      6272 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+      6272 ill-connected elements have been detected
+Attempt to repair ( 2 /20) ...
+      6272 ill-connected elements have been detected
+Attempt to repair ( 3 /20) ...
+Creation of 3136 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 44.02  %
+   Number of excellent quality elements : 15.86  %
+   Number of good quality elements      : 26.88  %
+   Number of average quality elements   : 11.48  %
+   Number of poor quality elements      : 1.76  %
+ 
+Verifying of linked faces ...
+  33 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+   Volume[1, 3, 4, 5, 6, 7] modified
+Volume[12,2,8,9,10,11,3,1,7,6,...] modified
+ 
+Verifying of linked faces ...
+  33 face(s) have consistent linked mesh generator.
+ 
+09:57:37     337 sec. Internal meshing of the lines
+ 
+Automatic meshing of 171  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 171 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 171 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 171 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+09:57:39     339 sec.    5546 1st order surfacic elements created
+ 
+Transport-projection meshing of 33  faces
+ 
+09:57:39     339 sec. Mapped meshing of the faces
+09:57:39     340 sec.    1506 1st order surfacic elements created
+ 
+Extrusive meshing of 64 faces
+09:57:39     340 sec.    5074 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 52 linked faces
+ 
+09:57:40     340 sec.     998 1st order lineic elements created
+ 
+Automatic mesh of 77 volumes
+ 
+Extrusive meshing of 4 volumes
+09:57:40     340 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 43476
+Checking 266 faces
+Checking 266 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 204
+Checking of faces completed in 2 iteration(s)
+Number of nodes creating while checking faces: 204
+  7218  boundary nodes
+  28652  boundary meshes
+09:57:43     344 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 1081
+09:57:45     345 sec.
+          8307 nodes
+         36887 meshes
+09:57:45     345 sec. Mesh compressing
+          8307 nodes
+         36252 meshes
+09:57:45     345 sec.   36252 1st order volumic elements created
+ 
+09:57:45     345 sec. Mapped meshing of volumes
+09:57:46     346 sec.    3240 1st order volumic elements created
+ 
+Extrusive meshing of 18 volumes
+09:57:46     346 sec.    8520 1st order volumic elements created
+      7640 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+      7640 ill-connected elements have been detected
+Attempt to repair ( 2 /20) ...
+      7640 ill-connected elements have been detected
+Attempt to repair ( 3 /20) ...
+      7640 ill-connected elements have been detected
+Attempt to repair ( 4 /20) ...
+Creation of 3820 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 44.12  %
+   Number of excellent quality elements : 15.23  %
+   Number of good quality elements      : 26.75  %
+   Number of average quality elements   : 11.95  %
+   Number of poor quality elements      : 1.96  %
+ 
+Verifying of linked faces ...
+  33 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+   RegionVolume[COIL_1, COIL_2, COIL_3, COIL_4, COIL_5, COIL_6] modified
+Volume Region[COIL_1,COIL_2,COIL_3,COIL_4,COIL_5,COIL_6] modified
+executed Undo(RegionVolume[COIL_1, COIL_2, COIL_3, COIL_4, COIL_5, COIL_6] modified)
+   setInvisible executed
+executed Undo(setInvisible executed)
+   deleteMesh executed
+   MeshLine[R_ST] created
+   MeshLine[R_ROT] created
+   MeshLine[H_ST] created
+   MeshLine[H_ROT] created
+   MeshLine[THETA_ROT] created
+   MeshLine[THETA_ST] created
+   MeshLine[THETA_ST_BI] created
+executed Undo(MeshLine[THETA_ST_BI] created)
+executed Undo(MeshLine[THETA_ST] created)
+executed Undo(MeshLine[THETA_ROT] created)
+executed Undo(MeshLine[H_ROT] created)
+executed Undo(MeshLine[H_ST] created)
+executed Undo(MeshLine[R_ROT] created)
+executed Undo(MeshLine[R_ST] created)
+   MeshLine[R_ST] created
+   MeshLine[R_ROT] created
+   MeshLine[H_ST] created
+   MeshLine[H_ROT] created
+   MeshLine[THETA_ROT] created
+   MeshLine[THETA_ST_ROUND_BI] created
+   MeshLine[THETA_ST_SLOT] created
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+ 
+Verifying of linked faces ...
+  33 face(s) have consistent linked mesh generator.
+ 
+10:54:12    3733 sec. Internal meshing of the lines
+ 
+Automatic meshing of 171  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 171 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 171 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 171 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+10:54:15    3735 sec.    5424 1st order surfacic elements created
+ 
+Transport-projection meshing of 33  faces
+ 
+10:54:15    3735 sec. Mapped meshing of the faces
+10:54:15    3735 sec.    1086 1st order surfacic elements created
+ 
+Extrusive meshing of 64 faces
+10:54:15    3735 sec.    4146 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 52 linked faces
+ 
+10:54:15    3736 sec.     902 1st order lineic elements created
+ 
+Automatic mesh of 77 volumes
+ 
+Extrusive meshing of 4 volumes
+10:54:16    3736 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 48186
+Checking 266 faces
+Checking 266 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 201
+Checking of faces completed in 2 iteration(s)
+Number of nodes creating while checking faces: 201
+  7635  boundary nodes
+  29970  boundary meshes
+10:54:20    3740 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 1139
+10:54:21    3741 sec.
+          8782 nodes
+         39007 meshes
+10:54:21    3741 sec. Mesh compressing
+          8782 nodes
+         38219 meshes
+10:54:21    3741 sec.   38219 1st order volumic elements created
+ 
+10:54:21    3741 sec. Mapped meshing of volumes
+10:54:22    3742 sec.    1944 1st order volumic elements created
+ 
+Extrusive meshing of 18 volumes
+10:54:22    3742 sec.    5040 1st order volumic elements created
+      8568 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+      8568 ill-connected elements have been detected
+Attempt to repair ( 2 /20) ...
+      8568 ill-connected elements have been detected
+Attempt to repair ( 3 /20) ...
+      8568 ill-connected elements have been detected
+Attempt to repair ( 4 /20) ...
+      8568 ill-connected elements have been detected
+Attempt to repair ( 5 /20) ...
+Creation of 4284 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 43.6  %
+   Number of excellent quality elements : 15.07  %
+   Number of good quality elements      : 25.25  %
+   Number of average quality elements   : 13.3  %
+   Number of poor quality elements      : 2.77  %
+ 
+Verifying of linked faces ...
+  33 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+   deleteMesh executed
+   Volume[37, 39, 46, 47, 48, 49, 50, 61 ..] modified
+Volume[47,48,49,50,37,46,64,65,39,61,...] modified
+   Volume[41, 52] modified
+Volume[41,52] modified
+executed Undo(Volume[41, 52] modified)
+   Volume[35, 36, 38, 40, 41, 42, 43, 44 ..] modified
+Volume[41,52,42,53,43,54,44,55,45,36,...] modified
+   Volume[21] modified
+executed Undo(Volume[21] modified)
+   Volume[13, 14, 16, 17, 18, 19, 20, 21 ..] modified
+Volume[21,16,17,22,18,23,19,24,20,25,...] modified
+ 
+Verifying of linked faces ...
+  33 face(s) have consistent linked mesh generator.
+ 
+11:04:50    4370 sec. Internal meshing of the lines
+ 
+Automatic meshing of 25  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+11:04:50    4370 sec.     936 1st order surfacic elements created
+ 
+Transport-projection meshing of 221  faces
+ 
+11:04:50    4370 sec. Mapped meshing of the faces
+11:04:51    4371 sec.    4066 1st order surfacic elements created
+ 
+Extrusive meshing of 34 faces
+11:04:51    4371 sec.    6370 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 40 linked faces
+ 
+11:04:51    4371 sec.    2070 1st order lineic elements created
+ 
+Automatic mesh of 77 volumes
+ 
+Extrusive meshing of 4 volumes
+11:04:51    4371 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 40655
+Checking 194 faces
+Checking 194 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 55
+Checking of faces completed in 2 iteration(s)
+Number of nodes creating while checking faces: 55
+  6423  boundary nodes
+  19563  boundary meshes
+11:04:54    4374 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 1151
+11:04:56    4376 sec.
+          7582 nodes
+         28557 meshes
+11:04:56    4376 sec. Mesh compressing
+          7582 nodes
+         27943 meshes
+11:04:56    4376 sec.   27943 1st order volumic elements created
+ 
+11:04:56    4376 sec. Mapped meshing of volumes
+11:04:58    4378 sec.    5064 1st order volumic elements created
+ 
+Extrusive meshing of 6 volumes
+11:04:58    4378 sec.    2304 1st order volumic elements created
+     11016 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Problem with repairing nearby node's coordinates (in meter) : (-0.009355741319096,0.017392448548401,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.0195261987564,0.002958838330186,-0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (-0.011375555833657,-0.01614384996257,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.007200670218568,0.018389603327479,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (-0.012325528537832,0.015430764997294,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.0195261987564,0.002958838330186,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.02036734958757,0.583333333333E-03,0.009453873998089)
+Problem with repairing nearby node's coordinates (in meter) : (0.008293206265642,-0.0179234453154,-0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (-0.019740172936477,0.593914620628E-03,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (-0.019740172936477,0.593914620628E-03,-0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.009355741319096,-0.017392448548401,-0.009875682632531)
+     11016 ill-connected elements have been detected
+Attempt to repair ( 2 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 3 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 4 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 5 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 6 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 7 /20) ...
+Creation of 5508 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 57.81  %
+   Number of excellent quality elements : 10.57  %
+   Number of good quality elements      : 15.92  %
+   Number of average quality elements   : 12.72  %
+   Number of poor quality elements      : 2.99  %
+ 
+Verifying of linked faces ...
+  33 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+   deleteMesh executed
+MAPPED mesh generator available only for volumes with 6 faces
+Anomaly (4) - User error:
+MAPPED mesh generator available only for volumes with 6 faces
+MAPPED mesh generator available only for volumes with 6 faces
+Failed to modify an instance.
+Can not execute the following command :
+Volume[26,27,28,29,30,15].meshGenerator=MeshGenerator['MAPPED']
+
+
+   MeshLine[THETA_ST_ROUND_BI, THETA_ST_SLOT] modified
+Mesh Line[THETA_ST_ROUND_BI,THETA_ST_SLOT] modified
+ 
+Verifying of linked faces ...
+  33 face(s) have consistent linked mesh generator.
+ 
+11:09:53    4673 sec. Internal meshing of the lines
+ 
+Automatic meshing of 25  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+11:09:53    4673 sec.     936 1st order surfacic elements created
+ 
+Transport-projection meshing of 221  faces
+ 
+11:09:53    4673 sec. Mapped meshing of the faces
+11:09:54    4674 sec.    4066 1st order surfacic elements created
+ 
+Extrusive meshing of 34 faces
+11:09:54    4674 sec.    6370 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 40 linked faces
+ 
+11:09:54    4674 sec.    2070 1st order lineic elements created
+ 
+Automatic mesh of 77 volumes
+ 
+Extrusive meshing of 4 volumes
+11:09:54    4675 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 40655
+Checking 194 faces
+Checking 194 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 55
+Checking of faces completed in 2 iteration(s)
+Number of nodes creating while checking faces: 55
+  6423  boundary nodes
+  19563  boundary meshes
+11:09:58    4678 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 1151
+11:09:59    4679 sec.
+          7582 nodes
+         28557 meshes
+11:09:59    4679 sec. Mesh compressing
+          7582 nodes
+         27943 meshes
+11:09:59    4679 sec.   27943 1st order volumic elements created
+ 
+11:09:59    4679 sec. Mapped meshing of volumes
+11:10:01    4681 sec.    5064 1st order volumic elements created
+ 
+Extrusive meshing of 6 volumes
+11:10:01    4681 sec.    2304 1st order volumic elements created
+     11016 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+Problem with repairing nearby node's coordinates (in meter) : (-0.009355741319096,0.017392448548401,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.0195261987564,0.002958838330186,-0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (-0.011375555833657,-0.01614384996257,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.007200670218568,0.018389603327479,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (-0.012325528537832,0.015430764997294,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.0195261987564,0.002958838330186,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.02036734958757,0.583333333333E-03,0.009453873998089)
+Problem with repairing nearby node's coordinates (in meter) : (0.008293206265642,-0.0179234453154,-0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (-0.019740172936477,0.593914620628E-03,0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (-0.019740172936477,0.593914620628E-03,-0.009875682632531)
+Problem with repairing nearby node's coordinates (in meter) : (0.009355741319096,-0.017392448548401,-0.009875682632531)
+     11016 ill-connected elements have been detected
+Attempt to repair ( 2 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 3 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 4 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 5 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 6 /20) ...
+     11016 ill-connected elements have been detected
+Attempt to repair ( 7 /20) ...
+Creation of 5508 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 57.81  %
+   Number of excellent quality elements : 10.57  %
+   Number of good quality elements      : 15.92  %
+   Number of average quality elements   : 12.72  %
+   Number of poor quality elements      : 2.99  %
+ 
+Verifying of linked faces ...
+  33 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+   deleteMesh executed

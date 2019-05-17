@@ -1,41 +1,41 @@
-[12|1557488278971|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
-[13|1557488279103|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
-[14|1557488279160|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
-[15|1557488279162|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
-[16|1557488279163|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
-[17|1557488279163|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
-[18|1557488279163|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\7_icems_journal_2018_2d
-[19|1557488279163|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
-[20|1557488279163|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
-[21|1557488279164|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
-[22|1557488279164|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
-[23|1557488279164|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
-[24|1557488279164|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
-[25|1557488279299|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[12|1558074224673|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1558074224815|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1558074224871|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1558074224874|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1558074224874|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1558074224874|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1558074224875|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\7_icems_journal_2018_2d
+[19|1558074224875|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1558074224875|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1558074224875|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1558074224875|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1558074224875|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1558074224876|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1558074225014|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
 Loading data model 'Flux_model.stp'
-[27|1557488279847|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+[27|1558074225534|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log_1.pyPython : ^&|#! Flux2D 18.1
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log_1.py'
  
                                                              FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
                                                                    2048 MiB N. + 127 MiB C. + 1024 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13976 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:19652 jperalta
  
-13:38:02       0 sec. FLUX2D_18.1.0 kernel initialized
-[62315|1557488282962|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
-[62316|1557488282963|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
-[62317|1557488283271|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
-[62319|1557488283548|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@40ea3333
+08:23:48       0 sec. FLUX2D_18.1.0 kernel initialized
+[62315|1558074228905|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
+[62316|1558074228906|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
+[62317|1558074229131|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
+[62319|1558074229416|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@3eac8d71
 
 Flux2D (application 2018.1) running
 
-[62328|1557488283614|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@2e0cb63f
-[62346|1557488284329|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62352|1557488284350|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62328|1558074229490|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@3a46379c
+[62348|1558074230452|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1558074230470|1|WARNING    ][Document|Document.updateInstances] : No project loaded
 Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
-[62363|1557488284497|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62364|1557488285961|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62363|1558074230637|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1558074232027|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
 Loading new project
 Creating ANONYM
 ... end loading new project
@@ -53,12 +53,13 @@ ParameterGeom[1]
    ParameterGeom[D_AGAP] created
    ParameterGeom[L_SLOT] created
 ParameterGeom[3]
-   ParameterGeom[R_ST_IN] created
+   ParameterGeom[W_SLOT] created
+ParameterGeom[4]
    ParameterGeom[D_ST] created
+ParameterGeom[5]
+   ParameterGeom[R_ST_IN] created
    ParameterGeom[R_ST_OUT] created
    ParameterGeom[D_MOT] created
-   ParameterGeom[W_SLOT] created
-ParameterGeom[8]
    ParameterGeom[Y] created
    ParameterGeom[DTHETA] created
    ParameterGeom[DX] created
@@ -136,6 +137,9 @@ Execution of command file '6_assign_mats_and_coils_revA.py' in batch mode ...
    RegionFace[PM] created
    RegionFace[AIRGAP] created
    ParameterGeom[COIL_KCU] created
+   VariationParameter[L_SLOT_PH] created
+   VariationParameter[W_SLOT_PH] created
+   VariationParameter[D_ST_PH] created
    VariationParameter[R_ST_OUT_PH] created
    VariationParameter[ST_A_SLOT] created
    VariationParameter[ST_BI_SLOT] created
@@ -237,7 +241,7 @@ End execution of command file '8_scenarios_test.py' in batch mode ...
 Meshing of 17 faces
  
 Automatic mesh of 66 lines
-13:38:08       5 sec. Internal meshing of the lines
+08:23:54       6 sec. Internal meshing of the lines
  
 Automatic meshing of 17  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -250,142 +254,41 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 17 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-13:38:08       6 sec.    3438 1st order surfacic elements created
+08:23:55       6 sec.    3382 1st order surfacic elements created
  
-13:38:08       6 sec. Generating 2nd order elements is running
-  Total number of nodes --> 6905
-13:38:08       6 sec. End generating 2nd order elements
+08:23:55       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6793
+08:23:55       6 sec. End generating 2nd order elements
  
 Surface elements :
    Number of elements not evaluated     : 0  %
-   Number of excellent quality elements : 98.84  %
-   Number of good quality elements      : 1.16  %
-   Number of average quality elements   : 0  %
+   Number of excellent quality elements : 99.53  %
+   Number of good quality elements      : 0.41  %
+   Number of average quality elements   : 0.06  %
    Number of poor quality elements      : 0  %
    meshDomain executed
  
-13:38:08       6 sec. Generating 2nd order elements is running
-  Total number of nodes --> 6905
-13:38:08       6 sec. End generating 2nd order elements
+08:23:55       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6793
+08:23:55       6 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
 Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py')
 
-[63724|1557488363522|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 2   Message: Failed to modify an instance.
-Can not execute the following command :
-startMacroTransaction()
-ParameterGeom['DY'].expression='2'
-
-endMacroTransaction()
-
-[63725|1557488363523|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: editObject Exception: (JavaException, The creation/modification/deletion of these entities is forbidden because the geometry is meshed. To carry out this command, first delete the mesh. Failed to modify an instance. Can not execute the following command : startMacroTransaction() ParameterGeom['DY'].expression='2' endMacroTransaction() )
---------------------------------------------------------------------------------
-Anomaly (1) - User error:
-The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh.
-Failed to modify an instance.
-Can not execute the following command :
-startMacroTransaction()
-ParameterGeom['DY'].expression='2'
-
-endMacroTransaction()
-
------------------------------- Advanced Text -----------------------------------
-stdcom.error.JavaException: The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh.
-	at cad.flux.kernel.components.FGTransactionModifyInstance.checkTransactionMesh(FGTransactionModifyInstance.java:325)
-	at cad.flux.kernel.components.FGTransactionModifyInstance.checkTransaction(FGTransactionModifyInstance.java:162)
-	at cad.core.kernel.components.TransactionModifyInstance.buildMergeInstances(TransactionModifyInstance.java:867)
-	at cad.flux.kernel.components.FGTransactionModifyInstance.processDBEvaluation(FGTransactionModifyInstance.java:381)
-	at cad.core.kernel.components.TransactionModifyInstance.commit(TransactionModifyInstance.java:658)
-	at cad.core.kernel.components.TransactionManager.commit(TransactionManager.java:284)
-	at cad.core.kernel.components.TransactionManager.processTransactionModifyInstance(TransactionManager.java:433)
-	at cad.core.kernel.components.TransactionManager.setFieldValue(TransactionManager.java:466)
-	at cad.core.kernel.Supervisor.setFieldValue(Supervisor.java:1568)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
-	at org.python.core.PyObject.__call__(PyObject.java:545)
-	at org.python.core.PyObject.__call__(PyObject.java:551)
-	at org.python.core.PyMethod.__call__(PyMethod.java:171)
-	at pydb$py.setFieldValue$215(pydb.py:1674)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:308)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:199)
-	at org.python.core.PyFunction.__call__(PyFunction.java:482)
-	at org.python.core.PyMethod.__call__(PyMethod.java:187)
-	at pydb$py.__setattr__$78(pydb.py:773)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:171)
-	at org.python.core.PyFunction.__call__(PyFunction.java:434)
-	at org.python.core.PyFunction.__call__(PyFunction.java:428)
-	at org.python.core.PyInstance.instance___setattr__(PyInstance.java:303)
-	at org.python.core.PyInstance.__setattr__(PyInstance.java:280)
-	at org.python.pycode._pyx17.f$0(<string>:1)
-	at org.python.pycode._pyx17.call_function(<string>)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyCode.call(PyCode.java:18)
-	at org.python.core.Py.runCode(Py.java:1625)
-	at org.python.core.Py.exec(Py.java:1669)
-	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
-	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
-	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
-	at cad.core.kernel.actions.implementation.instance.EditInstanceAction.doAction(EditInstanceAction.java:152)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
-	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
-	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
-	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
-	at cad.core.frontal.actions.implementation.instance.EditInstanceAction.postAct(EditInstanceAction.java:164)
-	at cad.flux.frontal.actions.implementation.instance.FGEditInstanceAction.postAct(FGEditInstanceAction.java:199)
-	at cad.core.frontal.actions.implementation.instance.EditInstanceAction.interpret(EditInstanceAction.java:182)
-	at cad.flux.frontal.actions.implementation.instance.FGEditInstanceAction.interpret(FGEditInstanceAction.java:122)
-	at cad.core.frontal.components.box.frontaldialog.FrontalDescriptorDialogBox.internalRun(FrontalDescriptorDialogBox.java:306)
-	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
-	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
---------------------------------------------------------------------------------
-[63729|1557488363570|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/error.gif
-[63730|1557488363571|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/informations.gif
-   deleteMesh executed
-Python : deleteMesh()
-
-   ParameterGeom[DY] modified
-Python : ParameterGeom['DY'].expression='1'
-
-
-   ParameterGeom[DY] modified
-Python : ParameterGeom['DY'].expression='0'
-
-
-   ParameterGeom[DX] modified
-Python : ParameterGeom['DX'].expression='1'
-
-
-   ParameterGeom[DTHETA] modified
-Python : ParameterGeom['DTHETA'].expression='90'
-
-
 Closing project
 Close of ANONYM
-[65465|1557488673644|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-[65490|1557488673674|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[63798|1558074289041|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[63823|1558074289094|22|WARNING    ][Document|Document.updateInstances] : No project loaded
 ... end closing project
 Python : closeProject()
 
 Python : exit()
-[65494|1557488673680|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+[63827|1558074289102|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
 Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 347177
+For the dynamic table ID 352368
 Maximum use of 9 MiB. in character memory
-For the dynamic table ID 237331
+For the dynamic table ID 236663
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -404,7 +307,7 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-13:44:33     390 sec. FLUX2D_18.1.0 kernel finalized
-[65518|1557488673685|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
-[65519|1557488673686|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
-[65520|1557488673686|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
+08:24:49      60 sec. FLUX2D_18.1.0 kernel finalized
+[63851|1558074289106|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[63852|1558074289106|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[63853|1558074289106|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers

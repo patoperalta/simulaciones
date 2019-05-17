@@ -68,6 +68,3 @@ LineSegment[1].assignMeshLine(meshLine=MeshLine['R_ROT'])
 Line[2,28].assignMeshLine(meshLine=MeshLine['H_ROT'])
 
 Line[9,22,24,14].assignMeshLine(meshLine=MeshLine['THETA'])
-
-
-

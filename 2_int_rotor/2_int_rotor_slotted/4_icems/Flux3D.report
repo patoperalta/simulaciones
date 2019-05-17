@@ -1,0 +1,568 @@
+[12|1557822625955|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1557822626114|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1557822626212|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1557822626216|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1557822626216|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1557822626217|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1557822626217|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\4_icems
+[19|1557822626217|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1557822626217|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1557822626218|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1557822626218|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1557822626219|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1557822626219|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1557822626420|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+Loading data model 'Flux_model.stp'
+[27|1557822626814|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/4_icems/Flux3D_log.pyPython : ^&|#! Flux3D 18.1
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/4_icems/Flux3D_log.py'
+ 
+                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:12952 jperalta
+ 
+10:30:31       0 sec. FLUX3D_18.1.0 kernel initialized
+[62315|1557822631320|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
+[62316|1557822631322|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
+[62317|1557822631403|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
+[62319|1557822631787|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@3eac8d71
+
+Flux3D (application 2018.1) running
+
+[62328|1557822631865|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@3a46379c
+[62348|1557822633029|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1557822633059|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/4_icems/00_main.py' in batch mode ...
+[62363|1557822633211|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1557822634528|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62513|1557822636289|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[62514|1557822636290|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[62515|1557822636450|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.WarningFortranException: Some intersections may not have been detected   Priority: 1
+Loading new project
+Creating ANONYM
+... end loading new project
+Execution of command file '1_param_revF.py' in batch mode ...
+FICHIER PARAM.PY
+
+   ParameterGeom[R_ST_OUT] created
+   ParameterGeom[D_MOT] created
+   ParameterGeom[K_D_ST] created
+   ParameterGeom[D_ST] created
+   ParameterGeom[R_ST_IN] created
+   ParameterGeom[K_W_SLOT] created
+ParameterGeom[6]
+   ParameterGeom[W_SLOT] created
+ParameterGeom[7]
+   ParameterGeom[Y] created
+   ParameterGeom[K_L_SLOT] created
+ParameterGeom[9]
+   ParameterGeom[L_SLOT] created
+ParameterGeom[10]
+   ParameterGeom[D_AGAP] created
+   ParameterGeom[R_ROT_OUT] created
+ParameterGeom[12]
+   ParameterGeom[BETA] created
+   ParameterGeom[ALPHA_H] created
+   ParameterGeom[ALPHA_CASE] created
+   ParameterGeom[H_ST] created
+ParameterGeom[16]
+   ParameterGeom[H_ROT] created
+   ParameterGeom[DTHETA] created
+   ParameterGeom[DALPHA] created
+   ParameterGeom[DBETA] created
+   ParameterGeom[DX] created
+   ParameterGeom[DY] created
+   ParameterGeom[X_H_DIFF] created
+   ParameterGeom[DZ] created
+   ParameterGeom[DR_0] created
+   ParameterGeom[DTHETA_0] created
+   ParameterGeom[Y2] created
+End execution of command file '1_param_revF.py' in batch mode ...
+Execution of command file '2_app_def.py' in batch mode ...
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+End execution of command file '2_app_def.py' in batch mode ...
+Execution of command file '3_mesh_info.py' in batch mode ...
+   AidedMesh[1] modified
+End execution of command file '3_mesh_info.py' in batch mode ...
+Execution of command file '4_geom_revE.py' in batch mode ...
+   CoordSys[COORD_SYS_ST] created
+   CoordSys[COORD_SYS_ROT] created
+   Point[1] created
+   Point[2] created
+   Point[3] created
+   Point[4] created
+   Point[5] created
+   Point[6] created
+   Line[1] created
+   Line[2] created
+   Line[3] created
+   Line[4] created
+   Line[5] created
+   Line[6] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 1
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.797E-07
+Checking the unicity of lines
+Creation of 1 FACE
+1
+   buildFaces executed
+   Transf[ROT_ST_60] created
+Creation of 5 face(s) done :
+2  3  4  5  6
+   propagate executed
+   Line[37] created
+   Line[38] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 1
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.407E-06
+Checking the unicity of lines
+Creation of 1 FACE
+7
+   buildFaces executed
+   Face[7] modified
+Creation of 5 face(s) done :
+8  9  10  11  12
+   propagate executed
+   Transf[ST_H_ST] created
+Creation of 12 volume(s) done :
+1  2  3  4  5  6  7  8  9  10  11  12
+   extrude executed
+   Point[73] created
+   Point[74] created
+   Point[75] created
+   Point[76] created
+   Line[133] created
+   Line[134] created
+   Line[135] created
+   Line[136] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 17
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.426E-06
+Checking the unicity of lines
+Creation of 3 FACES :
+73  74  75
+   buildFaces executed
+   Face[75] modified
+   Transf[ROT_ROTOR] created
+Creation of 2 volume(s) done :
+13  14
+   extrude executed
+   Transf[AX_SIM_ROT] created
+Creation of 2 volume(s) done :
+15  16
+   propagateVolume executed
+   InfiniteBox[InfiniteBoxCylinderZ] created
+No line-line intersections and no lines superimposed
+Number of surfaces found : 30
+Checking the unicity of auxiliary points
+Looking for identical points, minimum distance between 2 points is 0.434E-06
+Checking the unicity of lines
+Creation of 24 FACES :
+89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112
+   buildFaces executed
+   setInvisible executed
+   Face[74] deleted
+   Face[73] deleted
+No line-face intersections
+Creation of 7 VOLUMES :
+17  18  19  20  21  22  23
+   buildVolumes executed
+Some intersections may not have been detected
+
+End execution of command file '4_geom_revE.py' in batch mode ...
+Execution of command file '5_mat_def.py' in batch mode ...
+   Material[COGENT_M270_50A_50HZ] created
+Material[1]
+   Material[IMPHY_MUMETAL] created
+Material[2]
+   Material[BMT_50H] created
+Material[3]
+   Material[BMT_42UH] created
+Material[4]
+   Material[METGLAS] created
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   Material[NO12] created
+End execution of command file '5_mat_def.py' in batch mode ...
+Execution of command file '6_coils_concentric_revF.py' in batch mode ...
+   ParameterGeom[COIL_KCU] created
+   ParameterGeom[RHO_CU] created
+   VariationParameter[D_ST_PH] created
+   VariationParameter[L_SLOT_PH] created
+   VariationParameter[W_SLOT_PH] created
+   VariationParameter[R_ST_OUT_PH] created
+   VariationParameter[ST_A_SLOT] created
+   VariationParameter[ST_BI_SLOT] created
+   VariationParameter[ST_TOOTH_A] created
+   VariationParameter[A_SLOT] created
+   VariationParameter[A_COIL] created
+   VariationParameter[A_CU] created
+   VariationParameter[TH_COIL] created
+   VariationParameter[ALPHA_CASE_PH] created
+   VariationParameter[H_ST_PH] created
+   VariationParameter[L_BAR_PH] created
+   VariationParameter[I_T_PEAK] created
+   VariationParameter[THETA_T] created
+   VariationParameter[JT_RMS] created
+   VariationParameter[IT_HAT] created
+   VariationParameter[I_F_PEAK] created
+   VariationParameter[THETA_F0] created
+   VariationParameter[THETA_F_DIR] created
+   VariationParameter[THETA_F] created
+   VariationParameter[JF_RMS] created
+   VariationParameter[IF_HAT] created
+   VariationParameter[R_COIL] created
+   VariationParameter[P_CU_TOT] created
+   ParameterGeom[TH_COIL_OFFSET] created
+   ParameterGeom[L_COIL] created
+ParameterGeom[31]
+   ParameterGeom[M_TH_COIL] created
+ParameterGeom[32]
+   ParameterGeom[N_TH_COIL] created
+ParameterGeom[33]
+   ParameterGeom[TH_COIL] created
+ParameterGeom[34]
+   CoordSys[COORD_COIL_1] created
+   VariationParameter[I_T_1] created
+   VariationParameter[I_F_1] created
+   CoilConductor[I_1] created
+ 
+Coil(1) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_1] created
+   CoordSys[COORD_COIL_2] created
+   VariationParameter[I_T_2] created
+   VariationParameter[I_F_2] created
+   CoilConductor[I_2] created
+Coil(2) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_2] created
+   CoordSys[COORD_COIL_3] created
+   VariationParameter[I_T_3] created
+   VariationParameter[I_F_3] created
+   CoilConductor[I_3] created
+Coil(3) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_3] created
+   CoordSys[COORD_COIL_4] created
+   VariationParameter[I_T_4] created
+   VariationParameter[I_F_4] created
+   CoilConductor[I_4] created
+Coil(4) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_4] created
+   CoordSys[COORD_COIL_5] created
+   VariationParameter[I_T_5] created
+   VariationParameter[I_F_5] created
+   CoilConductor[I_5] created
+Coil(5) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_5] created
+   CoordSys[COORD_COIL_6] created
+   VariationParameter[I_T_6] created
+   VariationParameter[I_F_6] created
+   CoilConductor[I_6] created
+Coil(6) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_6] created
+   VariationParameter[V_FE_ST_RING] created
+   VariationParameter[V_FE_ST_SLOTS] created
+   VariationParameter[R_ROT_OUT_PH] created
+   VariationParameter[H_ROT_PH] created
+   VariationParameter[V_PM] created
+   VariationParameter[V_CU] created
+End execution of command file '6_coils_concentric_revF.py' in batch mode ...
+Execution of command file '7_assign_revB.py' in batch mode ...
+   RegionVolume[IRON_ST] created
+   RegionVolume[AIR] created
+   RegionVolume[PM] created
+   assignRegion executed
+   assignRegion executed
+   assignRegionToVolumes executed
+   orientRegVolMaterial executed
+   RegionVolume[IRON_ST] modified
+   RegionVolume[PM] modified
+   MeshLine[R_ST] created
+   MeshLine[R_ROT] created
+   MeshLine[H_ST] created
+   MeshLine[H_ROT] created
+   MeshLine[THETA_ROT] created
+   MeshLine[THETA_ST] created
+   assignMeshLine executed
+   assignMeshLine executed
+
+[63223|1557822638334|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 500   Message: GARDE2   => Counter < 1 ?
+[63224|1557822638335|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 500   Message: GARDE2   => Counter < 1 ?
+[63225|1557822658261|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.SoftwareFortranException: Failed execution   Priority: 1
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+End execution of command file '7_assign_revB.py' in batch mode ...
+Execution of command file '8_sensors.py' in batch mode ...
+   Sensor[F_ROT] created
+   Sensor[TX_ROT] created
+   Sensor[TY_ROT] created
+   Sensor[TZ_ROT] created
+   Sensor[F_ST] created
+   Sensor[TX_ST] created
+   Sensor[TY_ST] created
+   Sensor[TZ_ST] created
+End execution of command file '8_sensors.py' in batch mode ...
+Execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
+   Scenario[0_FIELD] created
+Scenario[1]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ] created
+Scenario[2]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA] created
+Scenario[3]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA] created
+Scenario[4]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX] created
+Scenario[5]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY] created
+Scenario[6]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
+Execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+   Scenario[6_JT] created
+Scenario[7]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF] created
+Scenario[8]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+--- GARDE2 -> Warning RB.F3D.SCAL_I(138) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.PARAMETRE_GEOM(31) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SEC_BOB_REC_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.BOBINE(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(222) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SECTION_BOBINE_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(138) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.PARAMETRE_GEOM(31) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SEC_BOB_REC_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.BOBINE(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(222) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SECTION_BOBINE_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(138) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.PARAMETRE_GEOM(31) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SEC_BOB_REC_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.BOBINE(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(222) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SECTION_BOBINE_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(138) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.PARAMETRE_GEOM(31) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SEC_BOB_REC_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.BOBINE(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(222) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SECTION_BOBINE_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(138) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.PARAMETRE_GEOM(31) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SEC_BOB_REC_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.BOBINE(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(222) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SECTION_BOBINE_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(138) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.PARAMETRE_GEOM(31) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SEC_BOB_REC_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.BOBINE(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(222) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SECTION_BOBINE_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(138) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.PARAMETRE_GEOM(31) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SEC_BOB_REC_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.BOBINE(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(222) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SECTION_BOBINE_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(138) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.PARAMETRE_GEOM(31) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SEC_BOB_REC_I(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.BOBINE(6) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SCAL_I(222) is recursive. ---
+--- GARDE2 -> Warning RB.F3D.SECTION_BOBINE_I(6) is recursive. ---
+ 
+Verifying of linked faces ...
+  18 face(s) have consistent linked mesh generator.
+ 
+10:30:38       7 sec. Internal meshing of the lines
+ 
+Automatic meshing of 25  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 25 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+10:30:38       7 sec.    1271 1st order surfacic elements created
+ 
+Transport-projection meshing of 2  faces
+ 
+10:30:38       7 sec. Mapped meshing of the faces
+10:30:39       7 sec.      96 1st order surfacic elements created
+ 
+Extrusive meshing of 52 faces
+10:30:39       8 sec.    4236 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 31 linked faces
+ 
+10:30:39       8 sec.    1463 1st order lineic elements created
+ 
+Automatic mesh of 23 volumes
+ 
+Extrusive meshing of 10 volumes
+10:30:39       8 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 59794
+Checking 92 faces
+Checking 92 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 54
+Checking of faces completed in 2 iteration(s)
+Number of nodes creating while checking faces: 54
+  7606  boundary nodes
+  24234  boundary meshes
+10:30:45      14 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 2418
+10:30:48      17 sec.
+         10032 nodes
+         44815 meshes
+10:30:48      17 sec. Mesh compressing
+         10032 nodes
+         41588 meshes
+10:30:48      17 sec.   41588 1st order volumic elements created
+ 
+Extrusive meshing of 6 volumes
+10:30:48      17 sec.    2844 1st order volumic elements created
+     12744 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+     12744 ill-connected elements have been detected
+Attempt to repair ( 2 /20) ...
+     12744 ill-connected elements have been detected
+Attempt to repair ( 3 /20) ...
+     12744 ill-connected elements have been detected
+Attempt to repair ( 4 /20) ...
+Creation of 6372 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 47.88  %
+   Number of excellent quality elements : 14.01  %
+   Number of good quality elements      : 18.6  %
+   Number of average quality elements   : 10.77  %
+   Number of poor quality elements      : 8.73  %
+ 
+Verifying of linked faces ...
+  18 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+Failed execution
+ 
+10:30:58      27 sec. Generating 2nd order elements is running
+  Total number of nodes --> 114283
+10:30:59      28 sec. End generating 2nd order elements
+   generateSecondOrderElements executed
+
+End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/4_icems/00_main.py' in batch mode ...
+Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/4_icems/00_main.py')
+
+Closing project
+Close of ANONYM
+[64138|1557822715536|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[64163|1557822715668|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+... end closing project
+Python : closeProject()
+
+Python : exit()
+[64167|1557822715676|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+Maximum use of 886 MiB. in numerical memory
+For the dynamic table ID 1492218
+Maximum use of 8 MiB. in character memory
+For the dynamic table ID 50483
+ 
+   NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
+ 
+       1             5       6       4   R08 5             0             0
+       2             1       5       5   C80 8             0             0
+       4     536870913       1       6   R08 5             0             0
+       5       1677722       2       2   C80 8             0             0
+       6             5       4       1   I04 2        600037             0
+Numerical memory: Total length                   = 536870912
+(8 byte words)    Present length                 =    600041
+                  Useful length                  =    600041
+                  Number of numerical arrays     =         3
+Character memory: Total length                   =   1677721
+(80 byte words)   Present length                 =         0
+                  Useful length                  =         0
+                  Number of character arrays     =         2
+Maximum number of arrays (num+char)              =    100006
+ 
+10:31:55      84 sec. FLUX3D_18.1.0 kernel finalized
+[64191|1557822715680|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[64192|1557822715680|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[64193|1557822715680|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers

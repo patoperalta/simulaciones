@@ -5,7 +5,7 @@
 
 lastInstance = RegionVolume(name='IRON_ST',
              magneticDC3D=MagneticDC3DVolumeMagnetic(material=Material['NO12']),
-             color=Color['Turquoise'],
+             color=Color['Black'],
              visibility=Visibility['VISIBLE'])
 			 
 lastInstance = RegionVolume(name='AIR',
@@ -15,7 +15,7 @@ lastInstance = RegionVolume(name='AIR',
 
 lastInstance = RegionVolume(name='PM',
              magneticDC3D=MagneticDC3DVolumeMagnetic(material=Material['BMT_42UH']),
-             color=Color['Turquoise'],
+             color=Color['Red'],
              visibility=Visibility['VISIBLE'])			 
 			 
 Volume[1,3,5,6].assignRegion(region=RegionVolume['PM'])
@@ -33,10 +33,6 @@ assignRegionToVolumes(volume=[Volume[9],
 
 orientRegVolMaterial(region=RegionVolume['PM'],coordSys=CoordSys['COORD_SYS_ROT'],orientation='Direction',angle='0')
 
-RegionVolume['IRON_ST'].color=Color['Black']
-
-RegionVolume['PM'].color=Color['Red']
-
 ##mesh things
 lastInstance = MeshLineArithmetic(name='R_ST',
                    color=Color['White'],
@@ -44,30 +40,26 @@ lastInstance = MeshLineArithmetic(name='R_ST',
 
 lastInstance = MeshLineArithmetic(name='R_ROT',
                    color=Color['White'],
-                   number=10)
+                   number=6)
 
-lastInstance = MeshLineArithmetic(name='H_ST',
+lastInstance = MeshLineArithmetic(name='H_ST : assigned for the half of the st height',
+                   color=Color['White'],
+                   number=3)
+
+lastInstance = MeshLineArithmetic(name='H_ROT : assigned for the half of the rot height',
                    color=Color['White'],
                    number=5)
-
-lastInstance = MeshLineArithmetic(name='H_ROT',
-                   color=Color['White'],
-                   number=8)
 				   
 lastInstance = MeshLineArithmetic(name='THETA',
                    color=Color['White'],
-                   number=90)
+                   number=45)
 				   
-
-LineSegment[8].assignMeshLine(meshLine=MeshLine['R_ST'])
+Line[8,21].assignMeshLine(meshLine=MeshLine['R_ST'])
 
 Line[7,37].assignMeshLine(meshLine=MeshLine['H_ST'])
 
-LineSegment[1].assignMeshLine(meshLine=MeshLine['R_ROT'])
+Line[1,10].assignMeshLine(meshLine=MeshLine['R_ROT'])
 
 Line[2,28].assignMeshLine(meshLine=MeshLine['H_ROT'])
 
-Line[9,22,24,14].assignMeshLine(meshLine=MeshLine['THETA'])
-
-
-
+Line[9,22,14,19,27,24].assignMeshLine(meshLine=MeshLine['THETA'])				   

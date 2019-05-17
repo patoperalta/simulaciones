@@ -63,6 +63,8 @@ meshDomain()
 
 generateSecondOrderElements()
 
+buildMagneticCircuitCut()
+
 #saveProjectAs(project_path+project_name)
 if(solving):
 	saveProjectAs(project_path+project_name)

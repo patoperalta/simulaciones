@@ -1,12 +1,12 @@
 Loading data model 'Flux_model.stp'
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/Flux2D_log.py'
  
-                                                            FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
-                                                                  2048 MiB N. + 127 MiB C. + 1024 MiB J.
-                                                                 HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:7812 jperalta
+                                                             FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
+                                                                   2048 MiB N. + 127 MiB C. + 1024 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:19476 jperalta
  
-09:06:47       0 sec. FLUX2D_18.1.0 kernel initialized
+09:12:17       0 sec. FLUX2D_18.1.0 kernel initialized
 
 Flux2D (application 2018.1) running
 
@@ -190,7 +190,7 @@ End execution of command file '8_scenarios_test.py' in batch mode ...
 Meshing of 17 faces
  
 Automatic mesh of 46 lines
-09:06:53       6 sec. Internal meshing of the lines
+09:12:23       6 sec. Internal meshing of the lines
  
 Automatic meshing of 17  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -203,23 +203,23 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 17 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:06:54       7 sec.    3022 1st order surfacic elements created
+09:12:24       6 sec.    2980 1st order surfacic elements created
  
-09:06:54       7 sec. Generating 2nd order elements is running
-  Total number of nodes --> 6073
-09:06:54       7 sec. End generating 2nd order elements
+09:12:24       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 5989
+09:12:24       6 sec. End generating 2nd order elements
  
 Surface elements :
    Number of elements not evaluated     : 0  %
-   Number of excellent quality elements : 96.82  %
-   Number of good quality elements      : 3.18  %
+   Number of excellent quality elements : 98.79  %
+   Number of good quality elements      : 1.21  %
    Number of average quality elements   : 0  %
    Number of poor quality elements      : 0  %
    meshDomain executed
  
-09:06:54       7 sec. Generating 2nd order elements is running
-  Total number of nodes --> 6073
-09:06:54       7 sec. End generating 2nd order elements
+09:12:24       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 5989
+09:12:24       6 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py' in batch mode ...
@@ -227,9 +227,9 @@ Closing project
 Close of ANONYM
 ... end closing project
 Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 262904
+For the dynamic table ID 263071
 Maximum use of 10 MiB. in character memory
-For the dynamic table ID 163482
+For the dynamic table ID 163487
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -248,4 +248,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:07:58      71 sec. FLUX2D_18.1.0 kernel finalized
+09:35:18    1380 sec. FLUX2D_18.1.0 kernel finalized

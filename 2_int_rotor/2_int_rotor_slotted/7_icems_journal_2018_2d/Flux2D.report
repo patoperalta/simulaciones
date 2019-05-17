@@ -1,41 +1,41 @@
-[12|1557817127712|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
-[13|1557817127864|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
-[14|1557817127927|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
-[15|1557817127930|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
-[16|1557817127930|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
-[17|1557817127930|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
-[18|1557817127930|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\7_icems_journal_2018_2d
-[19|1557817127930|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
-[20|1557817127931|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
-[21|1557817127931|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
-[22|1557817127931|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
-[23|1557817127931|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
-[24|1557817127931|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
-[25|1557817128088|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[12|1558076927556|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1558076927685|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1558076927745|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1558076927748|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1558076927748|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1558076927748|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1558076927748|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\7_icems_journal_2018_2d
+[19|1558076927748|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1558076927748|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1558076927749|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1558076927749|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1558076927749|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1558076927749|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1558076927890|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
 Loading data model 'Flux_model.stp'
-[27|1557817128577|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+[27|1558076928435|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log.pyPython : ^&|#! Flux2D 18.1
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log.py'
  
-                                                            FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
-                                                                  2048 MiB N. + 127 MiB C. + 1024 MiB J.
-                                                                 HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:8392 jperalta
+                                                             FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
+                                                                   2048 MiB N. + 127 MiB C. + 1024 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:25156 jperalta
  
-08:58:52       0 sec. FLUX2D_18.1.0 kernel initialized
-[62315|1557817132307|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
-[62316|1557817132308|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
-[62317|1557817132501|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
-[62319|1557817132844|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@3eac8d71
+09:08:51       0 sec. FLUX2D_18.1.0 kernel initialized
+[62315|1558076931712|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
+[62316|1558076931713|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
+[62317|1558076931747|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
+[62319|1558076932157|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@40ea3333
 
 Flux2D (application 2018.1) running
 
-[62328|1557817132923|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@3a46379c
-[62348|1557817133827|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62354|1557817133849|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62328|1558076932233|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@2e0cb63f
+[62348|1558076933155|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1558076933178|1|WARNING    ][Document|Document.updateInstances] : No project loaded
 Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
-[62363|1557817134018|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62364|1557817135705|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62363|1558076933339|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1558076934802|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
 Loading new project
 Creating ANONYM
 ... end loading new project
@@ -241,7 +241,7 @@ End execution of command file '8_scenarios_test.py' in batch mode ...
 Meshing of 17 faces
  
 Automatic mesh of 66 lines
-08:58:58       6 sec. Internal meshing of the lines
+09:08:57       5 sec. Internal meshing of the lines
  
 Automatic meshing of 17  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -254,146 +254,41 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 17 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-08:58:59       7 sec.    3534 1st order surfacic elements created
+09:08:58       6 sec.    3382 1st order surfacic elements created
  
-08:58:59       7 sec. Generating 2nd order elements is running
-  Total number of nodes --> 7097
-08:58:59       7 sec. End generating 2nd order elements
+09:08:58       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6793
+09:08:58       6 sec. End generating 2nd order elements
  
 Surface elements :
    Number of elements not evaluated     : 0  %
-   Number of excellent quality elements : 99.97  %
-   Number of good quality elements      : 0.03  %
-   Number of average quality elements   : 0  %
+   Number of excellent quality elements : 99.53  %
+   Number of good quality elements      : 0.41  %
+   Number of average quality elements   : 0.06  %
    Number of poor quality elements      : 0  %
    meshDomain executed
  
-08:58:59       7 sec. Generating 2nd order elements is running
-  Total number of nodes --> 7097
-08:58:59       7 sec. End generating 2nd order elements
+09:08:58       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6793
+09:08:58       6 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
 Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py')
 
-[63766|1557817258737|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 2   Message: Failed to modify an instance.
-Can not execute the following command :
-startMacroTransaction()
-ParameterGeom['R_ROT_OUT'].expression='15'
-
-endMacroTransaction()
-
-[63767|1557817258738|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: editObject Exception: (JavaException, The creation/modification/deletion of these entities is forbidden because the geometry is meshed. To carry out this command, first delete the mesh. Failed to modify an instance. Can not execute the following command : startMacroTransaction() ParameterGeom['R_ROT_OUT'].expression='15' endMacroTransaction() )
---------------------------------------------------------------------------------
-Anomaly (1) - User error:
-The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh.
-Failed to modify an instance.
-Can not execute the following command :
-startMacroTransaction()
-ParameterGeom['R_ROT_OUT'].expression='15'
-
-endMacroTransaction()
-
------------------------------- Advanced Text -----------------------------------
-stdcom.error.JavaException: The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh.
-	at cad.flux.kernel.components.FGTransactionModifyInstance.checkTransactionMesh(FGTransactionModifyInstance.java:325)
-	at cad.flux.kernel.components.FGTransactionModifyInstance.checkTransaction(FGTransactionModifyInstance.java:162)
-	at cad.core.kernel.components.TransactionModifyInstance.buildMergeInstances(TransactionModifyInstance.java:867)
-	at cad.flux.kernel.components.FGTransactionModifyInstance.processDBEvaluation(FGTransactionModifyInstance.java:381)
-	at cad.core.kernel.components.TransactionModifyInstance.commit(TransactionModifyInstance.java:658)
-	at cad.core.kernel.components.TransactionManager.commit(TransactionManager.java:284)
-	at cad.core.kernel.components.TransactionManager.processTransactionModifyInstance(TransactionManager.java:433)
-	at cad.core.kernel.components.TransactionManager.setFieldValue(TransactionManager.java:466)
-	at cad.core.kernel.Supervisor.setFieldValue(Supervisor.java:1568)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
-	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:206)
-	at org.python.core.PyObject.__call__(PyObject.java:545)
-	at org.python.core.PyObject.__call__(PyObject.java:551)
-	at org.python.core.PyMethod.__call__(PyMethod.java:171)
-	at pydb$py.setFieldValue$215(pydb.py:1674)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:308)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:199)
-	at org.python.core.PyFunction.__call__(PyFunction.java:482)
-	at org.python.core.PyMethod.__call__(PyMethod.java:187)
-	at pydb$py.__setattr__$78(pydb.py:773)
-	at pydb$py.call_function(pydb.py)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyBaseCode.call(PyBaseCode.java:171)
-	at org.python.core.PyFunction.__call__(PyFunction.java:434)
-	at org.python.core.PyFunction.__call__(PyFunction.java:428)
-	at org.python.core.PyInstance.instance___setattr__(PyInstance.java:303)
-	at org.python.core.PyInstance.__setattr__(PyInstance.java:280)
-	at org.python.pycode._pyx17.f$0(<string>:1)
-	at org.python.pycode._pyx17.call_function(<string>)
-	at org.python.core.PyTableCode.call(PyTableCode.java:171)
-	at org.python.core.PyCode.call(PyCode.java:18)
-	at org.python.core.Py.runCode(Py.java:1625)
-	at org.python.core.Py.exec(Py.java:1669)
-	at org.python.util.PythonInterpreter.exec(PythonInterpreter.java:267)
-	at cad.core.kernel.components.PythonWrapper.exec(PythonWrapper.java:989)
-	at cad.core.kernel.components.PythonWrapper.executeTuiRequest(PythonWrapper.java:740)
-	at cad.core.kernel.actions.implementation.instance.EditInstanceAction.doAction(EditInstanceAction.java:152)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:145)
-	at cad.core.common.dynamic.actions.UIActionManager.postAction(UIActionManager.java:274)
-	at cad.core.kernel.KernelCommon.postAction(KernelCommon.java:306)
-	at cad.core.kernel.encoder.ActionServerRequestsInputPlug.postAction(ActionServerRequestsInputPlug.java:88)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsRouter.postAction(ActionServerRequestsRouter.java:54)
-	at stdcom.protocole.actionserverrequests.ActionServerRequestsOutputPlug.postAction(ActionServerRequestsOutputPlug.java:79)
-	at cad.core.frontal.decoder.FrontalDecoder.postAction(FrontalDecoder.java:473)
-	at cad.core.frontal.actions.implementation.instance.EditInstanceAction.postAct(EditInstanceAction.java:164)
-	at cad.flux.frontal.actions.implementation.instance.FGEditInstanceAction.postAct(FGEditInstanceAction.java:199)
-	at cad.core.frontal.actions.implementation.instance.EditInstanceAction.interpret(EditInstanceAction.java:182)
-	at cad.flux.frontal.actions.implementation.instance.FGEditInstanceAction.interpret(FGEditInstanceAction.java:122)
-	at cad.core.frontal.components.box.frontaldialog.FrontalDescriptorDialogBox.internalRun(FrontalDescriptorDialogBox.java:306)
-	at cad.core.frontal.frontalthread.WorkerThread.executeImplementer(WorkerThread.java:226)
-	at cad.core.frontal.frontalthread.WorkerThread.run(WorkerThread.java:274)
---------------------------------------------------------------------------------
-[63769|1557817258782|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/error.gif
-[63770|1557817258783|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/informations.gif
-   deleteMesh executed
-Python : deleteMesh()
-
-   ParameterGeom[R_ROT_OUT] modified
-Python : ParameterGeom['R_ROT_OUT'].expression='15'
-
-
-   ParameterGeom[R_ROT_OUT] modified
-Python : ParameterGeom['R_ROT_OUT'].expression='20'
-
-
-   ParameterGeom[R_ROT_OUT] modified
-Python : ParameterGeom['R_ROT_OUT'].expression='15'
-
-
-   ParameterGeom[R_ROT_OUT] modified
-Python : ParameterGeom['R_ROT_OUT'].expression='10'
-
-
-   ParameterGeom[R_ROT_OUT] modified
-Python : ParameterGeom['R_ROT_OUT'].expression='20'
-
-
 Closing project
 Close of ANONYM
-[65887|1557817430144|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-[65912|1557817430202|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[63759|1558077120543|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[63784|1558077120575|22|WARNING    ][Document|Document.updateInstances] : No project loaded
 ... end closing project
 Python : closeProject()
 
 Python : exit()
-[65916|1557817430209|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+[63788|1558077120581|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
 Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 354651
-Maximum use of 10 MiB. in character memory
-For the dynamic table ID 237862
+For the dynamic table ID 352302
+Maximum use of 9 MiB. in character memory
+For the dynamic table ID 236597
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -412,7 +307,7 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:03:50     298 sec. FLUX2D_18.1.0 kernel finalized
-[65940|1557817430212|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
-[65941|1557817430212|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
-[65942|1557817430212|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
+09:12:00     189 sec. FLUX2D_18.1.0 kernel finalized
+[63812|1558077120584|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[63813|1558077120584|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[63814|1558077120584|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers

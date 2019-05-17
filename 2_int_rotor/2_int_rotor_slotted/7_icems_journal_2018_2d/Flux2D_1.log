@@ -4,9 +4,9 @@ Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/
                                                              FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
                                                                    2048 MiB N. + 127 MiB C. + 1024 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13976 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:19652 jperalta
  
-13:38:02       0 sec. FLUX2D_18.1.0 kernel initialized
+08:23:48       0 sec. FLUX2D_18.1.0 kernel initialized
 
 Flux2D (application 2018.1) running
 
@@ -28,12 +28,13 @@ ParameterGeom[1]
    ParameterGeom[D_AGAP] created
    ParameterGeom[L_SLOT] created
 ParameterGeom[3]
-   ParameterGeom[R_ST_IN] created
+   ParameterGeom[W_SLOT] created
+ParameterGeom[4]
    ParameterGeom[D_ST] created
+ParameterGeom[5]
+   ParameterGeom[R_ST_IN] created
    ParameterGeom[R_ST_OUT] created
    ParameterGeom[D_MOT] created
-   ParameterGeom[W_SLOT] created
-ParameterGeom[8]
    ParameterGeom[Y] created
    ParameterGeom[DTHETA] created
    ParameterGeom[DX] created
@@ -111,6 +112,9 @@ Execution of command file '6_assign_mats_and_coils_revA.py' in batch mode ...
    RegionFace[PM] created
    RegionFace[AIRGAP] created
    ParameterGeom[COIL_KCU] created
+   VariationParameter[L_SLOT_PH] created
+   VariationParameter[W_SLOT_PH] created
+   VariationParameter[D_ST_PH] created
    VariationParameter[R_ST_OUT_PH] created
    VariationParameter[ST_A_SLOT] created
    VariationParameter[ST_BI_SLOT] created
@@ -212,7 +216,7 @@ End execution of command file '8_scenarios_test.py' in batch mode ...
 Meshing of 17 faces
  
 Automatic mesh of 66 lines
-13:38:08       5 sec. Internal meshing of the lines
+08:23:54       6 sec. Internal meshing of the lines
  
 Automatic meshing of 17  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -225,48 +229,33 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 17 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-13:38:08       6 sec.    3438 1st order surfacic elements created
+08:23:55       6 sec.    3382 1st order surfacic elements created
  
-13:38:08       6 sec. Generating 2nd order elements is running
-  Total number of nodes --> 6905
-13:38:08       6 sec. End generating 2nd order elements
+08:23:55       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6793
+08:23:55       6 sec. End generating 2nd order elements
  
 Surface elements :
    Number of elements not evaluated     : 0  %
-   Number of excellent quality elements : 98.84  %
-   Number of good quality elements      : 1.16  %
-   Number of average quality elements   : 0  %
+   Number of excellent quality elements : 99.53  %
+   Number of good quality elements      : 0.41  %
+   Number of average quality elements   : 0.06  %
    Number of poor quality elements      : 0  %
    meshDomain executed
  
-13:38:08       6 sec. Generating 2nd order elements is running
-  Total number of nodes --> 6905
-13:38:08       6 sec. End generating 2nd order elements
+08:23:55       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6793
+08:23:55       6 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
-Anomaly (1) - User error:
-The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh.
-Failed to modify an instance.
-Can not execute the following command :
-startMacroTransaction()
-ParameterGeom['DY'].expression='2'
-
-endMacroTransaction()
-
-   deleteMesh executed
-   ParameterGeom[DY] modified
-   ParameterGeom[DY] modified
-   ParameterGeom[DX] modified
-   ParameterGeom[DTHETA] modified
 Closing project
 Close of ANONYM
 ... end closing project
 Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 347177
+For the dynamic table ID 352368
 Maximum use of 9 MiB. in character memory
-For the dynamic table ID 237331
+For the dynamic table ID 236663
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -285,4 +274,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-13:44:33     390 sec. FLUX2D_18.1.0 kernel finalized
+08:24:49      60 sec. FLUX2D_18.1.0 kernel finalized

@@ -4,9 +4,9 @@ Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/
                                                              FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                    4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:18248 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13428 jperalta
  
-09:40:45       0 sec. FLUX3D_18.1.0 kernel initialized
+09:50:53       0 sec. FLUX3D_18.1.0 kernel initialized
 
 Flux3D (application 2018.1) running
 
@@ -82,7 +82,7 @@ Execution of command file '4_geom_revD_circular.py' in batch mode ...
 No line-line intersections and no lines superimposed
 Number of surfaces found : 1
 Checking the unicity of auxiliary points
-Looking for identical points, minimum distance between 2 points is 0.392E-06
+Looking for identical points, minimum distance between 2 points is 0.219E-06
 Checking the unicity of lines
 Creation of 2 FACES :
 1  2
@@ -112,9 +112,9 @@ Creation of 2 volume(s) done :
    propagateVolume executed
    InfiniteBox[InfiniteBoxCylinderZ] created
 No line-line intersections and no lines superimposed
-Number of surfaces found : 16
+Number of surfaces found : 18
 Checking the unicity of auxiliary points
-Looking for identical points, minimum distance between 2 points is 0.783E-06
+Looking for identical points, minimum distance between 2 points is 0.438E-06
 Checking the unicity of lines
 Creation of 27 FACES :
 33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59
@@ -184,6 +184,12 @@ Execution of command file '6_elec_circuit_toroidal_revG.py' in batch mode ...
    VariationParameter[V_FE_ST] created
    VariationParameter[V_PM] created
    VariationParameter[V_CU] created
+   VariationParameter[DENS_NO12] created
+   VariationParameter[DENS_CU] created
+   VariationParameter[DENS_NDFEB] created
+   VariationParameter[MASS_ST] created
+   VariationParameter[MASS_CU] created
+   VariationParameter[MASS_PM] created
    CoordSys[COORD_COIL_1] created
    VariationParameter[I_T_1] created
    VariationParameter[I_F_1] created
@@ -248,8 +254,6 @@ Execution of command file '7_assign_circular.py' in batch mode ...
    assignRegion executed
    assignRegionToVolumes executed
    orientRegVolMaterial executed
-   RegionVolume[IRON_ST] modified
-   RegionVolume[PM] modified
    MeshLine[R_ST] created
    MeshLine[R_ROT] created
    MeshLine[H_ST] created
@@ -267,37 +271,77 @@ Execution of command file '8_sensors.py' in batch mode ...
    Sensor[TY_ROT] created
    Sensor[TZ_ROT] created
    Sensor[F_ST] created
+
    Sensor[TX_ST] created
    Sensor[TY_ST] created
    Sensor[TZ_ST] created
 End execution of command file '8_sensors.py' in batch mode ...
 Execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
-
    Scenario[0_FIELD] created
 Scenario[1]
    addPilot executed
    addPilot executed
    addPilot executed
-End execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
-Execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+   addPilot executed
+   Scenario[1_DZ] created
 Scenario[2]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[6_JT] created
-   Scenario[7_JF] created
+   addPilot executed
+   Scenario[2_DALPHA] created
 Scenario[3]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
+   addPilot executed
+   Scenario[3_DBETA] created
+Scenario[4]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX] created
+Scenario[5]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY] created
+Scenario[6]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
+Execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+   Scenario[6_JT] created
+Scenario[7]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF] created
+Scenario[8]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
 End execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+   closeModelerContext executed
+Modeler context closed
  
 Verifying of linked faces ...
   27 face(s) have consistent linked mesh generator.
  
-09:40:52       7 sec. Internal meshing of the lines
+09:50:59       6 sec. Internal meshing of the lines
  
 Automatic meshing of 26  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -310,112 +354,87 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 26 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:40:53       8 sec.    1057 1st order surfacic elements created
+09:50:59       6 sec.     796 1st order surfacic elements created
  
 Extrusive meshing of 5 faces
-09:40:53       8 sec.    2790 1st order surfacic elements created
+09:50:59       6 sec.     900 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 25 linked faces
  
-09:40:53       8 sec.    1729 1st order lineic elements created
+09:50:59       6 sec.     882 1st order lineic elements created
  
 Automatic mesh of 15 volumes
-09:40:53       8 sec. Boundary meshing of volumes
+09:50:59       6 sec. Boundary meshing of volumes
 Insert of nodes ...
 ... End of nodes insert
-   Number of elements in the global boundary mesh  : 62729
+   Number of elements in the global boundary mesh  : 21172
 Checking 44 faces
 Checking 44 faces: iteration No 1  completed
-Number of node(s) creating while the iteration: 32
+Number of node(s) creating while the iteration: 34
 Checking 44 faces: iteration No 2  completed
-Number of node(s) creating while the iteration: 2
+Number of node(s) creating while the iteration: 3
 Checking of faces completed in 3 iteration(s)
-Number of nodes creating while checking faces: 34
-  11412  boundary nodes
-  31022  boundary meshes
-09:41:08      23 sec. Internal meshing of volumes
+Number of nodes creating while checking faces: 37
+  3853  boundary nodes
+  11192  boundary meshes
+09:51:01       8 sec. Internal meshing of volumes
  
-Number of nodes created by internal meshing 2365
-09:41:14      29 sec.
-         13785 nodes
-         52593 meshes
-09:41:14      29 sec. Mesh compressing
-         13785 nodes
-         51400 meshes
-09:41:14      29 sec.   51400 1st order volumic elements created
+Number of nodes created by internal meshing 1105
+09:51:02       9 sec.
+          4966 nodes
+         19980 meshes
+09:51:02       9 sec. Mesh compressing
+          4966 nodes
+         19727 meshes
+09:51:02       9 sec.   19727 1st order volumic elements created
  
 Extrusive meshing of 8 volumes
-09:41:15      29 sec.   52200 1st order volumic elements created
-     21600 ill-connected elements have been detected
+09:51:02       9 sec.   15120 1st order volumic elements created
+      6840 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
-Creation of 10800 1st order pyramid elements
+Creation of 3420 1st order pyramid elements
 End of topological mesh regularization
  
 Volume elements :
-   Number of elements not evaluated     : 68.98  %
-   Number of excellent quality elements : 7.15  %
-   Number of good quality elements      : 8.61  %
-   Number of average quality elements   : 9.25  %
-   Number of poor quality elements      : 6.01  %
+   Number of elements not evaluated     : 59.85  %
+   Number of excellent quality elements : 11.81  %
+   Number of good quality elements      : 13.77  %
+   Number of average quality elements   : 9.72  %
+   Number of poor quality elements      : 4.85  %
  
 Verifying of linked faces ...
   27 face(s) respect strongly (ELEMENTS) linked mesh generator.
  
    meshDomain executed
  
-09:41:20      35 sec. Generating 2nd order elements is running
+09:51:03      10 sec. Generating 2nd order elements is running
 Percentage of 2nd order nodes not projected on line 48 : 28%
 Percentage of 2nd order nodes not projected on line 55 : 28%
 Percentage of 2nd order nodes not projected on line 64 : 18%
-Percentage of 2nd order nodes not projected on line 75 : 9%
-Percentage of 2nd order nodes not projected on face 43 : 4%
-Percentage of 2nd order nodes not projected on face 44 : 57%
-Percentage of 2nd order nodes not projected on face 52 : 6%
-Percentage of 2nd order nodes not projected on face 58 : 4%
-  Total number of nodes --> 190258
-09:41:25      39 sec. End generating 2nd order elements
+Percentage of 2nd order nodes not projected on line 75 : 18%
+Percentage of 2nd order nodes not projected on face 44 : 37%
+Percentage of 2nd order nodes not projected on face 52 : 37%
+Percentage of 2nd order nodes not projected on face 58 : 8%
+  Total number of nodes --> 61086
+09:51:04      11 sec. End generating 2nd order elements
    generateSecondOrderElements executed
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+ 
+    1 holes have been identified.
+    1 magnetic cuts have been created.
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   buildMagneticCircuitCut executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py' in batch mode ...
-closeModelerContext()
-The construction of faces is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh : [MESH] [DEL_MESH]
-   closeModelerContext executed
-Anomaly (1) - Warning:
-The construction of faces is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh : [MESH] [DEL_MESH]
-
-Modeler context closed
-Anomaly (2) - Fatal error:
-The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh.
-Failed to modify an instance.
-Can not execute the following command :
-startMacroTransaction()
-ParameterGeom['DX_MULT'].expression='1'
-
-endMacroTransaction()
-
-   deleteMesh executed
-   ParameterGeom[DX_MULT] modified
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[DX] modified
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[DX_MULT] modified
-   ParameterGeom[DX] modified
-   ParameterGeom[DX_MULT] modified
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[R_ROT_OUT] modified
+   setInvisible executed
 Closing project
 Close of ANONYM
 ... end closing project
-Maximum use of 895 MiB. in numerical memory
-For the dynamic table ID 1409895
+Maximum use of 862 MiB. in numerical memory
+For the dynamic table ID 971165
 Maximum use of 8 MiB. in character memory
-For the dynamic table ID 6120509
+For the dynamic table ID 311397
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -434,4 +453,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:46:41     355 sec. FLUX3D_18.1.0 kernel finalized
+09:51:42      49 sec. FLUX3D_18.1.0 kernel finalized

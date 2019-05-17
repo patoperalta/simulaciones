@@ -1,12 +1,12 @@
 Loading data model 'Flux_model.stp'
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log.py'
  
-                                                            FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
-                                                                  2048 MiB N. + 127 MiB C. + 1024 MiB J.
-                                                                 HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:8392 jperalta
+                                                             FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
+                                                                   2048 MiB N. + 127 MiB C. + 1024 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:25156 jperalta
  
-08:58:52       0 sec. FLUX2D_18.1.0 kernel initialized
+09:08:51       0 sec. FLUX2D_18.1.0 kernel initialized
 
 Flux2D (application 2018.1) running
 
@@ -216,7 +216,7 @@ End execution of command file '8_scenarios_test.py' in batch mode ...
 Meshing of 17 faces
  
 Automatic mesh of 66 lines
-08:58:58       6 sec. Internal meshing of the lines
+09:08:57       5 sec. Internal meshing of the lines
  
 Automatic meshing of 17  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -229,49 +229,33 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 17 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-08:58:59       7 sec.    3534 1st order surfacic elements created
+09:08:58       6 sec.    3382 1st order surfacic elements created
  
-08:58:59       7 sec. Generating 2nd order elements is running
-  Total number of nodes --> 7097
-08:58:59       7 sec. End generating 2nd order elements
+09:08:58       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6793
+09:08:58       6 sec. End generating 2nd order elements
  
 Surface elements :
    Number of elements not evaluated     : 0  %
-   Number of excellent quality elements : 99.97  %
-   Number of good quality elements      : 0.03  %
-   Number of average quality elements   : 0  %
+   Number of excellent quality elements : 99.53  %
+   Number of good quality elements      : 0.41  %
+   Number of average quality elements   : 0.06  %
    Number of poor quality elements      : 0  %
    meshDomain executed
  
-08:58:59       7 sec. Generating 2nd order elements is running
-  Total number of nodes --> 7097
-08:58:59       7 sec. End generating 2nd order elements
+09:08:58       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 6793
+09:08:58       6 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
-Anomaly (1) - User error:
-The creation/modification/deletion of these entities is forbidden because the geometry is meshed.
-To carry out this command, first delete the mesh.
-Failed to modify an instance.
-Can not execute the following command :
-startMacroTransaction()
-ParameterGeom['R_ROT_OUT'].expression='15'
-
-endMacroTransaction()
-
-   deleteMesh executed
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[R_ROT_OUT] modified
-   ParameterGeom[R_ROT_OUT] modified
 Closing project
 Close of ANONYM
 ... end closing project
 Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 354651
-Maximum use of 10 MiB. in character memory
-For the dynamic table ID 237862
+For the dynamic table ID 352302
+Maximum use of 9 MiB. in character memory
+For the dynamic table ID 236597
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -290,4 +274,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:03:50     298 sec. FLUX2D_18.1.0 kernel finalized
+09:12:00     189 sec. FLUX2D_18.1.0 kernel finalized

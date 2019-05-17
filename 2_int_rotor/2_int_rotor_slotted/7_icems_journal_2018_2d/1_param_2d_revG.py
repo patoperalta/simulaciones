@@ -12,7 +12,7 @@ print("FICHIER PARAM.PY\n")
 #########################################################################################################################################################
 
 r_rot_out=10
-
+tuning=4
 ##rotor without hole!
 ParameterGeom(name='R_ROT_OUT : outer radius of stator',
               expression=str(r_rot_out))
@@ -20,33 +20,47 @@ ParameterGeom(name='R_ROT_OUT : outer radius of stator',
 ## mech/mag airgap 			  
 lastInstance = ParameterGeom(name='D_AGAP',
 			  expression='2')	
-
-ParameterGeom(name='L_SLOT',
-			  expression='7+ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*1.25')				  
-			  
-ParameterGeom(name='W_SLOT',
-			  expression='6+3*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')				  			  
-			  
-ParameterGeom(name='D_ST',
-			  expression='6+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')				  			  			  
-
-# here i already erased the L_SLOT
-# if r_rot_out==10:			  				  
-	# # ParameterGeom(name='W_SLOT : now directly modifiable',
-				  # # expression='6')	
-	# # lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
-				  # # expression='6')	
-# elif r_rot_out==15:				  				  
-	# # ParameterGeom(name='W_SLOT : now directly modifiable',
-				  # # expression='9')	
-	# # lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
-				  # # expression='10')						  
-# elif r_rot_out==20:					  
-	# # ParameterGeom(name='W_SLOT : now directly modifiable',
-				  # # expression='13')	
-	# # lastInstance = ParameterGeom(name='D_ST : stator thickness is now directly available',
-				  # # expression='14')			  				  
-			  
+##RETUNE FOLLOWING PARAMETERS FOR THE COILS			  
+if tuning==1:
+##tuning out 2d sims
+	ParameterGeom(name='L_SLOT',
+				  expression='7+ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*1.25')				  
+				  
+	ParameterGeom(name='W_SLOT',
+				  expression='6+3*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')				  			  
+				  
+	ParameterGeom(name='D_ST',
+				  expression='6+4*ValidLR(R_ROT_OUT,11,21,1,1)+4*ValidLR(R_ROT_OUT,19,21,1,1)')				  			  			  
+elif tuning==2:	
+	## help of 3d sims with alpha = 2
+	ParameterGeom(name='L_SLOT',
+				  expression='9.25+3/2*ValidLR(R_ROT_OUT,11,21,1,1)+2.25*ValidLR(R_ROT_OUT,19,21,1,1)')				  
+				  
+	ParameterGeom(name='W_SLOT',
+				  expression='10+4*ValidLR(R_ROT_OUT,11,21,1,1)+6*ValidLR(R_ROT_OUT,19,21,1,1)')				  			  
+				  
+	ParameterGeom(name='D_ST',
+				  expression='10+5*ValidLR(R_ROT_OUT,11,21,1,1)+7*ValidLR(R_ROT_OUT,19,21,1,1)')			  			  			  			  
+elif tuning==3:
+	## help of 3d sims with alpha = 1.5
+	ParameterGeom(name='L_SLOT',
+				  expression='7.5+2*ValidLR(R_ROT_OUT,11,21,1,1)+1*ValidLR(R_ROT_OUT,19,21,1,1)')				  
+				  
+	ParameterGeom(name='W_SLOT',
+				  expression='7+5*ValidLR(R_ROT_OUT,11,21,1,1)+4*ValidLR(R_ROT_OUT,19,21,1,1)')				  			  
+				  
+	ParameterGeom(name='D_ST',
+				  expression='8+5*ValidLR(R_ROT_OUT,11,21,1,1)+5*ValidLR(R_ROT_OUT,19,21,1,1)')	
+elif tuning==4:
+	## free to change, and commented
+	ParameterGeom(name='L_SLOT : r=(10,15,20)->l=(7.5,9.5,10.5)',
+				  expression='7.5')
+				  
+	ParameterGeom(name='W_SLOT : r=(10,15,20)->l=(7,12,16)',
+				  expression='7')
+				  
+	ParameterGeom(name='D_ST : r=(10,15,20)->l=(8,13,18)',
+				  expression='8')				  
 ## stator
 lastInstance = ParameterGeom(name='R_ST_IN',
               expression='R_ROT_OUT+D_AGAP+L_SLOT')				  

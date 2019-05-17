@@ -48,10 +48,19 @@ lastInstance = VariationParameterFormula(name='A_CU',
 ##now the length and therefore resistance
 lastInstance = VariationParameterFormula(name='ALPHA_CASE_PH',
                           formula='ValidLR(ALPHA_H,0,1,1,1)')
-
-lastInstance = VariationParameterFormula(name='D_ST_PH',
-                          formula='5+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*7/2')
-						  
+if tuning==1:
+	lastInstance = VariationParameterFormula(name='D_ST_PH',
+							  formula='5+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*7/2')
+elif tuning==2:
+	lastInstance = VariationParameterFormula(name='D_ST_PH',
+							  formula='8+6*ValidLR(R_ROT_OUT,11,21,1,1)+6*ValidLR(R_ROT_OUT,19,21,1,1)')
+elif tuning==3:
+	lastInstance = VariationParameterFormula(name='D_ST_PH',
+							  formula='6+5*ValidLR(R_ROT_OUT,11,21,1,1)+6*ValidLR(R_ROT_OUT,19,21,1,1)')			  
+elif tuning==4:
+	lastInstance = VariationParameterFormula(name='D_ST_PH : r=(10,15,20)->d=(6,11,17)',
+							  formula='D_ST')
+							  
 lastInstance = VariationParameterFormula(name='R_ST_OUT_PH',
                           formula='R_ROT_OUT+D_AGAP+D_ST_PH')						  
 
@@ -77,7 +86,7 @@ lastInstance = VariationParameterPilot(name='I_T_PEAK : peak value of torque exc
                         referenceValue=0.0)
 						
 lastInstance = VariationParameterPilot(name='THETA_T : torque generation angle degrees',
-                        referenceValue=0)
+                        referenceValue=150)
 
 lastInstance = VariationParameterPilot(name='JT_RMS : torque current density',
                         referenceValue=0.0)			
@@ -90,7 +99,7 @@ lastInstance = VariationParameterPilot(name='I_F_PEAK : peak value of force exci
                         referenceValue=0.0)
 
 lastInstance = VariationParameterPilot(name='THETA_F0 : if 90, and THETA_F is 0, force goes in x direction',
-                        referenceValue=270)
+                        referenceValue=30)
 
 lastInstance = VariationParameterPilot(name='THETA_F_DIR : gives force direction in stator coordinates',
                         referenceValue=0.0)
@@ -120,6 +129,24 @@ lastInstance = VariationParameterFormula(name='V_PM : PM volume',
 
 lastInstance = VariationParameterFormula(name='V_CU : copper volume',
                           formula='6*L_BAR_PH*A_CU/COIL_KCU')
+						  
+lastInstance = VariationParameterFormula(name='DENS_NO12 : no12 cogent google in g/mm^3',
+                          formula='7.65/1000')							  
+						  
+lastInstance = VariationParameterFormula(name='DENS_CU : cu wiki in g/mm^3',
+                          formula='8.96/1000')		
+
+lastInstance = VariationParameterFormula(name='DENS_NDFEB : ndfeb wiki in g/mm^3',
+                          formula='1/2*(7.3+7.7)/1000')	
+
+lastInstance = VariationParameterFormula(name='MASS_ST',
+                          formula='V_FE_ST*DENS_NO12')
+						  
+lastInstance = VariationParameterFormula(name='MASS_CU',
+                          formula='V_CU*DENS_CU')
+						  
+lastInstance = VariationParameterFormula(name='MASS_PM',
+                          formula='V_PM*DENS_NDFEB')							  						  
 
 ##now loop what is needed for each coil	
 ##define coordinate system, current types, their sum and coils						  
@@ -128,11 +155,11 @@ for i in range(1,7):
 	lastInstance = CoordSysCartesian(name='COORD_COIL_'+str(i),
 					parentCoordSys=GlobalUnits(lengthUnit=LengthUnit['MILLIMETER'],
 												angleUnit=AngleUnit['DEGREE']),
-					origin=['1/2*(R_ST_OUT+r_st_in)*cosd(60*'+str(i-1)+')',
-							'1/2*(R_ST_OUT+r_st_in)*sind(60*'+str(i-1)+')',
+					origin=['1/2*(R_ST_OUT+r_st_in)*cosd(30+60*'+str(i-1)+')',
+							'1/2*(R_ST_OUT+r_st_in)*sind(30+60*'+str(i-1)+')',
 							'0'],
 					rotationAngles=RotationAngles(angleX='90',
-													angleY='60*'+str(i-1)+'',
+													angleY='30+60*'+str(i-1)+'',
 													angleZ='0'),
 					visibility=Visibility['VISIBLE'])
 	# equations for torque current

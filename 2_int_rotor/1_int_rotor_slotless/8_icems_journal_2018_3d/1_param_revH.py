@@ -15,8 +15,8 @@ print("FICHIER PARAM.PY\n")
 #########################################################################################################################################################
 
 ## define from outside towars inside
-r_rot_out = 20
-	  
+r_rot_out = 10
+tuning=4	  
 ParameterGeom(name='R_ROT_OUT : outer radius of rotor',
               expression=str(r_rot_out))
 
@@ -27,22 +27,22 @@ lastInstance = ParameterGeom(name='D_MECHGAP : d_cu= d_agap-d_mechgap',
 lastInstance = ParameterGeom(name='D_AGAP : mechanic + cu',
 			  expression='5')	
 
-## from 2d
-ParameterGeom(name='D_ST',
-			  expression='5+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*7/2')				  			  			  			  			  
-			  
-# if r_rot_out==10:		  
-	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
-	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  # expression='5')					  
-# elif r_rot_out==15:
-	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
-	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  # expression='9')					  				  
-# elif r_rot_out==20:
-	# ## D_ST is now a parameter, so there is no proportionality constant			  		  
-	# lastInstance = ParameterGeom(name='D_ST : stator thickness',
-				  # expression='12.5')			  
+if tuning==1:			  
+##tuning out 2d sims
+	ParameterGeom(name='D_ST',
+				  expression='5+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*7/2')
+elif tuning==2:					  
+	## tuning out of 3d sims with alpha = 2
+	ParameterGeom(name='D_ST',
+				  expression='8+6*ValidLR(R_ROT_OUT,11,21,1,1)+6*ValidLR(R_ROT_OUT,19,21,1,1)')
+elif tuning==3:					  
+	## tuning out of 3d sims with alpha = 2
+	ParameterGeom(name='D_ST',
+				  expression='6+5*ValidLR(R_ROT_OUT,11,21,1,1)+6*ValidLR(R_ROT_OUT,19,21,1,1)')
+elif tuning==4:					  
+	## free to change
+	ParameterGeom(name='D_ST : r=(10,15,20)->d=(6,11,17)',
+				  expression='6')
 	  
 lastInstance = ParameterGeom(name='R_ST_IN : stator inner radius',
               expression='R_ROT_OUT+D_AGAP')			  			  
@@ -61,7 +61,7 @@ lastInstance = ParameterGeom(name='beta : times total diameter gives away stator
               expression='.3')			  
 			  
 lastInstance = ParameterGeom(name='alpha_h : h_rot/h_st',
-              expression='1.0')	
+              expression='1.2')	
 
 lastInstance = ParameterGeom(name='alpha_case : case of alpha, equals to 1 if he\'s between 0 and 1',
               expression='ValidLR(ALPHA_H,0,1,1,1)')	  

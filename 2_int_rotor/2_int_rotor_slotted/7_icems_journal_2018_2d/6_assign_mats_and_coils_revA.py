@@ -22,15 +22,40 @@ lastInstance = ParameterGeom(name='COIL_KCU : copper filling factor',
               expression='.4')	
 
 ## now i have to define them otherwise...  since they are defined through functions (and not hard coded)			  
-lastInstance = VariationParameterFormula(name='L_SLOT_PH',
-                          formula='7+ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*5/4')							  			  
-						  
-lastInstance = VariationParameterFormula(name='W_SLOT_PH',
-                          formula='6+3*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')							  			  						  
-						  
-lastInstance = VariationParameterFormula(name='D_ST_PH',
-                          formula='6+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')							  			  						  						  
-##						  
+if tuning==1:
+	lastInstance = VariationParameterFormula(name='L_SLOT_PH',
+							  formula='7+ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*5/4')							  			  
+							  
+	lastInstance = VariationParameterFormula(name='W_SLOT_PH',
+							  formula='6+3*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')							  			  						  
+	lastInstance = VariationParameterFormula(name='D_ST_PH',
+							  formula='6+4*ValidLR(R_ROT_OUT,11,21,1,1)+ValidLR(R_ROT_OUT,19,21,1,1)*4')
+elif tuning==2:								  
+	lastInstance = VariationParameterFormula(name='L_SLOT_PH',
+							  formula='9.25+3/2*ValidLR(R_ROT_OUT,11,21,1,1)+2.25*ValidLR(R_ROT_OUT,19,21,1,1)')
+							  
+	lastInstance = VariationParameterFormula(name='W_SLOT_PH',
+							  formula='10+4*ValidLR(R_ROT_OUT,11,21,1,1)+6*ValidLR(R_ROT_OUT,19,21,1,1)')							  			  						  
+	lastInstance = VariationParameterFormula(name='D_ST_PH',
+							  formula='10+5*ValidLR(R_ROT_OUT,11,21,1,1)+7*ValidLR(R_ROT_OUT,19,21,1,1)')
+elif tuning==3:								  
+	lastInstance = VariationParameterFormula(name='L_SLOT_PH',
+							  formula='7.5+2*ValidLR(R_ROT_OUT,11,21,1,1)+1*ValidLR(R_ROT_OUT,19,21,1,1)')
+							  
+	lastInstance = VariationParameterFormula(name='W_SLOT_PH',
+							  formula='7+5*ValidLR(R_ROT_OUT,11,21,1,1)+4*ValidLR(R_ROT_OUT,19,21,1,1)')							  			  						  
+	lastInstance = VariationParameterFormula(name='D_ST_PH',
+							  formula='8+5*ValidLR(R_ROT_OUT,11,21,1,1)+5*ValidLR(R_ROT_OUT,19,21,1,1)')		
+elif tuning==4:					
+				#free to roll with the parameters
+	lastInstance = VariationParameterFormula(name='L_SLOT_PH',
+							  formula='L_SLOT')
+							  
+	lastInstance = VariationParameterFormula(name='W_SLOT_PH',
+							  formula='W_SLOT')
+							  
+	lastInstance = VariationParameterFormula(name='D_ST_PH',
+							  formula='D_ST')
 			  
 lastInstance = VariationParameterFormula(name='R_ST_OUT_PH',
                           formula='R_ROT_OUT+D_AGAP+L_SLOT_PH+D_ST_PH')			  

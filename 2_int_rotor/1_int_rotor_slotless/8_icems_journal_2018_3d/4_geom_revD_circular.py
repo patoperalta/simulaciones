@@ -249,8 +249,8 @@ result = Volume[2,4].propagateVolume(transformation=Transf['AX_SIM_ST'],
 ##domain
 lastInstance = InfiniteBoxCylinderZ(size=['3*r_st_out',
                            '4*r_st_out',
-                           '5*Max(H_ROT,H_ST)',
-                           '6*Max(H_ROT,H_ST)'])          
+                           '3*Max(H_ROT,H_ST)',
+                           '4*Max(H_ROT,H_ST)'])          
 
 
 buildFaces()     
@@ -262,4 +262,3 @@ FaceAutomatic[33].delete()
 FaceAutomatic[35].delete()
 
 buildVolumes()
-

@@ -1,41 +1,41 @@
-[12|1557817602167|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
-[13|1557817602330|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
-[14|1557817602427|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
-[15|1557817602430|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
-[16|1557817602431|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
-[17|1557817602431|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
-[18|1557817602431|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\7_icems_journal_2018_2d
-[19|1557817602431|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
-[20|1557817602431|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
-[21|1557817602432|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
-[22|1557817602432|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
-[23|1557817602432|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
-[24|1557817602432|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
-[25|1557817602624|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[12|1558077133953|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1558077134082|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1558077134140|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1558077134142|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1558077134142|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1558077134142|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1558077134142|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\7_icems_journal_2018_2d
+[19|1558077134143|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1558077134143|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1558077134143|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1558077134143|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1558077134143|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1558077134143|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1558077134273|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
 Loading data model 'Flux_model.stp'
-[27|1557817603019|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+[27|1558077134829|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/Flux2D_log.pyPython : ^&|#! Flux2D 18.1
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/Flux2D_log.py'
  
-                                                            FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
-                                                                  2048 MiB N. + 127 MiB C. + 1024 MiB J.
-                                                                 HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:7812 jperalta
+                                                             FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
+                                                                   2048 MiB N. + 127 MiB C. + 1024 MiB J.
+                                                                  HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:19476 jperalta
  
-09:06:47       0 sec. FLUX2D_18.1.0 kernel initialized
-[62315|1557817607309|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
-[62316|1557817607309|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
-[62317|1557817607509|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
-[62319|1557817607851|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@49aa1d3b
+09:12:17       0 sec. FLUX2D_18.1.0 kernel initialized
+[62315|1558077138033|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
+[62316|1558077138035|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
+[62317|1558077138093|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
+[62319|1558077138402|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@3eac8d71
 
 Flux2D (application 2018.1) running
 
-[62328|1557817607930|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@1410a137
-[62346|1557817608751|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62352|1557817608774|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62328|1558077138479|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@3a46379c
+[62348|1558077139391|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1558077139410|1|WARNING    ][Document|Document.updateInstances] : No project loaded
 Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py' in batch mode ...
-[62363|1557817608942|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62364|1557817610648|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62361|1558077139584|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1558077141309|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
 Loading new project
 Creating ANONYM
 ... end loading new project
@@ -215,7 +215,7 @@ End execution of command file '8_scenarios_test.py' in batch mode ...
 Meshing of 17 faces
  
 Automatic mesh of 46 lines
-09:06:53       6 sec. Internal meshing of the lines
+09:12:23       6 sec. Internal meshing of the lines
  
 Automatic meshing of 17  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -228,41 +228,44 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 17 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:06:54       7 sec.    3022 1st order surfacic elements created
+09:12:24       6 sec.    2980 1st order surfacic elements created
  
-09:06:54       7 sec. Generating 2nd order elements is running
-  Total number of nodes --> 6073
-09:06:54       7 sec. End generating 2nd order elements
+09:12:24       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 5989
+09:12:24       6 sec. End generating 2nd order elements
  
 Surface elements :
    Number of elements not evaluated     : 0  %
-   Number of excellent quality elements : 96.82  %
-   Number of good quality elements      : 3.18  %
+   Number of excellent quality elements : 98.79  %
+   Number of good quality elements      : 1.21  %
    Number of average quality elements   : 0  %
    Number of poor quality elements      : 0  %
    meshDomain executed
  
-09:06:54       7 sec. Generating 2nd order elements is running
-  Total number of nodes --> 6073
-09:06:54       7 sec. End generating 2nd order elements
+09:12:24       6 sec. Generating 2nd order elements is running
+  Total number of nodes --> 5989
+09:12:24       6 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
+[63266|1558077147029|22|WARNING    ][ApplicationConfiguration|FluxMruGroupPreferences.checkFilePath] : Unable to open file: C:\Users\jperalta\Google Drive\4_EPFL_Dropbox\10_Publications\5_ICEMS_journal\flux_simulations\2d\post 3d\slotless_d_st_tuning.FLU
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py' in batch mode ...
 Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/7_icems_journal_2018_2d/00_main.py')
 
+[63665|1558077213206|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Parameter/Quantity]
+[63666|1558077214246|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Solver]
 Closing project
 Close of ANONYM
-[63683|1557817677970|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-[63708|1557817678023|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[63811|1558078518479|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[63836|1558078518554|22|WARNING    ][Document|Document.updateInstances] : No project loaded
 ... end closing project
 Python : closeProject()
 
 Python : exit()
-[63712|1557817678031|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+[63840|1558078518560|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
 Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 262904
+For the dynamic table ID 263071
 Maximum use of 10 MiB. in character memory
-For the dynamic table ID 163482
+For the dynamic table ID 163487
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -281,7 +284,7 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:07:58      71 sec. FLUX2D_18.1.0 kernel finalized
-[63736|1557817678034|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
-[63737|1557817678035|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
-[63738|1557817678035|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
+09:35:18    1380 sec. FLUX2D_18.1.0 kernel finalized
+[63864|1558078518563|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[63865|1558078518564|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[63866|1558078518564|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
