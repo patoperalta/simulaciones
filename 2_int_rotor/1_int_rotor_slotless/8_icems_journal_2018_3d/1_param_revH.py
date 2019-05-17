@@ -61,7 +61,7 @@ lastInstance = ParameterGeom(name='beta : times total diameter gives away stator
               expression='.3')			  
 			  
 lastInstance = ParameterGeom(name='alpha_h : h_rot/h_st',
-              expression='1.2')	
+              expression='1.5')	
 
 lastInstance = ParameterGeom(name='alpha_case : case of alpha, equals to 1 if he\'s between 0 and 1',
               expression='ValidLR(ALPHA_H,0,1,1,1)')	  

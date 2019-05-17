@@ -40,98 +40,37 @@ for i in range(1,7):
 			 
 InfiniteBoxCylinderZ['InfiniteBoxCylinderZ'].setInvisible()
 
-Volume[33,34,31,32].assignRegion(region=RegionVolume['PM'])
+Volume[38,37,40,39].assignRegion(region=RegionVolume['PM'])
 
 ##iron teeth
-Volume[3,4,5,6,7,1].assignRegion(region=RegionVolume['IRON_ST'])
-
+Volume[5,6,7,1,3,4].assignRegion(region=RegionVolume['IRON_ST'])
 ##steel backiron
-Volume[26,2,27,8,28,9,29,10,30,11,15,12].assignRegion(region=RegionVolume['IRON_ST'])
-
-##domain
-assignRegionToVolumes(volume=[Volume[75],
-                              Volume[76],
-                              Volume[77],
-                              Volume[74],
-                              Volume[73],
-                              Volume[71],							  
-                              Volume[72]],
-                      region=RegionVolume['AIR_DOMAIN'])
+Volume[12,27,32,2,28,33,8,29,34,9,30,35,10,31,11,15,16,36].assignRegion(region=RegionVolume['IRON_ST'])
 ##coils
+Volume[57,52,47,22,18,62,67,72].assignRegion(region=RegionVolume['COIL_1'])
 
-assignRegionToVolumes(volume=[Volume[35],
-                              Volume[37],
-                              Volume[36],
-                              Volume[16],
-                              Volume[14],
-                              Volume[40],
-                              Volume[39],
-                              Volume[38]],
-                      region=RegionVolume['COIL_1'])
+Volume[48,53,58,19,23,63,68,73].assignRegion(region=RegionVolume['COIL_2'])
 
-assignRegionToVolumes(volume=[Volume[51],
-                              Volume[46],
-                              Volume[41],
-                              Volume[21],
-                              Volume[17],
-                              Volume[66],
-                              Volume[61],
-                              Volume[56]],
-                      region=RegionVolume['COIL_2'])
+Volume[49,54,59,20,24,74,69,64].assignRegion(region=RegionVolume['COIL_3'])
 
-assignRegionToVolumes(volume=[Volume[42],
-                              Volume[18],
-                              Volume[67],
-                              Volume[62],
-                              Volume[57],
-                              Volume[22],
-                              Volume[52],
-                              Volume[47]],
-                      region=RegionVolume['COIL_3'])
+Volume[50,55,60,21,25,65,70,75].assignRegion(region=RegionVolume['COIL_4'])
 
-assignRegionToVolumes(volume=[Volume[43],
-                              Volume[48],
-                              Volume[53],
-                              Volume[23],
-                              Volume[58],
-                              Volume[63],
-                              Volume[68],
-                              Volume[19]],
-                      region=RegionVolume['COIL_4'])
+Volume[51,56,61,13,26,66,71,76].assignRegion(region=RegionVolume['COIL_5'])
 
-assignRegionToVolumes(volume=[Volume[44],
-                              Volume[49],
-                              Volume[54],
-                              Volume[24],
-                              Volume[59],
-                              Volume[64],
-                              Volume[69],
-                              Volume[20]],
-                      region=RegionVolume['COIL_5'])
+Volume[41,42,43,17,14,44,45,46].assignRegion(region=RegionVolume['COIL_6'])
+##domain
+assignRegionToVolumes(volume=[Volume[78],
+                              Volume[80],
+                              Volume[79],
+                              Volume[82],
+                              Volume[81],
+                              Volume[83]],
+                      region=RegionVolume['AIR_DOMAIN'])
 
-assignRegionToVolumes(volume=[Volume[45],
-                              Volume[50],
-                              Volume[55],
-                              Volume[25],
-                              Volume[60],
-                              Volume[65],
-                              Volume[70],
-                              Volume[13]],
-                      region=RegionVolume['COIL_6'])
+assignRegionToVolumes(volume=[Volume[77]],
+                      region=RegionVolume['AIR_DOMAIN'])
 
 orientRegVolMaterial(region=RegionVolume['PM'],coordSys=CoordSys['COORD_SYS_ROT'],orientation='Direction',angle='0')
-
-## mapped slots and their backiron
-#backiron
-Volume[12,2,8,9,10,11].meshGenerator=MeshGenerator['MAPPED']
-#slots	
-Volume[3,1,7,6,5,4].meshGenerator=MeshGenerator['MAPPED']
-#coil volume on top and under slots	
-Volume[47,48,49,50,37,46,64,65,39,61,62,63].meshGenerator=MeshGenerator['MAPPED']
-#coil sides, up and down
-Volume[41,52,42,53,43,54,44,55,45,36,35,51,59,68,58,67,57,66,56,40,38,70,60,69].meshGenerator=MeshGenerator['MAPPED']
-#coil sides at airgap height
-Volume[21,16,17,22,18,23,19,24,20,25,13,14].meshGenerator=MeshGenerator['MAPPED']
 
 ##mesh things, meshed equivalently to slotless version
 ## see 
@@ -166,18 +105,16 @@ lastInstance = MeshLineArithmetic(name='THETA_ST_SLOT : coming out of slot',
                    number=(9)/3)		
 
 ## assign lines
-LinePropagated[128,153,83,90,96,133,104,138,146,115,120,148].assignMeshLine(meshLine=MeshLine['R_ST'])
+LinePropagated[165,216,103,102,219,148,145,222,153,150,225,158,155,228,163,160,177,168,264,269,291,329,296,299,334,304,307,339,312,315,344,320,323,349,259,255].assignMeshLine(meshLine=MeshLine['R_ST'])
 
-Line[207,213].assignMeshLine(meshLine=MeshLine['R_ROT'])
+Line[237,243].assignMeshLine(meshLine=MeshLine['R_ROT'])
 
-LineExtruded[152,127,88,82,95,132,103,137,111,142,119,147].assignMeshLine(meshLine=MeshLine['H_ST'])
+LineExtruded[151,149,224,156,154,227,161,159,176,166,164,215,99,100,218,146,144,221,180,96,94,185,109,107,190,117,115,195,125,123,200,133,131,169,141,139,105,192,112,113,197,120,121,202,129,171,136,137,182,91,92,187,104].assignMeshLine(meshLine=MeshLine['H_ST'])
 
-Line[212,208,206].assignMeshLine(meshLine=MeshLine['H_ROT'])
+Line[236,242].assignMeshLine(meshLine=MeshLine['H_ROT'])
 
-LineExtruded[211,215].assignMeshLine(meshLine=MeshLine['THETA_ROT'])
+LineExtruded[241,245].assignMeshLine(meshLine=MeshLine['THETA_ROT'])
 
-LinePropagated[201,202,203,204,164,200].assignMeshLine(meshLine=MeshLine['THETA_ST_ROUND_BI'])
+LinePropagated[231,223,226,233,229,234,232,220,230,217,179,178].assignMeshLine(meshLine=MeshLine['THETA_ST_ROUND_BI'])
 
-LinePropagated[155,89,135,140,145,150,114,122,130,85,98,106].assignMeshLine(meshLine=MeshLine['THETA_ST_SLOT'])
-
-   				   
+LinePropagated[101,147,152,157,162,167].assignMeshLine(meshLine=MeshLine['THETA_ST_SLOT'])

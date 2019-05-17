@@ -150,6 +150,7 @@ lastInstance = LineArcRadius(color=Color['White'],
 			  
 ##build faces and define type of mesh
 buildFaces()
+Face[ALL].meshGenerator=MeshGenerator['MAPPED']
 # Face[1].meshGenerator=MeshGenerator['MAPPED']
 
 ##define type of transformation
@@ -172,18 +173,7 @@ result = FaceAutomatic[ALL].propagate(transformation=Transf['ROT_ST_60'],
           regionPropagation='None')
 
 ##########################################################
-
-##define outer arc now	
-lastInstance = LineArcRadius(color=Color['White'],
-              visibility=Visibility['VISIBLE'],
-              coordSys=CoordSys['COORD_SYS_ST'],
-              radius='R_ST_OUT',
-              defPoint=[Point[33],
-                        Point[36]],
-              nature=Nature['STANDARD'],
-              mesh=MeshLine['AIDED_MESHLINE'],
-              relaxation=RelaxLine['AIDED_RELAXLINE'])
-##separating point of coil
+##separating point of coil and outer stator, so that we can mesh it as mapped
 lastInstance = PointCoordinates(color=Color['White'],
                  visibility=Visibility['VISIBLE'],
                  coordSys=CoordSys['COORD_SYS_ST'],
@@ -200,7 +190,40 @@ lastInstance = PointCoordinates(color=Color['White'],
                       '0',
                       '0'],
                  nature=Nature['STANDARD'],
-                 mesh=MeshPoint['AIDED_MESHPOINT'])	 
+                 mesh=MeshPoint['AIDED_MESHPOINT'])	
+				 
+##separating point of coil and outer stator, so that we can mesh it as mapped
+lastInstance = PointCoordinates(color=Color['White'],
+                 visibility=Visibility['VISIBLE'],
+                 coordSys=CoordSys['COORD_SYS_ST'],
+                 uvw=['r_ST_OUT',
+                      '0',
+                      '0'],
+                 nature=Nature['STANDARD'],
+                 mesh=MeshPoint['AIDED_MESHPOINT'])				 
+				 
+				 
+##define outer arc now	
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_ST_OUT',
+              defPoint=[Point[33],
+                        Point[39]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])
+			  
+lastInstance = LineArcRadius(color=Color['White'],
+              visibility=Visibility['VISIBLE'],
+              coordSys=CoordSys['COORD_SYS_ST'],
+              radius='R_ST_OUT',
+              defPoint=[Point[39],
+                        Point[36]],
+              nature=Nature['STANDARD'],
+              mesh=MeshLine['AIDED_MESHLINE'],
+              relaxation=RelaxLine['AIDED_RELAXLINE'])			  
+ 
 ##close the newest arcs
 #rstin			  
 lastInstance = LineArcRadius(color=Color['White'],
@@ -250,12 +273,19 @@ lastInstance = LineSegment(color=Color['White'],
             nature=Nature['STANDARD'],
             mesh=MeshLine['AIDED_MESHLINE'],
             relaxation=RelaxLine['AIDED_RELAXLINE'])	  
+# and backiron
+lastInstance = LineSegment(color=Color['White'],
+            visibility=Visibility['VISIBLE'],
+            defPoint=[Point[37],
+                      Point[39]],
+            nature=Nature['STANDARD'],
+            relaxation=RelaxLine['AIDED_RELAXLINE'])			
 
 ## generate face again
 buildFaces()
-# Face[13,14].meshGenerator=MeshGenerator['MAPPED']
+Face[13,14,15,16].meshGenerator=MeshGenerator['MAPPED']
 ## rotate
-result = FaceAutomatic[13,14,15].propagate(transformation=Transf['ROT_ST_60'],
+result = FaceAutomatic[13,14,15,16].propagate(transformation=Transf['ROT_ST_60'],
           repetitionNumber=5,
           buildingOption='FacesWithMeshGenerator',
           regionPropagation='Same')
@@ -313,43 +343,43 @@ lastInstance = PointCoordinates(color=Color['White'],
 ##rotor lines
 lastInstance = LineSegment(color=Color['White'],
             visibility=Visibility['VISIBLE'],
-            defPoint=[Point[97],
-                      Point[100]],
+            defPoint=[Point[109],
+                      Point[112]],
             nature=Nature['STANDARD'],
             mesh=MeshLine['AIDED_MESHLINE'],
             relaxation=RelaxLine['AIDED_RELAXLINE'])
 
 lastInstance = LineSegment(color=Color['White'],
             visibility=Visibility['VISIBLE'],
-            defPoint=[Point[100],
-                      Point[99]],
+            defPoint=[Point[112],
+                      Point[111]],
             nature=Nature['STANDARD'],
             mesh=MeshLine['AIDED_MESHLINE'],
             relaxation=RelaxLine['AIDED_RELAXLINE'])
 
 lastInstance = LineSegment(color=Color['White'],
             visibility=Visibility['VISIBLE'],
-            defPoint=[Point[99],
-                      Point[98]],
+            defPoint=[Point[111],
+                      Point[110]],
             nature=Nature['STANDARD'],
             mesh=MeshLine['AIDED_MESHLINE'],
             relaxation=RelaxLine['AIDED_RELAXLINE'])
 
 lastInstance = LineSegment(color=Color['White'],
             visibility=Visibility['VISIBLE'],
-            defPoint=[Point[98],
-                      Point[97]],
+            defPoint=[Point[110],
+                      Point[109]],
             nature=Nature['STANDARD'],
             mesh=MeshLine['AIDED_MESHLINE'],
             relaxation=RelaxLine['AIDED_RELAXLINE'])
 				 
 ## build faces
 buildFaces()
-FaceAutomatic[140].delete()
-FaceAutomatic[139].delete()
+FaceAutomatic[164].delete()
+FaceAutomatic[163].delete()
 
 ## and make mapped faces				 
-Face[141].meshGenerator=MeshGenerator['MAPPED']
+Face[165].meshGenerator=MeshGenerator['MAPPED']
 ##define transformation of rotational symmetry
 lastInstance = TransfRotation3AnglesPivotCoord(name='ROT_ROTOR',
                                 coordSys=CoordSys['COORD_SYS_ROT'],
@@ -360,7 +390,7 @@ lastInstance = TransfRotation3AnglesPivotCoord(name='ROT_ROTOR',
                                                               angleY='0',
                                                               angleZ='180'))
 ##apply transformation
-result = FaceAutomatic[141].extrude(transformation=Transf['ROT_ROTOR'],
+result = FaceAutomatic[165].extrude(transformation=Transf['ROT_ROTOR'],
         repetitionNumber=2,
         extrusionType='standard',
         buildingOption='VolumesWithMeshGenerator')				 
@@ -371,7 +401,7 @@ lastInstance = TransfTranslationVector(name='AX_SIM_ROT',
                                 '0',
                                 '-H_ROT/2'])
 ##now apply axial symmetry
-result = Volume[31,32].propagateVolume(transformation=Transf['AX_SIM_ROT'],
+result = Volume[37,38].propagateVolume(transformation=Transf['AX_SIM_ROT'],
                 repetionNumber=1,
                 buildingOption='VolumesWithMeshGenerator',
                 regionPropagation='Same')
@@ -388,18 +418,20 @@ lastInstance = TransfTranslationVector(name='H_COILS_MINUS',
                         vector=['0',
                                 '0',
                                 '-TH_COIL'])								
+								
+#EVERYTHING BUT the coils have mapped mesh								
 ##up
-result = FaceAutomatic[97,91,64].extrude(transformation=Transf['H_COILS_PLUS'],
+result = FaceAutomatic[97,70,106].extrude(transformation=Transf['H_COILS_PLUS'],
         repetitionNumber=1,
         extrusionType='standard',
         buildingOption='Volumes')
 ##down
-result = FaceAutomatic[14,7,16].extrude(transformation=Transf['H_COILS_MINUS'],
+result = FaceAutomatic[14,7,17].extrude(transformation=Transf['H_COILS_MINUS'],
         repetitionNumber=1,
         extrusionType='standard',
         buildingOption='Volumes')
 #propagate
-result = Volume[35,37,36,38,39,40].propagateVolume(transformation=Transf['ROT_ST_60'],
+result = Volume[41,42,43,44,45,46].propagateVolume(transformation=Transf['ROT_ST_60'],
                 repetionNumber=5,
                 buildingOption='Volumes',
                 regionPropagation='None')		
@@ -415,10 +447,10 @@ buildFaces()
 
 InfiniteBoxCylinderZ['InfiniteBoxCylinderZ'].setInvisible()
 
-FaceAutomatic[299].delete()
-FaceAutomatic[298].delete()
-FaceAutomatic[297].delete()
-FaceAutomatic[300].delete()
+FaceAutomatic[323].delete()
+FaceAutomatic[322].delete()
+FaceAutomatic[321].delete()
+FaceAutomatic[324].delete()
 
 buildVolumes()
 

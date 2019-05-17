@@ -4,9 +4,9 @@ Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/
                                                              FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                    4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13428 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:19640 jperalta
  
-09:50:53       0 sec. FLUX3D_18.1.0 kernel initialized
+13:13:07       0 sec. FLUX3D_18.1.0 kernel initialized
 
 Flux3D (application 2018.1) running
 
@@ -341,7 +341,7 @@ Modeler context closed
 Verifying of linked faces ...
   27 face(s) have consistent linked mesh generator.
  
-09:50:59       6 sec. Internal meshing of the lines
+13:13:14       7 sec. Internal meshing of the lines
  
 Automatic meshing of 26  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -354,18 +354,18 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 26 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:50:59       6 sec.     796 1st order surfacic elements created
+13:13:15       7 sec.     796 1st order surfacic elements created
  
 Extrusive meshing of 5 faces
-09:50:59       6 sec.     900 1st order surfacic elements created
+13:13:15       7 sec.     900 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 25 linked faces
  
-09:50:59       6 sec.     882 1st order lineic elements created
+13:13:15       7 sec.     882 1st order lineic elements created
  
 Automatic mesh of 15 volumes
-09:50:59       6 sec. Boundary meshing of volumes
+13:13:15       7 sec. Boundary meshing of volumes
 Insert of nodes ...
 ... End of nodes insert
    Number of elements in the global boundary mesh  : 21172
@@ -378,19 +378,19 @@ Checking of faces completed in 3 iteration(s)
 Number of nodes creating while checking faces: 37
   3853  boundary nodes
   11192  boundary meshes
-09:51:01       8 sec. Internal meshing of volumes
+13:13:17       9 sec. Internal meshing of volumes
  
 Number of nodes created by internal meshing 1105
-09:51:02       9 sec.
+13:13:18      10 sec.
           4966 nodes
          19980 meshes
-09:51:02       9 sec. Mesh compressing
+13:13:18      10 sec. Mesh compressing
           4966 nodes
          19727 meshes
-09:51:02       9 sec.   19727 1st order volumic elements created
+13:13:18      10 sec.   19727 1st order volumic elements created
  
 Extrusive meshing of 8 volumes
-09:51:02       9 sec.   15120 1st order volumic elements created
+13:13:18      10 sec.   15120 1st order volumic elements created
       6840 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
 Creation of 3420 1st order pyramid elements
@@ -408,7 +408,7 @@ Verifying of linked faces ...
  
    meshDomain executed
  
-09:51:03      10 sec. Generating 2nd order elements is running
+13:13:19      12 sec. Generating 2nd order elements is running
 Percentage of 2nd order nodes not projected on line 48 : 28%
 Percentage of 2nd order nodes not projected on line 55 : 28%
 Percentage of 2nd order nodes not projected on line 64 : 18%
@@ -417,7 +417,7 @@ Percentage of 2nd order nodes not projected on face 44 : 37%
 Percentage of 2nd order nodes not projected on face 52 : 37%
 Percentage of 2nd order nodes not projected on face 58 : 8%
   Total number of nodes --> 61086
-09:51:04      11 sec. End generating 2nd order elements
+13:13:20      13 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
  
@@ -427,7 +427,6 @@ The final derivative of points defining the spline curve of material NO12 must b
    buildMagneticCircuitCut executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py' in batch mode ...
-   setInvisible executed
 Closing project
 Close of ANONYM
 ... end closing project
@@ -453,4 +452,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:51:42      49 sec. FLUX3D_18.1.0 kernel finalized
+13:16:01     173 sec. FLUX3D_18.1.0 kernel finalized

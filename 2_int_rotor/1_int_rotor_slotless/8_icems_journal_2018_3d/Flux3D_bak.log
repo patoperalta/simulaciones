@@ -4,9 +4,9 @@ Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/
                                                              FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                    4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:14156 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13428 jperalta
  
-09:36:56       0 sec. FLUX3D_18.1.0 kernel initialized
+09:50:53       0 sec. FLUX3D_18.1.0 kernel initialized
 
 Flux3D (application 2018.1) running
 
@@ -254,6 +254,16 @@ Execution of command file '7_assign_circular.py' in batch mode ...
    assignRegion executed
    assignRegionToVolumes executed
    orientRegVolMaterial executed
+   MeshLine[R_ST] created
+   MeshLine[R_ROT] created
+   MeshLine[H_ST] created
+   MeshLine[H_ROT] created
+   MeshLine[THETA] created
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
+   assignMeshLine executed
 End execution of command file '7_assign_circular.py' in batch mode ...
 Execution of command file '8_sensors.py' in batch mode ...
    Sensor[F_ROT] created
@@ -261,6 +271,7 @@ Execution of command file '8_sensors.py' in batch mode ...
    Sensor[TY_ROT] created
    Sensor[TZ_ROT] created
    Sensor[F_ST] created
+
    Sensor[TX_ST] created
    Sensor[TY_ST] created
    Sensor[TZ_ST] created
@@ -268,7 +279,6 @@ End execution of command file '8_sensors.py' in batch mode ...
 Execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
    Scenario[0_FIELD] created
 Scenario[1]
-
    addPilot executed
    addPilot executed
    addPilot executed
@@ -331,7 +341,7 @@ Modeler context closed
 Verifying of linked faces ...
   27 face(s) have consistent linked mesh generator.
  
-09:37:03       6 sec. Internal meshing of the lines
+09:50:59       6 sec. Internal meshing of the lines
  
 Automatic meshing of 26  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -344,21 +354,21 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 26 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:37:03       6 sec.     785 1st order surfacic elements created
+09:50:59       6 sec.     796 1st order surfacic elements created
  
 Extrusive meshing of 5 faces
-09:37:03       6 sec.     720 1st order surfacic elements created
+09:50:59       6 sec.     900 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 25 linked faces
  
-09:37:03       6 sec.     719 1st order lineic elements created
+09:50:59       6 sec.     882 1st order lineic elements created
  
 Automatic mesh of 15 volumes
-09:37:03       6 sec. Boundary meshing of volumes
+09:50:59       6 sec. Boundary meshing of volumes
 Insert of nodes ...
 ... End of nodes insert
-   Number of elements in the global boundary mesh  : 17416
+   Number of elements in the global boundary mesh  : 21172
 Checking 44 faces
 Checking 44 faces: iteration No 1  completed
 Number of node(s) creating while the iteration: 34
@@ -366,39 +376,39 @@ Checking 44 faces: iteration No 2  completed
 Number of node(s) creating while the iteration: 3
 Checking of faces completed in 3 iteration(s)
 Number of nodes creating while checking faces: 37
-  3151  boundary nodes
-  9380  boundary meshes
-09:37:04       8 sec. Internal meshing of volumes
+  3853  boundary nodes
+  11192  boundary meshes
+09:51:01       8 sec. Internal meshing of volumes
  
-Number of nodes created by internal meshing 783
-09:37:05       8 sec.
-          3942 nodes
-         15451 meshes
-09:37:05       8 sec. Mesh compressing
-          3942 nodes
-         15343 meshes
-09:37:05       8 sec.   15343 1st order volumic elements created
+Number of nodes created by internal meshing 1105
+09:51:02       9 sec.
+          4966 nodes
+         19980 meshes
+09:51:02       9 sec. Mesh compressing
+          4966 nodes
+         19727 meshes
+09:51:02       9 sec.   19727 1st order volumic elements created
  
 Extrusive meshing of 8 volumes
-09:37:05       8 sec.   10512 1st order volumic elements created
-      5472 ill-connected elements have been detected
+09:51:02       9 sec.   15120 1st order volumic elements created
+      6840 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
-Creation of 2736 1st order pyramid elements
+Creation of 3420 1st order pyramid elements
 End of topological mesh regularization
  
 Volume elements :
-   Number of elements not evaluated     : 57.86  %
-   Number of excellent quality elements : 11.21  %
-   Number of good quality elements      : 15.48  %
-   Number of average quality elements   : 10.68  %
-   Number of poor quality elements      : 4.76  %
+   Number of elements not evaluated     : 59.85  %
+   Number of excellent quality elements : 11.81  %
+   Number of good quality elements      : 13.77  %
+   Number of average quality elements   : 9.72  %
+   Number of poor quality elements      : 4.85  %
  
 Verifying of linked faces ...
   27 face(s) respect strongly (ELEMENTS) linked mesh generator.
  
    meshDomain executed
  
-09:37:06       9 sec. Generating 2nd order elements is running
+09:51:03      10 sec. Generating 2nd order elements is running
 Percentage of 2nd order nodes not projected on line 48 : 28%
 Percentage of 2nd order nodes not projected on line 55 : 28%
 Percentage of 2nd order nodes not projected on line 64 : 18%
@@ -406,8 +416,8 @@ Percentage of 2nd order nodes not projected on line 75 : 18%
 Percentage of 2nd order nodes not projected on face 44 : 37%
 Percentage of 2nd order nodes not projected on face 52 : 37%
 Percentage of 2nd order nodes not projected on face 58 : 8%
-  Total number of nodes --> 44562
-09:37:07      10 sec. End generating 2nd order elements
+  Total number of nodes --> 61086
+09:51:04      11 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
  
@@ -418,455 +428,11 @@ The final derivative of points defining the spline curve of material NO12 must b
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py' in batch mode ...
    setInvisible executed
-   MeshLine[R_ST] created
-   MeshLine[R_ROT] created
-   MeshLine[H_ST] created
-   MeshLine[H_ROT] created
-   MeshLine[THETA] created
-   deleteMesh executed
-   assignMeshLine executed
- 
-Verifying of linked faces ...
-  27 face(s) have consistent linked mesh generator.
- 
-09:41:42     285 sec. Internal meshing of the lines
- 
-Automatic meshing of 26  faces
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-End of topological mesh regularization
-09:41:42     286 sec.     797 1st order surfacic elements created
- 
-Extrusive meshing of 5 faces
-09:41:42     286 sec.     792 1st order surfacic elements created
- 
-Meshing of linked faces...
-Meshing of 25 linked faces
- 
-09:41:42     286 sec.     727 1st order lineic elements created
- 
-Automatic mesh of 15 volumes
-09:41:43     286 sec. Boundary meshing of volumes
-Insert of nodes ...
-... End of nodes insert
-   Number of elements in the global boundary mesh  : 19012
-Checking 44 faces
-Checking 44 faces: iteration No 1  completed
-Number of node(s) creating while the iteration: 34
-Checking 44 faces: iteration No 2  completed
-Number of node(s) creating while the iteration: 3
-Checking of faces completed in 3 iteration(s)
-Number of nodes creating while checking faces: 37
-  3439  boundary nodes
-  10112  boundary meshes
-09:41:44     287 sec. Internal meshing of volumes
- 
-Number of nodes created by internal meshing 855
-09:41:45     288 sec.
-          4302 nodes
-         16838 meshes
-09:41:45     288 sec. Mesh compressing
-          4302 nodes
-         16626 meshes
-09:41:45     288 sec.   16626 1st order volumic elements created
- 
-Extrusive meshing of 8 volumes
-09:41:45     288 sec.   12240 1st order volumic elements created
-      6048 ill-connected elements have been detected
-Attempt to repair ( 1 /20) ...
-Creation of 3024 1st order pyramid elements
-End of topological mesh regularization
- 
-Volume elements :
-   Number of elements not evaluated     : 59.78  %
-   Number of excellent quality elements : 11.14  %
-   Number of good quality elements      : 14.57  %
-   Number of average quality elements   : 9.83  %
-   Number of poor quality elements      : 4.68  %
- 
-Verifying of linked faces ...
-  27 face(s) respect strongly (ELEMENTS) linked mesh generator.
- 
-   meshDomain executed
-   deleteMesh executed
-   assignMeshLine executed
-   assignMeshLine executed
-   assignMeshLine executed
-   assignMeshLine executed
-executed Undo(assignMeshLine executed)
-executed Undo(assignMeshLine executed)
-executed Undo(assignMeshLine executed)
-executed Undo(assignMeshLine executed)
- 
-Verifying of linked faces ...
-  27 face(s) have consistent linked mesh generator.
- 
-09:46:00     544 sec. Internal meshing of the lines
- 
-Automatic meshing of 26  faces
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-End of topological mesh regularization
-09:46:01     544 sec.     797 1st order surfacic elements created
- 
-Extrusive meshing of 5 faces
-09:46:01     544 sec.     792 1st order surfacic elements created
- 
-Meshing of linked faces...
-Meshing of 25 linked faces
- 
-09:46:01     544 sec.     727 1st order lineic elements created
- 
-Automatic mesh of 15 volumes
-09:46:01     544 sec. Boundary meshing of volumes
-Insert of nodes ...
-... End of nodes insert
-   Number of elements in the global boundary mesh  : 19012
-Checking 44 faces
-Checking 44 faces: iteration No 1  completed
-Number of node(s) creating while the iteration: 34
-Checking 44 faces: iteration No 2  completed
-Number of node(s) creating while the iteration: 3
-Checking of faces completed in 3 iteration(s)
-Number of nodes creating while checking faces: 37
-  3439  boundary nodes
-  10112  boundary meshes
-09:46:03     546 sec. Internal meshing of volumes
- 
-Number of nodes created by internal meshing 855
-09:46:03     546 sec.
-          4302 nodes
-         16838 meshes
-09:46:03     546 sec. Mesh compressing
-          4302 nodes
-         16626 meshes
-09:46:03     546 sec.   16626 1st order volumic elements created
- 
-Extrusive meshing of 8 volumes
-09:46:03     547 sec.   12240 1st order volumic elements created
-      6048 ill-connected elements have been detected
-Attempt to repair ( 1 /20) ...
-Creation of 3024 1st order pyramid elements
-End of topological mesh regularization
- 
-Volume elements :
-   Number of elements not evaluated     : 59.78  %
-   Number of excellent quality elements : 11.14  %
-   Number of good quality elements      : 14.57  %
-   Number of average quality elements   : 9.83  %
-   Number of poor quality elements      : 4.68  %
- 
-Verifying of linked faces ...
-  27 face(s) respect strongly (ELEMENTS) linked mesh generator.
- 
-   meshDomain executed
-   deleteMesh executed
-   assignMeshLine executed
- 
-Verifying of linked faces ...
-  27 face(s) have consistent linked mesh generator.
- 
-09:46:56     599 sec. Internal meshing of the lines
- 
-Automatic meshing of 26  faces
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-End of topological mesh regularization
-09:46:56     599 sec.     804 1st order surfacic elements created
- 
-Extrusive meshing of 5 faces
-09:46:56     599 sec.     900 1st order surfacic elements created
- 
-Meshing of linked faces...
-Meshing of 25 linked faces
- 
-09:46:56     599 sec.     736 1st order lineic elements created
- 
-Automatic mesh of 15 volumes
-09:46:56     599 sec. Boundary meshing of volumes
-Insert of nodes ...
-... End of nodes insert
-   Number of elements in the global boundary mesh  : 21284
-Checking 44 faces
-Checking 44 faces: iteration No 1  completed
-Number of node(s) creating while the iteration: 34
-Checking 44 faces: iteration No 2  completed
-Number of node(s) creating while the iteration: 3
-Checking of faces completed in 3 iteration(s)
-Number of nodes creating while checking faces: 37
-  3871  boundary nodes
-  11088  boundary meshes
-09:46:59     602 sec. Internal meshing of volumes
- 
-Number of nodes created by internal meshing 1055
-09:46:59     602 sec.
-          4934 nodes
-         19451 meshes
-09:46:59     602 sec. Mesh compressing
-          4934 nodes
-         19215 meshes
-09:46:59     602 sec.   19215 1st order volumic elements created
- 
-Extrusive meshing of 8 volumes
-09:46:59     603 sec.   13248 1st order volumic elements created
-      6912 ill-connected elements have been detected
-Attempt to repair ( 1 /20) ...
-Creation of 3456 1st order pyramid elements
-End of topological mesh regularization
- 
-Volume elements :
-   Number of elements not evaluated     : 58.52  %
-   Number of excellent quality elements : 10.83  %
-   Number of good quality elements      : 16.02  %
-   Number of average quality elements   : 10.33  %
-   Number of poor quality elements      : 4.31  %
- 
-Verifying of linked faces ...
-  27 face(s) respect strongly (ELEMENTS) linked mesh generator.
- 
-   meshDomain executed
-   deleteMesh executed
-   assignMeshLine executed
- 
-Verifying of linked faces ...
-  27 face(s) have consistent linked mesh generator.
- 
-09:47:36     639 sec. Internal meshing of the lines
- 
-Automatic meshing of 26  faces
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-End of topological mesh regularization
-09:47:37     640 sec.     843 1st order surfacic elements created
- 
-Extrusive meshing of 5 faces
-09:47:37     640 sec.    1008 1st order surfacic elements created
- 
-Meshing of linked faces...
-Meshing of 25 linked faces
- 
-09:47:37     640 sec.     749 1st order lineic elements created
- 
-Automatic mesh of 15 volumes
-09:47:37     640 sec. Boundary meshing of volumes
-Insert of nodes ...
-... End of nodes insert
-   Number of elements in the global boundary mesh  : 23460
-Checking 44 faces
-Checking 44 faces: iteration No 1  completed
-Number of node(s) creating while the iteration: 34
-Checking 44 faces: iteration No 2  completed
-Number of node(s) creating while the iteration: 3
-Checking of faces completed in 3 iteration(s)
-Number of nodes creating while checking faces: 37
-  4303  boundary nodes
-  11968  boundary meshes
-09:47:39     642 sec. Internal meshing of volumes
- 
-Number of nodes created by internal meshing 1153
-09:47:40     643 sec.
-          5464 nodes
-         21348 meshes
-09:47:40     643 sec. Mesh compressing
-          5464 nodes
-         21116 meshes
-09:47:40     643 sec.   21116 1st order volumic elements created
- 
-Extrusive meshing of 8 volumes
-09:47:40     643 sec.   18864 1st order volumic elements created
-      7776 ill-connected elements have been detected
-Attempt to repair ( 1 /20) ...
-Creation of 3888 1st order pyramid elements
-End of topological mesh regularization
- 
-Volume elements :
-   Number of elements not evaluated     : 63.67  %
-   Number of excellent quality elements : 9.42  %
-   Number of good quality elements      : 13.68  %
-   Number of average quality elements   : 9.1  %
-   Number of poor quality elements      : 4.13  %
- 
-Verifying of linked faces ...
-  27 face(s) respect strongly (ELEMENTS) linked mesh generator.
- 
-   meshDomain executed
-   deleteMesh executed
-   assignMeshLine executed
- 
-Verifying of linked faces ...
-  27 face(s) have consistent linked mesh generator.
- 
-09:48:13     676 sec. Internal meshing of the lines
- 
-Automatic meshing of 26  faces
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-End of topological mesh regularization
-09:48:13     676 sec.     854 1st order surfacic elements created
- 
-Extrusive meshing of 5 faces
-09:48:13     676 sec.    1116 1st order surfacic elements created
- 
-Meshing of linked faces...
-Meshing of 25 linked faces
- 
-09:48:13     676 sec.     758 1st order lineic elements created
- 
-Automatic mesh of 15 volumes
-09:48:13     676 sec. Boundary meshing of volumes
-Insert of nodes ...
-... End of nodes insert
-   Number of elements in the global boundary mesh  : 26052
-Checking 44 faces
-Checking 44 faces: iteration No 1  completed
-Number of node(s) creating while the iteration: 34
-Checking 44 faces: iteration No 2  completed
-Number of node(s) creating while the iteration: 3
-Checking of faces completed in 3 iteration(s)
-Number of nodes creating while checking faces: 37
-  4735  boundary nodes
-  13264  boundary meshes
-09:48:16     679 sec. Internal meshing of volumes
- 
-Number of nodes created by internal meshing 1320
-09:48:17     680 sec.
-          6063 nodes
-         23584 meshes
-09:48:17     680 sec. Mesh compressing
-          6063 nodes
-         23323 meshes
-09:48:17     680 sec.   23323 1st order volumic elements created
- 
-Extrusive meshing of 8 volumes
-09:48:17     680 sec.   20448 1st order volumic elements created
-      8640 ill-connected elements have been detected
-Attempt to repair ( 1 /20) ...
-Creation of 4320 1st order pyramid elements
-End of topological mesh regularization
- 
-Volume elements :
-   Number of elements not evaluated     : 63.43  %
-   Number of excellent quality elements : 10.25  %
-   Number of good quality elements      : 14.41  %
-   Number of average quality elements   : 8.12  %
-   Number of poor quality elements      : 3.78  %
- 
-Verifying of linked faces ...
-  27 face(s) respect strongly (ELEMENTS) linked mesh generator.
- 
-   meshDomain executed
-   deleteMesh executed
-   assignMeshLine executed
- 
-Verifying of linked faces ...
-  27 face(s) have consistent linked mesh generator.
- 
-09:48:53     716 sec. Internal meshing of the lines
- 
-Automatic meshing of 26  faces
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-Boundary meshing of the faces achieved in 1 iteration(s)
-Internal meshing of the 26 faces
-Faces internal meshing achieved
-End of topological mesh regularization
-09:48:53     716 sec.     860 1st order surfacic elements created
- 
-Extrusive meshing of 5 faces
-09:48:53     716 sec.    2790 1st order surfacic elements created
- 
-Meshing of linked faces...
-Meshing of 25 linked faces
- 
-09:48:53     716 sec.    1730 1st order lineic elements created
- 
-Automatic mesh of 15 volumes
-09:48:53     716 sec. Boundary meshing of volumes
-Insert of nodes ...
-... End of nodes insert
-   Number of elements in the global boundary mesh  : 62189
-Checking 44 faces
-Checking 44 faces: iteration No 1  completed
-Number of node(s) creating while the iteration: 34
-Checking 44 faces: iteration No 2  completed
-Number of node(s) creating while the iteration: 3
-Checking of faces completed in 3 iteration(s)
-Number of nodes creating while checking faces: 37
-  11323  boundary nodes
-  30609  boundary meshes
-09:49:08     731 sec. Internal meshing of volumes
- 
-Number of nodes created by internal meshing 2456
-09:49:11     734 sec.
-         13787 nodes
-         52169 meshes
-09:49:11     734 sec. Mesh compressing
-         13787 nodes
-         50497 meshes
-09:49:11     735 sec.   50497 1st order volumic elements created
- 
-Extrusive meshing of 8 volumes
-09:49:12     735 sec.   53280 1st order volumic elements created
-     21600 ill-connected elements have been detected
-Attempt to repair ( 1 /20) ...
-Creation of 10800 1st order pyramid elements
-End of topological mesh regularization
- 
-Volume elements :
-   Number of elements not evaluated     : 69.51  %
-   Number of excellent quality elements : 6.79  %
-   Number of good quality elements      : 9.14  %
-   Number of average quality elements   : 8.41  %
-   Number of poor quality elements      : 6.15  %
- 
-Verifying of linked faces ...
-  27 face(s) respect strongly (ELEMENTS) linked mesh generator.
- 
-   meshDomain executed
 Closing project
 Close of ANONYM
 ... end closing project
-Maximum use of 895 MiB. in numerical memory
-For the dynamic table ID 10954863
+Maximum use of 862 MiB. in numerical memory
+For the dynamic table ID 971165
 Maximum use of 8 MiB. in character memory
 For the dynamic table ID 311397
  
@@ -887,4 +453,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:50:46     829 sec. FLUX3D_18.1.0 kernel finalized
+09:51:42      49 sec. FLUX3D_18.1.0 kernel finalized

@@ -1,44 +1,44 @@
-[12|1558079449095|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
-[13|1558079449233|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
-[14|1558079449329|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
-[15|1558079449332|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
-[16|1558079449332|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
-[17|1558079449332|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
-[18|1558079449332|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\8_icems_journal_2018_3d
-[19|1558079449333|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
-[20|1558079449333|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
-[21|1558079449333|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
-[22|1558079449333|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
-[23|1558079449334|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
-[24|1558079449334|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
-[25|1558079449514|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[12|1558091581473|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1558091581618|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1558091581681|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1558091581684|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1558091581684|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1558091581684|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1558091581684|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\1_int_rotor_slotless\8_icems_journal_2018_3d
+[19|1558091581684|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1558091581684|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1558091581685|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1558091581685|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1558091581685|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1558091581685|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1558091581852|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
 Loading data model 'Flux_model.stp'
-[27|1558079449976|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+[27|1558091582339|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/Flux3D_log.pyPython : ^&|#! Flux3D 18.1
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/Flux3D_log.py'
  
                                                              FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                    4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13428 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:19640 jperalta
  
-09:50:53       0 sec. FLUX3D_18.1.0 kernel initialized
-[62315|1558079453397|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
-[62316|1558079453398|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
-[62317|1558079453437|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
-[62319|1558079453713|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@3eac8d71
+13:13:07       0 sec. FLUX3D_18.1.0 kernel initialized
+[62315|1558091587742|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
+[62316|1558091587743|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
+[62317|1558091587938|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
+[62319|1558091588290|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@49aa1d3b
 
 Flux3D (application 2018.1) running
 
-[62328|1558079453784|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@3a46379c
-[62348|1558079454771|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62354|1558079454788|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62328|1558091588384|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@1410a137
+[62348|1558091589867|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1558091589886|1|WARNING    ][Document|Document.updateInstances] : No project loaded
 Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py' in batch mode ...
-[62363|1558079454927|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62364|1558079456401|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62501|1558079457544|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
-[62502|1558079457544|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
-[62503|1558079457634|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.WarningFortranException: Some intersections may not have been detected   Priority: 1
+[62363|1558091590028|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1558091591363|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62501|1558091592676|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[62502|1558091592677|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[62503|1558091592782|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.WarningFortranException: Some intersections may not have been detected   Priority: 1
 Loading new project
 Creating ANONYM
 ... end loading new project
@@ -369,7 +369,7 @@ Modeler context closed
 Verifying of linked faces ...
   27 face(s) have consistent linked mesh generator.
  
-09:50:59       6 sec. Internal meshing of the lines
+13:13:14       7 sec. Internal meshing of the lines
  
 Automatic meshing of 26  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -382,18 +382,18 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 26 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:50:59       6 sec.     796 1st order surfacic elements created
+13:13:15       7 sec.     796 1st order surfacic elements created
  
 Extrusive meshing of 5 faces
-09:50:59       6 sec.     900 1st order surfacic elements created
+13:13:15       7 sec.     900 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 25 linked faces
  
-09:50:59       6 sec.     882 1st order lineic elements created
+13:13:15       7 sec.     882 1st order lineic elements created
  
 Automatic mesh of 15 volumes
-09:50:59       6 sec. Boundary meshing of volumes
+13:13:15       7 sec. Boundary meshing of volumes
 Insert of nodes ...
 ... End of nodes insert
    Number of elements in the global boundary mesh  : 21172
@@ -406,19 +406,19 @@ Checking of faces completed in 3 iteration(s)
 Number of nodes creating while checking faces: 37
   3853  boundary nodes
   11192  boundary meshes
-09:51:01       8 sec. Internal meshing of volumes
+13:13:17       9 sec. Internal meshing of volumes
  
 Number of nodes created by internal meshing 1105
-09:51:02       9 sec.
+13:13:18      10 sec.
           4966 nodes
          19980 meshes
-09:51:02       9 sec. Mesh compressing
+13:13:18      10 sec. Mesh compressing
           4966 nodes
          19727 meshes
-09:51:02       9 sec.   19727 1st order volumic elements created
+13:13:18      10 sec.   19727 1st order volumic elements created
  
 Extrusive meshing of 8 volumes
-09:51:02       9 sec.   15120 1st order volumic elements created
+13:13:18      10 sec.   15120 1st order volumic elements created
       6840 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
 Creation of 3420 1st order pyramid elements
@@ -436,7 +436,7 @@ Verifying of linked faces ...
  
    meshDomain executed
  
-09:51:03      10 sec. Generating 2nd order elements is running
+13:13:19      12 sec. Generating 2nd order elements is running
 Percentage of 2nd order nodes not projected on line 48 : 28%
 Percentage of 2nd order nodes not projected on line 55 : 28%
 Percentage of 2nd order nodes not projected on line 64 : 18%
@@ -445,7 +445,7 @@ Percentage of 2nd order nodes not projected on face 44 : 37%
 Percentage of 2nd order nodes not projected on face 52 : 37%
 Percentage of 2nd order nodes not projected on face 58 : 8%
   Total number of nodes --> 61086
-09:51:04      11 sec. End generating 2nd order elements
+13:13:20      13 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
  
@@ -457,18 +457,16 @@ The final derivative of points defining the spline curve of material NO12 must b
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py' in batch mode ...
 Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py')
 
-   setInvisible executed
-Python : InfiniteBoxCylinderZ['InfiniteBoxCylinderZ'].setInvisible()
-
+[64317|1558091744726|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Geometry, Geometric tools]
 Closing project
 Close of ANONYM
-[64738|1558079502803|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-[64763|1558079502832|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[64357|1558091761226|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[64382|1558091761267|22|WARNING    ][Document|Document.updateInstances] : No project loaded
 ... end closing project
 Python : closeProject()
 
 Python : exit()
-[64767|1558079502839|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+[64386|1558091761275|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
 Maximum use of 862 MiB. in numerical memory
 For the dynamic table ID 971165
 Maximum use of 8 MiB. in character memory
@@ -491,7 +489,7 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:51:42      49 sec. FLUX3D_18.1.0 kernel finalized
-[64791|1558079502844|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
-[64792|1558079502844|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
-[64793|1558079502844|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
+13:16:01     173 sec. FLUX3D_18.1.0 kernel finalized
+[64410|1558091761279|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[64411|1558091761279|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[64412|1558091761279|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
