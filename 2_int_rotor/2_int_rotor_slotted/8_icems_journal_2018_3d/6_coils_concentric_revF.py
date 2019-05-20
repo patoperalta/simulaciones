@@ -56,7 +56,24 @@ elif tuning==4:
 							  formula='W_SLOT')
 							  
 	lastInstance = VariationParameterFormula(name='D_ST_PH',
-							  formula='D_ST')						  
+							  formula='D_ST')	
+
+## displacements as output
+lastInstance = VariationParameterFormula(name='DALPHA_OUT',
+						  formula='DALPHA_MULT*R_ROT_OUT/4')	
+
+lastInstance = VariationParameterFormula(name='DBETA_OUT',
+						  formula='DBETA_MULT*R_ROT_OUT/4')	
+
+lastInstance = VariationParameterFormula(name='DX_OUT',
+						  formula='DX_MULT*R_ROT_OUT/12')		
+
+lastInstance = VariationParameterFormula(name='DY_OUT',
+						  formula='DY_MULT*R_ROT_OUT/12')							  
+						  
+lastInstance = VariationParameterFormula(name='DZ_OUT',
+						  formula='DZ_MULT*R_ROT_OUT/5')						  
+##						  
 
 lastInstance = VariationParameterFormula(name='R_ST_IN_PH',
                           formula='R_ROT_OUT+D_AGAP+L_SLOT_PH')	

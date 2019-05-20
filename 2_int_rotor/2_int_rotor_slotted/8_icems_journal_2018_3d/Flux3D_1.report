@@ -1,16 +1,44 @@
+[12|1558097866948|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1558097867084|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1558097867133|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1558097867135|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1558097867135|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1558097867135|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1558097867136|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\8_icems_journal_2018_3d
+[19|1558097867136|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1558097867136|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1558097867136|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1558097867136|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1558097867136|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1558097867136|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1558097867253|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
 Loading data model 'Flux_model.stp'
-Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/Flux3D_log.py'
+[27|1558097867840|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/Flux3D_log_1.pyPython : ^&|#! Flux3D 18.1
+Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/Flux3D_log_1.py'
  
                                                              FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                    4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:18220 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:24184 jperalta
  
-14:55:42       0 sec. FLUX3D_18.1.0 kernel initialized
+14:57:50       0 sec. FLUX3D_18.1.0 kernel initialized
+[62315|1558097870867|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
+[62316|1558097870868|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
+[62317|1558097871135|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
+[62319|1558097871404|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@49aa1d3b
 
 Flux3D (application 2018.1) running
 
+[62328|1558097871473|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@1410a137
+[62348|1558097872329|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1558097872353|1|WARNING    ][Document|Document.updateInstances] : No project loaded
 Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py' in batch mode ...
+[62363|1558097872488|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1558097873653|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62547|1558097876068|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[62548|1558097876068|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[62549|1558097876482|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.WarningFortranException: Some intersections may not have been detected   Priority: 1
 Loading new project
 Creating ANONYM
 ... end loading new project
@@ -421,32 +449,266 @@ Scenario[8]
    addPilot executed
 End execution of command file '9_scenarios_slotted.py' in batch mode ...
 Execution of command file '9_scenarios_slotted.py' in batch mode ...
+   Scenario[0_FIELD_R15] created
+Scenario[9]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ_R15] created
+Scenario[10]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA_R15] created
+Scenario[11]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA_R15] created
+Scenario[12]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX_R15] created
+Scenario[13]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Scenario[14]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY_R15] created
+   Scenario[6_JT_R15] created
+Scenario[15]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF_R15] created
+Scenario[16]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_scenarios_slotted.py' in batch mode ...
+Execution of command file '9_scenarios_slotted.py' in batch mode ...
+   Scenario[0_FIELD_R20] created
+Scenario[17]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ_R20] created
+Scenario[18]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA_R20] created
+Scenario[19]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA_R20] created
+Scenario[20]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX_R20] created
+Scenario[21]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Scenario[22]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY_R20] created
+   Scenario[6_JT_R20] created
+Scenario[23]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF_R20] created
+Scenario[24]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_scenarios_slotted.py' in batch mode ...
+ 
+Verifying of linked faces ...
+  38 face(s) have consistent linked mesh generator.
+ 
+14:58:00       9 sec. Internal meshing of the lines
+ 
+Automatic meshing of 168  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 168 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 168 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 168 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+14:58:02      11 sec.    5048 1st order surfacic elements created
+ 
+Transport-projection meshing of 7  faces
+ 
+14:58:02      11 sec. Mapped meshing of the faces
+14:58:02      11 sec.     186 1st order surfacic elements created
+ 
+Extrusive meshing of 94 faces
+14:58:02      11 sec.    4110 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 75 linked faces
+ 
+14:58:02      11 sec.    1002 1st order lineic elements created
+ 
+Automatic mesh of 83 volumes
+ 
+Extrusive meshing of 40 volumes
+14:58:02      11 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 47735
+Checking 284 faces
+Checking 284 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 192
 
-Anomaly (1) - Program error:
-Can not execute the following command :
-executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py')
+Checking of faces completed in 2 iteration(s)
+Number of nodes creating while checking faces: 192
+  7580  boundary nodes
+  29283  boundary meshes
+14:58:06      15 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 1438
+14:58:07      17 sec.
+          9026 nodes
+         40857 meshes
+14:58:07      17 sec. Mesh compressing
+          9026 nodes
+         40053 meshes
+14:58:07      17 sec.   40053 1st order volumic elements created
+     10440 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+     10440 ill-connected elements have been detected
+Attempt to repair ( 2 /20) ...
+     10440 ill-connected elements have been detected
+Attempt to repair ( 3 /20) ...
+     10440 ill-connected elements have been detected
+Attempt to repair ( 4 /20) ...
+     10440 ill-connected elements have been detected
+Attempt to repair ( 5 /20) ...
+     10440 ill-connected elements have been detected
+Attempt to repair ( 6 /20) ...
+Creation of 5220 1st order pyramid elements
+End of topological mesh regularization
+ 
+Volume elements :
+   Number of elements not evaluated     : 41.09  %
+   Number of excellent quality elements : 15.82  %
+   Number of good quality elements      : 24.92  %
+   Number of average quality elements   : 15.01  %
+   Number of poor quality elements      : 3.16  %
+ 
+Verifying of linked faces ...
+  38 face(s) respect strongly (ELEMENTS) linked mesh generator.
+ 
+   meshDomain executed
+ 
+14:58:15      24 sec. Generating 2nd order elements is running
+  Total number of nodes --> 109888
+14:58:16      25 sec. End generating 2nd order elements
+   generateSecondOrderElements executed
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+ 
+    1 holes have been identified.
+    1 magnetic cuts have been created.
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   buildMagneticCircuitCut executed
 
-Error occured while executing the command file :
-   C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py.
-Line : 72.
+End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py' in batch mode ...
+Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py')
 
-
-Error occured while executing the command file :
-   9_scenarios_slotted.py.
-Line : 28.
-
-
-Entity : Scenario['0_FIELD_R10_ABCDEF1']
-Cause :
-0_FIELD_R10 : this name has already been used by another entity. 
-Transaction failed.
+[64632|1558098029046|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Post processing, Support]
 Closing project
 Close of ANONYM
+[64709|1558098099579|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[64734|1558098099626|22|WARNING    ][Document|Document.updateInstances] : No project loaded
 ... end closing project
-Maximum use of 592 MiB. in numerical memory
-For the dynamic table ID 24728
+Python : closeProject()
+
+Python : exit()
+[64738|1558098099634|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+Maximum use of 911 MiB. in numerical memory
+For the dynamic table ID 2364942
 Maximum use of 8 MiB. in character memory
-For the dynamic table ID 1979299
+For the dynamic table ID 1982989
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -465,4 +727,7 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-14:56:33      50 sec. FLUX3D_18.1.0 kernel finalized
+15:01:39     228 sec. FLUX3D_18.1.0 kernel finalized
+[64762|1558098099643|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[64763|1558098099644|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[64764|1558098099644|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers

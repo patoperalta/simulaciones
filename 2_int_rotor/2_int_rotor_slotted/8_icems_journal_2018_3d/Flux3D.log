@@ -1,12 +1,12 @@
 Loading data model 'Flux_model.stp'
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/Flux3D_log.py'
  
-                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
-                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
-                                                                  HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:25500 jperalta
+                                                            FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                  4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                 HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:8100 jperalta
  
-13:14:05       0 sec. FLUX3D_18.1.0 kernel initialized
+14:56:50       0 sec. FLUX3D_18.1.0 kernel initialized
 
 Flux3D (application 2018.1) running
 
@@ -198,6 +198,11 @@ Execution of command file '6_coils_concentric_revF.py' in batch mode ...
    VariationParameter[L_SLOT_PH] created
    VariationParameter[W_SLOT_PH] created
    VariationParameter[D_ST_PH] created
+   VariationParameter[DALPHA_OUT] created
+   VariationParameter[DBETA_OUT] created
+   VariationParameter[DX_OUT] created
+   VariationParameter[DY_OUT] created
+   VariationParameter[DZ_OUT] created
    VariationParameter[R_ST_IN_PH] created
    VariationParameter[R_ST_OUT_PH] created
    VariationParameter[ST_A_SLOT] created
@@ -272,13 +277,13 @@ Coil(5) :
  
    Coil[COIL_5] created
    CoordSys[COORD_COIL_6] created
+
    VariationParameter[I_T_6] created
    VariationParameter[I_F_6] created
    CoilConductor[I_6] created
 Coil(6) :
    Total number of coils obtained by duplication : 1
    Number of portions of conductors in parallel = 1
-
  
    Coil[COIL_6] created
    VariationParameter[V_FE_ST_RING] created
@@ -341,70 +346,233 @@ Execution of command file '8_sensors.py' in batch mode ...
    Sensor[TY_ST] created
    Sensor[TZ_ST] created
 End execution of command file '8_sensors.py' in batch mode ...
-Execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
-   Scenario[0_FIELD] created
+Execution of command file '9_scenarios_slotted.py' in batch mode ...
+   Scenario[0_FIELD_R10] created
 Scenario[1]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[1_DZ] created
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ_R10] created
 Scenario[2]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[2_DALPHA] created
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA_R10] created
 Scenario[3]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[3_DBETA] created
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA_R10] created
 Scenario[4]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[4_DX] created
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX_R10] created
 Scenario[5]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[5_DY] created
+   addPilot executed
+   addPilot executed
 Scenario[6]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-End execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
-Execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
-   Scenario[6_JT] created
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY_R10] created
+   Scenario[6_JT_R10] created
 Scenario[7]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[7_JF] created
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF_R10] created
 Scenario[8]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-End execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+   addPilot executed
+   addPilot executed
+End execution of command file '9_scenarios_slotted.py' in batch mode ...
+Execution of command file '9_scenarios_slotted.py' in batch mode ...
+   Scenario[0_FIELD_R15] created
+Scenario[9]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ_R15] created
+Scenario[10]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA_R15] created
+Scenario[11]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA_R15] created
+Scenario[12]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX_R15] created
+Scenario[13]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Scenario[14]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY_R15] created
+   Scenario[6_JT_R15] created
+Scenario[15]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF_R15] created
+Scenario[16]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_scenarios_slotted.py' in batch mode ...
+Execution of command file '9_scenarios_slotted.py' in batch mode ...
+   Scenario[0_FIELD_R20] created
+Scenario[17]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ_R20] created
+Scenario[18]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA_R20] created
+Scenario[19]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA_R20] created
+Scenario[20]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX_R20] created
+Scenario[21]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Scenario[22]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY_R20] created
+   Scenario[6_JT_R20] created
+Scenario[23]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF_R20] created
+Scenario[24]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9_scenarios_slotted.py' in batch mode ...
  
 Verifying of linked faces ...
   38 face(s) have consistent linked mesh generator.
  
-13:14:14       8 sec. Internal meshing of the lines
+14:57:03      12 sec. Internal meshing of the lines
  
 Automatic meshing of 168  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -417,25 +585,25 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 168 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-13:14:16      10 sec.    5048 1st order surfacic elements created
+14:57:05      14 sec.    5048 1st order surfacic elements created
  
 Transport-projection meshing of 7  faces
  
-13:14:16      10 sec. Mapped meshing of the faces
-13:14:16      10 sec.     186 1st order surfacic elements created
+14:57:05      14 sec. Mapped meshing of the faces
+14:57:05      14 sec.     186 1st order surfacic elements created
  
 Extrusive meshing of 94 faces
-13:14:16      10 sec.    4110 1st order surfacic elements created
+14:57:05      14 sec.    4110 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 75 linked faces
  
-13:14:16      11 sec.    1002 1st order lineic elements created
+14:57:05      14 sec.    1002 1st order lineic elements created
  
 Automatic mesh of 83 volumes
  
 Extrusive meshing of 40 volumes
-13:14:16      11 sec. Boundary meshing of volumes
+14:57:06      15 sec. Boundary meshing of volumes
 Strong periodicity of mesh might be not insured
 Insert of nodes ...
 ... End of nodes insert
@@ -443,20 +611,21 @@ Insert of nodes ...
 Checking 284 faces
 Checking 284 faces: iteration No 1  completed
 Number of node(s) creating while the iteration: 192
+
 Checking of faces completed in 2 iteration(s)
 Number of nodes creating while checking faces: 192
   7580  boundary nodes
   29283  boundary meshes
-13:14:20      15 sec. Internal meshing of volumes
+14:57:09      19 sec. Internal meshing of volumes
  
 Number of nodes created by internal meshing 1438
-13:14:22      16 sec.
+14:57:11      20 sec.
           9026 nodes
          40857 meshes
-13:14:22      16 sec. Mesh compressing
+14:57:11      20 sec. Mesh compressing
           9026 nodes
          40053 meshes
-13:14:22      16 sec.   40053 1st order volumic elements created
+14:57:11      20 sec.   40053 1st order volumic elements created
      10440 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
      10440 ill-connected elements have been detected
@@ -484,9 +653,9 @@ Verifying of linked faces ...
  
    meshDomain executed
  
-13:14:30      24 sec. Generating 2nd order elements is running
+14:57:19      28 sec. Generating 2nd order elements is running
   Total number of nodes --> 109888
-13:14:31      25 sec. End generating 2nd order elements
+14:57:20      29 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
  
@@ -496,13 +665,347 @@ The final derivative of points defining the spline curve of material NO12 must b
    buildMagneticCircuitCut executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py' in batch mode ...
+Saving project as '../../../../../../Desktop/02_flux_int_rotor_slotted/6_icems_journal_3d/20190517_slotted_rev1.FLU'
+15:12:49     958 sec. Start save ...
+15:12:49     958 sec. ... end save
+... end saving project
+Begin of physical check ...
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+Please, verify the properties of the material: NO12
+ 
+An electric circuit exists.
+The active physical application does not take account of it.
+ 
+End of physical check.
+15:18:02    1271 sec. Start save ...
+15:18:02    1271 sec. ... end save
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+Active formulation(s) :
+MS3SCA : Magnetostatic total scalar potential formulation
+MS3RED : Magnetostatic reduced scalar potential formulation
+Matrix system : non linear, real, symmetrical
+ 
+15:18:03    1272 sec. Start solving problem ...
+ 
+Step number 1
+Value of parameter ALPHA_H : 1
+Value of parameter BETA : 0.1
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA_MULT : 0
+Value of parameter DBETA_MULT : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX_MULT : 0
+Value of parameter DY_MULT : 0
+Value of parameter DZ_MULT : 0
+Value of parameter D_AGAP : 2
+Value of parameter D_ST : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter L_SLOT : 7
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 180
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 270
+Value of parameter W_SLOT : 7
+ 
+Verifying of linked faces ...
+  38 face(s) have consistent linked mesh generator.
+ 
+15:18:06    1275 sec. Internal meshing of the lines
+ 
+Automatic meshing of 168  faces
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 168 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 168 faces
+Faces internal meshing achieved
+Boundary meshing of the faces achieved in 1 iteration(s)
+Internal meshing of the 168 faces
+Faces internal meshing achieved
+End of topological mesh regularization
+15:18:07    1276 sec.    4476 1st order surfacic elements created
+ 
+Transport-projection meshing of 7  faces
+ 
+15:18:07    1276 sec. Mapped meshing of the faces
+15:18:07    1276 sec.     172 1st order surfacic elements created
+ 
+Extrusive meshing of 94 faces
+15:18:07    1277 sec.    3988 1st order surfacic elements created
+ 
+Meshing of linked faces...
+Meshing of 75 linked faces
+ 
+15:18:08    1277 sec.    1002 1st order lineic elements created
+ 
+Automatic mesh of 83 volumes
+ 
+Extrusive meshing of 40 volumes
+15:18:08    1277 sec. Boundary meshing of volumes
+Strong periodicity of mesh might be not insured
+Insert of nodes ...
+... End of nodes insert
+   Number of elements in the global boundary mesh  : 40876
+Checking 284 faces
+Checking 284 faces: iteration No 1  completed
+Number of node(s) creating while the iteration: 312
+Checking 284 faces: iteration No 2  completed
+Number of node(s) creating while the iteration: 39
+Checking 284 faces: iteration No 3  completed
+Number of node(s) creating while the iteration: 5
+Checking of faces completed in 4 iteration(s)
+Number of nodes creating while checking faces: 356
+  7318  boundary nodes
+  27633  boundary meshes
+15:18:12    1281 sec. Internal meshing of volumes
+ 
+Number of nodes created by internal meshing 1860
+15:18:13    1282 sec.
+          9186 nodes
+         41372 meshes
+15:18:13    1282 sec. Mesh compressing
+          9186 nodes
+         41220 meshes
+15:18:13    1283 sec.   41220 1st order volumic elements created
+     10104 ill-connected elements have been detected
+Attempt to repair ( 1 /20) ...
+     10104 ill-connected elements have been detected
+Attempt to repair ( 2 /20) ...
+     10104 ill-connected elements have been detected
+Attempt to repair ( 3 /20) ...
+     10104 ill-connected elements have been detected
+Attempt to repair ( 4 /20) ...
+     10104 ill-connected elements have been detected
+Attempt to repair ( 5 /20) ...
+Creation of 5052 1st order pyramid elements
+End of topological mesh regularization
+ 
+15:18:22    1291 sec. Generating 2nd order elements is running
+Percentage of 2nd order nodes not projected on line 433 : 30%
+Percentage of 2nd order nodes not projected on line 436 : 69%
+Percentage of 2nd order nodes not projected on line 437 : 30%
+Percentage of 2nd order nodes not projected on line 443 : 40%
+Percentage of 2nd order nodes not projected on face 326 : 48%
+Percentage of 2nd order nodes not projected on face 327 : 13%
+Percentage of 2nd order nodes not projected on face 328 : 34%
+Percentage of 2nd order nodes not projected on face 330 : 34%
+Percentage of 2nd order nodes not projected on face 332 : 100%
+Percentage of 2nd order nodes not projected on face 333 : 100%
+Percentage of 2nd order nodes not projected on face 335 : 13%
+Percentage of 2nd order nodes not projected on face 341 : 100%
+Percentage of 2nd order nodes not projected on face 344 : 48%
+Percentage of 2nd order nodes not projected on face 345 : 48%
+Percentage of 2nd order nodes not projected on face 346 : 48%
+Percentage of 2nd order nodes not projected on face 347 : 84%
+  Total number of nodes --> 108681
+15:18:24    1293 sec. End generating 2nd order elements
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+ 
+15:18:24    1293 sec. Start creating Dirichlet constraints at points...
+15:18:24    1293 sec. ... end creating Dirichlet constraints at points.
+ 
+  V1 unknowns are initialized to zero
+  V1R unknowns are initialized to zero
+ 
+15:18:25    1294 sec. Start computing reduced total increments ...
+15:18:25    1294 sec. Start solving ...
+Active formulation(s) :
+MS3COU : 3D formulation for coupling potentials on a cut.
+MS3CRT : 3D formulation for coupling total and reduced scalar potentials
+Matrix system : linear, real, symmetrical
+  DV1 unknowns are initialized to zero
+15:18:25    1294 sec. Numbering of    15376 nodal values done.
+15:18:25    1294 sec. Number of non zero matrix elements estimated to be     1236480
+15:18:25    1294 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:           91 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                  15282
+ Length of the shortest line         =                                      8
+ Length of the longest line          =                                    271
+ Average line length                 =                                     17
+ Number of the longest line          =                                    190
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                 270604
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:               91 Mo.
+   Memory allocated during solving process:                     94 Mo.
+ 
+15:18:25    1294 sec. Integration on the region RS_CUT finished ( 24  elements )
+15:18:25    1294 sec. Integration on the region COUPLING_RED_TOT finished ( 5136  elements )
+15:18:25    1294 sec. Linear part has been integrated and assembled.
+       Prec. rel. = 0.0E0/0.0E0
+15:18:25    1294 sec. ... end of solving
+15:18:25    1294 sec. ... end of computing reduced total increments.
+ 
+15:18:25    1295 sec. Numbering of   124004 nodal values done.
+15:18:25    1295 sec. Number of non zero matrix elements estimated to be    10668640
+15:18:26    1295 sec. Renumbering due to boundary conditions done.
+ 
+Building of topologic matrix ...
+Memory used during the building:          143 Mo.
+ 
+TOPOLOGY OF LINEAR SYSTEM :
+ 
+ Number of equations                 =                                 108167
+ Length of the shortest line         =                                     10
+ Length of the longest line          =                                    995
+ Average line length                 =                                     44
+ Number of the longest line          =                                  15121
+ 
+ Redundance for vectorization                                             NON
+ Number of nonzero coefficients      =                                4803581
+ 
+NUMERIC MEMORY INFORMATION :
+ 
+   Total reserved memory:                                     4294 Mo.
+   Total memory allocated before solving process:              143 Mo.
+   Memory allocated during solving process:                    184 Mo.
+ 
+15:18:28    1297 sec. Integration on the region COIL_2 finished ( 1642  elements )
+15:18:28    1297 sec. Integration on the region COIL_3 finished ( 1647  elements )
+15:18:28    1297 sec. Integration on the region COIL_1 finished ( 1691  elements )
+15:18:28    1297 sec. Integration on the region COIL_6 finished ( 1691  elements )
+15:18:28    1297 sec. Integration on the region COIL_4 finished ( 1694  elements )
+15:18:28    1297 sec. Integration on the region COIL_5 finished ( 1700  elements )
+15:18:28    1297 sec. Integration on the region PM finished ( 10800  elements )
+15:18:29    1298 sec. Integration on the region AIR_DOMAIN finished ( 26449  elements )
+15:18:29    1298 sec. Linear part has been integrated and assembled.
+15:18:29    1298 sec. Computation of F_ROT
+15:18:29    1298 sec. Value of F_ROT : 0 0 0
+15:18:29    1298 sec. Computation of TX_ROT
+15:18:29    1298 sec. Value of TX_ROT : 0
+15:18:29    1298 sec. Computation of TY_ROT
+15:18:30    1299 sec. Value of TY_ROT : 0
+15:18:30    1299 sec. Computation of TZ_ROT
+15:18:30    1299 sec. Value of TZ_ROT : 0
+15:18:30    1299 sec. Computation of F_ST
+15:18:30    1299 sec. Value of F_ST : 0 0 0
+15:18:30    1299 sec. Computation of TX_ST
+15:18:31    1300 sec. Value of TX_ST : 0
+15:18:31    1300 sec. Computation of TY_ST
+15:18:31    1300 sec. Value of TY_ST : 0
+15:18:31    1300 sec. Computation of TZ_ST
+15:18:31    1300 sec. Value of TZ_ST : 0
+15:18:31    1300 sec. Value of L_SLOT_PH : 7
+15:18:31    1300 sec. Value of W_SLOT_PH : 7
+15:18:31    1300 sec. Value of D_ST_PH : 8
+15:18:31    1300 sec. Value of DALPHA_OUT : 0
+15:18:31    1300 sec. Value of DBETA_OUT : 0
+15:18:31    1300 sec. Value of DX_OUT : 0
+15:18:31    1300 sec. Value of DY_OUT : 0
+15:18:31    1300 sec. Value of DZ_OUT : 0
+15:18:31    1300 sec. Value of R_ST_IN_PH : 19
+15:18:31    1300 sec. Value of R_ST_OUT_PH : 27
+15:18:31    1300 sec. Value of ST_A_SLOT : 306.305283725005
+15:18:31    1300 sec. Value of ST_BI_SLOT : 192.684349420174
+15:18:31    1300 sec. Value of ST_TOOTH_A : 49
+15:18:31    1300 sec. Value of A_SLOT : 64.6209343048309
+15:18:31    1300 sec. Value of A_COIL : 32.3104671524154
+15:18:31    1300 sec. Value of A_CU : 12.9241868609662
+15:18:31    1300 sec. Value of TH_COIL : 4.61578102177363
+15:18:31    1300 sec. Value of ALPHA_CASE_PH : 1
+15:18:31    1300 sec. Value of H_ST_PH : 5.4
+15:18:31    1300 sec. Value of L_BAR_PH : 39.3009037485832
+15:18:31    1300 sec. Value of IT_HAT : 0
+15:18:31    1300 sec. Value of THETA_F : 180
+15:18:31    1300 sec. Value of IF_HAT : 0
+15:18:31    1300 sec. Value of R_COIL : 0.510867871286E-04
+15:18:31    1300 sec. Value of P_CU_TOT : 0
+15:18:31    1300 sec. Value of I_T_1 : 0
+15:18:31    1300 sec. Value of I_F_1 : 0
+15:18:31    1300 sec. Value of I_T_2 : 0
+15:18:31    1300 sec. Value of I_F_2 : 0
+15:18:31    1300 sec. Value of I_T_3 : 0
+15:18:31    1300 sec. Value of I_F_3 : 0
+15:18:31    1300 sec. Value of I_T_4 : 0
+15:18:31    1300 sec. Value of I_F_4 : 0
+15:18:31    1300 sec. Value of I_T_5 : 0
+15:18:31    1300 sec. Value of I_F_5 : 0
+15:18:31    1300 sec. Value of I_T_6 : 0
+15:18:31    1300 sec. Value of I_F_6 : 0
+15:18:31    1300 sec. Value of V_FE_ST_RING : 6242.97292121364
+15:18:31    1300 sec. Value of V_FE_ST_SLOTS : 1587.6
+15:18:31    1300 sec. Value of H_ROT_PH : 5.4
+15:18:31    1300 sec. Value of V_PM : 1696.46003293849
+15:18:31    1300 sec. Value of V_CU : 3047.59334310921
+15:18:31    1300 sec. Value of DENS_NO12 : 0.00765
+15:18:31    1300 sec. Value of DENS_CU : 0.00896
+15:18:31    1300 sec. Value of DENS_NDFEB : 0.0075
+15:18:31    1300 sec. Value of MASS_ST : 59.9038828472843
+15:18:31    1300 sec. Value of MASS_CU : 27.3064363542586
+15:18:31    1300 sec. Value of MASS_PM : 12.7234502470387
+15:18:32    1301 sec. Start save ...
+15:18:32    1301 sec. ... end save
+15:18:33    1302 sec. Start reading ...
+15:18:34    1303 sec. ... end reading
+ 
+Verifying of linked faces ...
+  38 face(s) have consistent linked mesh generator.
+ 
+15:18:34    1303 sec. ... end solving problem.
+ 
+15:18:34    1303 sec. Start save ...
+15:18:34    1303 sec. ... end save
+Value of parameter ALPHA_H : 1
+Value of parameter BETA : 0.1
+Value of parameter COIL_KCU : 0.4
+Value of parameter DALPHA_MULT : 0
+Value of parameter DBETA_MULT : 0
+Value of parameter DR_0 : 0
+Value of parameter DTHETA : 0
+Value of parameter DTHETA_0 : 0
+Value of parameter DX_MULT : 0
+Value of parameter DY_MULT : 0
+Value of parameter DZ_MULT : 0
+Value of parameter D_AGAP : 2
+Value of parameter D_ST : 8
+Value of parameter I_F_PEAK : 0
+Value of parameter I_T_PEAK : 0
+Value of parameter JF_RMS : 0
+Value of parameter JT_RMS : 0
+Value of parameter L_SLOT : 7
+Value of parameter RHO_CU : 0.168E-07
+Value of parameter R_ROT_OUT : 10
+Value of parameter THETA_F0 : 180
+Value of parameter THETA_F_DIR : 0
+Value of parameter THETA_T : 270
+Value of parameter W_SLOT : 7
+ 
+User stop at the end of a solver iteration
+ 
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+   solve executed
+Anomaly (1) - Warning:
+Solving process interrupted by user
+
+15:20:11    1400 sec. Start reading ...
+15:20:11    1400 sec. ... end reading
+ 
+Verifying of linked faces ...
+  38 face(s) have consistent linked mesh generator.
+ 
+   DeleteAllResults executed
 Closing project
-Close of ANONYM
+Close of ../../../../../../Desktop/02_flux_int_rotor_slotted/6_icems_journal_3d/20190517_slotted_rev1
 ... end closing project
 Maximum use of 911 MiB. in numerical memory
-For the dynamic table ID 2347695
-Maximum use of 8 MiB. in character memory
-For the dynamic table ID 1981141
+For the dynamic table ID 2359884
+Maximum use of 9 MiB. in character memory
+For the dynamic table ID 6924565
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -521,4 +1024,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-13:16:03     118 sec. FLUX3D_18.1.0 kernel finalized
+15:25:04    1693 sec. FLUX3D_18.1.0 kernel finalized

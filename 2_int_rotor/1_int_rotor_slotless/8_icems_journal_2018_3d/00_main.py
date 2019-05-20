@@ -49,11 +49,35 @@ time_assign = time.time() - t
 executeBatchSpy('8_sensors.py')           	    		# Defines different parameters
 time_sensors = time.time() - t
 
-executeBatchSpy('9_make_scenarios_passive_revC.py')    	# Defines different parameters
-time_scenarios_p = time.time() - t
+## create scenarios
+#common parameters
+alpha_min = 1.0
+alpha_max = 2
+d_alpha= 0.2
+ 
+beta_min = 0.1
+beta_max = 0.3
+d_beta= 0.1
 
-executeBatchSpy('10_make_scenarios_active_revC.py')    	# Defines different parameters
-time_scenarios_a = time.time() - t
+dgap_min = 3
+dgap_max = 6 
+dgap_gap= 1
+
+j=8
+##
+
+## specific for motor size
+r_rot=10
+dst=6
+executeBatchSpy('9_scenarios_slotless.py')           	    		# Defines different parameters
+## specific for motor size
+r_rot=15
+dst=11
+executeBatchSpy('9_scenarios_slotless.py')           	    		# Defines different parameters
+## specific for motor size
+r_rot=20
+dst=17
+executeBatchSpy('9_scenarios_slotless.py')           	    		# Defines different parameters
 
 t = time.time()
 
@@ -79,7 +103,7 @@ if(solving):
 
 time_solving = time.time() - t
 
-total_time = time_params+time_app_def+time_mesh+time_geometry+time_materials+time_toroidal_coils+time_assign+time_sensors+time_scenarios_p+time_scenarios_a
+total_time = time_params+time_app_def+time_mesh+time_geometry+time_materials+time_toroidal_coils+time_assign+time_sensors
 
 print("\n")
 print("Time for initialisation:        "+print_time_hms(time_initialisation))

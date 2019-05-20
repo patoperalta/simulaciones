@@ -30,20 +30,56 @@ executeBatchSpy('2_app_def.py')               			# Defines different parameters
 
 executeBatchSpy('3_mesh_info.py')               		# Defines different parameters
 
-executeBatchSpy('4_geom_revE.py')              		# Defines different parameters
+executeBatchSpy('4_geom_revE.py')              			# Defines different parameters
 
 executeBatchSpy('5_mat_def.py')               			# Defines different parameters
 
-executeBatchSpy('6_coils_concentric_revF.py')      # Defines different parameters
+executeBatchSpy('6_coils_concentric_revF.py')      		# Defines different parameters
 
-executeBatchSpy('7_assign_revB.py')      # Defines different parameters
+executeBatchSpy('7_assign_revB.py')      				# Defines different parameters
 
-executeBatchSpy('8_sensors.py')      # Defines different parameters
+executeBatchSpy('8_sensors.py')      					# Defines different parameters
 
-executeBatchSpy('9_make_scenarios_passive_revC.py')      # Defines different parameters
+## create scenarios
+#common parameters
+alpha_min = 1.0
+alpha_max = 2
+d_alpha= 0.2
+ 
+beta_min = 0.1
+beta_max = 0.3
+d_beta= 0.1
 
-executeBatchSpy('10_make_scenarios_active_revC.py')      # Defines different parameters
+j=8
+## specific for motor size
+r_rot=10
+wslot=7
+dst=8
 
+lslot_min = 7
+lslot_max = 10 
+lslot_dgap= 1
+executeBatchSpy('9_scenarios_slotted.py')      			# Defines different parameters
+
+## specific for motor size
+r_rot=15
+wslot=12
+dst=13
+
+lslot_min = 9
+lslot_max = 12 
+lslot_dgap= 1
+executeBatchSpy('9_scenarios_slotted.py')      			# Defines different parameters
+## specific for motor size
+r_rot=20
+wslot=16
+dst=18
+
+lslot_min = 11
+lslot_max = 14 
+lslot_dgap= 1
+executeBatchSpy('9_scenarios_slotted.py')      			# Defines different parameters
+##end
 
 t = time.time()
 

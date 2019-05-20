@@ -1,12 +1,12 @@
 Loading data model 'Flux_model.stp'
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/Flux3D_log.py'
  
-                                                             FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
-                                                                   4096 MiB N. + 127 MiB C. + 2048 MiB J.
-                                                                  HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:13428 jperalta
+                                                            FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
+                                                                  4096 MiB N. + 127 MiB C. + 2048 MiB J.
+                                                                 HWU licensing used: 6200@stilic5.epfl.ch
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:7012 jperalta
  
-09:50:53       0 sec. FLUX3D_18.1.0 kernel initialized
+14:52:05       0 sec. FLUX3D_18.1.0 kernel initialized
 
 Flux3D (application 2018.1) running
 
@@ -163,6 +163,11 @@ Execution of command file '6_elec_circuit_toroidal_revG.py' in batch mode ...
    VariationParameter[A_CU] created
    VariationParameter[ALPHA_CASE_PH] created
    VariationParameter[D_ST_PH] created
+   VariationParameter[DALPHA_OUT] created
+   VariationParameter[DBETA_OUT] created
+   VariationParameter[DX_OUT] created
+   VariationParameter[DY_OUT] created
+   VariationParameter[DZ_OUT] created
    VariationParameter[R_ST_OUT_PH] created
    VariationParameter[H_ST_PH] created
    VariationParameter[L_BAR_PH] created
@@ -265,83 +270,222 @@ Execution of command file '7_assign_circular.py' in batch mode ...
    assignMeshLine executed
    assignMeshLine executed
 End execution of command file '7_assign_circular.py' in batch mode ...
+
 Execution of command file '8_sensors.py' in batch mode ...
    Sensor[F_ROT] created
    Sensor[TX_ROT] created
    Sensor[TY_ROT] created
    Sensor[TZ_ROT] created
    Sensor[F_ST] created
-
    Sensor[TX_ST] created
    Sensor[TY_ST] created
    Sensor[TZ_ST] created
 End execution of command file '8_sensors.py' in batch mode ...
-Execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
-   Scenario[0_FIELD] created
+Execution of command file '9a_scenarios_r10_slotless.py' in batch mode ...
+   Scenario[0_FIELD_R10] created
 Scenario[1]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[1_DZ] created
+   addPilot executed
+   Scenario[1_DZ_R10] created
 Scenario[2]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[2_DALPHA] created
+   addPilot executed
+   Scenario[2_DALPHA_R10] created
 Scenario[3]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[3_DBETA] created
+   addPilot executed
+   Scenario[3_DBETA_R10] created
 Scenario[4]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[4_DX] created
+   addPilot executed
+   Scenario[4_DX_R10] created
 Scenario[5]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[5_DY] created
+   addPilot executed
 Scenario[6]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-End execution of command file '9_make_scenarios_passive_revC.py' in batch mode ...
-Execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
-   Scenario[6_JT] created
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY_R10] created
+   Scenario[6_JT_R10] created
 Scenario[7]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-   Scenario[7_JF] created
+   addPilot executed
+   Scenario[7_JF_R10] created
 Scenario[8]
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
    addPilot executed
-End execution of command file '10_make_scenarios_active_revC.py' in batch mode ...
+   addPilot executed
+End execution of command file '9a_scenarios_r10_slotless.py' in batch mode ...
+Execution of command file '9b_scenarios_r15_slotless.py' in batch mode ...
+   Scenario[0_FIELD_R15] created
+Scenario[9]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ_R15] created
+Scenario[10]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA_R15] created
+Scenario[11]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA_R15] created
+Scenario[12]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX_R15] created
+Scenario[13]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Scenario[14]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY_R15] created
+   Scenario[6_JT_R15] created
+Scenario[15]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF_R15] created
+Scenario[16]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9b_scenarios_r15_slotless.py' in batch mode ...
+Execution of command file '9c_scenarios_r20_slotless.py' in batch mode ...
+   Scenario[0_FIELD_R20] created
+Scenario[17]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[1_DZ_R20] created
+Scenario[18]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[2_DALPHA_R20] created
+Scenario[19]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[3_DBETA_R20] created
+Scenario[20]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[4_DX_R20] created
+Scenario[21]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Scenario[22]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[5_DY_R20] created
+   Scenario[6_JT_R20] created
+Scenario[23]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[7_JF_R20] created
+Scenario[24]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+End execution of command file '9c_scenarios_r20_slotless.py' in batch mode ...
    closeModelerContext executed
 Modeler context closed
  
 Verifying of linked faces ...
   27 face(s) have consistent linked mesh generator.
  
-09:50:59       6 sec. Internal meshing of the lines
+14:52:13       7 sec. Internal meshing of the lines
  
 Automatic meshing of 26  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -354,21 +498,21 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 26 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:50:59       6 sec.     796 1st order surfacic elements created
+14:52:13       8 sec.     796 1st order surfacic elements created
  
 Extrusive meshing of 5 faces
-09:50:59       6 sec.     900 1st order surfacic elements created
+14:52:13       8 sec.     900 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 25 linked faces
  
-09:50:59       6 sec.     882 1st order lineic elements created
+14:52:13       8 sec.     882 1st order lineic elements created
  
 Automatic mesh of 15 volumes
-09:50:59       6 sec. Boundary meshing of volumes
+14:52:13       8 sec. Boundary meshing of volumes
 Insert of nodes ...
 ... End of nodes insert
-   Number of elements in the global boundary mesh  : 21172
+   Number of elements in the global boundary mesh  : 21344
 Checking 44 faces
 Checking 44 faces: iteration No 1  completed
 Number of node(s) creating while the iteration: 34
@@ -377,38 +521,38 @@ Number of node(s) creating while the iteration: 3
 Checking of faces completed in 3 iteration(s)
 Number of nodes creating while checking faces: 37
   3853  boundary nodes
-  11192  boundary meshes
-09:51:01       8 sec. Internal meshing of volumes
+  11364  boundary meshes
+14:52:15      10 sec. Internal meshing of volumes
  
-Number of nodes created by internal meshing 1105
-09:51:02       9 sec.
-          4966 nodes
-         19980 meshes
-09:51:02       9 sec. Mesh compressing
-          4966 nodes
-         19727 meshes
-09:51:02       9 sec.   19727 1st order volumic elements created
+Number of nodes created by internal meshing 1032
+14:52:16      11 sec.
+          4893 nodes
+         19480 meshes
+14:52:16      11 sec. Mesh compressing
+          4893 nodes
+         19133 meshes
+14:52:16      11 sec.   19133 1st order volumic elements created
  
 Extrusive meshing of 8 volumes
-09:51:02       9 sec.   15120 1st order volumic elements created
+14:52:16      11 sec.   15120 1st order volumic elements created
       6840 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
 Creation of 3420 1st order pyramid elements
 End of topological mesh regularization
  
 Volume elements :
-   Number of elements not evaluated     : 59.85  %
-   Number of excellent quality elements : 11.81  %
-   Number of good quality elements      : 13.77  %
-   Number of average quality elements   : 9.72  %
-   Number of poor quality elements      : 4.85  %
+   Number of elements not evaluated     : 60.9  %
+   Number of excellent quality elements : 10.91  %
+   Number of good quality elements      : 13.49  %
+   Number of average quality elements   : 9.64  %
+   Number of poor quality elements      : 5.06  %
  
 Verifying of linked faces ...
   27 face(s) respect strongly (ELEMENTS) linked mesh generator.
  
    meshDomain executed
  
-09:51:03      10 sec. Generating 2nd order elements is running
+14:52:18      12 sec. Generating 2nd order elements is running
 Percentage of 2nd order nodes not projected on line 48 : 28%
 Percentage of 2nd order nodes not projected on line 55 : 28%
 Percentage of 2nd order nodes not projected on line 64 : 18%
@@ -416,8 +560,8 @@ Percentage of 2nd order nodes not projected on line 75 : 18%
 Percentage of 2nd order nodes not projected on face 44 : 37%
 Percentage of 2nd order nodes not projected on face 52 : 37%
 Percentage of 2nd order nodes not projected on face 58 : 8%
-  Total number of nodes --> 61086
-09:51:04      11 sec. End generating 2nd order elements
+  Total number of nodes --> 60419
+14:52:19      14 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
  
@@ -427,12 +571,11 @@ The final derivative of points defining the spline curve of material NO12 must b
    buildMagneticCircuitCut executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/1_int_rotor_slotless/8_icems_journal_2018_3d/00_main.py' in batch mode ...
-   setInvisible executed
 Closing project
 Close of ANONYM
 ... end closing project
 Maximum use of 862 MiB. in numerical memory
-For the dynamic table ID 971165
+For the dynamic table ID 985337
 Maximum use of 8 MiB. in character memory
 For the dynamic table ID 311397
  
@@ -453,4 +596,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:51:42      49 sec. FLUX3D_18.1.0 kernel finalized
+14:53:19      73 sec. FLUX3D_18.1.0 kernel finalized
