@@ -126,3 +126,6 @@ lastInstance = ParameterGeom(name='DTHETA_0',
 lastInstance = ParameterGeom(name='Y2 : length of y to rstout',
               expression='Sqrt(R_ST_OUT**2-(W_SLOT/2)**2)')
 			  
+# define rotating speed as parameter
+# lastInstance = ParameterGeom(name='N : rpm for mechanical set',
+              # expression='0')

@@ -1,41 +1,41 @@
-[12|1558076813076|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
-[13|1558076813218|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
-[14|1558076813280|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
-[15|1558076813282|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
-[16|1558076813283|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
-[17|1558076813283|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
-[18|1558076813283|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\7_icems_journal_2018_2d
-[19|1558076813284|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
-[20|1558076813284|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
-[21|1558076813284|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
-[22|1558076813284|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
-[23|1558076813284|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
-[24|1558076813285|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
-[25|1558076813449|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[12|1563526087077|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1563526087211|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1563526087268|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1563526087271|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1563526087271|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1563526087271|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1563526087271|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\7_icems_journal_2018_2d
+[19|1563526087271|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1563526087272|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1563526087272|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1563526087272|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1563526087272|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1563526087272|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1563526087412|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
 Loading data model 'Flux_model.stp'
-[27|1558076813943|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+[27|1563526087950|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log.pyPython : ^&|#! Flux2D 18.1
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/Flux2D_log.py'
  
                                                              FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
                                                                    2048 MiB N. + 127 MiB C. + 1024 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:14696 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:19576 jperalta
  
-09:06:57       0 sec. FLUX2D_18.1.0 kernel initialized
-[62315|1558076817407|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
-[62316|1558076817407|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
-[62317|1558076817454|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
-[62319|1558076817767|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@21e850e8
+10:48:11       0 sec. FLUX2D_18.1.0 kernel initialized
+[62315|1563526091495|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux2D   Version: 2018.1
+[62316|1563526091496|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux2D, 2018.1)
+[62317|1563526091945|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux2D, 2018.1)   Groups: 7
+[62319|1563526092309|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@5a5e66a9
 
 Flux2D (application 2018.1) running
 
-[62328|1558076817843|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@4736e0ac
-[62346|1558076818727|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62354|1558076818747|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62328|1563526092362|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@4244acfa
+[62346|1563526093031|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62352|1563526093064|1|WARNING    ][Document|Document.updateInstances] : No project loaded
 Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
-[62363|1558076818918|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62364|1558076820440|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62363|1563526093236|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1563526094547|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
 Loading new project
 Creating ANONYM
 ... end loading new project
@@ -241,7 +241,7 @@ End execution of command file '8_scenarios_test.py' in batch mode ...
 Meshing of 17 faces
  
 Automatic mesh of 66 lines
-09:07:03       5 sec. Internal meshing of the lines
+10:48:17       6 sec. Internal meshing of the lines
  
 Automatic meshing of 17  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -254,11 +254,11 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 17 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:07:03       6 sec.    3382 1st order surfacic elements created
+10:48:18       6 sec.    3382 1st order surfacic elements created
  
-09:07:03       6 sec. Generating 2nd order elements is running
+10:48:18       6 sec. Generating 2nd order elements is running
   Total number of nodes --> 6793
-09:07:03       6 sec. End generating 2nd order elements
+10:48:18       7 sec. End generating 2nd order elements
  
 Surface elements :
    Number of elements not evaluated     : 0  %
@@ -268,27 +268,242 @@ Surface elements :
    Number of poor quality elements      : 0  %
    meshDomain executed
  
-09:07:03       6 sec. Generating 2nd order elements is running
+10:48:18       7 sec. Generating 2nd order elements is running
   Total number of nodes --> 6793
-09:07:03       6 sec. End generating 2nd order elements
+10:48:18       7 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
 Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py')
 
+
+   Converting point regions
+
+   Converting line regions
+
+   Converting face regions
+   RegionFace[INFINITE] modified
+   RegionFace[IRON_ST] modified
+   RegionFace[PM] modified
+   RegionFace[AIRGAP] modified
+   RegionFace[COIL_PLUS_1] modified
+   RegionFace[COIL_MINUS_1] modified
+   RegionFace[COIL_PLUS_2] modified
+   RegionFace[COIL_MINUS_2] modified
+   RegionFace[COIL_PLUS_3] modified
+   RegionFace[COIL_MINUS_3] modified
+   RegionFace[COIL_PLUS_4] modified
+   RegionFace[COIL_MINUS_4] modified
+   RegionFace[COIL_PLUS_5] modified
+   RegionFace[COIL_MINUS_5] modified
+   RegionFace[COIL_PLUS_6] modified
+   RegionFace[COIL_MINUS_6] modified
+
+   Converting application
+   DeleteCurrentApplication executed
+Creation VAR_PARAMETER (TIME) done.
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+ApplicationMagneticTransient2D[2]
+Saving project as 'test_1.FLU'
+10:49:35      84 sec. Start save ...
+10:49:36      84 sec. ... end save
+... end saving project
+   convertApplicationToMagneticTransient executed
+   Material[BMT_42UH] modified
+   orientRegSurfMaterial executed
+Python : #! Flux2D 18.1
+
+##save
+convertApplicationToMagneticTransient(projectName='test_1.FLU')
+
+##define conductivity
+startMacroTransaction()
+Material['BMT_42UH'].propertyJE=PropertyJeLinear(rho='140*10**(-8)')
+
+Material['BMT_42UH'].name='BMT_42UH : BMT_NdFeB, rho from wiki'
+
+endMacroTransaction()
+
+orientRegSurfMaterial(region=RegionFace['PM'],coordSys=CoordSys['COORD_SYS_ROT'],orientation='Direction',angle='0')
+
+
+   ParameterGeom[N_PROP] created
+   ParameterGeom[N] created
+Python : #define speed
+lastInstance = ParameterGeom(name='N_PROP : fraction of full mech speed',
+              expression='1')
+
+lastInstance = ParameterGeom(name='N : rpm for mechanical set',
+              expression='N_PROP*161/(R_ROT_OUT/1000)*(60/(2*pi()))')
+
+   MechanicalSet[ROTOR] created
+Python : ##make mechanical set
+lastInstance = MechanicalSetRotation1Axis(name='ROTOR',
+                           kinematics=RotatingImposedSpeed(velocity='N',
+                                                           initialPosition='0'),
+                           rotationAxis=RotationZAxis(coordSys=CoordSys['COORD_SYS_ROT'],
+                                                      pivot=['0',
+                                                             '0']))
+
+   MechanicalSet[STATOR] created
+   RegionFace[INFINITE, IRON_ST, AIRGAP, COIL_PLUS_1, COIL_MINUS_1, COIL_PLUS_2, COIL_MINUS_2, COIL_PLUS_3 ..] modified
+   RegionFace[PM] modified
+   RegionFace[PM] modified
+   orientRegSurfMaterial executed
+Python : lastInstance = MechanicalSetFixed(name='STATOR')
+
+#define region's mechanical set
+RegionFace['AIRGAP','COIL_MINUS_1','COIL_MINUS_2','COIL_MINUS_3','COIL_MINUS_4','COIL_MINUS_5','COIL_MINUS_6','COIL_PLUS_1','COIL_PLUS_2','COIL_PLUS_3','COIL_PLUS_4','COIL_PLUS_5','COIL_PLUS_6','INFINITE','IRON_ST'].mechanicalSet=MechanicalSet['STATOR']
+
+RegionFace['PM'].mechanicalSet=MechanicalSet['ROTOR']
+
+## PM is no longer non conducting volume, but a solid conductor with open circuit
+RegionFace['PM'].magneticTransient2D=MagneticTransient2DFaceSolidConductor(material=Material['BMT_42UH'],
+                                                                           circuitType=OpenCircuit())
+
+##it loses its orientation after previous definition
+orientRegSurfMaterial(region=RegionFace['PM'],coordSys=CoordSys['COORD_SYS_ROT'],orientation='Direction',angle='0')
+
+# Scenario(name='Scenario_1')
+
+# startMacroTransaction()
+
+# Scenario['Scenario_1'].addPilot(pilot=MultiValues(parameter=VariationParameter['ANGPOS_ROTOR'],
+                                                  # intervals=[IntervalStepValue(minValue=0.0,
+                                                                               # maxValue=360.0,
+                                                                               # stepValue=1.0)]))
+
+# endMacroTransaction()
+
+   Scenario[SCENARIO_1] created
+Python : Scenario(name='Scenario_1')
+
+Python : startMacroTransaction()
+
+   addPilot executed
+Python : Scenario['Scenario_1'].addPilot(pilot=MultiValues(parameter=VariationParameter['ANGPOS_ROTOR'],
+                                                  intervals=[IntervalStepValue(minValue=0.0,
+                                                                               maxValue=180.0,
+                                                                               stepValue=1.0)]))
+
+   addPilot executed
+Python : Scenario['Scenario_1'].addPilot(pilot=MultiValues(parameter=VariationParameter['N_PROP'],
+                                                  intervals=[IntervalStepValue(minValue=0.5,
+                                                                               maxValue=1.0,
+                                                                               stepValue=0.5)]))
+
+Python : endMacroTransaction()
+
+ 
+Surface elements :
+   Number of elements not evaluated     : 0  %
+   Number of excellent quality elements : 99.53  %
+   Number of good quality elements      : 0.41  %
+   Number of average quality elements   : 0.06  %
+   Number of poor quality elements      : 0  %
+ 
+Number of nodes : 6793
+Number of line elements : 425
+Number of surface elements : 3382
+Mesh order : 2nd order
+   checkMesh executed
+Python : checkMesh()
+
+Begin of physical check ...
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+Please, verify the properties of the material: NO12
+The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
+Please, verify the properties of the material: METGLAS_2605SA1
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 33.2103049326848
+Please, verify the properties of the material: METGLAS_NETL
+The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+[67161|1563526295847|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+[67162|1563526295847|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+*** Please, use a I/O parameter to control a scenario parameter describing the physics. ***
+[67164|1563526295848|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 0   Message: *** Please, use a I/O parameter to control a scenario parameter describing the physics. ***
+[67165|1563526296092|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 0   Message: Impossible to solve problem
+End of physical check.
+[67167|1563526296092|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.UserFortranException: The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+*** Please, use a I/O parameter to control a scenario parameter describing the physics. ***
+Impossible to solve problem   Priority: 2
+[67168|1563526296324|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
+[67178|1563526296382|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: Scenario_resoudre Exception: (UserFortranException, The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry. *** Please, use a I/O parameter to control a scenario parameter describing the physics. *** Impossible to solve problem)
+[67181|1563526296430|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/error.gif
+[67182|1563526296431|19|WARNING    ][IconLoader|DefaultFrontalIconLoader.loadImage] : Icon file does not exist: C:\Program Files\Altair\2018\flux\Flux\Resources/Images/General/Dialog/informations.gif
+[67197|1563526312706|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Parameter/Quantity, Parameter I/O]
+   VariationParameter[N] created
+Python : lastInstance = VariationParameterFormula(name='N',
+                          formula='20000')
+
+[67589|1563526323377|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Parameter/Quantity]
+   MechanicalSet[ROTOR] modified
+Python : MechanicalSet['ROTOR'].kinematics=RotatingImposedSpeed(velocity='N',
+                                                       initialPosition='0')
+
+
+Begin of physical check ...
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+Please, verify the properties of the material: NO12
+The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
+Please, verify the properties of the material: METGLAS_2605SA1
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 33.2103049326848
+Please, verify the properties of the material: METGLAS_NETL
+The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+[67742|1563526395931|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+[67743|1563526395932|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+*** Please, use a I/O parameter to control a scenario parameter describing the physics. ***
+[67745|1563526395932|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 0   Message: *** Please, use a I/O parameter to control a scenario parameter describing the physics. ***
+[67746|1563526396157|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 0   Message: Impossible to solve problem
+End of physical check.
+[67748|1563526396157|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.UserFortranException: The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+*** Please, use a I/O parameter to control a scenario parameter describing the physics. ***
+Impossible to solve problem   Priority: 2
+[67749|1563526396372|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
+[67758|1563526396445|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: Scenario_resoudre Exception: (UserFortranException, The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry. *** Please, use a I/O parameter to control a scenario parameter describing the physics. *** Impossible to solve problem)
+Parameter_geom with the same name of a parameter_var
+Unable to change the name of the geometric parameter
+[67791|1563526415881|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: -1   Message: Parameter_geom with the same name of a parameter_varUnable to change the name of the geometric parameter
+[67792|1563526415881|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: -1   Message: Parameter_geom with the same name of a parameter_varUnable to change the name of the geometric parameter
+[67793|1563526415882|22|INFO       ][Fortran.Error|ErrorManager.insertMessage] : Type: -1   Message:  
+[67804|1563526415921|22|INFO       ][Fortran.Error|ErrorManager.addMessageToException] : Type: 2   Message: Failed to modify an instance.
+Can not execute the following command :
+startMacroTransaction()
+ParameterGeom['N'].expression='20000'
+
+endMacroTransaction()
+
+[67805|1563526415921|22|WARNING    ][ActionManager|UIActionManager.postAction] : Error during action execution: Action: editObject Exception: (JavaException, Parameter_geom with the same name of a parameter_var Unable to change the name of the geometric parameter Failed to modify an instance. Can not execute the following command : startMacroTransaction() ParameterGeom['N'].expression='20000' endMacroTransaction() )
+--------------------------------------------------------------------------------
+Anomaly (1) - User error:
+Parameter_geom with the same name of a parameter_var
+Unable to change the name of the geometric parameter
+Failed to modify an instance.
+Can not execute the following command :
+startMacroTransaction()
+ParameterGeom['N'].expression='20000'
+
+endMacroTransaction()
+
+------------------------------ Advanced Text -----------------------------------
+
+--------------------------------------------------------------------------------
 Closing project
-Close of ANONYM
-[63720|1558076921414|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-[63745|1558076921474|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+Close of test_1
+[67830|1563526424779|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[67855|1563526424823|22|WARNING    ][Document|Document.updateInstances] : No project loaded
 ... end closing project
 Python : closeProject()
 
 Python : exit()
-[63749|1558076921480|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+[67859|1563526424829|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
 Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 352368
+For the dynamic table ID 352314
 Maximum use of 9 MiB. in character memory
-For the dynamic table ID 236663
+For the dynamic table ID 236609
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -307,7 +522,7 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:08:41     104 sec. FLUX2D_18.1.0 kernel finalized
-[63773|1558076921489|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
-[63774|1558076921489|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
-[63775|1558076921489|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
+10:53:44     333 sec. FLUX2D_18.1.0 kernel finalized
+[67883|1563526424832|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[67884|1563526424832|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[67885|1563526424832|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers

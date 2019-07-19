@@ -4,9 +4,9 @@ Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/
                                                              FLUX2D_18.1.0 : 2D Finite Element Electromagnetism
                                                                    2048 MiB N. + 127 MiB C. + 1024 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:14696 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:19576 jperalta
  
-09:06:57       0 sec. FLUX2D_18.1.0 kernel initialized
+10:48:11       0 sec. FLUX2D_18.1.0 kernel initialized
 
 Flux2D (application 2018.1) running
 
@@ -216,7 +216,7 @@ End execution of command file '8_scenarios_test.py' in batch mode ...
 Meshing of 17 faces
  
 Automatic mesh of 66 lines
-09:07:03       5 sec. Internal meshing of the lines
+10:48:17       6 sec. Internal meshing of the lines
  
 Automatic meshing of 17  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -229,11 +229,11 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 17 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-09:07:03       6 sec.    3382 1st order surfacic elements created
+10:48:18       6 sec.    3382 1st order surfacic elements created
  
-09:07:03       6 sec. Generating 2nd order elements is running
+10:48:18       6 sec. Generating 2nd order elements is running
   Total number of nodes --> 6793
-09:07:03       6 sec. End generating 2nd order elements
+10:48:18       7 sec. End generating 2nd order elements
  
 Surface elements :
    Number of elements not evaluated     : 0  %
@@ -243,19 +243,116 @@ Surface elements :
    Number of poor quality elements      : 0  %
    meshDomain executed
  
-09:07:03       6 sec. Generating 2nd order elements is running
+10:48:18       7 sec. Generating 2nd order elements is running
   Total number of nodes --> 6793
-09:07:03       6 sec. End generating 2nd order elements
+10:48:18       7 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/7_icems_journal_2018_2d/00_main.py' in batch mode ...
+
+   Converting point regions
+
+   Converting line regions
+
+   Converting face regions
+   RegionFace[INFINITE] modified
+   RegionFace[IRON_ST] modified
+   RegionFace[PM] modified
+   RegionFace[AIRGAP] modified
+   RegionFace[COIL_PLUS_1] modified
+   RegionFace[COIL_MINUS_1] modified
+   RegionFace[COIL_PLUS_2] modified
+   RegionFace[COIL_MINUS_2] modified
+   RegionFace[COIL_PLUS_3] modified
+   RegionFace[COIL_MINUS_3] modified
+   RegionFace[COIL_PLUS_4] modified
+   RegionFace[COIL_MINUS_4] modified
+   RegionFace[COIL_PLUS_5] modified
+   RegionFace[COIL_MINUS_5] modified
+   RegionFace[COIL_PLUS_6] modified
+   RegionFace[COIL_MINUS_6] modified
+
+   Converting application
+   DeleteCurrentApplication executed
+Creation VAR_PARAMETER (TIME) done.
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+ApplicationMagneticTransient2D[2]
+Saving project as 'test_1.FLU'
+10:49:35      84 sec. Start save ...
+10:49:36      84 sec. ... end save
+... end saving project
+   convertApplicationToMagneticTransient executed
+   Material[BMT_42UH] modified
+   orientRegSurfMaterial executed
+   ParameterGeom[N_PROP] created
+   ParameterGeom[N] created
+   MechanicalSet[ROTOR] created
+   MechanicalSet[STATOR] created
+   RegionFace[INFINITE, IRON_ST, AIRGAP, COIL_PLUS_1, COIL_MINUS_1, COIL_PLUS_2, COIL_MINUS_2, COIL_PLUS_3 ..] modified
+   RegionFace[PM] modified
+   RegionFace[PM] modified
+   orientRegSurfMaterial executed
+   Scenario[SCENARIO_1] created
+   addPilot executed
+   addPilot executed
+ 
+Surface elements :
+   Number of elements not evaluated     : 0  %
+   Number of excellent quality elements : 99.53  %
+   Number of good quality elements      : 0.41  %
+   Number of average quality elements   : 0.06  %
+   Number of poor quality elements      : 0  %
+ 
+Number of nodes : 6793
+Number of line elements : 425
+Number of surface elements : 3382
+Mesh order : 2nd order
+   checkMesh executed
+Begin of physical check ...
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+Please, verify the properties of the material: NO12
+The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
+Please, verify the properties of the material: METGLAS_2605SA1
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 33.2103049326848
+Please, verify the properties of the material: METGLAS_NETL
+The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+*** Please, use a I/O parameter to control a scenario parameter describing the physics. ***
+End of physical check.
+   VariationParameter[N] created
+   MechanicalSet[ROTOR] modified
+Begin of physical check ...
+The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
+Please, verify the properties of the material: NO12
+The final derivative of points defining the spline curve of material METGLAS_2605SA1 must be equal to Mu0. The final relative permeability is equal to: 0.646778731856974
+Please, verify the properties of the material: METGLAS_2605SA1
+The final derivative of points defining the spline curve of material METGLAS_NETL must be equal to Mu0. The final relative permeability is equal to: 33.2103049326848
+Please, verify the properties of the material: METGLAS_NETL
+The parameter N_PROP of scenario SCENARIO_1 is defined as geometric parameter whereas it does not modify the geometry.
+*** Please, use a I/O parameter to control a scenario parameter describing the physics. ***
+End of physical check.
+Parameter_geom with the same name of a parameter_var
+Unable to change the name of the geometric parameter
+Anomaly (1) - User error:
+Parameter_geom with the same name of a parameter_var
+Unable to change the name of the geometric parameter
+Failed to modify an instance.
+Can not execute the following command :
+startMacroTransaction()
+ParameterGeom['N'].expression='20000'
+
+endMacroTransaction()
+
 Closing project
-Close of ANONYM
+Close of test_1
 ... end closing project
 Maximum use of 335 MiB. in numerical memory
-For the dynamic table ID 352368
+For the dynamic table ID 352314
 Maximum use of 9 MiB. in character memory
-For the dynamic table ID 236663
+For the dynamic table ID 236609
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -274,4 +371,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-09:08:41     104 sec. FLUX2D_18.1.0 kernel finalized
+10:53:44     333 sec. FLUX2D_18.1.0 kernel finalized

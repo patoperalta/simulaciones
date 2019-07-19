@@ -278,3 +278,78 @@ Scenario['7_JF_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParame
 Scenario['7_JF_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['D_ST'],
                                           value=dst))										  
 endMacroTransaction()
+
+## tilting stiffnesses with and no slots...
+
+Scenario(name='8_DALPHA2_R'+str(r_rot))
+
+startMacroTransaction()
+
+Scenario['8_DALPHA2_R'+str(r_rot)].addPilot(pilot=MultiValues(parameter=VariationParameter['ALPHA_H'],
+                                            intervals=[IntervalStepValue(minValue=alpha_min,
+                                                                         maxValue=alpha_max,
+                                                                         stepValue=d_alpha)]))
+
+Scenario['8_DALPHA2_R'+str(r_rot)].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA'],
+                                            intervals=[IntervalStepValue(minValue=beta_min,
+                                                                         maxValue=beta_max,
+                                                                         stepValue=d_beta)]))
+
+Scenario['8_DALPHA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['DBETA_MULT'],
+                                          value=1.0))
+										  
+Scenario['8_DALPHA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['DTHETA'],
+                                          value=90))										  
+
+Scenario['8_DALPHA2_R'+str(r_rot)].addPilot(pilot=MultiValues(parameter=VariationParameter['L_SLOT'],
+                                            intervals=[IntervalStepValue(minValue=lslot_min,
+                                                                         maxValue=lslot_max,
+                                                                         stepValue=lslot_dgap)]))
+
+Scenario['8_DALPHA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['R_ROT_OUT'],
+                                          value=r_rot))	
+
+Scenario['8_DALPHA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['W_SLOT'],
+                                          value=wslot))	
+
+Scenario['8_DALPHA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['D_ST'],
+                                          value=dst))																		 
+																		 
+endMacroTransaction()
+
+
+Scenario(name='9_DBETA2_R'+str(r_rot))
+
+startMacroTransaction()
+
+Scenario['9_DBETA2_R'+str(r_rot)].addPilot(pilot=MultiValues(parameter=VariationParameter['ALPHA_H'],
+                                            intervals=[IntervalStepValue(minValue=alpha_min,
+                                                                         maxValue=alpha_max,
+                                                                         stepValue=d_alpha)]))
+
+Scenario['9_DBETA2_R'+str(r_rot)].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA'],
+                                            intervals=[IntervalStepValue(minValue=beta_min,
+                                                                         maxValue=beta_max,
+                                                                         stepValue=d_beta)]))
+
+Scenario['9_DBETA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['DALPHA_MULT'],
+                                          value=1.0))
+										  
+Scenario['9_DBETA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['DTHETA'],
+                                          value=90))										  
+
+Scenario['9_DBETA2_R'+str(r_rot)].addPilot(pilot=MultiValues(parameter=VariationParameter['L_SLOT'],
+                                            intervals=[IntervalStepValue(minValue=lslot_min,
+                                                                         maxValue=lslot_max,
+                                                                         stepValue=lslot_dgap)]))
+
+Scenario['9_DBETA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['R_ROT_OUT'],
+                                          value=r_rot))	
+
+Scenario['9_DBETA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['W_SLOT'],
+                                          value=wslot))	
+
+Scenario['9_DBETA2_R'+str(r_rot)].addPilot(pilot=MonoValue(parameter=VariationParameter['D_ST'],
+                                          value=dst))																		 
+																		 
+endMacroTransaction()

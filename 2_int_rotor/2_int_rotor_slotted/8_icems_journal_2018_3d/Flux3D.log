@@ -4,9 +4,9 @@ Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/
                                                              FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                    4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:12504 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:21400 jperalta
  
-08:03:28       0 sec. FLUX3D_18.1.0 kernel initialized
+13:54:51       0 sec. FLUX3D_18.1.0 kernel initialized
 
 Flux3D (application 2018.1) running
 
@@ -346,233 +346,11 @@ Execution of command file '8_sensors.py' in batch mode ...
    Sensor[TY_ST] created
    Sensor[TZ_ST] created
 End execution of command file '8_sensors.py' in batch mode ...
-Execution of command file '9_scenarios_slotted.py' in batch mode ...
-   Scenario[0_FIELD_R10] created
-Scenario[1]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[1_DZ_R10] created
-Scenario[2]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[2_DALPHA_R10] created
-Scenario[3]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[3_DBETA_R10] created
-Scenario[4]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[4_DX_R10] created
-Scenario[5]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-Scenario[6]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[5_DY_R10] created
-   Scenario[6_JT_R10] created
-Scenario[7]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[7_JF_R10] created
-Scenario[8]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-End execution of command file '9_scenarios_slotted.py' in batch mode ...
-Execution of command file '9_scenarios_slotted.py' in batch mode ...
-   Scenario[0_FIELD_R15] created
-Scenario[9]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[1_DZ_R15] created
-Scenario[10]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[2_DALPHA_R15] created
-Scenario[11]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[3_DBETA_R15] created
-Scenario[12]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[4_DX_R15] created
-Scenario[13]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-Scenario[14]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[5_DY_R15] created
-   Scenario[6_JT_R15] created
-Scenario[15]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[7_JF_R15] created
-Scenario[16]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-End execution of command file '9_scenarios_slotted.py' in batch mode ...
-Execution of command file '9_scenarios_slotted.py' in batch mode ...
-   Scenario[0_FIELD_R20] created
-Scenario[17]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[1_DZ_R20] created
-Scenario[18]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[2_DALPHA_R20] created
-Scenario[19]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[3_DBETA_R20] created
-Scenario[20]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[4_DX_R20] created
-Scenario[21]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-Scenario[22]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[5_DY_R20] created
-   Scenario[6_JT_R20] created
-Scenario[23]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[7_JF_R20] created
-Scenario[24]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-End execution of command file '9_scenarios_slotted.py' in batch mode ...
  
 Verifying of linked faces ...
   38 face(s) have consistent linked mesh generator.
  
-08:03:40      12 sec. Internal meshing of the lines
+13:55:01       9 sec. Internal meshing of the lines
  
 Automatic meshing of 168  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -585,25 +363,25 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 168 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-08:03:42      14 sec.    5048 1st order surfacic elements created
+13:55:03      12 sec.    5048 1st order surfacic elements created
  
 Transport-projection meshing of 7  faces
  
-08:03:42      14 sec. Mapped meshing of the faces
-08:03:42      14 sec.     186 1st order surfacic elements created
+13:55:03      12 sec. Mapped meshing of the faces
+13:55:04      12 sec.     186 1st order surfacic elements created
  
 Extrusive meshing of 94 faces
-08:03:42      14 sec.    4110 1st order surfacic elements created
+13:55:04      12 sec.    4110 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 75 linked faces
  
-08:03:43      14 sec.    1002 1st order lineic elements created
+13:55:04      12 sec.    1002 1st order lineic elements created
  
 Automatic mesh of 83 volumes
  
 Extrusive meshing of 40 volumes
-08:03:43      14 sec. Boundary meshing of volumes
+13:55:04      12 sec. Boundary meshing of volumes
 Strong periodicity of mesh might be not insured
 Insert of nodes ...
 ... End of nodes insert
@@ -611,21 +389,20 @@ Insert of nodes ...
 Checking 284 faces
 Checking 284 faces: iteration No 1  completed
 Number of node(s) creating while the iteration: 192
-
 Checking of faces completed in 2 iteration(s)
 Number of nodes creating while checking faces: 192
   7580  boundary nodes
   29283  boundary meshes
-08:03:47      19 sec. Internal meshing of volumes
+13:55:08      16 sec. Internal meshing of volumes
  
 Number of nodes created by internal meshing 1438
-08:03:49      20 sec.
+13:55:10      18 sec.
           9026 nodes
          40857 meshes
-08:03:49      20 sec. Mesh compressing
+13:55:10      18 sec. Mesh compressing
           9026 nodes
          40053 meshes
-08:03:49      21 sec.   40053 1st order volumic elements created
+13:55:10      18 sec.   40053 1st order volumic elements created
      10440 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
      10440 ill-connected elements have been detected
@@ -653,9 +430,9 @@ Verifying of linked faces ...
  
    meshDomain executed
  
-08:03:58      30 sec. Generating 2nd order elements is running
+13:55:19      27 sec. Generating 2nd order elements is running
   Total number of nodes --> 109888
-08:04:00      31 sec. End generating 2nd order elements
+13:55:20      28 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
  
@@ -665,21 +442,120 @@ The final derivative of points defining the spline curve of material NO12 must b
    buildMagneticCircuitCut executed
 
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py' in batch mode ...
-Saving project as '20190521_slotted_rev1.FLU'
-08:06:17     168 sec. Start save ...
-08:06:18     169 sec. ... end save
+
+   Converting point regions
+
+   Converting line regions
+
+   Converting face regions
+
+   Converting volume regions
+   RegionVolume[IRON_ST] modified
+   RegionVolume[AIR_DOMAIN] modified
+   RegionVolume[PM] modified
+   RegionVolume[COIL_1] modified
+   RegionVolume[COIL_2] modified
+   RegionVolume[COIL_3] modified
+   RegionVolume[COIL_4] modified
+   RegionVolume[COIL_5] modified
+   RegionVolume[COIL_6] modified
+
+   Converting application
+   DeleteCurrentApplication executed
+Creation VAR_PARAMETER (TIME) done.
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+ApplicationMagneticTransient3D[2]
+Saving project as 'test_1.FLU'
+13:56:22      90 sec. Start save ...
+13:56:23      91 sec. ... end save
 ... end saving project
-Saving project as '../../../../../../Desktop/02_flux_int_rotor_slotted/6_icems_journal_3d/20190521_slotted_rev1.FLU'
-08:07:44     256 sec. Start save ...
-08:07:45     256 sec. ... end save
+   convertApplicationToMagneticTransient executed
+   Material[BMT_42UH] modified
+   RegionVolume[PM] modified
+   orientRegVolMaterial executed
+   Material[COPPER] created
+   VariationParameter[N_PROP] created
+   VariationParameter[N] created
+   MechanicalSet[ROTOR] created
+   MechanicalSet[STATOR] created
+   RegionVolume[IRON_ST, AIR_DOMAIN, COIL_1, COIL_2, COIL_3, COIL_4, COIL_5, COIL_6] modified
+ 
+Coil(1) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(2) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(3) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(4) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(5) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(6) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_1, COIL_2, COIL_3, COIL_4, COIL_5, COIL_6] modified
+   RegionVolume[PM] modified
+   Sensor[P_JOULE_ROT] created
+   Scenario[PJ_ROT_10_N10] created
+Scenario[1]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[PJ_ROT_15_N10] created
+Scenario[2]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   Scenario[PJ_ROT_20_N10] created
+Scenario[3]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Saving project 'test_1.FLU'
+14:10:03     911 sec. Start save ...
+14:10:04     912 sec. ... end save
+... end saving project
+Saving project as '../../../../../../Desktop/02_flux_int_rotor_slotted/7_icems_journal_2d_transient/slotted_transient_long_simu.FLU'
+14:10:30     938 sec. Start save ...
+14:10:31     939 sec. ... end save
 ... end saving project
 Closing project
-Close of ../../../../../../Desktop/02_flux_int_rotor_slotted/6_icems_journal_3d/20190521_slotted_rev1
+Close of ../../../../../../Desktop/02_flux_int_rotor_slotted/7_icems_journal_2d_transient/slotted_transient_long_simu
 ... end closing project
 Maximum use of 911 MiB. in numerical memory
-For the dynamic table ID 2359884
+For the dynamic table ID 2359031
 Maximum use of 8 MiB. in character memory
-For the dynamic table ID 1977931
+For the dynamic table ID 1984288
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -698,4 +574,4 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-08:08:32     304 sec. FLUX3D_18.1.0 kernel finalized
+14:17:33    1361 sec. FLUX3D_18.1.0 kernel finalized

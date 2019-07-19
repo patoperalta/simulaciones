@@ -1,44 +1,44 @@
-[12|1558418603127|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
-[13|1558418603277|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
-[14|1558418603334|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
-[15|1558418603336|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
-[16|1558418603336|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
-[17|1558418603337|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
-[18|1558418603337|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\8_icems_journal_2018_3d
-[19|1558418603337|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
-[20|1558418603337|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
-[21|1558418603337|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
-[22|1558418603337|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
-[23|1558418603338|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
-[24|1558418603338|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
-[25|1558418603482|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
+[12|1563537287594|1|INFO       ][FactoryHelper|FactoryHelper.getApplicationVersionFromReleaseFile] : Application version:   Release file: Flux_Release.txt   Version: 2018.1.0.1121 20180629
+[13|1563537287736|19|CONFIG     ][ApplicationConfiguration|LookandFeelEnum.setCurrentLookAndFeel] : Applying look&feel: (PLASTIC_3D, com.jgoodies.plaf.plastic.Plastic3DLookAndFeel)
+[14|1563537287796|1|CONFIG     ][Application|CoreApplication.internalLaunchApplication] : Application flags:   Debug: false   Advanced: false   Server: false   Batch: false   New project: false
+[15|1563537287799|1|CONFIG     ][Application|MainFlux.initEnvironment] : User name: jperalta
+[16|1563537287799|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Install directory: C:\Program Files\Altair\2018\flux\Flux\Resources
+[17|1563537287799|1|CONFIG     ][Application|CoreApplication.validateDirectory] : User home: C:\Users\jperalta
+[18|1563537287799|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Running directory: C:\Users\jperalta\Documents\github_pato\flux\2_int_rotor\2_int_rotor_slotted\8_icems_journal_2018_3d
+[19|1563537287800|1|CONFIG     ][Application|CoreApplication.validateDirectory] : Temporary directory: C:\Users\jperalta\AppData\Local\Temp
+[20|1563537287800|1|CONFIG     ][Application|MainFlux.initEnvironment] : Environment variable CAO_DEFLAN: 2
+[21|1563537287800|1|CONFIG     ][Application|MainFlux.initEnvironment] : Extension directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\extensions   Final: C:\Users\jperalta
+[22|1563537287800|1|CONFIG     ][Application|MainFlux.initEnvironment] : Certified overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Flux\Overlays   Final: C:\Program Files\Altair\2018\flux\Flux\Overlays
+[23|1563537287800|1|CONFIG     ][Application|MainFlux.initEnvironment] : User overlay directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Overlays   Final: C:\Program Files\Altair\2018\flux\Extensions\Overlays
+[24|1563537287801|1|CONFIG     ][Application|MainFlux.initEnvironment] : Macro directory:   Defined: C:\Program Files\Altair\2018\flux\Extensions\Macros   Final: C:\Program Files\Altair\2018\flux\Extensions\Macros
+[25|1563537287950|1|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.graphic.view.GraphicViewsManager$EventHandler@376b4233
 Loading data model 'Flux_model.stp'
-[27|1558418604002|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
+[27|1563537288475|12|INFO       ][Application|CoreApplication$SyncRunnable.run] : Stop application synchronisation thread
 Python : @#*C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/Flux3D_log.pyPython : ^&|#! Flux3D 18.1
 Recording commands in 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/Flux3D_log.py'
  
                                                              FLUX3D_18.1.0 : 3D Finite Element Electromagnetism
                                                                    4096 MiB N. + 127 MiB C. + 2048 MiB J.
                                                                   HWU licensing used: 6200@stilic5.epfl.ch
-                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:12504 jperalta
+                                           Build 1806291121 Flux_Release_2018.1 CL15346 Win64 4/8 cores LAIB108233:21400 jperalta
  
-08:03:28       0 sec. FLUX3D_18.1.0 kernel initialized
-[62315|1558418608957|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
-[62316|1558418608958|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
-[62317|1558418609188|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
-[62319|1558418609666|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@49aa1d3b
+13:54:51       0 sec. FLUX3D_18.1.0 kernel initialized
+[62315|1563537292181|1|INFO       ][FrontalPreferences|DefaultFrontalPreferencesManager.getApplicationConfiguration] : Loading Frontal ApplicationConfiguration:   Application: Flux3D   Version: 2018.1
+[62316|1563537292182|1|INFO       ][ApplicationConfiguration|ApplicationConfiguration.getApplicationConfiguration] : Application: (Flux3D, 2018.1)
+[62317|1563537292226|1|CONFIG     ][ApplicationConfiguration|ApplicationConfiguration.updateGroupPreferences] : Application configuration updated:   Application: (Flux3D, 2018.1)   Groups: 6
+[62319|1563537292546|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.box.frontaldialog.FrontalDialogBoxManager$EventHandler@301f2717
 
 Flux3D (application 2018.1) running
 
-[62328|1558418609750|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@1410a137
-[62348|1558418611058|1|WARNING    ][Document|Document.updateInstances] : No project loaded
-[62354|1558418611084|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62328|1563537292614|19|WARNING    ][Selection|DocumentSelectionManager.attachSelectionClient] : Already attached, client: cad.core.frontal.components.tree.TreeManager$EventHandler@1e51a87d
+[62348|1563537293482|1|WARNING    ][Document|Document.updateInstances] : No project loaded
+[62354|1563537293505|1|WARNING    ][Document|Document.updateInstances] : No project loaded
 Execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py' in batch mode ...
-[62363|1558418611342|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62364|1558418612862|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
-[62547|1558418615952|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
-[62548|1558418615953|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
-[62549|1558418616457|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.WarningFortranException: Some intersections may not have been detected   Priority: 1
+[62363|1563537293653|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62364|1563537294961|22|WARNING    ][UseCase|UseCaseManager.changeUseCase] : No use case transaction found
+[62547|1563537297908|22|INFO       ][ErrorManager|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[62548|1563537297908|22|INFO       ][Fortran.Error|ErrorManager.createFortranException] : Type: 0   Message: Some intersections may not have been detected
+[62549|1563537298416|22|INFO       ][ErrorManager|ErrorManager.setPriorityLevel] : Exception: stdcom.error.WarningFortranException: Some intersections may not have been detected   Priority: 1
 Loading new project
 Creating ANONYM
 ... end loading new project
@@ -374,233 +374,11 @@ Execution of command file '8_sensors.py' in batch mode ...
    Sensor[TY_ST] created
    Sensor[TZ_ST] created
 End execution of command file '8_sensors.py' in batch mode ...
-Execution of command file '9_scenarios_slotted.py' in batch mode ...
-   Scenario[0_FIELD_R10] created
-Scenario[1]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[1_DZ_R10] created
-Scenario[2]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[2_DALPHA_R10] created
-Scenario[3]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[3_DBETA_R10] created
-Scenario[4]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[4_DX_R10] created
-Scenario[5]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-Scenario[6]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[5_DY_R10] created
-   Scenario[6_JT_R10] created
-Scenario[7]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[7_JF_R10] created
-Scenario[8]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-End execution of command file '9_scenarios_slotted.py' in batch mode ...
-Execution of command file '9_scenarios_slotted.py' in batch mode ...
-   Scenario[0_FIELD_R15] created
-Scenario[9]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[1_DZ_R15] created
-Scenario[10]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[2_DALPHA_R15] created
-Scenario[11]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[3_DBETA_R15] created
-Scenario[12]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[4_DX_R15] created
-Scenario[13]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-Scenario[14]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[5_DY_R15] created
-   Scenario[6_JT_R15] created
-Scenario[15]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[7_JF_R15] created
-Scenario[16]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-End execution of command file '9_scenarios_slotted.py' in batch mode ...
-Execution of command file '9_scenarios_slotted.py' in batch mode ...
-   Scenario[0_FIELD_R20] created
-Scenario[17]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[1_DZ_R20] created
-Scenario[18]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[2_DALPHA_R20] created
-Scenario[19]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[3_DBETA_R20] created
-Scenario[20]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[4_DX_R20] created
-Scenario[21]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-Scenario[22]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[5_DY_R20] created
-   Scenario[6_JT_R20] created
-Scenario[23]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   Scenario[7_JF_R20] created
-Scenario[24]
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-   addPilot executed
-End execution of command file '9_scenarios_slotted.py' in batch mode ...
  
 Verifying of linked faces ...
   38 face(s) have consistent linked mesh generator.
  
-08:03:40      12 sec. Internal meshing of the lines
+13:55:01       9 sec. Internal meshing of the lines
  
 Automatic meshing of 168  faces
 Boundary meshing of the faces achieved in 1 iteration(s)
@@ -613,25 +391,25 @@ Boundary meshing of the faces achieved in 1 iteration(s)
 Internal meshing of the 168 faces
 Faces internal meshing achieved
 End of topological mesh regularization
-08:03:42      14 sec.    5048 1st order surfacic elements created
+13:55:03      12 sec.    5048 1st order surfacic elements created
  
 Transport-projection meshing of 7  faces
  
-08:03:42      14 sec. Mapped meshing of the faces
-08:03:42      14 sec.     186 1st order surfacic elements created
+13:55:03      12 sec. Mapped meshing of the faces
+13:55:04      12 sec.     186 1st order surfacic elements created
  
 Extrusive meshing of 94 faces
-08:03:42      14 sec.    4110 1st order surfacic elements created
+13:55:04      12 sec.    4110 1st order surfacic elements created
  
 Meshing of linked faces...
 Meshing of 75 linked faces
  
-08:03:43      14 sec.    1002 1st order lineic elements created
+13:55:04      12 sec.    1002 1st order lineic elements created
  
 Automatic mesh of 83 volumes
  
 Extrusive meshing of 40 volumes
-08:03:43      14 sec. Boundary meshing of volumes
+13:55:04      12 sec. Boundary meshing of volumes
 Strong periodicity of mesh might be not insured
 Insert of nodes ...
 ... End of nodes insert
@@ -639,21 +417,20 @@ Insert of nodes ...
 Checking 284 faces
 Checking 284 faces: iteration No 1  completed
 Number of node(s) creating while the iteration: 192
-
 Checking of faces completed in 2 iteration(s)
 Number of nodes creating while checking faces: 192
   7580  boundary nodes
   29283  boundary meshes
-08:03:47      19 sec. Internal meshing of volumes
+13:55:08      16 sec. Internal meshing of volumes
  
 Number of nodes created by internal meshing 1438
-08:03:49      20 sec.
+13:55:10      18 sec.
           9026 nodes
          40857 meshes
-08:03:49      20 sec. Mesh compressing
+13:55:10      18 sec. Mesh compressing
           9026 nodes
          40053 meshes
-08:03:49      21 sec.   40053 1st order volumic elements created
+13:55:10      18 sec.   40053 1st order volumic elements created
      10440 ill-connected elements have been detected
 Attempt to repair ( 1 /20) ...
      10440 ill-connected elements have been detected
@@ -681,9 +458,9 @@ Verifying of linked faces ...
  
    meshDomain executed
  
-08:03:58      30 sec. Generating 2nd order elements is running
+13:55:19      27 sec. Generating 2nd order elements is running
   Total number of nodes --> 109888
-08:04:00      31 sec. End generating 2nd order elements
+13:55:20      28 sec. End generating 2nd order elements
    generateSecondOrderElements executed
 The final derivative of points defining the spline curve of material NO12 must be equal to Mu0. The final relative permeability is equal to: 1.10924599072956
  
@@ -695,31 +472,342 @@ The final derivative of points defining the spline curve of material NO12 must b
 End execution of command file 'C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py' in batch mode ...
 Python : executeBatchSpy('C:/Users/jperalta/Documents/github_pato/flux/2_int_rotor/2_int_rotor_slotted/8_icems_journal_2018_3d/00_main.py')
 
-Saving project as '20190521_slotted_rev1.FLU'
-08:06:17     168 sec. Start save ...
-08:06:18     169 sec. ... end save
-... end saving project
-Python : saveProjectAs('20190521_slotted_rev1.FLU')
 
-Saving project as '../../../../../../Desktop/02_flux_int_rotor_slotted/6_icems_journal_3d/20190521_slotted_rev1.FLU'
-08:07:44     256 sec. Start save ...
-08:07:45     256 sec. ... end save
+   Converting point regions
+
+   Converting line regions
+
+   Converting face regions
+
+   Converting volume regions
+   RegionVolume[IRON_ST] modified
+   RegionVolume[AIR_DOMAIN] modified
+   RegionVolume[PM] modified
+   RegionVolume[COIL_1] modified
+   RegionVolume[COIL_2] modified
+   RegionVolume[COIL_3] modified
+   RegionVolume[COIL_4] modified
+   RegionVolume[COIL_5] modified
+   RegionVolume[COIL_6] modified
+
+   Converting application
+   DeleteCurrentApplication executed
+Creation VAR_PARAMETER (TIME) done.
+ 
+Multiplying coefficient for the flux in the coils and for coupling with electrical circuits :
+Automatically calculated value = 1
+ 
+   Application[2] created
+[67886|1563537382523|22|WARNING    ][Command|FrontalCommand.setFrontalImplementation] : Can't find implementation class for: cad.flux.frontal.actions.implementation.algo.project.AssignGeomTerminalsToSolidCondComp2TermCompletion
+[67887|1563537382533|22|WARNING    ][Command|FrontalCommand.setFrontalImplementation] : Can't find implementation class for: cad.flux.frontal.actions.implementation.algo.project.AssignGeomTerminalsToSolidCondCompNTermCompletion
+ApplicationMagneticTransient3D[2]
+Saving project as 'test_1.FLU'
+13:56:22      90 sec. Start save ...
+13:56:23      91 sec. ... end save
 ... end saving project
-Python : saveProjectAs('../../../../../../Desktop/02_flux_int_rotor_slotted/6_icems_journal_3d/20190521_slotted_rev1.FLU')
+   convertApplicationToMagneticTransient executed
+   Material[BMT_42UH] modified
+   RegionVolume[PM] modified
+   orientRegVolMaterial executed
+   Material[COPPER] created
+   VariationParameter[N_PROP] created
+   VariationParameter[N] created
+   MechanicalSet[ROTOR] created
+   MechanicalSet[STATOR] created
+   RegionVolume[IRON_ST, AIR_DOMAIN, COIL_1, COIL_2, COIL_3, COIL_4, COIL_5, COIL_6] modified
+ 
+Coil(1) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(2) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(3) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(4) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(5) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+Coil(6) :
+   Total number of coils obtained by duplication : 1
+   Number of portions of conductors in parallel = 1
+ 
+   Coil[COIL_1, COIL_2, COIL_3, COIL_4, COIL_5, COIL_6] modified
+   RegionVolume[PM] modified
+   Sensor[P_JOULE_ROT] created
+Python : #! Flux2D 18.1
+
+##save
+convertApplicationToMagneticTransient(projectName='test_1.FLU')
+
+##define conductivity of NdFeB
+startMacroTransaction()
+Material['BMT_42UH'].propertyJE=PropertyJeLinear(rho='140*10**(-8)')
+
+Material['BMT_42UH'].name='BMT_42UH : BMT_NdFeB, rho from wiki'
+
+endMacroTransaction()
+
+##make magnet a conductor
+RegionVolume['PM'].magneticTransient3D=MagneticTransient3DVolumeSolidConductor(material=Material['BMT_42UH'])
+
+##reorient magnet
+orientRegVolMaterial(region=RegionVolume['PM'],coordSys=CoordSys['COORD_SYS_ROT'],orientation='Direction',angle='0')
+
+##define copper conductivity
+lastInstance = Material(name='COPPER',
+         propertyJE=PropertyJeLinear(rho='1.68*10**(-8)'))
+
+##and coils are no further made out of air
+# startMacroTransaction()
+# RegionVolume['COIL_1'].magneticTransient3D=MagneticTransient3DVolumeSolidConductor(material=Material['COPPER'])
+
+# RegionVolume['COIL_2'].magneticTransient3D=MagneticTransient3DVolumeSolidConductor(material=Material['COPPER'])
+
+# RegionVolume['COIL_3'].magneticTransient3D=MagneticTransient3DVolumeSolidConductor(material=Material['COPPER'])
+
+# RegionVolume['COIL_4'].magneticTransient3D=MagneticTransient3DVolumeSolidConductor(material=Material['COPPER'])
+
+# RegionVolume['COIL_5'].magneticTransient3D=MagneticTransient3DVolumeSolidConductor(material=Material['COPPER'])
+
+# RegionVolume['COIL_6'].magneticTransient3D=MagneticTransient3DVolumeSolidConductor(material=Material['COPPER'])
+
+# endMacroTransaction()
+
+#define rotor speed in RPM
+
+lastInstance = VariationParameterPilot(name='N_PROP',
+                        referenceValue=1.0)
+
+lastInstance = VariationParameterFormula(name='N',
+                          formula='N_PROP*161/(R_ROT_OUT/1000)*(60/(2*pi()))')
+
+##make mechanical set
+lastInstance = MechanicalSetRotation1Axis(name='ROTOR',
+                           kinematics=RotatingImposedSpeed(velocity='N',
+                                                           initialPosition='0'),
+                           rotationAxis=RotationZAxis(coordSys=CoordSys['COORD_SYS_ROT'],
+                                                      pivot=['0',
+                                                             '0',
+                                                             '0']))
+
+lastInstance = MechanicalSetFixed(name='STATOR')
+
+##define region's mechanical set
+##for 'concentric coils'
+RegionVolume['AIR_DOMAIN','COIL_1','COIL_2','COIL_3','COIL_4','COIL_5','COIL_6','IRON_ST'].mechanicalSet=MechanicalSet['STATOR']
+##for virtual coils
+CoilRectangular[ALL].mechanicalSet=MechanicalSet['STATOR']
+
+RegionVolume['PM'].mechanicalSet=MechanicalSet['ROTOR']
+
+##define loss sensor
+lastInstance = SensorPredefinedLosses(name='P_JOULE_ROT',
+                       support=ComputationSupportLossesVolumeRegion(region=[RegionVolume['PM']]))
+
+[69255|1563537584401|19|WARNING    ][Tree|TreeViewControl.treeWillCollapse] : Expand veto: Path: [MultiTreeRoot{activeGroup=General data}, Parameter/Quantity]
+   Scenario[PJ_ROT_10_N10] created
+Scenario[1]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Python : ##scenario
+##general values
+alpha_min = 1.0
+alpha_max = 2
+d_alpha= 0.2
+ 
+beta_min = 0.1
+beta_max = 0.3
+d_beta= 0.1
+
+n=1
+
+##changing values
+r_rot=10
+wslot=7
+dst=8
+lslot=7
+
+Scenario(name='PJ_ROT_'+str(r_rot)+'_N'+str(10*n))
+
+startMacroTransaction()
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['ANGPOS_ROTOR'],
+                                                  intervals=[IntervalStepValue(minValue=0.0,
+                                                                               maxValue=60.0,
+                                                                               stepValue=1.0)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['ALPHA_H'],
+                                                  intervals=[IntervalStepValue(minValue=alpha_min,
+                                                                               maxValue=alpha_max,
+                                                                               stepValue=d_alpha)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA'],
+                                                  intervals=[IntervalStepValue(minValue=beta_min,
+                                                                               maxValue=beta_max,
+                                                                               stepValue=d_beta)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['D_ST'],
+                                                value=dst))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['L_SLOT'],
+                                                value=lslot))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['N_PROP'],
+                                                value=n))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['R_ROT_OUT'],
+                                                value=r_rot))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['W_SLOT'],
+                                                value=wslot))
+
+endMacroTransaction()
+
+   Scenario[PJ_ROT_15_N10] created
+Scenario[2]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Python : ##changing values
+r_rot=15
+wslot=12
+dst=13
+lslot=9
+
+Scenario(name='PJ_ROT_'+str(r_rot)+'_N'+str(10*n))
+
+startMacroTransaction()
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['ANGPOS_ROTOR'],
+                                                  intervals=[IntervalStepValue(minValue=0.0,
+                                                                               maxValue=60.0,
+                                                                               stepValue=1.0)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['ALPHA_H'],
+                                                  intervals=[IntervalStepValue(minValue=alpha_min,
+                                                                               maxValue=alpha_max,
+                                                                               stepValue=d_alpha)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA'],
+                                                  intervals=[IntervalStepValue(minValue=beta_min,
+                                                                               maxValue=beta_max,
+                                                                               stepValue=d_beta)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['D_ST'],
+                                                value=dst))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['L_SLOT'],
+                                                value=lslot))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['N_PROP'],
+                                                value=n))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['R_ROT_OUT'],
+                                                value=r_rot))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['W_SLOT'],
+                                                value=wslot))
+
+endMacroTransaction()
+
+
+   Scenario[PJ_ROT_20_N10] created
+Scenario[3]
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+   addPilot executed
+Python : ##changing values
+r_rot=20
+wslot=16
+dst=18
+lslot=11
+
+Scenario(name='PJ_ROT_'+str(r_rot)+'_N'+str(10*n))
+
+startMacroTransaction()
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['ANGPOS_ROTOR'],
+                                                  intervals=[IntervalStepValue(minValue=0.0,
+                                                                               maxValue=60.0,
+                                                                               stepValue=1.0)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['ALPHA_H'],
+                                                  intervals=[IntervalStepValue(minValue=alpha_min,
+                                                                               maxValue=alpha_max,
+                                                                               stepValue=d_alpha)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MultiValues(parameter=VariationParameter['BETA'],
+                                                  intervals=[IntervalStepValue(minValue=beta_min,
+                                                                               maxValue=beta_max,
+                                                                               stepValue=d_beta)]))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['D_ST'],
+                                                value=dst))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['L_SLOT'],
+                                                value=lslot))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['N_PROP'],
+                                                value=n))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['R_ROT_OUT'],
+                                                value=r_rot))
+
+Scenario['PJ_ROT_'+str(r_rot)+'_N'+str(10*n)].addPilot(pilot=MonoValue(parameter=VariationParameter['W_SLOT'],
+                                                value=wslot))
+
+endMacroTransaction()
+
+Saving project 'test_1.FLU'
+14:10:03     911 sec. Start save ...
+14:10:04     912 sec. ... end save
+... end saving project
+Python : saveProject()
+
+Saving project as '../../../../../../Desktop/02_flux_int_rotor_slotted/7_icems_journal_2d_transient/slotted_transient_long_simu.FLU'
+14:10:30     938 sec. Start save ...
+14:10:31     939 sec. ... end save
+... end saving project
+Python : saveProjectAs('../../../../../../Desktop/02_flux_int_rotor_slotted/7_icems_journal_2d_transient/slotted_transient_long_simu.FLU')
 
 Closing project
-Close of ../../../../../../Desktop/02_flux_int_rotor_slotted/6_icems_journal_3d/20190521_slotted_rev1
-[64699|1558418912815|22|WARNING    ][Document|Document.updateInstances] : No project loaded
-[64724|1558418912866|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+Close of ../../../../../../Desktop/02_flux_int_rotor_slotted/7_icems_journal_2d_transient/slotted_transient_long_simu
+[69512|1563538653137|22|WARNING    ][Document|Document.updateInstances] : No project loaded
+[69537|1563538653180|22|WARNING    ][Document|Document.updateInstances] : No project loaded
 ... end closing project
 Python : closeProject()
 
 Python : exit()
-[64728|1558418912872|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
+[69541|1563538653185|22|INFO       ][ExitAction|ExitAction.doAction] : Sending notofication to DB manager
 Maximum use of 911 MiB. in numerical memory
-For the dynamic table ID 2359884
+For the dynamic table ID 2359031
 Maximum use of 8 MiB. in character memory
-For the dynamic table ID 1977931
+For the dynamic table ID 1984288
  
    NUMZM         ADRES    SUIV    PREC    CODE          LONG           UID     PROP4   ...
  
@@ -738,7 +826,7 @@ Character memory: Total length                   =   1677721
                   Number of character arrays     =         2
 Maximum number of arrays (num+char)              =    100006
  
-08:08:32     304 sec. FLUX3D_18.1.0 kernel finalized
-[64752|1558418912876|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
-[64753|1558418912876|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
-[64754|1558418912876|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
+14:17:33    1361 sec. FLUX3D_18.1.0 kernel finalized
+[69565|1563538653189|22|INFO       ][ExitAction|ExitAction.doAction] : Closing spy file
+[69566|1563538653189|22|INFO       ][ExitAction|ExitAction.doAction] : Closing error tracer
+[69567|1563538653189|22|INFO       ][ExitAction|ExitAction.doAction] : Flushing log handlers
