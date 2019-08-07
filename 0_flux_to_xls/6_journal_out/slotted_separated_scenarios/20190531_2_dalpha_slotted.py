@@ -27,7 +27,7 @@ for i in range(N-1):
 	d_gap[i+1]=round(d_gap[i]+dx,2)	
 	
 ## rmot
-r_mot=[10,15]
+r_mot=[10,15,20]
 # r_mot=[20]
 
 #info about the motor and its revision and blahblah
@@ -59,11 +59,11 @@ for l in range(0,len(r_mot)):
 	for z in range(N-1):
 		l_slot[z+1]=round(l_slot[z]+dx,1)		
 
-	selectCurrentStep(activeScenario=Scenario['8_DALPHA2_R'+str(r_mot[l])],
+	selectCurrentStep(activeScenario=Scenario['2_DALPHA_R'+str(r_mot[l])],
 				parameterValue=['ALPHA_H='+str(alpha[0]),
 								'BETA='+str(beta[0]),
-								'DBETA_MULT=1',
-								'DTHETA=90',
+								'DALPHA_MULT=1',
+								# 'DTHETA=90',
 								'L_SLOT='+str(l_0),
 								'R_ROT_OUT='+str(r_mot[0]),
 								'D_ST='+str(d_st),
@@ -89,12 +89,12 @@ for l in range(0,len(r_mot)):
 																				   limitMax=l_slot[-1]),
 					SetParameterFixed(paramEvol=VariationParameter['R_ROT_OUT'],
 																			   currentValue=r_mot[l]),	
-					SetParameterFixed(paramEvol=VariationParameter['DBETA_MULT'],
+					SetParameterFixed(paramEvol=VariationParameter['DALPHA_MULT'],
 																			   currentValue=1),
-					SetParameterFixed(paramEvol=VariationParameter['DTHETA'],
-																			   currentValue=90),
+					# SetParameterFixed(paramEvol=VariationParameter['DTHETA'],
+																			   # currentValue=90),
 					SetParameterFixed(paramEvol=VariationParameter['W_SLOT'],
 																			   currentValue=w_slot),
 					SetParameterFixed(paramEvol=VariationParameter['D_ST'],
 																			   currentValue=d_st)]),
-					filename=dir+mot+'_2_DALPHA2_rev'+rev+'_R_'+str(r_mot[0]))		   
+					filename=dir+mot+'_2_DALPHA_rev'+rev+'_R_'+str(r_mot[l]))		   
